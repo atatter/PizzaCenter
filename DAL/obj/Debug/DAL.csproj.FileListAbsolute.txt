@@ -1,0 +1,14 @@
+c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\bin\Debug\DAL.dll.config
+c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\bin\Debug\DAL.dll
+c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\bin\Debug\DAL.pdb
+c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\bin\Debug\Domain.dll
+c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\bin\Debug\EntityFramework.dll
+c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\bin\Debug\Domain.pdb
+c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\bin\Debug\EntityFramework.xml
+c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\obj\Debug\DAL.dll
+c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\obj\Debug\DAL.pdb
+c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\obj\Debug\DAL.Migrations.projectFirstMigration.resources
+c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache
