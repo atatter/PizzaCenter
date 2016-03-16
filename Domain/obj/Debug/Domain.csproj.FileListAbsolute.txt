@@ -8,3 +8,12 @@ c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Domain\bin\Debug\E
 c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Domain\obj\Debug\Domain.dll
 c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Domain\obj\Debug\Domain.pdb
+C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\bin\Debug\Domain.dll.config
+C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\bin\Debug\Domain.dll
+C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\bin\Debug\Domain.pdb
+C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\bin\Debug\EntityFramework.dll
+C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\bin\Debug\EntityFramework.xml
+C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\obj\Debug\Domain.dll
+C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\obj\Debug\Domain.pdb

@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\EFRepositoryFactories.cs" />
+    <Compile Include="Helpers\EFRepositoryProvider.cs" />
+    <Compile Include="Interfaces\IAdditionalComponentRepository.cs" />
+    <Compile Include="Interfaces\IComponentRepository.cs" />
+    <Compile Include="Interfaces\IDbContext.cs" />
+    <Compile Include="Interfaces\IEFRepository.cs" />
+    <Compile Include="Interfaces\IEFRepositoryProvider.cs" />
+    <Compile Include="Interfaces\IOrderedPizzaRepository.cs" />
+    <Compile Include="Interfaces\IOrderRepository.cs" />
+    <Compile Include="Interfaces\IPizzaComponentRepository.cs" />
+    <Compile Include="Interfaces\IPizzaRepository.cs" />
+    <Compile Include="Interfaces\IUOW.cs" />
     <Compile Include="Migrations\201602292151550_projectFirstMigration.cs" />
     <Compile Include="Migrations\201602292151550_projectFirstMigration.Designer.cs">
       <DependentUpon>201602292151550_projectFirstMigration.cs</DependentUpon>
@@ -56,6 +68,14 @@
     <Compile Include="Migrations\MigrationConfiguration.cs" />
     <Compile Include="PizzaDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AdditionalComponentRepository.cs" />
+    <Compile Include="Repositories\ComponentRepository.cs" />
+    <Compile Include="Repositories\EFRepository.cs" />
+    <Compile Include="Repositories\OrderedPizzaRepository.cs" />
+    <Compile Include="Repositories\OrderRepository.cs" />
+    <Compile Include="Repositories\PizzaComponentRepository.cs" />
+    <Compile Include="Repositories\PizzaRepository.cs" />
+    <Compile Include="UOW.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

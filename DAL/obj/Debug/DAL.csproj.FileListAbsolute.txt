@@ -12,3 +12,17 @@ c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\obj\Debug\DAL.
 c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\obj\Debug\DAL.pdb
 c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\obj\Debug\DAL.Migrations.projectFirstMigration.resources
 c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache
+C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\DAL.dll.config
+C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\DAL.dll
+C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\DAL.pdb
+C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\Domain.dll
+C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\Domain.pdb
+C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\obj\Debug\DAL.Migrations.projectFirstMigration.resources
+C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache
+C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\obj\Debug\DAL.dll
+C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\obj\Debug\DAL.pdb

@@ -5,11 +5,12 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL.Interfaces;
 using Domain;
 
 namespace DAL
 {
-    public class PizzaDbContext : DbContext
+    public class PizzaDbContext : DbContext, IDbContext
     {
         public PizzaDbContext() : base("DbConnectionString")
         {
