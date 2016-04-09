@@ -20,11 +20,24 @@ namespace DAL
 #endif
         }
 
-        public DbSet<Pizza> Pizzas { get; set; }
-        public DbSet<Order> Orders { get; set; }
+        public DbSet<AdditionalProduct> AdditionalProducts { get; set; }
+        public DbSet<AdditionalProductInOrder> AdditionalProductInOrders { get; set; }
         public DbSet<Component> Components { get; set; }
-        public DbSet<AdditionalComponent> AdditionalComponents { get; set; }
-        public DbSet<OrderedPizza> OrderedPizzas { get; set; }
-        public DbSet<PizzaComponent> PizzaComponents { get; set; }
+        public DbSet<ComponentAsTopping> ComponentAsToppings { get; set; }
+        public DbSet<ComponentInPizza> ComponentInPizzas { get; set; }
+        public DbSet<Coupon> Coupons { get; set; }
+        public DbSet<Invoice> Invoices { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<PaymentMethod> PaymentMethods { get; set; }
+        public DbSet<Person> Persons { get; set; }
+        public DbSet<Pizza> Pizzas { get; set; }
+        public DbSet<PizzaInOrder> PizzaInOrders { get; set; }
+        public DbSet<PizzaPriceBySize> PizzaPriceBySizes { get; set; }
+        public DbSet<PizzaSize> PizzaSizes { get; set; }
+        public DbSet<Price> Prices { get; set; }
+        public DbSet<PriceType> PriceTypes { get; set; }
+        public DbSet<Topping> Toppings { get; set; }
+        public DbSet<ToppingInPizzaOrder> ToppingInPizzaOrders { get; set; }
+
     }
 }
