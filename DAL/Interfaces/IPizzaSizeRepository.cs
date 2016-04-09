@@ -7,7 +7,7 @@ using Domain;
 
 namespace DAL.Interfaces
 {
-    public interface IAdditionalComponentRepository : IEFRepository<AdditionalComponent>
+    public interface IPizzaSizeRepository : IEFRepository<PizzaSize>
     {
     }
 }
