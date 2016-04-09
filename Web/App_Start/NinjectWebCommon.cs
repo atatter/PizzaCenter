@@ -66,10 +66,10 @@ namespace Web.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            //kernel.Bind<IDbContext>().To<PizzaDbContext>().InRequestScope();
-            //kernel.Bind<EFRepositoryFactories>().To<EFRepositoryFactories>().InSingletonScope();
-            //kernel.Bind<IEFRepositoryProvider>().To<EFRepositoryProvider>().InRequestScope();
-            //kernel.Bind<IUOW>().To<UOW>().InRequestScope();
+            kernel.Bind<IDbContext>().To<PizzaDbContext>().InRequestScope();
+            kernel.Bind<EFRepositoryFactories>().To<EFRepositoryFactories>().InSingletonScope();
+            kernel.Bind<IEFRepositoryProvider>().To<EFRepositoryProvider>().InRequestScope();
+            kernel.Bind<IUOW>().To<UOW>().InRequestScope();
         }        
     }
 }

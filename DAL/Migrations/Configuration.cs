@@ -5,9 +5,9 @@ namespace DAL.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class MigrationConfiguration : DbMigrationsConfiguration<DAL.PizzaDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<DAL.PizzaDbContext>
     {
-        public MigrationConfiguration()
+        public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }

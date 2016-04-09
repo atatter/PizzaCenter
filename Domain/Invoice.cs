@@ -9,6 +9,10 @@ namespace Domain
     public class Invoice
     {
         public int InvoiceId { get; set; }
+        public DateTime CreationTime { get; set; }
+        public int? SumWOCoupon { get; set; }
+        public int? Sum { get; set; }
+        public string CustomersName { get; set; }
 
         //List tellimusi
         public virtual List<Order> Orders { get; set; }  

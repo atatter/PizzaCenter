@@ -1,11 +1,31 @@
-﻿<!DOCTYPE html>
+﻿@using System.Threading
+@{
+    // set up global js variable, to hold culture code
+    var currentCultureCode = "root";
+    switch (Thread.CurrentThread.CurrentCulture.ToString())
+    {
+        case "et-EE":
+            currentCultureCode = "et";
+            break;
+        case "en-US":
+            currentCultureCode = "en";
+            break;
+        default:
+            currentCultureCode = Thread.CurrentThread.CurrentCulture.ToString();
+            break;
+    }
+}
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <meta charset ="utf-8"   />
+    <meta name ="viewport"  content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title - My ASP.NET Application</title>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        <script type="text/javascript">
+        var currentCultureCode = '@currentCultureCode';
+        </script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -21,7 +41,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Pizzas", "Index", "Pizzas")</li>
+                    <li>@Html.ActionLink("Pizzas", "Index", "Invoices")</li>
+                    <li>@Html.ActionLink("Coupons", "Index", "Coupons")</li>
                 </ul>
             </div>
         </div>
@@ -30,12 +51,19 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Andres Käver, Mait Poska 2016</p>
+            <p>&copy; @DateTime.Now.Year - Andres Käver, Mait Poska 2016 Culture:@Culture UICulture:@UICulture </p>
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/cldr")
+    @Scripts.Render("~/bundles/globalize")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/moment")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/app")
+
+
     @RenderSection("scripts", required: false)
 </body>
 </html>

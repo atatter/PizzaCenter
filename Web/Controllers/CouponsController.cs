@@ -7,111 +7,118 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using DAL;
+using DAL.Interfaces;
 using Domain;
 
 namespace Web.Controllers
 {
-    public class PizzasController : Controller
+    public class CouponsController : Controller
     {
         private PizzaDbContext db = new PizzaDbContext();
+        private IUOW _uow;
 
-        // GET: Pizzas
-        public ActionResult Index()
+        public CouponsController(IUOW uow)
         {
-            return View(db.Pizzas.ToList());
+            _uow = uow;
         }
 
-        // GET: Pizzas/Details/5
+        // GET: Coupons
+        public ActionResult Index()
+        {
+            return View(_uow.Coupons.All);
+        }
+
+        // GET: Coupons/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Pizza pizza = db.Pizzas.Find(id);
-            if (pizza == null)
+            Coupon coupon = db.Coupons.Find(id);
+            if (coupon == null)
             {
                 return HttpNotFound();
             }
-            return View(pizza);
+            return View(coupon);
         }
 
-        // GET: Pizzas/Create
+        // GET: Coupons/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Pizzas/Create
+        // POST: Coupons/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "PizzaId,Name")] Pizza pizza)
+        public ActionResult Create([Bind(Include = "CouponId,StartDate,EndDate,IsReusable,HasBeenUsed")] Coupon coupon)
         {
             if (ModelState.IsValid)
             {
-                db.Pizzas.Add(pizza);
+                db.Coupons.Add(coupon);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(pizza);
+            return View(coupon);
         }
 
-        // GET: Pizzas/Edit/5
+        // GET: Coupons/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Pizza pizza = db.Pizzas.Find(id);
-            if (pizza == null)
+            Coupon coupon = db.Coupons.Find(id);
+            if (coupon == null)
             {
                 return HttpNotFound();
             }
-            return View(pizza);
+            return View(coupon);
         }
 
-        // POST: Pizzas/Edit/5
+        // POST: Coupons/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "PizzaId,Name")] Pizza pizza)
+        public ActionResult Edit([Bind(Include = "CouponId,StartDate,EndDate,IsReusable,HasBeenUsed")] Coupon coupon)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(pizza).State = EntityState.Modified;
+                db.Entry(coupon).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(pizza);
+            return View(coupon);
         }
 
-        // GET: Pizzas/Delete/5
+        // GET: Coupons/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Pizza pizza = db.Pizzas.Find(id);
-            if (pizza == null)
+            Coupon coupon = db.Coupons.Find(id);
+            if (coupon == null)
             {
                 return HttpNotFound();
             }
-            return View(pizza);
+            return View(coupon);
         }
 
-        // POST: Pizzas/Delete/5
+        // POST: Coupons/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Pizza pizza = db.Pizzas.Find(id);
-            db.Pizzas.Remove(pizza);
+            Coupon coupon = db.Coupons.Find(id);
+            db.Coupons.Remove(coupon);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
