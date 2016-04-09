@@ -7,8 +7,6 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using DAL;
-using DAL.Interfaces;
-using DAL.Repositories;
 using Domain;
 
 namespace Web.Controllers
@@ -16,16 +14,11 @@ namespace Web.Controllers
     public class PizzasController : Controller
     {
         private PizzaDbContext db = new PizzaDbContext();
-        private readonly IUOW _uow;
-        public PizzasController(IUOW uow)
-        {
-            _uow = uow;
-        }
 
         // GET: Pizzas
         public ActionResult Index()
         {
-            return View(_uow.Pizzas.All);
+            return View(db.Pizzas.ToList());
         }
 
         // GET: Pizzas/Details/5
@@ -54,12 +47,12 @@ namespace Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "PizzaId,Name,Price")] Pizza pizza)
+        public ActionResult Create([Bind(Include = "PizzaId,Name")] Pizza pizza)
         {
             if (ModelState.IsValid)
             {
-                _uow.Pizzas.Add(pizza);
-                _uow.Commit();
+                db.Pizzas.Add(pizza);
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
@@ -86,7 +79,7 @@ namespace Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "PizzaId,Name,Price")] Pizza pizza)
+        public ActionResult Edit([Bind(Include = "PizzaId,Name")] Pizza pizza)
         {
             if (ModelState.IsValid)
             {

@@ -14,8 +14,7 @@ namespace Domain
         public string Name { get; set; }
 
         //Pizza tellimuses
-        public int PizzaInOrderId { get; set; }
-        public virtual PizzaInOrder PizzaInOrder { get; set; }
+        public virtual List<PizzaInOrder> PizzaInOrders { get; set; }
 
         //List hindu pitsa suuruse järgi
         public virtual List<PizzaPriceBySize> PizzaPriceBySizes { get; set; } 
