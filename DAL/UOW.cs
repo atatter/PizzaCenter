@@ -33,12 +33,26 @@ namespace DAL
         //standard repos
         //public IEFRepository<Contact> Contacts => GetStandardRepo<Contact>();
         //public IEFRepository<ContactType> ContactTypes => GetStandardRepo<ContactType>();
-        public IEFRepository<Pizza> Pizzas => GetStandardRepo<Pizza>();
-        public IEFRepository<PizzaComponent> PizzaComponents => GetStandardRepo<PizzaComponent>();
-        public IEFRepository<AdditionalComponent> AdditionalComponents => GetStandardRepo<AdditionalComponent>();
+        public IEFRepository<AdditionalProduct> AdditionalProducts => GetStandardRepo<AdditionalProduct>();
+        public IEFRepository<AdditionalProductInOrder> AdditionalProductInOrders => GetStandardRepo<AdditionalProductInOrder>();
         public IEFRepository<Component> Components => GetStandardRepo<Component>();
+        public IEFRepository<ComponentAsTopping> ComponentAsToppings => GetStandardRepo<ComponentAsTopping>();
+        public IEFRepository<ComponentInPizza> ComponentInPizzas => GetStandardRepo<ComponentInPizza>();
+        public IEFRepository<Coupon> Coupons => GetStandardRepo<Coupon>();
+        public IEFRepository<Invoice> Invoices => GetStandardRepo<Invoice>();
         public IEFRepository<Order> Orders => GetStandardRepo<Order>();
-        public IEFRepository<OrderedPizza> OrderedPizzas => GetStandardRepo<OrderedPizza>();
+        public IEFRepository<PaymentMethod> PaymentMethods => GetStandardRepo<PaymentMethod>();
+        public IEFRepository<Person> Persons => GetStandardRepo<Person>();
+        public IEFRepository<Pizza> Pizzas => GetStandardRepo<Pizza>();
+        public IEFRepository<PizzaInOrder> PizzaInOrders => GetStandardRepo<PizzaInOrder>();
+        public IEFRepository<PizzaPriceBySize> PizzaPriceBySizes => GetStandardRepo<PizzaPriceBySize>();
+        public IEFRepository<PizzaSize> PizzaSizes => GetStandardRepo<PizzaSize>();
+        public IEFRepository<Price> Prices => GetStandardRepo<Price>();
+        public IEFRepository<PriceType> PriceTypes => GetStandardRepo<PriceType>();
+        public IEFRepository<Topping> Toppings => GetStandardRepo<Topping>();
+        public IEFRepository<ToppingInPizzaOrder> ToppingInPizzaOrders => GetStandardRepo<ToppingInPizzaOrder>();
+        
+        
         // repo with custom methods
         // add it also in EFRepositoryFactories.cs, in method GetCustomFactories
         //public IPersonRepository Persons => GetRepo<IPersonRepository>();

@@ -8,9 +8,9 @@ using Domain;
 
 namespace DAL.Repositories
 {
-    public class PizzaComponentRepository : EFRepository<PizzaComponent>, IPizzaComponentRepository
+    public class AdditionalProductRepository : EFRepository<AdditionalProduct>, IAdditionalProductRepository
     {
-        public PizzaComponentRepository(IDbContext dbContext) : base(dbContext)
+        public AdditionalProductRepository(IDbContext dbContext) : base(dbContext)
         {
         }
     }

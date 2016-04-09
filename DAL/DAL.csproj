@@ -80,13 +80,25 @@
     <Compile Include="Migrations\MigrationConfiguration.cs" />
     <Compile Include="PizzaDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\AdditionalComponentRepository.cs" />
+    <Compile Include="Repositories\AdditionalProductInOrderRepository.cs" />
+    <Compile Include="Repositories\AdditionalProductRepository.cs" />
+    <Compile Include="Repositories\ComponentAsToppingRepository.cs" />
+    <Compile Include="Repositories\ComponentInPizzaRepository.cs" />
     <Compile Include="Repositories\ComponentRepository.cs" />
+    <Compile Include="Repositories\CouponRepository.cs" />
     <Compile Include="Repositories\EFRepository.cs" />
-    <Compile Include="Repositories\OrderedPizzaRepository.cs" />
+    <Compile Include="Repositories\InvoiceRepository.cs" />
     <Compile Include="Repositories\OrderRepository.cs" />
-    <Compile Include="Repositories\PizzaComponentRepository.cs" />
+    <Compile Include="Repositories\PaymentMethodRepository.cs" />
+    <Compile Include="Repositories\PersonRepository.cs" />
+    <Compile Include="Repositories\PizzaInOrderRepository.cs" />
+    <Compile Include="Repositories\PizzaPriceBySizeRepository.cs" />
     <Compile Include="Repositories\PizzaRepository.cs" />
+    <Compile Include="Repositories\PizzaSizeRepository.cs" />
+    <Compile Include="Repositories\PriceRepository.cs" />
+    <Compile Include="Repositories\PriceTypeRepository.cs" />
+    <Compile Include="Repositories\ToppingInPizzaOrderRepository.cs" />
+    <Compile Include="Repositories\ToppingRepository.cs" />
     <Compile Include="UOW.cs" />
   </ItemGroup>
   <ItemGroup>
