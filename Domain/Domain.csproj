@@ -49,13 +49,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdditionalComponent.cs" />
+    <Compile Include="AdditionalProduct.cs" />
+    <Compile Include="AdditionalProductInOrder.cs" />
     <Compile Include="Component.cs" />
+    <Compile Include="ComponentAsTopping.cs" />
+    <Compile Include="ComponentInPizza.cs" />
+    <Compile Include="Coupon.cs" />
+    <Compile Include="Invoice.cs" />
     <Compile Include="Order.cs" />
-    <Compile Include="OrderedPizza.cs" />
+    <Compile Include="PaymentMethod.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Pizza.cs" />
-    <Compile Include="PizzaComponent.cs" />
+    <Compile Include="PizzaInOrder.cs" />
+    <Compile Include="PizzaPriceBySize.cs" />
+    <Compile Include="PizzaSize.cs" />
+    <Compile Include="Price.cs" />
+    <Compile Include="PriceType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Topping.cs" />
+    <Compile Include="ToppingInPizzaOrder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

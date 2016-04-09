@@ -9,9 +9,11 @@ namespace Domain
     public class Component
     {
         public int ComponentId { get; set; }
-        public string Name { get; set; }
-        public virtual List<PizzaComponent> PizzaComponents { get; set; }
-        public virtual List<AdditionalComponent> AdditionalComponents { get; set; }
+        public string Nimetus { get; set; }
 
+        //List komponente lisandiks
+        public virtual List<ComponentAsTopping> ComponentsAsTopping { get; set; }
+        //List komponente pizzas
+        public virtual List<ComponentInPizza> ComponentInPizzas { get; set; }
     }
 }

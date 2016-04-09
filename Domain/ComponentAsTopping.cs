@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class AdditionalComponent
+    public class ComponentAsTopping
     {
-        public int AdditionalComponentId { get; set; }
-        public int OrderedPizzaId { get; set; }
-        public virtual OrderedPizza OrderedPizza { get; set; }
+        public int ComponentAsToppingId { get; set; }
+
+        //Lisand
+        public int ToppingId { get; set; }
+        public virtual Topping Topping { get; set; }
+        //Komponent
         public int ComponentId { get; set; }
         public virtual Component Component { get; set; }
     }
