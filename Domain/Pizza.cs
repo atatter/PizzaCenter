@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Security.AccessControl;
 using System.Security.Permissions;
@@ -12,6 +13,11 @@ namespace Domain
     {
         public int PizzaId { get; set; }
         public string Name { get; set; }
+        public string Description { get; set; }
+
+        [ForeignKey(nameof(ContactTypeName))]
+        public int ContactTypeNameId { get; set; }
+        public virtual MultiLangString ContactTypeName { get; set; }
 
         //Pizza tellimuses
         public virtual List<PizzaInOrder> PizzaInOrders { get; set; }

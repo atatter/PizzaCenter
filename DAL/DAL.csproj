@@ -73,17 +73,9 @@
     <Compile Include="Interfaces\IToppingInPizzaOrderRepository.cs" />
     <Compile Include="Interfaces\IToppingRepository.cs" />
     <Compile Include="Interfaces\IUOW.cs" />
-    <Compile Include="Migrations\201604092104571_MigrationsInitialized.cs" />
-    <Compile Include="Migrations\201604092104571_MigrationsInitialized.Designer.cs">
-      <DependentUpon>201604092104571_MigrationsInitialized.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604092112544_MigrationDb_CouponUpdated.cs" />
-    <Compile Include="Migrations\201604092112544_MigrationDb_CouponUpdated.Designer.cs">
-      <DependentUpon>201604092112544_MigrationDb_CouponUpdated.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604092147306_MigrationDb_Coupon_Update.cs" />
-    <Compile Include="Migrations\201604092147306_MigrationDb_Coupon_Update.Designer.cs">
-      <DependentUpon>201604092147306_MigrationDb_Coupon_Update.cs</DependentUpon>
+    <Compile Include="Migrations\201604101812509_new.cs" />
+    <Compile Include="Migrations\201604101812509_new.Designer.cs">
+      <DependentUpon>201604101812509_new.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PizzaDbContext.cs" />
@@ -120,14 +112,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201604092104571_MigrationsInitialized.resx">
-      <DependentUpon>201604092104571_MigrationsInitialized.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604092112544_MigrationDb_CouponUpdated.resx">
-      <DependentUpon>201604092112544_MigrationDb_CouponUpdated.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604092147306_MigrationDb_Coupon_Update.resx">
-      <DependentUpon>201604092147306_MigrationDb_Coupon_Update.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201604101812509_new.resx">
+      <DependentUpon>201604101812509_new.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -22,7 +22,11 @@ C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\bin\Debug\Domain.dll
 C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\bin\Debug\Domain.pdb
 C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\bin\Debug\EntityFramework.dll
 C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\bin\Debug\Resources.dll
+C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\bin\Debug\Resources.pdb
 C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\bin\Debug\EntityFramework.xml
 C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\bin\Debug\et\Resources.resources.dll
+C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\obj\Debug\Domain.dll
 C:\Users\Aleks\Source\Repos\PizzaCenter\Domain\obj\Debug\Domain.pdb

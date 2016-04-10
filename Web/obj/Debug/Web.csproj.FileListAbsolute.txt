@@ -206,6 +206,7 @@ C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Newtonsoft.Json.dll
 C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Ninject.dll
 C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Ninject.Web.Common.dll
 C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Ninject.Web.Mvc.dll
+C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Resources.dll
 C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.Helpers.dll
 C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.Mvc.dll
 C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.Optimization.dll
@@ -217,6 +218,7 @@ C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\WebActivatorEx.dll
 C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\WebGrease.dll
 C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\DAL.pdb
 C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Domain.pdb
+C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Resources.pdb
 C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Antlr3.Runtime.pdb
 C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\EntityFramework.xml
 C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\EntityFramework.SqlServer.xml
@@ -237,6 +239,7 @@ C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.Razor.xml
 C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.WebPages.xml
 C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\et\Resources.resources.dll
 C:\Users\Aleks\Source\Repos\PizzaCenter\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
 C:\Users\Aleks\Source\Repos\PizzaCenter\Web\obj\Debug\Web.dll
 C:\Users\Aleks\Source\Repos\PizzaCenter\Web\obj\Debug\Web.pdb

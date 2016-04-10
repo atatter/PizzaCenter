@@ -7,118 +7,116 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using DAL;
-using DAL.Interfaces;
 using Domain;
 
 namespace Web.Controllers
 {
-    public class CouponsController : BaseController
+    public class PizzasController : BaseController
     {
         private PizzaDbContext db = new PizzaDbContext();
-        private IUOW _uow;
 
-        public CouponsController(IUOW uow)
-        {
-            _uow = uow;
-        }
-
-        // GET: Coupons
+        // GET: Pizzas
         public ActionResult Index()
         {
-            return View(_uow.Coupons.All);
+            var pizzas = db.Pizzas.Include(p => p.ContactTypeName);
+            return View(pizzas.ToList());
         }
 
-        // GET: Coupons/Details/5
+        // GET: Pizzas/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Coupon coupon = db.Coupons.Find(id);
-            if (coupon == null)
+            Pizza pizza = db.Pizzas.Find(id);
+            if (pizza == null)
             {
                 return HttpNotFound();
             }
-            return View(coupon);
+            return View(pizza);
         }
 
-        // GET: Coupons/Create
+        // GET: Pizzas/Create
         public ActionResult Create()
         {
+            ViewBag.ContactTypeNameId = new SelectList(db.MultiLangStrings, "MultiLangStringId", "Value");
             return View();
         }
 
-        // POST: Coupons/Create
+        // POST: Pizzas/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "CouponId,StartDate,EndDate,IsReusable,HasBeenUsed")] Coupon coupon)
+        public ActionResult Create([Bind(Include = "PizzaId,Name,Description,ContactTypeNameId")] Pizza pizza)
         {
             if (ModelState.IsValid)
             {
-                db.Coupons.Add(coupon);
+                db.Pizzas.Add(pizza);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(coupon);
+            ViewBag.ContactTypeNameId = new SelectList(db.MultiLangStrings, "MultiLangStringId", "Value", pizza.ContactTypeNameId);
+            return View(pizza);
         }
 
-        // GET: Coupons/Edit/5
+        // GET: Pizzas/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Coupon coupon = db.Coupons.Find(id);
-            if (coupon == null)
+            Pizza pizza = db.Pizzas.Find(id);
+            if (pizza == null)
             {
                 return HttpNotFound();
             }
-            return View(coupon);
+            ViewBag.ContactTypeNameId = new SelectList(db.MultiLangStrings, "MultiLangStringId", "Value", pizza.ContactTypeNameId);
+            return View(pizza);
         }
 
-        // POST: Coupons/Edit/5
+        // POST: Pizzas/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "CouponId,StartDate,EndDate,IsReusable,HasBeenUsed")] Coupon coupon)
+        public ActionResult Edit([Bind(Include = "PizzaId,Name,Description,ContactTypeNameId")] Pizza pizza)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(coupon).State = EntityState.Modified;
+                db.Entry(pizza).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(coupon);
+            ViewBag.ContactTypeNameId = new SelectList(db.MultiLangStrings, "MultiLangStringId", "Value", pizza.ContactTypeNameId);
+            return View(pizza);
         }
 
-        // GET: Coupons/Delete/5
+        // GET: Pizzas/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Coupon coupon = db.Coupons.Find(id);
-            if (coupon == null)
+            Pizza pizza = db.Pizzas.Find(id);
+            if (pizza == null)
             {
                 return HttpNotFound();
             }
-            return View(coupon);
+            return View(pizza);
         }
 
-        // POST: Coupons/Delete/5
+        // POST: Pizzas/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Coupon coupon = db.Coupons.Find(id);
-            db.Coupons.Remove(coupon);
+            Pizza pizza = db.Pizzas.Find(id);
+            db.Pizzas.Remove(pizza);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

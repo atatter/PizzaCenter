@@ -15,6 +15,10 @@ namespace DAL
         public PizzaDbContext() : base("DbConnectionString")
         {
             Database.SetInitializer(new DropCreateDatabaseIfModelChanges<PizzaDbContext>());
+            //Database.SetInitializer(new MigrateDatabaseToLatestVersion<PizzaDbContext,Migrations.Configuration>());
+
+
+
 #if DEBUG
             Database.Log = s => Trace.Write(s);
 #endif
@@ -39,5 +43,6 @@ namespace DAL
         public DbSet<Topping> Toppings { get; set; }
         public DbSet<ToppingInPizzaOrder> ToppingInPizzaOrders { get; set; }
 
+        public System.Data.Entity.DbSet<Domain.MultiLangString> MultiLangStrings { get; set; }
     }
 }

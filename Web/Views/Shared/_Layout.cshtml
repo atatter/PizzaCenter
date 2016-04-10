@@ -1,4 +1,5 @@
 ﻿@using System.Threading
+@using Web.Helpers
 @{
     // set up global js variable, to hold culture code
     var currentCultureCode = "root";
@@ -14,6 +15,15 @@
             currentCultureCode = Thread.CurrentThread.CurrentCulture.ToString();
             break;
     }
+}
+@{
+    var culture = CultureHelper.GetCurrentUICulture().ToLower();
+
+    var nameValueCollection = HttpUtility.ParseQueryString(Request?.Url?.Query ?? "");
+    nameValueCollection.Remove("culture");
+    string returnUrl = Request?.Url?.AbsolutePath + "?" + nameValueCollection;
+
+    //var returnUrl = Request.Url?.PathAndQuery ?? "";
 }
 <!DOCTYPE html>
 <html>
@@ -36,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink(@Resources.Common.WebsiteName, "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -49,7 +59,15 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
+        <hr/>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="@Html.Raw(culture == "et" ? "list-group-item-success" : "")">
+                @Html.ActionLink("Est", "SetLanguage", new { area = "", controller = "Language", culture = "et", returnUrl }, htmlAttributes: new { id = "langLinkEst" })
+            </li>
+            <li class="@Html.Raw(culture == "en" ? "list-group-item-success" : "")">
+                @Html.ActionLink("Eng", "SetLanguage", new { area = "", controller = "Language", culture = "en", returnUrl }, htmlAttributes: new { id = "langLinkEng" })
+            </li>
+        </ul>
         <footer>
             <p>&copy; @DateTime.Now.Year - Andres Käver, Mait Poska 2016 Culture:@Culture UICulture:@UICulture </p>
         </footer>

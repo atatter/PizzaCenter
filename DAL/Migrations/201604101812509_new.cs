@@ -3,7 +3,7 @@ namespace DAL.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class MigrationsInitialized : DbMigration
+    public partial class _new : DbMigration
     {
         public override void Up()
         {
@@ -70,8 +70,12 @@ namespace DAL.Migrations
                     {
                         PizzaId = c.Int(nullable: false, identity: true),
                         Name = c.String(),
+                        Description = c.String(),
+                        ContactTypeNameId = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => t.PizzaId);
+                .PrimaryKey(t => t.PizzaId)
+                .ForeignKey("dbo.MultiLangStrings", t => t.ContactTypeNameId, cascadeDelete: true)
+                .Index(t => t.ContactTypeNameId);
             
             CreateTable(
                 "dbo.ComponentInPizzas",
@@ -167,14 +171,15 @@ namespace DAL.Migrations
                         SumWOCoupon = c.Int(),
                         Sum = c.Int(),
                         CustomersName = c.String(),
-                        CouponId = c.Int(nullable: false),
+                        Delivered = c.Boolean(nullable: false),
+                        CouponId = c.Int(),
                         PaymentMethodId = c.Int(nullable: false),
-                        PersonId = c.Int(nullable: false),
+                        PersonId = c.Int(),
                     })
                 .PrimaryKey(t => t.InvoiceId)
-                .ForeignKey("dbo.Coupons", t => t.CouponId, cascadeDelete: true)
+                .ForeignKey("dbo.Coupons", t => t.CouponId)
                 .ForeignKey("dbo.PaymentMethods", t => t.PaymentMethodId, cascadeDelete: true)
-                .ForeignKey("dbo.People", t => t.PersonId, cascadeDelete: true)
+                .ForeignKey("dbo.People", t => t.PersonId)
                 .Index(t => t.CouponId)
                 .Index(t => t.PaymentMethodId)
                 .Index(t => t.PersonId);
@@ -184,6 +189,10 @@ namespace DAL.Migrations
                 c => new
                     {
                         CouponId = c.Int(nullable: false, identity: true),
+                        StartDate = c.DateTime(nullable: false),
+                        EndDate = c.DateTime(nullable: false),
+                        IsReusable = c.Boolean(nullable: false),
+                        HasBeenUsed = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.CouponId);
             
@@ -205,6 +214,29 @@ namespace DAL.Migrations
                         LastName = c.String(),
                     })
                 .PrimaryKey(t => t.PersonId);
+            
+            CreateTable(
+                "dbo.MultiLangStrings",
+                c => new
+                    {
+                        MultiLangStringId = c.Int(nullable: false, identity: true),
+                        Value = c.String(),
+                        Owner = c.String(maxLength: 255),
+                    })
+                .PrimaryKey(t => t.MultiLangStringId);
+            
+            CreateTable(
+                "dbo.Translations",
+                c => new
+                    {
+                        TranslationId = c.Int(nullable: false, identity: true),
+                        Value = c.String(),
+                        MultiLangStringId = c.Int(nullable: false),
+                        Culture = c.String(maxLength: 12),
+                    })
+                .PrimaryKey(t => t.TranslationId)
+                .ForeignKey("dbo.MultiLangStrings", t => t.MultiLangStringId, cascadeDelete: true)
+                .Index(t => t.MultiLangStringId);
             
             CreateTable(
                 "dbo.PizzaSizes",
@@ -234,6 +266,8 @@ namespace DAL.Migrations
             DropForeignKey("dbo.Prices", "PizzaPriceBySizeId", "dbo.PizzaPriceBySizes");
             DropForeignKey("dbo.PizzaPriceBySizes", "PizzaSizeId", "dbo.PizzaSizes");
             DropForeignKey("dbo.PizzaPriceBySizes", "PizzaId", "dbo.Pizzas");
+            DropForeignKey("dbo.Pizzas", "ContactTypeNameId", "dbo.MultiLangStrings");
+            DropForeignKey("dbo.Translations", "MultiLangStringId", "dbo.MultiLangStrings");
             DropForeignKey("dbo.ComponentInPizzas", "PizzaId", "dbo.Pizzas");
             DropForeignKey("dbo.ToppingInPizzaOrders", "ToppingId", "dbo.Toppings");
             DropForeignKey("dbo.ToppingInPizzaOrders", "PizzaInOrderId", "dbo.PizzaInOrders");
@@ -249,6 +283,7 @@ namespace DAL.Migrations
             DropForeignKey("dbo.ComponentInPizzas", "ComponentId", "dbo.Components");
             DropForeignKey("dbo.Prices", "AdditionalProductId", "dbo.AdditionalProducts");
             DropForeignKey("dbo.AdditionalProductInOrders", "AdditionalProductId", "dbo.AdditionalProducts");
+            DropIndex("dbo.Translations", new[] { "MultiLangStringId" });
             DropIndex("dbo.Invoices", new[] { "PersonId" });
             DropIndex("dbo.Invoices", new[] { "PaymentMethodId" });
             DropIndex("dbo.Invoices", new[] { "CouponId" });
@@ -261,6 +296,7 @@ namespace DAL.Migrations
             DropIndex("dbo.ComponentAsToppings", new[] { "ToppingId" });
             DropIndex("dbo.ComponentInPizzas", new[] { "ComponentId" });
             DropIndex("dbo.ComponentInPizzas", new[] { "PizzaId" });
+            DropIndex("dbo.Pizzas", new[] { "ContactTypeNameId" });
             DropIndex("dbo.PizzaPriceBySizes", new[] { "PizzaId" });
             DropIndex("dbo.PizzaPriceBySizes", new[] { "PizzaSizeId" });
             DropIndex("dbo.Prices", new[] { "AdditionalProductId" });
@@ -271,6 +307,8 @@ namespace DAL.Migrations
             DropIndex("dbo.AdditionalProductInOrders", new[] { "AdditionalProductId" });
             DropTable("dbo.PriceTypes");
             DropTable("dbo.PizzaSizes");
+            DropTable("dbo.Translations");
+            DropTable("dbo.MultiLangStrings");
             DropTable("dbo.People");
             DropTable("dbo.PaymentMethods");
             DropTable("dbo.Coupons");

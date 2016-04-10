@@ -172,13 +172,17 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\Coupons1Controller.cs" />
     <Compile Include="Controllers\CouponsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InvoicesController.cs" />
+    <Compile Include="Controllers\LanguageController.cs" />
+    <Compile Include="Controllers\PizzasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\CultureHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1581,10 +1585,16 @@
     <Content Include="Views\Coupons1\Details.cshtml" />
     <Content Include="Views\Coupons1\Edit.cshtml" />
     <Content Include="Views\Coupons1\Index.cshtml" />
+    <Content Include="Views\Pizzas\Create.cshtml" />
+    <Content Include="Views\Pizzas\Delete.cshtml" />
+    <Content Include="Views\Pizzas\Details.cshtml" />
+    <Content Include="Views\Pizzas\Edit.cshtml" />
+    <Content Include="Views\Pizzas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Language\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -1607,6 +1617,10 @@
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{2d136789-7e4e-43e1-bd09-3047e0339741}</Project>
       <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Resources\Resources.csproj">
+      <Project>{b281fd3f-84dd-42ad-960a-46fef2d06a5e}</Project>
+      <Name>Resources</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
