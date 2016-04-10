@@ -50,6 +50,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Common.et.resx</DependentUpon>
     </Compile>
+    <Compile Include="Coupon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Coupon.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Coupon.et.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Coupon.et.resx</DependentUpon>
+    </Compile>
     <Compile Include="Domain.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -65,6 +75,14 @@
     <EmbeddedResource Include="Common.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Common.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coupon.et.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Coupon.et.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coupon.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Coupon.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Domain.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

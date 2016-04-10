@@ -41,5 +41,3 @@ C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\et\Resources.resources.dll
 C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\obj\Debug\DAL.dll
 C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\obj\Debug\DAL.pdb
-C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\obj\Debug\DAL.Migrations._new.resources
-C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache

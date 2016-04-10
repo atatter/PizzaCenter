@@ -117,34 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CreateNew" xml:space="preserve">
-    <value>Loo uus</value>
+  <data name="Coupons" xml:space="preserve">
+    <value>Kupongid</value>
   </data>
-  <data name="FirstName" xml:space="preserve">
-    <value>Eesnimi</value>
+  <data name="EndDate" xml:space="preserve">
+    <value>Kehtivus lõpeb</value>
   </data>
-  <data name="Home" xml:space="preserve">
-    <value>Avaleht</value>
+  <data name="HasBeenUsed" xml:space="preserve">
+    <value>On kasutatud?</value>
   </data>
-  <data name="LastName" xml:space="preserve">
-    <value>Perenimi</value>
+  <data name="IsReusable" xml:space="preserve">
+    <value>On taaskasutatav?</value>
   </data>
-  <data name="MultiLang" xml:space="preserve">
-    <value>Lisa sisu</value>
-  </data>
-  <data name="News" xml:space="preserve">
-    <value>Uudised</value>
-  </data>
-  <data name="Persons" xml:space="preserve">
-    <value>Inimesed</value>
-  </data>
-  <data name="Pizzas" xml:space="preserve">
-    <value>Pitsad</value>
-  </data>
-  <data name="Submit" xml:space="preserve">
-    <value>Kinnita</value>
-  </data>
-  <data name="Translations" xml:space="preserve">
-    <value>Tõlgi sisu</value>
+  <data name="StartDate" xml:space="preserve">
+    <value>Kehtivus algab</value>
   </data>
 </root>

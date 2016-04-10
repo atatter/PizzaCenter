@@ -50,9 +50,12 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Pizzas", "Index", "Invoices")</li>
-                    <li>@Html.ActionLink("Coupons", "Index", "Coupons")</li>
+                    <li>@Html.ActionLink(@Resources.Common.Home, "Index", "Home")</li>
+                    <li>@Html.ActionLink(@Resources.Common.Persons, "Index", "Persons")</li>
+                    <li>@Html.ActionLink(@Resources.Coupon.Coupons, "Index", "Coupons")</li>
+                    <li>@Html.ActionLink(@Resources.Common.Pizzas, "Index", "Pizzas")</li>
+                    <li>@Html.ActionLink(@Resources.Common.MultiLang, "Create", "MultiLangStrings")</li>
+                    <li>@Html.ActionLink(@Resources.Common.Translations, "Index", "Translations")</li>
                 </ul>
             </div>
         </div>
@@ -69,7 +72,7 @@
             </li>
         </ul>
         <footer>
-            <p>&copy; @DateTime.Now.Year - Andres Käver, Mait Poska 2016 Culture:@Culture UICulture:@UICulture </p>
+            <p>&copy; @DateTime.Now.Year - Pizza Center</p>
         </footer>
     </div>
 

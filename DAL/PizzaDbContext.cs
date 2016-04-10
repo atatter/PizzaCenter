@@ -44,5 +44,7 @@ namespace DAL
         public DbSet<ToppingInPizzaOrder> ToppingInPizzaOrders { get; set; }
 
         public System.Data.Entity.DbSet<Domain.MultiLangString> MultiLangStrings { get; set; }
+
+        public System.Data.Entity.DbSet<Domain.Translation> Translations { get; set; }
     }
 }

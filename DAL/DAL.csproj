@@ -73,10 +73,6 @@
     <Compile Include="Interfaces\IToppingInPizzaOrderRepository.cs" />
     <Compile Include="Interfaces\IToppingRepository.cs" />
     <Compile Include="Interfaces\IUOW.cs" />
-    <Compile Include="Migrations\201604101812509_new.cs" />
-    <Compile Include="Migrations\201604101812509_new.Designer.cs">
-      <DependentUpon>201604101812509_new.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PizzaDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -110,11 +106,6 @@
       <Project>{2d136789-7e4e-43e1-bd09-3047e0339741}</Project>
       <Name>Domain</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201604101812509_new.resx">
-      <DependentUpon>201604101812509_new.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

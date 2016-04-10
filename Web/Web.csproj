@@ -178,7 +178,10 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InvoicesController.cs" />
     <Compile Include="Controllers\LanguageController.cs" />
+    <Compile Include="Controllers\MultiLangStringsController.cs" />
+    <Compile Include="Controllers\PersonsController.cs" />
     <Compile Include="Controllers\PizzasController.cs" />
+    <Compile Include="Controllers\TranslationsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1585,11 +1588,26 @@
     <Content Include="Views\Coupons1\Details.cshtml" />
     <Content Include="Views\Coupons1\Edit.cshtml" />
     <Content Include="Views\Coupons1\Index.cshtml" />
+    <Content Include="Views\Persons\Create.cshtml" />
+    <Content Include="Views\Persons\Delete.cshtml" />
+    <Content Include="Views\Persons\Details.cshtml" />
+    <Content Include="Views\Persons\Edit.cshtml" />
+    <Content Include="Views\Persons\Index.cshtml" />
     <Content Include="Views\Pizzas\Create.cshtml" />
     <Content Include="Views\Pizzas\Delete.cshtml" />
     <Content Include="Views\Pizzas\Details.cshtml" />
     <Content Include="Views\Pizzas\Edit.cshtml" />
     <Content Include="Views\Pizzas\Index.cshtml" />
+    <Content Include="Views\MultiLangStrings\Create.cshtml" />
+    <Content Include="Views\MultiLangStrings\Delete.cshtml" />
+    <Content Include="Views\MultiLangStrings\Details.cshtml" />
+    <Content Include="Views\MultiLangStrings\Edit.cshtml" />
+    <Content Include="Views\MultiLangStrings\Index.cshtml" />
+    <Content Include="Views\Translations\Create.cshtml" />
+    <Content Include="Views\Translations\Delete.cshtml" />
+    <Content Include="Views\Translations\Details.cshtml" />
+    <Content Include="Views\Translations\Edit.cshtml" />
+    <Content Include="Views\Translations\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
