@@ -65,6 +65,9 @@ namespace Domain
 
         public virtual List<Contact> Contacts { get; set; } = new List<Contact>();
 
+        //List arveid
+        public virtual List<Invoice> Invoices { get; set; }
+
         // not mapped properties, just getters
         public string FirstLastname => (Firstname + " " + Lastname).Trim();
         public string LastFirstname => (Lastname + " " + Firstname).Trim();
