@@ -1324,6 +1324,9 @@
     <Content Include="Content\img\credit\visa.png" />
     <Content Include="Content\img\default-50x50.gif" />
     <Content Include="Content\img\icons.png" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\main-banner.jpg" />
+    <Content Include="Content\img\pattern1.jpg" />
     <Content Include="Content\img\photo1.png" />
     <Content Include="Content\img\photo2.png" />
     <Content Include="Content\img\photo3.jpg" />
@@ -1336,6 +1339,7 @@
     <Content Include="Content\img\user6-128x128.jpg" />
     <Content Include="Content\img\user7-128x128.jpg" />
     <Content Include="Content\img\user8-128x128.jpg" />
+    <Content Include="Content\main.css" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\skins\skin-black-light.css" />
     <Content Include="Content\skins\skin-black-light.min.css" />
@@ -2145,6 +2149,7 @@
     <Content Include="Content\font-awesome-4.6.1\scss\_screen-reader.scss" />
     <Content Include="Content\font-awesome-4.6.1\scss\_stacked.scss" />
     <Content Include="Content\font-awesome-4.6.1\scss\_variables.scss" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -2383,7 +2388,6 @@
     <Content Include="Views\Shared\_Layout.original.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="logs\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>

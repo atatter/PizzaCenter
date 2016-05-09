@@ -1,0 +1,145 @@
+﻿/* HETKENE CSS MILLE PEAKS SASSI ÜLE VIIMA */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+body {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+}
+
+/*.container {
+    width: 1170px;
+}*/
+
+/*MENÜÜ*/
+
+.nav-bar {
+    padding: 12px;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 0 1px #afafaf;
+    z-index: 2;
+}
+
+.nav-bar .container .logo{
+    float: left;
+}
+
+
+.nav-bar .container .logo img{
+    height: 52px;
+}
+
+.nav-bar .container .nav {
+    float: right;
+    display: table-cell;
+}
+
+.nav-bar .container ul {
+    line-height: 52px;
+    margin: 0;
+}
+
+.nav-bar .container ul li {
+    display: inline-block;
+    margin-left: 14px;
+}
+
+.nav-bar .container ul li a {
+    text-transform: uppercase;
+    font-size: 14px;    
+    color: #5f5f5f;
+    text-decoration: none;
+}
+
+.nav-bar .container ul li a:hover {
+    color: #cc3300;
+    transition: all .35s;
+}
+
+/*CONTENT AREA*/
+
+.content {
+    margin: 72px 0 0 0;
+}
+
+/*FOOTER*/
+
+.footer {
+    width: 100%;
+    background: #393b3d;
+    padding: 32px 0;
+    background-image: url(/Content/img/pattern1.jpg);
+    background-position: left top;
+    background-repeat: repeat;
+}
+
+.footer .container p {
+    margin: 20px 0;
+    text-align: center;
+    color: white;
+    opacity: 0.5;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/*INDEX PAGE*/
+
+section .white-area {
+    padding: 85px 0;
+    text-align: center;
+}
+section .white-area p {
+    max-width: 555px;
+    margin: auto;
+    font-size: 16px;
+    margin-bottom: 45px;
+}
+section .white-area h2 {
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    color: #393b3d;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+section .white-area a {
+    padding: 12px 18px;
+    background-color: #cc3300;
+    transition: all .35s;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+section .white-area a:hover {
+    background-color: #ea3a00;
+}
+
+.content .container #header {
+    position: absolute;
+    background: url(/Content/img/main-banner.jpg) no-repeat left top scroll;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    left: 0;
+}
+
+.content .container #header .hr {
+    border-bottom: 2px solid white;
+    display: block;
+    width: 70px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.content .container #header .text {
+    font-size: 60px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    text-align: center;
+}
