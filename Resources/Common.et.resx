@@ -117,34 +117,52 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CreateNew" xml:space="preserve">
-    <value>Loo uus</value>
+  <data name="ApplicationName" xml:space="preserve">
+    <value>MinuRakendus</value>
   </data>
-  <data name="FirstName" xml:space="preserve">
-    <value>Eesnimi</value>
+  <data name="Cancel" xml:space="preserve">
+    <value>Katkesta</value>
   </data>
-  <data name="Home" xml:space="preserve">
-    <value>Avaleht</value>
+  <data name="Login" xml:space="preserve">
+    <value>Logi sisse</value>
   </data>
-  <data name="LastName" xml:space="preserve">
-    <value>Perenimi</value>
+  <data name="LogOff" xml:space="preserve">
+    <value>Logi välja</value>
   </data>
-  <data name="MultiLang" xml:space="preserve">
-    <value>Lisa sisu</value>
+  <data name="ManageAccount" xml:space="preserve">
+    <value>Halda kontot</value>
   </data>
-  <data name="News" xml:space="preserve">
-    <value>Uudised</value>
+  <data name="Next" xml:space="preserve">
+    <value>Järgmine</value>
   </data>
-  <data name="Persons" xml:space="preserve">
-    <value>Inimesed</value>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
   </data>
-  <data name="Pizzas" xml:space="preserve">
-    <value>Pitsad</value>
+  <data name="Previous" xml:space="preserve">
+    <value>Eelmine</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Registreeru</value>
   </data>
   <data name="Submit" xml:space="preserve">
     <value>Kinnita</value>
   </data>
-  <data name="Translations" xml:space="preserve">
-    <value>Tõlgi sisu</value>
+  <data name="FieldIsRequired" xml:space="preserve">
+    <value>Väli {0} on kohustuslik.</value>
+  </data>
+  <data name="FieldMaxLength" xml:space="preserve">
+    <value>Väli {0} peab olema maksimaalse pikkusega &amp;#39;{1}&amp;#39;.</value>
+  </data>
+  <data name="FieldMinLength" xml:space="preserve">
+    <value>Väli {0} peab olema minimaalse pikkusega &amp;#39;{1}&amp;#39;.</value>
+  </data>
+  <data name="FieldMustBeDataTypeDate" xml:space="preserve">
+    <value>Väli {0} peab olema kuupäev.</value>
+  </data>
+  <data name="FieldMustBeDataTypeDateTime" xml:space="preserve">
+    <value>Väli {0} peab sisaldama kuupäeva ja kellaaega.</value>
+  </data>
+  <data name="FieldMustBeDataTypeTime" xml:space="preserve">
+    <value>Väli {0} peab olema kellaaeg.</value>
   </data>
 </root>

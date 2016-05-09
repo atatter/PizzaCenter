@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace DAL.Interfaces
 {
+    // this is the base repository interface for all EF repositories
     public interface IEFRepository<T> : IDisposable
-            where T : class
+        where T : class
     {
         // gett all records in table
         //IQueryable<T> All { get; }
@@ -16,7 +17,7 @@ namespace DAL.Interfaces
 
         // get all records with filter
         //IQueryable<T> GetAllIncluding(params Expression<Func<T, object>>[] includeProperties);
-        List<T> GetAllIncluding(params Expression<Func<T, object>>[] includeProperties);
+        List<T> AllIncluding(params Expression<Func<T, object>>[] includeProperties);
 
         T GetById(params object[] id);
         void Add(T entity);
@@ -24,7 +25,5 @@ namespace DAL.Interfaces
         //void UpdateOrInsert(T entity);
         void Delete(T entity);
         void Delete(params object[] id);
-
-        //void SaveChanges();
     }
 }

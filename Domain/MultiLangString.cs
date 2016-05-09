@@ -6,13 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Resources;
 
 namespace Domain
 {
     public class MultiLangString
     {
-        [Display(ResourceType = typeof(Resources.Domain), Name = "EntityPrimaryKey")]
+        [Display(ResourceType = typeof (Resources.Domain), Name = "EntityPrimaryKey")]
         public int MultiLangStringId { get; set; }
 
         /// <summary>

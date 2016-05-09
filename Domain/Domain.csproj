@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2D136789-7E4E-43E1-BD09-3047E0339741}</ProjectGuid>
+    <ProjectGuid>{54E9DC6C-C740-4878-B57E-546C09B4E8CA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Domain</RootNamespace>
@@ -30,12 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.2.3\lib\net45\NLog.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -49,37 +49,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdditionalProduct.cs" />
-    <Compile Include="AdditionalProductInOrder.cs" />
-    <Compile Include="Component.cs" />
-    <Compile Include="ComponentAsTopping.cs" />
-    <Compile Include="ComponentInPizza.cs" />
-    <Compile Include="Coupon.cs" />
-    <Compile Include="Invoice.cs" />
+    <Compile Include="Article.cs" />
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="Contact.cs" />
+    <Compile Include="ContactType.cs" />
+    <Compile Include="Identity\Role.cs" />
+    <Compile Include="Identity\User.cs" />
+    <Compile Include="Identity\UserClaim.cs" />
+    <Compile Include="Identity\UserLogin.cs" />
+    <Compile Include="Identity\UserRole.cs" />
     <Compile Include="MultiLangString.cs" />
-    <Compile Include="Order.cs" />
-    <Compile Include="PaymentMethod.cs" />
     <Compile Include="Person.cs" />
-    <Compile Include="Pizza.cs" />
-    <Compile Include="PizzaInOrder.cs" />
-    <Compile Include="PizzaPriceBySize.cs" />
-    <Compile Include="PizzaSize.cs" />
-    <Compile Include="Price.cs" />
-    <Compile Include="PriceType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Topping.cs" />
-    <Compile Include="ToppingInPizzaOrder.cs" />
     <Compile Include="Translation.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\DataAnnotations\DataAnnotations.csproj">
+      <Project>{2e1eb913-5b0c-4f6b-9f80-6a4ce6c14c15}</Project>
+      <Name>DataAnnotations</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Resources\Resources.csproj">
-      <Project>{b281fd3f-84dd-42ad-960a-46fef2d06a5e}</Project>
+      <Project>{7308994f-36c4-49c2-8421-215aff278799}</Project>
       <Name>Resources</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

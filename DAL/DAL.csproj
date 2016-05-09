@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EE2DEFF1-E12B-4089-886F-27BDD82F4004}</ProjectGuid>
+    <ProjectGuid>{FA3FE70D-BEA7-4C7B-940A-7E9CA2C345A6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DAL</RootNamespace>
@@ -38,9 +38,26 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.2.3\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,63 +66,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataBaseContext.cs" />
+    <Compile Include="DatabaseInitializer.cs" />
+    <Compile Include="EFConfiguration\RoleMap.cs" />
+    <Compile Include="EFConfiguration\ServiceMap.cs" />
+    <Compile Include="EFConfiguration\UserClaimMap.cs" />
+    <Compile Include="EFConfiguration\UserLoginMap.cs" />
+    <Compile Include="EFConfiguration\UserMap.cs" />
+    <Compile Include="EFConfiguration\UserRoleMap.cs" />
     <Compile Include="Helpers\EFRepositoryFactories.cs" />
     <Compile Include="Helpers\EFRepositoryProvider.cs" />
-    <Compile Include="Interfaces\IAdditionalProductRepository.cs" />
-    <Compile Include="Interfaces\IAdditionalProductInOrderRepostiory.cs" />
-    <Compile Include="Interfaces\IComponentRepository.cs" />
-    <Compile Include="Interfaces\IComponentAsToppingRepository.cs" />
-    <Compile Include="Interfaces\IComponentInPizzaRepository.cs" />
-    <Compile Include="Interfaces\ICouponRepository.cs" />
+    <Compile Include="Helpers\FormattedDbEntityValidationException.cs" />
+    <Compile Include="Interfaces\IArticleRepository.cs" />
+    <Compile Include="Interfaces\IContactRepository.cs" />
     <Compile Include="Interfaces\IDbContext.cs" />
     <Compile Include="Interfaces\IEFRepository.cs" />
     <Compile Include="Interfaces\IEFRepositoryProvider.cs" />
-    <Compile Include="Interfaces\IInvoiceRepository.cs" />
-    <Compile Include="Interfaces\IOrderRepository.cs" />
-    <Compile Include="Interfaces\IPaymentMethodRepository.cs" />
     <Compile Include="Interfaces\IPersonRepository.cs" />
-    <Compile Include="Interfaces\IPizzaInOrderRepository.cs" />
-    <Compile Include="Interfaces\IPizzaPriceBySizeRepository.cs" />
-    <Compile Include="Interfaces\IPizzaRepository.cs" />
-    <Compile Include="Interfaces\IPizzaSizeRepository.cs" />
-    <Compile Include="Interfaces\IPriceRepository.cs" />
-    <Compile Include="Interfaces\IPriceTypeRepository.cs" />
-    <Compile Include="Interfaces\IToppingInPizzaOrderRepository.cs" />
-    <Compile Include="Interfaces\IToppingRepository.cs" />
+    <Compile Include="Interfaces\IRoleRepository.cs" />
     <Compile Include="Interfaces\IUOW.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="PizzaDbContext.cs" />
+    <Compile Include="Interfaces\IUserClaimRepository.cs" />
+    <Compile Include="Interfaces\IUserLoginRepository.cs" />
+    <Compile Include="Interfaces\IUserNameResolver.cs" />
+    <Compile Include="Interfaces\IUserRepository.cs" />
+    <Compile Include="Interfaces\IUserRoleRepository.cs" />
+    <Compile Include="NLogCommandInterceptor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\AdditionalProductInOrderRepository.cs" />
-    <Compile Include="Repositories\AdditionalProductRepository.cs" />
-    <Compile Include="Repositories\ComponentAsToppingRepository.cs" />
-    <Compile Include="Repositories\ComponentInPizzaRepository.cs" />
-    <Compile Include="Repositories\ComponentRepository.cs" />
-    <Compile Include="Repositories\CouponRepository.cs" />
+    <Compile Include="Repositories\ArticleRepository.cs" />
+    <Compile Include="Repositories\ContactRepository.cs" />
     <Compile Include="Repositories\EFRepository.cs" />
-    <Compile Include="Repositories\InvoiceRepository.cs" />
-    <Compile Include="Repositories\OrderRepository.cs" />
-    <Compile Include="Repositories\PaymentMethodRepository.cs" />
     <Compile Include="Repositories\PersonRepository.cs" />
-    <Compile Include="Repositories\PizzaInOrderRepository.cs" />
-    <Compile Include="Repositories\PizzaPriceBySizeRepository.cs" />
-    <Compile Include="Repositories\PizzaRepository.cs" />
-    <Compile Include="Repositories\PizzaSizeRepository.cs" />
-    <Compile Include="Repositories\PriceRepository.cs" />
-    <Compile Include="Repositories\PriceTypeRepository.cs" />
-    <Compile Include="Repositories\ToppingInPizzaOrderRepository.cs" />
-    <Compile Include="Repositories\ToppingRepository.cs" />
+    <Compile Include="Repositories\RoleRepository.cs" />
+    <Compile Include="Repositories\UserClaimRepository.cs" />
+    <Compile Include="Repositories\UserLoginRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Repositories\UserRoleRepository.cs" />
     <Compile Include="UOW.cs" />
+    <Compile Include="UserName.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAnnotations\DataAnnotations.csproj">
+      <Project>{2E1EB913-5B0C-4F6B-9F80-6A4CE6C14C15}</Project>
+      <Name>DataAnnotations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{54e9dc6c-c740-4878-b57e-546c09b4e8ca}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Resources\Resources.csproj">
+      <Project>{7308994f-36c4-49c2-8421-215aff278799}</Project>
+      <Name>Resources</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Domain\Domain.csproj">
-      <Project>{2d136789-7e4e-43e1-bd09-3047e0339741}</Project>
-      <Name>Domain</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

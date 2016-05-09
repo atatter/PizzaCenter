@@ -1,43 +1,25 @@
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\bin\Debug\DAL.dll.config
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\bin\Debug\DAL.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\bin\Debug\DAL.pdb
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\bin\Debug\Domain.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\bin\Debug\EntityFramework.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\bin\Debug\EntityFramework.SqlServer.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\bin\Debug\Domain.pdb
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\bin\Debug\EntityFramework.xml
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\bin\Debug\EntityFramework.SqlServer.xml
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\obj\Debug\DAL.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\obj\Debug\DAL.pdb
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\obj\Debug\DAL.Migrations.projectFirstMigration.resources
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\DAL\bin\Debug\DAL.dll.config
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\DAL\bin\Debug\DAL.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\DAL\bin\Debug\DAL.pdb
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\DAL\bin\Debug\Domain.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\DAL\bin\Debug\EntityFramework.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\DAL\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\DAL\bin\Debug\Domain.pdb
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\DAL\bin\Debug\EntityFramework.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\DAL\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\DAL\obj\Debug\DAL.Migrations.projectFirstMigration.resources
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\DAL\obj\Debug\DAL.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\DAL\obj\Debug\DAL.pdb
-C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\DAL.dll.config
-C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\DAL.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\DAL.pdb
-C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\Domain.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\EntityFramework.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\Resources.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\Domain.pdb
-C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\EntityFramework.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\Resources.pdb
-C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\bin\Debug\et\Resources.resources.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\obj\Debug\DAL.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\DAL\obj\Debug\DAL.pdb
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\DAL.dll.config
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\DAL.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\DAL.pdb
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\DataAnnotations.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\Domain.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\Ninject.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\NLog.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\Resources.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\DataAnnotations.pdb
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\Domain.pdb
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\Resources.pdb
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\Ninject.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\NLog.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\bin\Debug\et\Resources.resources.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\obj\Debug\DAL.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\DAL\obj\Debug\DAL.pdb

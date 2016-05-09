@@ -61,74 +61,146 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create new.
+        ///   Looks up a localized string similar to MyApplication.
         /// </summary>
-        public static string CreateNew {
+        public static string ApplicationName {
             get {
-                return ResourceManager.GetString("CreateNew", resourceCulture);
+                return ResourceManager.GetString("ApplicationName", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to First Name.
+        ///   Looks up a localized string similar to Cancel.
         /// </summary>
-        public static string FirstName {
+        public static string Cancel {
             get {
-                return ResourceManager.GetString("FirstName", resourceCulture);
+                return ResourceManager.GetString("Cancel", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Home.
+        ///   Looks up a localized string similar to The {0} field is required..
         /// </summary>
-        public static string Home {
+        public static string FieldIsRequired {
             get {
-                return ResourceManager.GetString("Home", resourceCulture);
+                return ResourceManager.GetString("FieldIsRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Last Name.
+        ///   Looks up a localized string similar to The field {0} must be a string or array type with a maximum length of &amp;#39;{1}&amp;#39;..
         /// </summary>
-        public static string LastName {
+        public static string FieldMaxLength {
             get {
-                return ResourceManager.GetString("LastName", resourceCulture);
+                return ResourceManager.GetString("FieldMaxLength", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add string.
+        ///   Looks up a localized string similar to The field {0} must be a string or array type with a minimum length of &amp;#39;{1}&amp;#39;..
         /// </summary>
-        public static string MultiLang {
+        public static string FieldMinLength {
             get {
-                return ResourceManager.GetString("MultiLang", resourceCulture);
+                return ResourceManager.GetString("FieldMinLength", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to News.
+        ///   Looks up a localized string similar to The field {0} must be a date..
         /// </summary>
-        public static string News {
+        public static string FieldMustBeDataTypeDate {
             get {
-                return ResourceManager.GetString("News", resourceCulture);
+                return ResourceManager.GetString("FieldMustBeDataTypeDate", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to People.
+        ///   Looks up a localized string similar to The field {0} must be a datetime..
         /// </summary>
-        public static string Persons {
+        public static string FieldMustBeDataTypeDateTime {
             get {
-                return ResourceManager.GetString("Persons", resourceCulture);
+                return ResourceManager.GetString("FieldMustBeDataTypeDateTime", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pizzas.
+        ///   Looks up a localized string similar to The field {0} must be a time..
         /// </summary>
-        public static string Pizzas {
+        public static string FieldMustBeDataTypeTime {
             get {
-                return ResourceManager.GetString("Pizzas", resourceCulture);
+                return ResourceManager.GetString("FieldMustBeDataTypeTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login.
+        /// </summary>
+        public static string Login {
+            get {
+                return ResourceManager.GetString("Login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Logg off.
+        /// </summary>
+        public static string LogOff {
+            get {
+                return ResourceManager.GetString("LogOff", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage account.
+        /// </summary>
+        public static string ManageAccount {
+            get {
+                return ResourceManager.GetString("ManageAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Next.
+        /// </summary>
+        public static string Next {
+            get {
+                return ResourceManager.GetString("Next", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        public static string OK {
+            get {
+                return ResourceManager.GetString("OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous.
+        /// </summary>
+        public static string Previous {
+            get {
+                return ResourceManager.GetString("Previous", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Register.
+        /// </summary>
+        public static string Register {
+            get {
+                return ResourceManager.GetString("Register", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to --- Select! ---.
+        /// </summary>
+        public static string SelectOptionLabel {
+            get {
+                return ResourceManager.GetString("SelectOptionLabel", resourceCulture);
             }
         }
         
@@ -138,24 +210,6 @@ namespace Resources {
         public static string Submit {
             get {
                 return ResourceManager.GetString("Submit", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Translations.
-        /// </summary>
-        public static string Translations {
-            get {
-                return ResourceManager.GetString("Translations", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Pizza Center.
-        /// </summary>
-        public static string WebsiteName {
-            get {
-                return ResourceManager.GetString("WebsiteName", resourceCulture);
             }
         }
     }

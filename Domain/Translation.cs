@@ -14,7 +14,6 @@ namespace Domain
         [MaxLength(40960)]
         public string Value { get; set; }
 
-        //Multilangstring
         public int MultiLangStringId { get; set; }
         public virtual MultiLangString MultiLangString { get; set; }
 

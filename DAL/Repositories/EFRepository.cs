@@ -9,6 +9,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using DAL.Interfaces;
+using NLog;
 
 namespace DAL.Repositories
 {
@@ -16,6 +17,8 @@ namespace DAL.Repositories
     // covers all basic crud methods, common for all other repos
     public class EFRepository<T> : IEFRepository<T> where T : class
     {
+        private readonly NLog.ILogger _logger = NLog.LogManager.GetCurrentClassLogger();
+        private readonly string _instanceId = Guid.NewGuid().ToString();
 
         // the context and the dbset we are working with
         protected DbContext DbContext { get; set; }
@@ -24,6 +27,7 @@ namespace DAL.Repositories
         //Constructor, requires dbContext as dependency
         public EFRepository(IDbContext dbContext)
         {
+ 
             if (dbContext == null)
                 throw new ArgumentNullException(nameof(dbContext));
 
@@ -31,8 +35,7 @@ namespace DAL.Repositories
             //get the dbset from context
             if (DbContext != null) DbSet = DbContext.Set<T>();
 
-            if (DbSet == null)
-                throw new ArgumentNullException(nameof(T));
+            _logger.Info("_instanceId: " + _instanceId + " dbSet: " + DbSet.GetType());
         }
 
         //public IQueryable<T> All
@@ -40,7 +43,7 @@ namespace DAL.Repositories
         //	get { return DbSet; }
         //}
 
-        public virtual List<T> All => DbSet.ToList();
+        public List<T> All => DbSet.ToList();
 
         //public IQueryable<T> GetAllIncluding(params Expression<Func<T, object>>[] includeProperties)
         //{
@@ -57,7 +60,7 @@ namespace DAL.Repositories
         //	*/
         //}
 
-        public virtual List<T> GetAllIncluding(params Expression<Func<T, object>>[] includeProperties)
+        public List<T> AllIncluding(params Expression<Func<T, object>>[] includeProperties)
         {
             return includeProperties.
                 Aggregate<Expression<Func<T, object>>, IQueryable<T>>(DbSet,
@@ -68,16 +71,17 @@ namespace DAL.Repositories
         	{
         		query = query.Include(includeProperty);
         	}
-        	return query.ToList();
+        	return query;
         	*/
         }
 
-        public virtual T GetById(params object[] id)
+
+        public T GetById(params object[] id)
         {
             return DbSet.Find(id);
         }
 
-        public virtual void Add(T entity)
+        public void Add(T entity)
         {
             DbEntityEntry dbEntityEntry = DbContext.Entry(entity);
             if (dbEntityEntry.State != EntityState.Detached)
@@ -90,7 +94,7 @@ namespace DAL.Repositories
             }
         }
 
-        public virtual void Update(T entity)
+        public void Update(T entity)
         {
             DbEntityEntry dbEntityEntry = DbContext.Entry(entity);
             if (dbEntityEntry.State == EntityState.Detached)
@@ -100,7 +104,7 @@ namespace DAL.Repositories
             dbEntityEntry.State = EntityState.Modified;
         }
 
-        public virtual void Delete(T entity)
+        public void Delete(T entity)
         {
             DbEntityEntry dbEntityEntry = DbContext.Entry(entity);
             if (dbEntityEntry.State != EntityState.Deleted)
@@ -114,7 +118,7 @@ namespace DAL.Repositories
             }
         }
 
-        public virtual void Delete(params object[] id)
+        public void Delete(params object[] id)
         {
             var entity = GetById(id);
             if (entity == null) return;
@@ -122,13 +126,12 @@ namespace DAL.Repositories
         }
 
 
-
-        public virtual EntityKey GetPrimaryKeyInfo(T entity)
+        public EntityKey GetPrimaryKeyInfo(T entity)
         {
-            var properties = typeof(DbSet).GetProperties();
+            var properties = typeof (DbSet).GetProperties();
             foreach (
                 var objectContext in
-                    properties.Select(propertyInfo => ((IObjectContextAdapter)DbContext).ObjectContext))
+                    properties.Select(propertyInfo => ((IObjectContextAdapter) DbContext).ObjectContext))
             {
                 ObjectStateEntry objectStateEntry;
                 if (null != entity && objectContext.ObjectStateManager
@@ -140,22 +143,32 @@ namespace DAL.Repositories
             return null;
         }
 
-        public virtual string[] GetKeyNames(T entity)
+        public string[] GetKeyNames(T entity)
         {
-            var objectSet = ((IObjectContextAdapter)DbContext).ObjectContext.CreateObjectSet<T>();
+            var objectSet = ((IObjectContextAdapter) DbContext).ObjectContext.CreateObjectSet<T>();
             var keyNames = objectSet.EntitySet.ElementType.KeyMembers.Select(k => k.Name).ToArray();
             return keyNames;
         }
 
-        public virtual void SaveChanges()
-        {
-            DbContext.SaveChanges();
-        }
+        //public void UpdateOrInsert(T entity)
+        //{
+        //	var entityKeys = GetKeyNames(entity);
+        //	DbEntityEntry dbEntityEntry = DbContext.Entry(entity);
+        //	if (dbEntityEntry.Property(entityKeys[0]).CurrentValue == (object)0)
+        //	{
+        //		// insert
+        //		Add(entity);
+        //	}
+        //	else
+        //	{
+        //		// update
+        //		Update(entity);
+        //	}
+        //}
 
-        public virtual void Dispose()
+        public void Dispose()
         {
-            //Nothing to dispose
-            //maybe log something?
+            _logger.Debug("InstanceId: " + _instanceId);
         }
     }
 }

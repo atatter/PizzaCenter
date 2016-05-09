@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.2.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.2.1\build\Microsoft.Net.Compilers.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
-  <Import Project="..\packages\Microsoft.Net.Compilers.1.1.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.1.1\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3EB044EF-2A21-4E8C-8918-CC7E9A842D7E}</ProjectGuid>
+    <ProjectGuid>{8AEB9FF1-6DD2-41B7-840C-A933B00A95AB}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -18,7 +18,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44387</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -48,67 +48,59 @@
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AI.DependencyCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AI.Web, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.1.2.3\lib\net45\Microsoft.AI.Web.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AI.WindowsServer, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.ApplicationInsights, Version=1.2.3.490, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.1.2.3\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.3.2.0.0\lib\net45-full\Ninject.dll</HintPath>
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Ninject.Web.Common, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.Web.Common.3.2.0.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
+      <HintPath>..\packages\Ninject.Web.Common.3.2.3.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Ninject.Web.Mvc, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>..\packages\Ninject.MVC5.3.2.1.0\lib\net45-full\Ninject.Web.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Ninject.Web.WebApi, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.Web.WebApi.3.2.4.0\lib\net45-full\Ninject.Web.WebApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.WebApi.WebHost, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.Web.WebApi.WebHost.3.2.4.0\lib\net45-full\Ninject.Web.WebApi.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.2.3\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.Web.4.2\lib\net35\NLog.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Net" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -116,24 +108,31 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
-    <Reference Include="System.Web.Services" />
-    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
     </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.Net.Http.WebRequest">
     </Reference>
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -159,36 +158,164 @@
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
-      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+      <HintPath>..\packages\WebActivatorEx.2.1.0\lib\net40\WebActivatorEx.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="X.PagedList, Version=1.24.1.31653, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\X.PagedList.1.24.1.320\lib\net451\X.PagedList.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="X.PagedList.Mvc, Version=4.9.1.31908, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\X.PagedList.Mvc.4.9.1.310\lib\net45\X.PagedList.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.3\lib\net45\System.Web.Http.Owin.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\ArticlesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ContactTypesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MultiLangStringsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\RolesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SystemLogController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TranslationsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserClaimsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserLoginsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserRolesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UsersController.cs" />
+    <Compile Include="Areas\Admin\ViewModels\ArticleViewModels.cs" />
+    <Compile Include="Areas\Admin\ViewModels\ContactTypeViewModels.cs" />
+    <Compile Include="Areas\Admin\ViewModels\SystemLogViewModels.cs" />
+    <Compile Include="Areas\Admin\ViewModels\TranslationsViewModels.cs" />
+    <Compile Include="Areas\Admin\ViewModels\UserRoleViewModels.cs" />
+    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
+    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
+    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
+    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Api\AccountController.cs" />
+    <Compile Include="Controllers\ArticleController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
-    <Compile Include="Controllers\Coupons1Controller.cs" />
-    <Compile Include="Controllers\CouponsController.cs" />
+    <Compile Include="Controllers\ContactsController.cs" />
+    <Compile Include="Controllers\HelperDemoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\InvoicesController.cs" />
     <Compile Include="Controllers\LanguageController.cs" />
-    <Compile Include="Controllers\MultiLangStringsController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PersonsController.cs" />
-    <Compile Include="Controllers\PizzasController.cs" />
-    <Compile Include="Controllers\TranslationsController.cs" />
+    <Compile Include="Controllers\Api\ValuesController.cs" />
+    <Compile Include="Filters\RequireHttpsAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\CultureHelper.cs" />
+    <Compile Include="Helpers\HtmlHelper.cs" />
+    <Compile Include="Helpers\IListHelper.cs" />
+    <Compile Include="Helpers\ModelStateHelper.cs" />
+    <Compile Include="Helpers\PagedListHelper.cs" />
+    <Compile Include="Helpers\PasswordHelper.cs" />
+    <Compile Include="Helpers\SessionHelper.cs" />
+    <Compile Include="Helpers\StringHelper.cs" />
+    <Compile Include="Helpers\UserNameFactory.cs" />
+    <Compile Include="ViewModels\AccountBindingModels.cs" />
+    <Compile Include="ViewModels\AccountViewModels.cs" />
+    <Compile Include="ViewModels\ApiAccountViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\ApplicationOAuthProvider.cs" />
+    <Compile Include="Results\ChallengeResult.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\ContactViewModels.cs" />
+    <Compile Include="ViewModels\HelperDemoViewModels.cs" />
+    <Compile Include="ViewModels\HomeViewModels.cs" />
+    <Compile Include="ViewModels\ManageViewModels.cs" />
+    <Compile Include="ViewModels\PersonViewModels.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="bower_components\bootstrap\dist\css\bootstrap-theme.css" />
     <Content Include="bower_components\bootstrap\dist\css\bootstrap-theme.min.css" />
     <Content Include="bower_components\bootstrap\dist\css\bootstrap.css" />
@@ -216,8 +343,6 @@
     <Content Include="bower_components\bootstrap\js\tooltip.js" />
     <Content Include="bower_components\bootstrap\js\transition.js" />
     <Content Include="bower_components\bootstrap\package.js" />
-    <Content Include="bower_components\cldr-data\.gitattributes" />
-    <Content Include="bower_components\cldr-data\.gitignore" />
     <Content Include="bower_components\cldrjs\.gitignore" />
     <Content Include="bower_components\cldrjs\dist\cldr.js" />
     <Content Include="bower_components\cldrjs\dist\cldr\event.js" />
@@ -463,6 +588,123 @@
     <Content Include="bower_components\globalize\src\util\string\hash.js" />
     <Content Include="bower_components\globalize\src\util\string\pad.js" />
     <Content Include="bower_components\globalize\src\util\to-string.js" />
+    <Content Include="bower_components\jquery-validation-globalize\gulpfile.js" />
+    <Content Include="bower_components\jquery-validation-globalize\jquery.validate.globalize.js" />
+    <Content Include="bower_components\jquery-validation-globalize\jquery.validate.globalize.min.js" />
+    <Content Include="bower_components\jquery-validation\build\release.js" />
+    <Content Include="bower_components\jquery-validation\dist\additional-methods.js" />
+    <Content Include="bower_components\jquery-validation\dist\additional-methods.min.js" />
+    <Content Include="bower_components\jquery-validation\dist\jquery.validate.js" />
+    <Content Include="bower_components\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Include="bower_components\jquery-validation\Gruntfile.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\accept.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\additional.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\alphanumeric.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\bankaccountNL.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\bankorgiroaccountNL.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\bic.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\cifES.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\cpfBR.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\creditcard.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\creditcardtypes.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\currency.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\dateFA.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\dateITA.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\dateNL.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\extension.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\giroaccountNL.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\iban.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\integer.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\ipv4.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\ipv6.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\lettersonly.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\letterswithbasicpunc.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\mobileNL.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\mobileUK.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\nieES.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\nifES.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\notEqualTo.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\nowhitespace.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\pattern.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\phoneNL.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\phonesUK.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\phoneUK.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\phoneUS.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\postalcodeBR.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\postalCodeCA.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\postalcodeIT.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\postalcodeNL.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\postcodeUK.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\require_from_group.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\skip_or_fill_minimum.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\statesUS.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\strippedminlength.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\time.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\time12h.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\url2.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\vinUS.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\zipcodeUS.js" />
+    <Content Include="bower_components\jquery-validation\src\additional\ziprange.js" />
+    <Content Include="bower_components\jquery-validation\src\ajax.js" />
+    <Content Include="bower_components\jquery-validation\src\core.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_ar.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_bg.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_bn_BD.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_ca.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_cs.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_da.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_de.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_el.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_es.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_es_AR.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_es_PE.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_et.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_eu.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_fa.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_fi.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_fr.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_ge.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_gl.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_he.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_hr.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_hu.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_hy_AM.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_id.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_is.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_it.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_ja.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_ka.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_kk.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_ko.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_lt.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_lv.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_mk.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_my.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_nl.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_no.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_pl.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_pt_BR.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_pt_PT.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_ro.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_ru.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_si.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_sk.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_sl.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_sr.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_sr_lat.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_sv.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_th.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_tj.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_tr.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_uk.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_vi.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_zh.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\messages_zh_TW.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\methods_de.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\methods_es_CL.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\methods_fi.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\methods_nl.js" />
+    <Content Include="bower_components\jquery-validation\src\localization\methods_pt.js" />
     <Content Include="bower_components\jquery\AUTHORS.txt" />
     <Content Include="bower_components\jquery\dist\jquery.js" />
     <Content Include="bower_components\jquery\dist\jquery.min.js" />
@@ -1021,27 +1263,308 @@
     <Content Include="bower_components\tinymce\tinymce.jquery.min.js" />
     <Content Include="bower_components\tinymce\tinymce.js" />
     <Content Include="bower_components\tinymce\tinymce.min.js" />
+    <Content Include="Content\AdminLTE.css" />
+    <Content Include="Content\AdminLTE.min.css" />
+    <Content Include="Content\AdminLTE\index.html" />
+    <Content Include="Content\AdminLTE\index2.html" />
+    <Content Include="Content\AdminLTE\pages\calendar.html" />
+    <Content Include="Content\AdminLTE\pages\charts\chartjs.html" />
+    <Content Include="Content\AdminLTE\pages\charts\flot.html" />
+    <Content Include="Content\AdminLTE\pages\charts\inline.html" />
+    <Content Include="Content\AdminLTE\pages\charts\morris.html" />
+    <Content Include="Content\AdminLTE\pages\examples\404.html" />
+    <Content Include="Content\AdminLTE\pages\examples\500.html" />
+    <Content Include="Content\AdminLTE\pages\examples\blank.html" />
+    <Content Include="Content\AdminLTE\pages\examples\invoice-print.html" />
+    <Content Include="Content\AdminLTE\pages\examples\invoice.html" />
+    <Content Include="Content\AdminLTE\pages\examples\lockscreen.html" />
+    <Content Include="Content\AdminLTE\pages\examples\login.html" />
+    <Content Include="Content\AdminLTE\pages\examples\profile.html" />
+    <Content Include="Content\AdminLTE\pages\examples\register.html" />
+    <Content Include="Content\AdminLTE\pages\forms\advanced.html" />
+    <Content Include="Content\AdminLTE\pages\forms\editors.html" />
+    <Content Include="Content\AdminLTE\pages\forms\general.html" />
+    <Content Include="Content\AdminLTE\pages\layout\boxed.html" />
+    <Content Include="Content\AdminLTE\pages\layout\collapsed-sidebar.html" />
+    <Content Include="Content\AdminLTE\pages\layout\fixed.html" />
+    <Content Include="Content\AdminLTE\pages\layout\top-nav.html" />
+    <Content Include="Content\AdminLTE\pages\mailbox\compose.html" />
+    <Content Include="Content\AdminLTE\pages\mailbox\mailbox.html" />
+    <Content Include="Content\AdminLTE\pages\mailbox\read-mail.html" />
+    <Content Include="Content\AdminLTE\pages\tables\data.html" />
+    <Content Include="Content\AdminLTE\pages\tables\simple.html" />
+    <Content Include="Content\AdminLTE\pages\UI\buttons.html" />
+    <Content Include="Content\AdminLTE\pages\UI\general.html" />
+    <Content Include="Content\AdminLTE\pages\UI\icons.html" />
+    <Content Include="Content\AdminLTE\pages\UI\modals.html" />
+    <Content Include="Content\AdminLTE\pages\UI\sliders.html" />
+    <Content Include="Content\AdminLTE\pages\UI\timeline.html" />
+    <Content Include="Content\AdminLTE\pages\widgets.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\main.css" />
+    <Content Include="Content\font-awesome-4.6.1\css\font-awesome.css" />
+    <Content Include="Content\font-awesome-4.6.1\css\font-awesome.min.css" />
+    <Content Include="Content\font-awesome-4.6.1\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\font-awesome-4.6.1\HELP-US-OUT.txt" />
+    <Content Include="Content\img\avatar.png" />
+    <Content Include="Content\img\avatar04.png" />
+    <Content Include="Content\img\avatar2.png" />
+    <Content Include="Content\img\avatar3.png" />
+    <Content Include="Content\img\avatar5.png" />
+    <Content Include="Content\img\boxed-bg.jpg" />
+    <Content Include="Content\img\boxed-bg.png" />
+    <Content Include="Content\img\credit\american-express.png" />
+    <Content Include="Content\img\credit\cirrus.png" />
+    <Content Include="Content\img\credit\mastercard.png" />
+    <Content Include="Content\img\credit\mestro.png" />
+    <Content Include="Content\img\credit\paypal.png" />
+    <Content Include="Content\img\credit\paypal2.png" />
+    <Content Include="Content\img\credit\visa.png" />
+    <Content Include="Content\img\default-50x50.gif" />
+    <Content Include="Content\img\icons.png" />
+    <Content Include="Content\img\photo1.png" />
+    <Content Include="Content\img\photo2.png" />
+    <Content Include="Content\img\photo3.jpg" />
+    <Content Include="Content\img\photo4.jpg" />
+    <Content Include="Content\img\user1-128x128.jpg" />
+    <Content Include="Content\img\user2-160x160.jpg" />
+    <Content Include="Content\img\user3-128x128.jpg" />
+    <Content Include="Content\img\user4-128x128.jpg" />
+    <Content Include="Content\img\user5-128x128.jpg" />
+    <Content Include="Content\img\user6-128x128.jpg" />
+    <Content Include="Content\img\user7-128x128.jpg" />
+    <Content Include="Content\img\user8-128x128.jpg" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="Content\skins\skin-black-light.css" />
+    <Content Include="Content\skins\skin-black-light.min.css" />
+    <Content Include="Content\skins\skin-black.css" />
+    <Content Include="Content\skins\skin-black.min.css" />
+    <Content Include="Content\skins\skin-blue-light.css" />
+    <Content Include="Content\skins\skin-blue-light.min.css" />
+    <Content Include="Content\skins\skin-blue.css" />
+    <Content Include="Content\skins\skin-blue.min.css" />
+    <Content Include="Content\skins\skin-green-light.css" />
+    <Content Include="Content\skins\skin-green-light.min.css" />
+    <Content Include="Content\skins\skin-green.css" />
+    <Content Include="Content\skins\skin-green.min.css" />
+    <Content Include="Content\skins\skin-purple-light.css" />
+    <Content Include="Content\skins\skin-purple-light.min.css" />
+    <Content Include="Content\skins\skin-purple.css" />
+    <Content Include="Content\skins\skin-purple.min.css" />
+    <Content Include="Content\skins\skin-red-light.css" />
+    <Content Include="Content\skins\skin-red-light.min.css" />
+    <Content Include="Content\skins\skin-red.css" />
+    <Content Include="Content\skins\skin-red.min.css" />
+    <Content Include="Content\skins\skin-yellow-light.css" />
+    <Content Include="Content\skins\skin-yellow-light.min.css" />
+    <Content Include="Content\skins\skin-yellow.css" />
+    <Content Include="Content\skins\skin-yellow.min.css" />
+    <Content Include="Content\skins\_all-skins.css" />
+    <Content Include="Content\skins\_all-skins.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
-    <Content Include="Scripts\ai.0.15.0-build58334.js" />
-    <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Scripts\app\app.js" />
-    <Content Include="Scripts\app\jquery.validate.fixdata.js" />
-    <Content Include="Scripts\app\jquery.validate.globalize.datetime.js" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="Scripts\AdminLTE\app.js" />
+    <Content Include="Scripts\AdminLTE\app.min.js" />
+    <Content Include="Scripts\AdminLTE\demo.js" />
+    <Content Include="Scripts\AdminLTE\pages\dashboard.js" />
+    <Content Include="Scripts\AdminLTE\pages\dashboard2.js" />
+    <Content Include="Scripts\App\app.js" />
+    <Content Include="Scripts\App\ganalytics.js" />
+    <Content Include="Scripts\App\jquery.validate.fixdata.js" />
+    <Content Include="Scripts\App\jquery.validate.globalize.datetime.js" />
+    <Content Include="Scripts\App\tinymce.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\jquery-2.2.1.js" />
-    <Content Include="Scripts\jquery-2.2.1.min.js" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Articles\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Articles\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Articles\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Articles\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Articles\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\MultiLangStrings\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\MultiLangStrings\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\MultiLangStrings\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\MultiLangStrings\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\MultiLangStrings\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Roles\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Roles\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Roles\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Roles\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Roles\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Translations\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Translations\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Translations\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Translations\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Translations\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\UserClaims\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\UserClaims\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\UserClaims\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\UserClaims\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\UserClaims\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\UserLogins\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\UserLogins\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\UserLogins\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\UserLogins\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\UserLogins\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\UserRoles\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\UserRoles\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\UserRoles\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\UserRoles\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\UserRoles\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Areas\Admin\Views\SystemLog\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ContactTypes\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\ContactTypes\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\ContactTypes\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\ContactTypes\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\ContactTypes\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ContactTypes\_CreateEdit.cshtml" />
+    <Content Include="Areas\Admin\Views\Articles\_CreateEdit.cshtml" />
+    <Content Include="Areas\Admin\Views\SystemLog\DeleteAllLogFiles.cshtml" />
+    <Content Include="bower_components\cldr-data\.bower.json" />
+    <Content Include="bower_components\cldr-data\bower.json" />
+    <Content Include="bower_components\cldr-data\DCO.md" />
+    <Content Include="bower_components\cldr-data\index.json" />
+    <Content Include="bower_components\cldr-data\LICENSE-MIT" />
+    <Content Include="bower_components\cldr-data\README.md" />
+    <Content Include="bower_components\cldrjs\.bower.json" />
+    <Content Include="bower_components\cldrjs\.bowerrc" />
+    <Content Include="bower_components\cldrjs\.jshintrc" />
+    <Content Include="bower_components\cldrjs\bower.json" />
+    <Content Include="bower_components\cldrjs\CHANGELOG.md" />
+    <Content Include="bower_components\cldrjs\DCO.md" />
+    <Content Include="bower_components\cldrjs\doc\api\core\attributes.md" />
+    <Content Include="bower_components\cldrjs\doc\api\core\constructor.md" />
+    <Content Include="bower_components\cldrjs\doc\api\core\get.md" />
+    <Content Include="bower_components\cldrjs\doc\api\core\load.md" />
+    <Content Include="bower_components\cldrjs\doc\api\core\main.md" />
+    <Content Include="bower_components\cldrjs\doc\api\event\event_get.md" />
+    <Content Include="bower_components\cldrjs\doc\api\event\global_off.md" />
+    <Content Include="bower_components\cldrjs\doc\api\event\global_on.md" />
+    <Content Include="bower_components\cldrjs\doc\api\event\global_once.md" />
+    <Content Include="bower_components\cldrjs\doc\api\event\off.md" />
+    <Content Include="bower_components\cldrjs\doc\api\event\on.md" />
+    <Content Include="bower_components\cldrjs\doc\api\event\once.md" />
+    <Content Include="bower_components\cldrjs\doc\api\supplemental.md" />
+    <Content Include="bower_components\cldrjs\doc\api\supplemental\time_data_allowed.md" />
+    <Content Include="bower_components\cldrjs\doc\api\supplemental\time_data_preferred.md" />
+    <Content Include="bower_components\cldrjs\doc\api\supplemental\week_data_first_day.md" />
+    <Content Include="bower_components\cldrjs\doc\api\supplemental\week_data_min_days.md" />
+    <Content Include="bower_components\cldrjs\doc\api\unresolved\get.md" />
+    <Content Include="bower_components\cldrjs\doc\bundle_lookup_matcher.md" />
+    <Content Include="bower_components\cldrjs\LICENSE-MIT" />
+    <Content Include="bower_components\cldrjs\package.json" />
+    <Content Include="bower_components\cldrjs\README.md" />
+    <Content Include="bower_components\cldrjs\src\.dist_jshintrc" />
+    <Content Include="bower_components\cldrjs\src\.jshintrc" />
+    <Content Include="bower_components\cldrjs\test\.jshintrc" />
+    <Content Include="bower_components\globalize\.bower.json" />
+    <Content Include="bower_components\globalize\bower.json" />
+    <Content Include="bower_components\globalize\browserstack.json" />
+    <Content Include="bower_components\globalize\chore\release.sh" />
+    <Content Include="bower_components\globalize\doc\api\core\constructor.md" />
+    <Content Include="bower_components\globalize\doc\api\core\load.md" />
+    <Content Include="bower_components\globalize\doc\api\core\locale.md" />
+    <Content Include="bower_components\globalize\doc\api\currency\currency-formatter.md" />
+    <Content Include="bower_components\globalize\doc\api\date\date-formatter.md" />
+    <Content Include="bower_components\globalize\doc\api\date\date-parser.md" />
+    <Content Include="bower_components\globalize\doc\api\message\load-messages.md" />
+    <Content Include="bower_components\globalize\doc\api\message\message-formatter.md" />
+    <Content Include="bower_components\globalize\doc\api\number\number-formatter.md" />
+    <Content Include="bower_components\globalize\doc\api\number\number-parser.md" />
+    <Content Include="bower_components\globalize\doc\api\plural\plural-generator.md" />
+    <Content Include="bower_components\globalize\doc\api\relative-time\relative-time-formatter.md" />
+    <Content Include="bower_components\globalize\doc\api\unit\unit-formatter.md" />
+    <Content Include="bower_components\globalize\doc\cldr.md" />
+    <Content Include="bower_components\globalize\doc\error\e-default-locale-not-defined.md" />
+    <Content Include="bower_components\globalize\doc\error\e-invalid-cldr.md" />
+    <Content Include="bower_components\globalize\doc\error\e-invalid-par-type.md" />
+    <Content Include="bower_components\globalize\doc\error\e-invalid-par-value.md" />
+    <Content Include="bower_components\globalize\doc\error\e-missing-cldr.md" />
+    <Content Include="bower_components\globalize\doc\error\e-missing-parameter.md" />
+    <Content Include="bower_components\globalize\doc\error\e-missing-plural-module.md" />
+    <Content Include="bower_components\globalize\doc\error\e-par-missing-key.md" />
+    <Content Include="bower_components\globalize\doc\error\e-par-out-of-range.md" />
+    <Content Include="bower_components\globalize\doc\error\e-unsupported.md" />
+    <Content Include="bower_components\globalize\doc\migrating-from-0.x.md" />
+    <Content Include="bower_components\globalize\examples\amd-bower\messages\en.json" />
+    <Content Include="bower_components\globalize\examples\amd-bower\package.json" />
+    <Content Include="bower_components\globalize\examples\amd-bower\README.md" />
+    <Content Include="bower_components\globalize\examples\app-npm-webpack\messages\ar.json" />
+    <Content Include="bower_components\globalize\examples\app-npm-webpack\messages\de.json" />
+    <Content Include="bower_components\globalize\examples\app-npm-webpack\messages\en.json" />
+    <Content Include="bower_components\globalize\examples\app-npm-webpack\messages\es.json" />
+    <Content Include="bower_components\globalize\examples\app-npm-webpack\messages\pt.json" />
+    <Content Include="bower_components\globalize\examples\app-npm-webpack\messages\ru.json" />
+    <Content Include="bower_components\globalize\examples\app-npm-webpack\messages\zh.json" />
+    <Content Include="bower_components\globalize\examples\app-npm-webpack\package.json" />
+    <Content Include="bower_components\globalize\examples\app-npm-webpack\README.md" />
+    <Content Include="bower_components\globalize\examples\globalize-compiler\cldr.json" />
+    <Content Include="bower_components\globalize\examples\globalize-compiler\messages.json" />
+    <Content Include="bower_components\globalize\examples\globalize-compiler\package.json" />
+    <Content Include="bower_components\globalize\examples\globalize-compiler\README.md" />
+    <Content Include="bower_components\globalize\examples\node-npm\messages\en.json" />
+    <Content Include="bower_components\globalize\examples\node-npm\package.json" />
+    <Content Include="bower_components\globalize\examples\node-npm\README.md" />
+    <Content Include="bower_components\globalize\examples\plain-javascript\README.md" />
+    <Content Include="bower_components\globalize\package.json" />
+    <Content Include="bower_components\globalize\README.md" />
+    <Content Include="bower_components\jquery-validation-globalize\.bower.json" />
+    <Content Include="bower_components\jquery-validation-globalize\bower.json" />
+    <Content Include="bower_components\jquery-validation-globalize\LICENSE" />
+    <Content Include="bower_components\jquery-validation-globalize\package.json" />
+    <Content Include="bower_components\jquery-validation-globalize\README.md" />
+    <Content Include="bower_components\jquery-validation\.bower.json" />
+    <Content Include="bower_components\jquery-validation\bower.json" />
+    <Content Include="bower_components\jquery-validation\changelog.md" />
+    <Content Include="bower_components\jquery-validation\CONTRIBUTING.md" />
+    <Content Include="bower_components\jquery-validation\LICENSE.md" />
+    <Content Include="bower_components\jquery-validation\package.json" />
+    <Content Include="bower_components\jquery-validation\README.md" />
+    <Content Include="bower_components\jquery-validation\validation.jquery.json" />
+    <Content Include="bower_components\jquery\.bower.json" />
+    <Content Include="bower_components\jquery\bower.json" />
+    <Content Include="bower_components\jquery\dist\jquery.min.map" />
+    <Content Include="bower_components\jquery\dist\jquery.slim.min.map" />
+    <Content Include="bower_components\jquery\README.md" />
+    <Content Include="bower_components\jquery\sizzle\dist\sizzle.min.map" />
+    <Content Include="bower_components\jquery\src\.jshintrc" />
+    <Content Include="bower_components\moment\.bower.json" />
+    <Content Include="bower_components\moment\bower.json" />
+    <Content Include="bower_components\moment\CHANGELOG.md" />
+    <Content Include="bower_components\moment\LICENSE" />
+    <Content Include="bower_components\moment\README.md" />
     <Content Include="bower_components\bootstrap\.bower.json" />
     <Content Include="bower_components\bootstrap\bower.json" />
     <Content Include="bower_components\bootstrap\CHANGELOG.md" />
@@ -1141,162 +1664,20 @@
     <Content Include="bower_components\bootstrap\nuget\MyGet.ps1" />
     <Content Include="bower_components\bootstrap\package.json" />
     <Content Include="bower_components\bootstrap\README.md" />
-    <Content Include="bower_components\cldrjs\.bower.json" />
-    <Content Include="bower_components\cldrjs\.bowerrc" />
-    <Content Include="bower_components\cldrjs\.jshintrc" />
-    <Content Include="bower_components\cldrjs\bower.json" />
-    <Content Include="bower_components\cldrjs\CHANGELOG.md" />
-    <Content Include="bower_components\cldrjs\DCO.md" />
-    <Content Include="bower_components\cldrjs\doc\api\core\attributes.md" />
-    <Content Include="bower_components\cldrjs\doc\api\core\constructor.md" />
-    <Content Include="bower_components\cldrjs\doc\api\core\get.md" />
-    <Content Include="bower_components\cldrjs\doc\api\core\load.md" />
-    <Content Include="bower_components\cldrjs\doc\api\core\main.md" />
-    <Content Include="bower_components\cldrjs\doc\api\event\event_get.md" />
-    <Content Include="bower_components\cldrjs\doc\api\event\global_off.md" />
-    <Content Include="bower_components\cldrjs\doc\api\event\global_on.md" />
-    <Content Include="bower_components\cldrjs\doc\api\event\global_once.md" />
-    <Content Include="bower_components\cldrjs\doc\api\event\off.md" />
-    <Content Include="bower_components\cldrjs\doc\api\event\on.md" />
-    <Content Include="bower_components\cldrjs\doc\api\event\once.md" />
-    <Content Include="bower_components\cldrjs\doc\api\supplemental.md" />
-    <Content Include="bower_components\cldrjs\doc\api\supplemental\time_data_allowed.md" />
-    <Content Include="bower_components\cldrjs\doc\api\supplemental\time_data_preferred.md" />
-    <Content Include="bower_components\cldrjs\doc\api\supplemental\week_data_first_day.md" />
-    <Content Include="bower_components\cldrjs\doc\api\supplemental\week_data_min_days.md" />
-    <Content Include="bower_components\cldrjs\doc\api\unresolved\get.md" />
-    <Content Include="bower_components\cldrjs\doc\bundle_lookup_matcher.md" />
-    <Content Include="bower_components\cldrjs\LICENSE-MIT" />
-    <Content Include="bower_components\cldrjs\package.json" />
-    <Content Include="bower_components\cldrjs\README.md" />
-    <Content Include="bower_components\cldrjs\src\.dist_jshintrc" />
-    <Content Include="bower_components\cldrjs\src\.jshintrc" />
-    <Content Include="bower_components\cldrjs\test\.jshintrc" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\.bower.json" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\bower.json" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\component.json" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\composer.json" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\CONTRIBUTING.md" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\ChangeLog.md" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\ContributorsGuide.md" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\Events.md" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\Extras.md" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\FAQ.md" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\Functions.md" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\index.md" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\Installing.md" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\Options.md" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\Version 4 Changelog.md" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\Version 4 Contributors guide.md" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\LICENSE" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\mkdocs.yml" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\package.json" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\README.md" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\src\less\bootstrap-datetimepicker-build.less" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\src\less\_bootstrap-datetimepicker.less" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\src\nuget\Bootstrap.v3.Datetimepicker.CSS.nuspec" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\src\nuget\Bootstrap.v3.Datetimepicker.nuspec" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\src\nuget\install.ps1" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\src\sass\bootstrap-datetimepicker-build.scss" />
-    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\src\sass\_bootstrap-datetimepicker.scss" />
-    <Content Include="bower_components\globalize\.bower.json" />
-    <Content Include="bower_components\globalize\bower.json" />
-    <Content Include="bower_components\globalize\browserstack.json" />
-    <Content Include="bower_components\globalize\chore\release.sh" />
-    <Content Include="bower_components\globalize\doc\api\core\constructor.md" />
-    <Content Include="bower_components\globalize\doc\api\core\load.md" />
-    <Content Include="bower_components\globalize\doc\api\core\locale.md" />
-    <Content Include="bower_components\globalize\doc\api\currency\currency-formatter.md" />
-    <Content Include="bower_components\globalize\doc\api\date\date-formatter.md" />
-    <Content Include="bower_components\globalize\doc\api\date\date-parser.md" />
-    <Content Include="bower_components\globalize\doc\api\message\load-messages.md" />
-    <Content Include="bower_components\globalize\doc\api\message\message-formatter.md" />
-    <Content Include="bower_components\globalize\doc\api\number\number-formatter.md" />
-    <Content Include="bower_components\globalize\doc\api\number\number-parser.md" />
-    <Content Include="bower_components\globalize\doc\api\plural\plural-generator.md" />
-    <Content Include="bower_components\globalize\doc\api\relative-time\relative-time-formatter.md" />
-    <Content Include="bower_components\globalize\doc\api\unit\unit-formatter.md" />
-    <Content Include="bower_components\globalize\doc\cldr.md" />
-    <Content Include="bower_components\globalize\doc\error\e-default-locale-not-defined.md" />
-    <Content Include="bower_components\globalize\doc\error\e-invalid-cldr.md" />
-    <Content Include="bower_components\globalize\doc\error\e-invalid-par-type.md" />
-    <Content Include="bower_components\globalize\doc\error\e-invalid-par-value.md" />
-    <Content Include="bower_components\globalize\doc\error\e-missing-cldr.md" />
-    <Content Include="bower_components\globalize\doc\error\e-missing-parameter.md" />
-    <Content Include="bower_components\globalize\doc\error\e-missing-plural-module.md" />
-    <Content Include="bower_components\globalize\doc\error\e-par-missing-key.md" />
-    <Content Include="bower_components\globalize\doc\error\e-par-out-of-range.md" />
-    <Content Include="bower_components\globalize\doc\error\e-unsupported.md" />
-    <Content Include="bower_components\globalize\doc\migrating-from-0.x.md" />
-    <Content Include="bower_components\globalize\examples\amd-bower\messages\en.json" />
-    <Content Include="bower_components\globalize\examples\amd-bower\package.json" />
-    <Content Include="bower_components\globalize\examples\amd-bower\README.md" />
-    <Content Include="bower_components\globalize\examples\app-npm-webpack\messages\ar.json" />
-    <Content Include="bower_components\globalize\examples\app-npm-webpack\messages\de.json" />
-    <Content Include="bower_components\globalize\examples\app-npm-webpack\messages\en.json" />
-    <Content Include="bower_components\globalize\examples\app-npm-webpack\messages\es.json" />
-    <Content Include="bower_components\globalize\examples\app-npm-webpack\messages\pt.json" />
-    <Content Include="bower_components\globalize\examples\app-npm-webpack\messages\ru.json" />
-    <Content Include="bower_components\globalize\examples\app-npm-webpack\messages\zh.json" />
-    <Content Include="bower_components\globalize\examples\app-npm-webpack\package.json" />
-    <Content Include="bower_components\globalize\examples\app-npm-webpack\README.md" />
-    <Content Include="bower_components\globalize\examples\globalize-compiler\cldr.json" />
-    <Content Include="bower_components\globalize\examples\globalize-compiler\messages.json" />
-    <Content Include="bower_components\globalize\examples\globalize-compiler\package.json" />
-    <Content Include="bower_components\globalize\examples\globalize-compiler\README.md" />
-    <Content Include="bower_components\globalize\examples\node-npm\messages\en.json" />
-    <Content Include="bower_components\globalize\examples\node-npm\package.json" />
-    <Content Include="bower_components\globalize\examples\node-npm\README.md" />
-    <Content Include="bower_components\globalize\examples\plain-javascript\README.md" />
-    <Content Include="bower_components\globalize\package.json" />
-    <Content Include="bower_components\globalize\README.md" />
-    <Content Include="bower_components\jquery\.bower.json" />
-    <Content Include="bower_components\jquery\bower.json" />
-    <Content Include="bower_components\jquery\dist\jquery.min.map" />
-    <Content Include="bower_components\jquery\dist\jquery.slim.min.map" />
-    <Content Include="bower_components\jquery\README.md" />
-    <Content Include="bower_components\jquery\sizzle\dist\sizzle.min.map" />
-    <Content Include="bower_components\jquery\src\.jshintrc" />
-    <Content Include="bower_components\moment-timezone\.bower.json" />
-    <Content Include="bower_components\moment-timezone\bower.json" />
-    <Content Include="bower_components\moment-timezone\changelog.md" />
-    <Content Include="bower_components\moment-timezone\composer.json" />
-    <Content Include="bower_components\moment-timezone\data\meta\latest.json" />
-    <Content Include="bower_components\moment-timezone\data\packed\latest.json" />
-    <Content Include="bower_components\moment-timezone\data\unpacked\latest.json" />
-    <Content Include="bower_components\moment-timezone\LICENSE" />
-    <Content Include="bower_components\moment-timezone\README.md" />
-    <Content Include="bower_components\moment\.bower.json" />
-    <Content Include="bower_components\moment\bower.json" />
-    <Content Include="bower_components\moment\CHANGELOG.md" />
-    <Content Include="bower_components\moment\LICENSE" />
-    <Content Include="bower_components\moment\README.md" />
-    <Content Include="bower_components\respond\.bower.json" />
-    <Content Include="bower_components\respond\bower.json" />
-    <Content Include="bower_components\respond\LICENSE-MIT" />
-    <Content Include="bower_components\respond\package.json" />
-    <Content Include="bower_components\respond\README.md" />
-    <Content Include="bower_components\tinymce\.bower.json" />
-    <Content Include="bower_components\tinymce\bower.json" />
-    <Content Include="bower_components\tinymce\skins\lightgray\fonts\tinymce-small.eot" />
-    <Content Include="bower_components\tinymce\skins\lightgray\fonts\tinymce-small.ttf" />
-    <Content Include="bower_components\tinymce\skins\lightgray\fonts\tinymce-small.woff" />
-    <Content Include="bower_components\tinymce\skins\lightgray\fonts\tinymce.eot" />
-    <Content Include="bower_components\tinymce\skins\lightgray\fonts\tinymce.ttf" />
-    <Content Include="bower_components\tinymce\skins\lightgray\fonts\tinymce.woff" />
-    <Content Include="bower_components\cldr-data\.bower.json" />
-    <Content Include="bower_components\cldr-data\.ignored-bower.json" />
-    <Content Include="bower_components\cldr-data\.ignored-package.json" />
-    <Content Include="bower_components\cldr-data\availableLocales.json" />
-    <Content Include="bower_components\cldr-data\bower.json" />
-    <Content Include="bower_components\cldr-data\DCO.md" />
-    <Content Include="bower_components\cldr-data\defaultContent.json" />
-    <Content Include="bower_components\cldr-data\index.json" />
-    <Content Include="bower_components\cldr-data\LICENSE" />
-    <Content Include="bower_components\cldr-data\LICENSE-MIT" />
-    <Content Include="bower_components\cldr-data\README.md" />
-    <Content Include="bower_components\cldr-data\scriptMetadata.json" />
-    <Content Include="bower_components\cldr-data\state.json" />
+    <Content Include="bower_components\cldr-data\segments\de\suppressions.json" />
+    <Content Include="bower_components\cldr-data\segments\el\suppressions.json" />
+    <Content Include="bower_components\cldr-data\segments\en-US-POSIX\suppressions.json" />
+    <Content Include="bower_components\cldr-data\segments\en\suppressions.json" />
+    <Content Include="bower_components\cldr-data\segments\es\suppressions.json" />
+    <Content Include="bower_components\cldr-data\segments\fi\suppressions.json" />
+    <Content Include="bower_components\cldr-data\segments\fr\suppressions.json" />
+    <Content Include="bower_components\cldr-data\segments\it\suppressions.json" />
+    <Content Include="bower_components\cldr-data\segments\ja\suppressions.json" />
+    <Content Include="bower_components\cldr-data\segments\pt\suppressions.json" />
+    <Content Include="bower_components\cldr-data\segments\root\suppressions.json" />
+    <Content Include="bower_components\cldr-data\segments\ru\suppressions.json" />
+    <Content Include="bower_components\cldr-data\segments\zh-Hant\suppressions.json" />
+    <Content Include="bower_components\cldr-data\segments\zh\suppressions.json" />
     <Content Include="bower_components\cldr-data\supplemental\aliases.json" />
     <Content Include="bower_components\cldr-data\supplemental\calendarData.json" />
     <Content Include="bower_components\cldr-data\supplemental\calendarPreferenceData.json" />
@@ -1321,20 +1702,6 @@
     <Content Include="bower_components\cldr-data\supplemental\timeData.json" />
     <Content Include="bower_components\cldr-data\supplemental\weekData.json" />
     <Content Include="bower_components\cldr-data\supplemental\windowsZones.json" />
-    <Content Include="bower_components\cldr-data\segments\de\suppressions.json" />
-    <Content Include="bower_components\cldr-data\segments\el\suppressions.json" />
-    <Content Include="bower_components\cldr-data\segments\en-US-POSIX\suppressions.json" />
-    <Content Include="bower_components\cldr-data\segments\en\suppressions.json" />
-    <Content Include="bower_components\cldr-data\segments\es\suppressions.json" />
-    <Content Include="bower_components\cldr-data\segments\fi\suppressions.json" />
-    <Content Include="bower_components\cldr-data\segments\fr\suppressions.json" />
-    <Content Include="bower_components\cldr-data\segments\it\suppressions.json" />
-    <Content Include="bower_components\cldr-data\segments\ja\suppressions.json" />
-    <Content Include="bower_components\cldr-data\segments\pt\suppressions.json" />
-    <Content Include="bower_components\cldr-data\segments\root\suppressions.json" />
-    <Content Include="bower_components\cldr-data\segments\ru\suppressions.json" />
-    <Content Include="bower_components\cldr-data\segments\zh-Hant\suppressions.json" />
-    <Content Include="bower_components\cldr-data\segments\zh\suppressions.json" />
     <Content Include="bower_components\cldr-data\main\en-FI\ca-buddhist.json" />
     <Content Include="bower_components\cldr-data\main\en-FI\ca-chinese.json" />
     <Content Include="bower_components\cldr-data\main\en-FI\ca-coptic.json" />
@@ -1407,6 +1774,42 @@
     <Content Include="bower_components\cldr-data\main\en-GB\transformNames.json" />
     <Content Include="bower_components\cldr-data\main\en-GB\units.json" />
     <Content Include="bower_components\cldr-data\main\en-GB\variants.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\ca-buddhist.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\ca-chinese.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\ca-coptic.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\ca-dangi.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\ca-ethiopic-amete-alem.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\ca-ethiopic.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\ca-generic.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\ca-gregorian.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\ca-hebrew.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\ca-indian.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\ca-islamic-civil.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\ca-islamic-rgsa.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\ca-islamic-tbla.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\ca-islamic-umalqura.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\ca-islamic.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\ca-japanese.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\ca-persian.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\ca-roc.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\characters.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\contextTransforms.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\currencies.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\dateFields.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\delimiters.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\languages.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\layout.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\listPatterns.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\localeDisplayNames.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\measurementSystemNames.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\numbers.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\posix.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\scripts.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\territories.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\timeZoneNames.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\transformNames.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\units.json" />
+    <Content Include="bower_components\cldr-data\main\en-US-POSIX\variants.json" />
     <Content Include="bower_components\cldr-data\main\en\ca-buddhist.json" />
     <Content Include="bower_components\cldr-data\main\en\ca-chinese.json" />
     <Content Include="bower_components\cldr-data\main\en\ca-coptic.json" />
@@ -1478,6 +1881,41 @@
     <Content Include="bower_components\cldr-data\main\et\transformNames.json" />
     <Content Include="bower_components\cldr-data\main\et\units.json" />
     <Content Include="bower_components\cldr-data\main\et\variants.json" />
+    <Content Include="bower_components\cldr-data\main\eu\ca-buddhist.json" />
+    <Content Include="bower_components\cldr-data\main\eu\ca-chinese.json" />
+    <Content Include="bower_components\cldr-data\main\eu\ca-coptic.json" />
+    <Content Include="bower_components\cldr-data\main\eu\ca-dangi.json" />
+    <Content Include="bower_components\cldr-data\main\eu\ca-ethiopic-amete-alem.json" />
+    <Content Include="bower_components\cldr-data\main\eu\ca-ethiopic.json" />
+    <Content Include="bower_components\cldr-data\main\eu\ca-generic.json" />
+    <Content Include="bower_components\cldr-data\main\eu\ca-gregorian.json" />
+    <Content Include="bower_components\cldr-data\main\eu\ca-hebrew.json" />
+    <Content Include="bower_components\cldr-data\main\eu\ca-indian.json" />
+    <Content Include="bower_components\cldr-data\main\eu\ca-islamic-civil.json" />
+    <Content Include="bower_components\cldr-data\main\eu\ca-islamic-rgsa.json" />
+    <Content Include="bower_components\cldr-data\main\eu\ca-islamic-tbla.json" />
+    <Content Include="bower_components\cldr-data\main\eu\ca-islamic-umalqura.json" />
+    <Content Include="bower_components\cldr-data\main\eu\ca-islamic.json" />
+    <Content Include="bower_components\cldr-data\main\eu\ca-japanese.json" />
+    <Content Include="bower_components\cldr-data\main\eu\ca-persian.json" />
+    <Content Include="bower_components\cldr-data\main\eu\ca-roc.json" />
+    <Content Include="bower_components\cldr-data\main\eu\characters.json" />
+    <Content Include="bower_components\cldr-data\main\eu\currencies.json" />
+    <Content Include="bower_components\cldr-data\main\eu\dateFields.json" />
+    <Content Include="bower_components\cldr-data\main\eu\delimiters.json" />
+    <Content Include="bower_components\cldr-data\main\eu\languages.json" />
+    <Content Include="bower_components\cldr-data\main\eu\layout.json" />
+    <Content Include="bower_components\cldr-data\main\eu\listPatterns.json" />
+    <Content Include="bower_components\cldr-data\main\eu\localeDisplayNames.json" />
+    <Content Include="bower_components\cldr-data\main\eu\measurementSystemNames.json" />
+    <Content Include="bower_components\cldr-data\main\eu\numbers.json" />
+    <Content Include="bower_components\cldr-data\main\eu\posix.json" />
+    <Content Include="bower_components\cldr-data\main\eu\scripts.json" />
+    <Content Include="bower_components\cldr-data\main\eu\territories.json" />
+    <Content Include="bower_components\cldr-data\main\eu\timeZoneNames.json" />
+    <Content Include="bower_components\cldr-data\main\eu\transformNames.json" />
+    <Content Include="bower_components\cldr-data\main\eu\units.json" />
+    <Content Include="bower_components\cldr-data\main\eu\variants.json" />
     <Content Include="bower_components\cldr-data\main\fi\ca-buddhist.json" />
     <Content Include="bower_components\cldr-data\main\fi\ca-chinese.json" />
     <Content Include="bower_components\cldr-data\main\fi\ca-coptic.json" />
@@ -1514,6 +1952,127 @@
     <Content Include="bower_components\cldr-data\main\fi\transformNames.json" />
     <Content Include="bower_components\cldr-data\main\fi\units.json" />
     <Content Include="bower_components\cldr-data\main\fi\variants.json" />
+    <Content Include="bower_components\cldr-data\main\uk\ca-buddhist.json" />
+    <Content Include="bower_components\cldr-data\main\uk\ca-chinese.json" />
+    <Content Include="bower_components\cldr-data\main\uk\ca-coptic.json" />
+    <Content Include="bower_components\cldr-data\main\uk\ca-dangi.json" />
+    <Content Include="bower_components\cldr-data\main\uk\ca-ethiopic-amete-alem.json" />
+    <Content Include="bower_components\cldr-data\main\uk\ca-ethiopic.json" />
+    <Content Include="bower_components\cldr-data\main\uk\ca-generic.json" />
+    <Content Include="bower_components\cldr-data\main\uk\ca-gregorian.json" />
+    <Content Include="bower_components\cldr-data\main\uk\ca-hebrew.json" />
+    <Content Include="bower_components\cldr-data\main\uk\ca-indian.json" />
+    <Content Include="bower_components\cldr-data\main\uk\ca-islamic-civil.json" />
+    <Content Include="bower_components\cldr-data\main\uk\ca-islamic-rgsa.json" />
+    <Content Include="bower_components\cldr-data\main\uk\ca-islamic-tbla.json" />
+    <Content Include="bower_components\cldr-data\main\uk\ca-islamic-umalqura.json" />
+    <Content Include="bower_components\cldr-data\main\uk\ca-islamic.json" />
+    <Content Include="bower_components\cldr-data\main\uk\ca-japanese.json" />
+    <Content Include="bower_components\cldr-data\main\uk\ca-persian.json" />
+    <Content Include="bower_components\cldr-data\main\uk\ca-roc.json" />
+    <Content Include="bower_components\cldr-data\main\uk\characters.json" />
+    <Content Include="bower_components\cldr-data\main\uk\contextTransforms.json" />
+    <Content Include="bower_components\cldr-data\main\uk\currencies.json" />
+    <Content Include="bower_components\cldr-data\main\uk\dateFields.json" />
+    <Content Include="bower_components\cldr-data\main\uk\delimiters.json" />
+    <Content Include="bower_components\cldr-data\main\uk\languages.json" />
+    <Content Include="bower_components\cldr-data\main\uk\layout.json" />
+    <Content Include="bower_components\cldr-data\main\uk\listPatterns.json" />
+    <Content Include="bower_components\cldr-data\main\uk\localeDisplayNames.json" />
+    <Content Include="bower_components\cldr-data\main\uk\measurementSystemNames.json" />
+    <Content Include="bower_components\cldr-data\main\uk\numbers.json" />
+    <Content Include="bower_components\cldr-data\main\uk\posix.json" />
+    <Content Include="bower_components\cldr-data\main\uk\scripts.json" />
+    <Content Include="bower_components\cldr-data\main\uk\territories.json" />
+    <Content Include="bower_components\cldr-data\main\uk\timeZoneNames.json" />
+    <Content Include="bower_components\cldr-data\main\uk\transformNames.json" />
+    <Content Include="bower_components\cldr-data\main\uk\units.json" />
+    <Content Include="bower_components\cldr-data\main\uk\variants.json" />
+    <Content Include="bower_components\cldr-data\main\ru\ca-buddhist.json" />
+    <Content Include="bower_components\cldr-data\main\ru\ca-chinese.json" />
+    <Content Include="bower_components\cldr-data\main\ru\ca-coptic.json" />
+    <Content Include="bower_components\cldr-data\main\ru\ca-dangi.json" />
+    <Content Include="bower_components\cldr-data\main\ru\ca-ethiopic-amete-alem.json" />
+    <Content Include="bower_components\cldr-data\main\ru\ca-ethiopic.json" />
+    <Content Include="bower_components\cldr-data\main\ru\ca-generic.json" />
+    <Content Include="bower_components\cldr-data\main\ru\ca-gregorian.json" />
+    <Content Include="bower_components\cldr-data\main\ru\ca-hebrew.json" />
+    <Content Include="bower_components\cldr-data\main\ru\ca-indian.json" />
+    <Content Include="bower_components\cldr-data\main\ru\ca-islamic-civil.json" />
+    <Content Include="bower_components\cldr-data\main\ru\ca-islamic-rgsa.json" />
+    <Content Include="bower_components\cldr-data\main\ru\ca-islamic-tbla.json" />
+    <Content Include="bower_components\cldr-data\main\ru\ca-islamic-umalqura.json" />
+    <Content Include="bower_components\cldr-data\main\ru\ca-islamic.json" />
+    <Content Include="bower_components\cldr-data\main\ru\ca-japanese.json" />
+    <Content Include="bower_components\cldr-data\main\ru\ca-persian.json" />
+    <Content Include="bower_components\cldr-data\main\ru\ca-roc.json" />
+    <Content Include="bower_components\cldr-data\main\ru\characters.json" />
+    <Content Include="bower_components\cldr-data\main\ru\contextTransforms.json" />
+    <Content Include="bower_components\cldr-data\main\ru\currencies.json" />
+    <Content Include="bower_components\cldr-data\main\ru\dateFields.json" />
+    <Content Include="bower_components\cldr-data\main\ru\delimiters.json" />
+    <Content Include="bower_components\cldr-data\main\ru\languages.json" />
+    <Content Include="bower_components\cldr-data\main\ru\layout.json" />
+    <Content Include="bower_components\cldr-data\main\ru\listPatterns.json" />
+    <Content Include="bower_components\cldr-data\main\ru\localeDisplayNames.json" />
+    <Content Include="bower_components\cldr-data\main\ru\measurementSystemNames.json" />
+    <Content Include="bower_components\cldr-data\main\ru\numbers.json" />
+    <Content Include="bower_components\cldr-data\main\ru\posix.json" />
+    <Content Include="bower_components\cldr-data\main\ru\scripts.json" />
+    <Content Include="bower_components\cldr-data\main\ru\territories.json" />
+    <Content Include="bower_components\cldr-data\main\ru\timeZoneNames.json" />
+    <Content Include="bower_components\cldr-data\main\ru\transformNames.json" />
+    <Content Include="bower_components\cldr-data\main\ru\units.json" />
+    <Content Include="bower_components\cldr-data\main\ru\variants.json" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\.bower.json" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\bower.json" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\component.json" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\composer.json" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\CONTRIBUTING.md" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\ChangeLog.md" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\ContributorsGuide.md" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\Events.md" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\Extras.md" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\FAQ.md" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\Functions.md" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\index.md" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\Installing.md" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\Options.md" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\Version 4 Changelog.md" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\docs\Version 4 Contributors guide.md" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\LICENSE" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\mkdocs.yml" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\package.json" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\README.md" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\src\less\bootstrap-datetimepicker-build.less" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\src\less\_bootstrap-datetimepicker.less" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\src\nuget\Bootstrap.v3.Datetimepicker.CSS.nuspec" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\src\nuget\Bootstrap.v3.Datetimepicker.nuspec" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\src\nuget\install.ps1" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\src\sass\bootstrap-datetimepicker-build.scss" />
+    <Content Include="bower_components\eonasdan-bootstrap-datetimepicker\src\sass\_bootstrap-datetimepicker.scss" />
+    <Content Include="bower_components\moment-timezone\.bower.json" />
+    <Content Include="bower_components\moment-timezone\bower.json" />
+    <Content Include="bower_components\moment-timezone\changelog.md" />
+    <Content Include="bower_components\moment-timezone\composer.json" />
+    <Content Include="bower_components\moment-timezone\data\meta\latest.json" />
+    <Content Include="bower_components\moment-timezone\data\packed\latest.json" />
+    <Content Include="bower_components\moment-timezone\data\unpacked\latest.json" />
+    <Content Include="bower_components\moment-timezone\LICENSE" />
+    <Content Include="bower_components\moment-timezone\README.md" />
+    <Content Include="bower_components\respond\.bower.json" />
+    <Content Include="bower_components\respond\bower.json" />
+    <Content Include="bower_components\respond\LICENSE-MIT" />
+    <Content Include="bower_components\respond\package.json" />
+    <Content Include="bower_components\respond\README.md" />
+    <Content Include="bower_components\tinymce\.bower.json" />
+    <Content Include="bower_components\tinymce\bower.json" />
+    <Content Include="bower_components\tinymce\skins\lightgray\fonts\tinymce-small.eot" />
+    <Content Include="bower_components\tinymce\skins\lightgray\fonts\tinymce-small.ttf" />
+    <Content Include="bower_components\tinymce\skins\lightgray\fonts\tinymce-small.woff" />
+    <Content Include="bower_components\tinymce\skins\lightgray\fonts\tinymce.eot" />
+    <Content Include="bower_components\tinymce\skins\lightgray\fonts\tinymce.ttf" />
+    <Content Include="bower_components\tinymce\skins\lightgray\fonts\tinymce.woff" />
     <Content Include="bower_components\cldr-data\main\root\ca-buddhist.json" />
     <Content Include="bower_components\cldr-data\main\root\ca-chinese.json" />
     <Content Include="bower_components\cldr-data\main\root\ca-coptic.json" />
@@ -1548,6 +2107,50 @@
     <Content Include="bower_components\cldr-data\main\root\timeZoneNames.json" />
     <Content Include="bower_components\cldr-data\main\root\units.json" />
     <Content Include="bower_components\cldr-data\main\root\variants.json" />
+    <Content Include="App_Data\first-names.json" />
+    <Content Include="App_Data\middle-names.json" />
+    <Content Include="App_Data\names.json" />
+    <Content Include="App_Data\places.json" />
+    <Content Include="App_Data\countries.json" />
+    <Content Include="Content\font-awesome-4.6.1\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\font-awesome-4.6.1\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\font-awesome-4.6.1\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\font-awesome-4.6.1\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\font-awesome-4.6.1\fonts\FontAwesome.otf" />
+    <Content Include="Content\font-awesome-4.6.1\less\animated.less" />
+    <Content Include="Content\font-awesome-4.6.1\less\bordered-pulled.less" />
+    <Content Include="Content\font-awesome-4.6.1\less\core.less" />
+    <Content Include="Content\font-awesome-4.6.1\less\fixed-width.less" />
+    <Content Include="Content\font-awesome-4.6.1\less\font-awesome.less" />
+    <Content Include="Content\font-awesome-4.6.1\less\icons.less" />
+    <Content Include="Content\font-awesome-4.6.1\less\larger.less" />
+    <Content Include="Content\font-awesome-4.6.1\less\list.less" />
+    <Content Include="Content\font-awesome-4.6.1\less\mixins.less" />
+    <Content Include="Content\font-awesome-4.6.1\less\path.less" />
+    <Content Include="Content\font-awesome-4.6.1\less\rotated-flipped.less" />
+    <Content Include="Content\font-awesome-4.6.1\less\screen-reader.less" />
+    <Content Include="Content\font-awesome-4.6.1\less\stacked.less" />
+    <Content Include="Content\font-awesome-4.6.1\less\variables.less" />
+    <Content Include="Content\font-awesome-4.6.1\scss\font-awesome.scss" />
+    <Content Include="Content\font-awesome-4.6.1\scss\_animated.scss" />
+    <Content Include="Content\font-awesome-4.6.1\scss\_bordered-pulled.scss" />
+    <Content Include="Content\font-awesome-4.6.1\scss\_core.scss" />
+    <Content Include="Content\font-awesome-4.6.1\scss\_fixed-width.scss" />
+    <Content Include="Content\font-awesome-4.6.1\scss\_icons.scss" />
+    <Content Include="Content\font-awesome-4.6.1\scss\_larger.scss" />
+    <Content Include="Content\font-awesome-4.6.1\scss\_list.scss" />
+    <Content Include="Content\font-awesome-4.6.1\scss\_mixins.scss" />
+    <Content Include="Content\font-awesome-4.6.1\scss\_path.scss" />
+    <Content Include="Content\font-awesome-4.6.1\scss\_rotated-flipped.scss" />
+    <Content Include="Content\font-awesome-4.6.1\scss\_screen-reader.scss" />
+    <Content Include="Content\font-awesome-4.6.1\scss\_stacked.scss" />
+    <Content Include="Content\font-awesome-4.6.1\scss\_variables.scss" />
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Scripts\jquery-2.2.2.intellisense.js" />
+    <Content Include="Scripts\jquery-2.2.2.js" />
+    <Content Include="Scripts\jquery-2.2.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
@@ -1558,7 +2161,164 @@
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\_references.js" />
+    <Content Include="Scripts\tinymce\jquery.tinymce.min.js" />
+    <Content Include="Scripts\tinymce\license.txt" />
+    <Content Include="Scripts\tinymce\plugins\advlist\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\advlist\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\anchor\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\anchor\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\autolink\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\autolink\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\autoresize\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\autoresize\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\autosave\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\autosave\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\bbcode\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\bbcode\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\charmap\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\charmap\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\codesample\css\prism.css" />
+    <Content Include="Scripts\tinymce\plugins\codesample\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\codesample\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\code\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\code\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\colorpicker\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\colorpicker\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\css\dialog.css" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\img\buttons.png" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\img\icons.gif" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\img\items.gif" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\img\menu_arrow.gif" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\img\menu_check.gif" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\img\progress.gif" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\img\tabs.gif" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\tiny_mce_popup.js" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\utils\editable_selects.js" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\utils\form_utils.js" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\utils\mctabs.js" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\utils\validate.js" />
+    <Content Include="Scripts\tinymce\plugins\contextmenu\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\contextmenu\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\directionality\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\directionality\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-cool.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-cry.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-embarassed.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-foot-in-mouth.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-frown.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-innocent.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-kiss.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-laughing.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-money-mouth.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-sealed.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-smile.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-surprised.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-tongue-out.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-undecided.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-wink.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-yell.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\example\dialog.html" />
+    <Content Include="Scripts\tinymce\plugins\example\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\example\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\example_dependency\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\example_dependency\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\fullpage\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\fullpage\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\fullscreen\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\fullscreen\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\hr\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\hr\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\imagetools\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\imagetools\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\image\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\image\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\importcss\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\importcss\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\insertdatetime\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\insertdatetime\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\layer\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\layer\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\legacyoutput\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\legacyoutput\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\link\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\link\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\lists\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\lists\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\media\moxieplayer.swf" />
+    <Content Include="Scripts\tinymce\plugins\media\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\media\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\nonbreaking\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\nonbreaking\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\noneditable\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\noneditable\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\pagebreak\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\pagebreak\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\paste\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\paste\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\preview\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\preview\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\print\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\print\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\save\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\save\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\searchreplace\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\searchreplace\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\spellchecker\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\spellchecker\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\tabfocus\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\tabfocus\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\table\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\table\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\template\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\template\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\textcolor\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\textcolor\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\textpattern\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\textpattern\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\css\visualblocks.css" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\address.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\article.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\aside.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\blockquote.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\div.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\dl.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\figure.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\h1.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\h2.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\h3.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\h4.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\h5.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\h6.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\hgroup.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\ol.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\p.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\pre.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\section.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\img\ul.gif" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\visualchars\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\visualchars\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\wordcount\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\wordcount\plugin.min.js" />
+    <Content Include="Scripts\tinymce\skins\lightgray\content.inline.min.css" />
+    <Content Include="Scripts\tinymce\skins\lightgray\content.min.css" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce-small.svg" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce.svg" />
+    <Content Include="Scripts\tinymce\skins\lightgray\img\anchor.gif" />
+    <Content Include="Scripts\tinymce\skins\lightgray\img\loader.gif" />
+    <Content Include="Scripts\tinymce\skins\lightgray\img\object.gif" />
+    <Content Include="Scripts\tinymce\skins\lightgray\img\trans.gif" />
+    <Content Include="Scripts\tinymce\skins\lightgray\skin.ie7.min.css" />
+    <Content Include="Scripts\tinymce\skins\lightgray\skin.min.css" />
+    <Content Include="Scripts\tinymce\themes\modern\theme.js" />
+    <Content Include="Scripts\tinymce\themes\modern\theme.min.js" />
+    <Content Include="Scripts\tinymce\tinymce.js" />
+    <Content Include="Scripts\tinymce\tinymce.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -1566,53 +2326,66 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Invoices\Create.cshtml" />
-    <Content Include="Views\Invoices\Delete.cshtml" />
-    <Content Include="Views\Invoices\Details.cshtml" />
-    <Content Include="Views\Invoices\Edit.cshtml" />
-    <Content Include="Views\Invoices\Index.cshtml" />
-    <Content Include="Views\Coupons\Create.cshtml" />
-    <Content Include="Views\Coupons\Delete.cshtml" />
-    <Content Include="Views\Coupons\Details.cshtml" />
-    <Content Include="Views\Coupons\Edit.cshtml" />
-    <Content Include="Views\Coupons\Index.cshtml" />
-    <Content Include="Views\Coupons1\Create.cshtml" />
-    <Content Include="Views\Coupons1\Delete.cshtml" />
-    <Content Include="Views\Coupons1\Details.cshtml" />
-    <Content Include="Views\Coupons1\Edit.cshtml" />
-    <Content Include="Views\Coupons1\Index.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Article\Index.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce.woff" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce.ttf" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce.json" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce.eot" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce-small.woff" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce-small.ttf" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce-small.json" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce-small.eot" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\readme.md" />
+    <Content Include="Scripts\tinymce\langs\readme.md" />
     <Content Include="Views\Persons\Create.cshtml" />
     <Content Include="Views\Persons\Delete.cshtml" />
     <Content Include="Views\Persons\Details.cshtml" />
     <Content Include="Views\Persons\Edit.cshtml" />
     <Content Include="Views\Persons\Index.cshtml" />
-    <Content Include="Views\Pizzas\Create.cshtml" />
-    <Content Include="Views\Pizzas\Delete.cshtml" />
-    <Content Include="Views\Pizzas\Details.cshtml" />
-    <Content Include="Views\Pizzas\Edit.cshtml" />
-    <Content Include="Views\Pizzas\Index.cshtml" />
-    <Content Include="Views\MultiLangStrings\Create.cshtml" />
-    <Content Include="Views\MultiLangStrings\Delete.cshtml" />
-    <Content Include="Views\MultiLangStrings\Details.cshtml" />
-    <Content Include="Views\MultiLangStrings\Edit.cshtml" />
-    <Content Include="Views\MultiLangStrings\Index.cshtml" />
-    <Content Include="Views\Translations\Create.cshtml" />
-    <Content Include="Views\Translations\Delete.cshtml" />
-    <Content Include="Views\Translations\Details.cshtml" />
-    <Content Include="Views\Translations\Edit.cshtml" />
-    <Content Include="Views\Translations\Index.cshtml" />
+    <Content Include="Views\Contacts\Create.cshtml" />
+    <Content Include="Views\Contacts\Delete.cshtml" />
+    <Content Include="Views\Contacts\Details.cshtml" />
+    <Content Include="Views\Contacts\Edit.cshtml" />
+    <Content Include="Views\Contacts\Index.cshtml" />
+    <Content Include="Views\Contacts\_CreateEdit.cshtml" />
+    <Content Include="Views\Persons\_CreateEdit.cshtml" />
+    <Content Include="Scripts\jquery-2.2.2.min.map" />
+    <Content Include="Views\Home\ApiDemo.cshtml" />
+    <Content Include="Views\HelperDemo\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.original.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
-    <Folder Include="Views\Language\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="logs\" />
+    <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -1625,19 +2398,30 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Project_Readme.html" />
-    <Content Include="Scripts\jquery-2.2.1.min.map" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{ee2deff1-e12b-4089-886f-27bdd82f4004}</Project>
+      <Project>{FA3FE70D-BEA7-4C7B-940A-7E9CA2C345A6}</Project>
       <Name>DAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataAnnotations\DataAnnotations.csproj">
+      <Project>{2e1eb913-5b0c-4f6b-9f80-6a4ce6c14c15}</Project>
+      <Name>DataAnnotations</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
-      <Project>{2d136789-7e4e-43e1-bd09-3047e0339741}</Project>
+      <Project>{54e9dc6c-c740-4878-b57e-546c09b4e8ca}</Project>
       <Name>Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HtmlHelpers\HtmlHelpers.csproj">
+      <Project>{aa310729-e203-4e3e-8e27-9399868d64d9}</Project>
+      <Name>HtmlHelpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Identity\Identity.csproj">
+      <Project>{5b0755b3-5cf6-4cfb-b328-e152c98e6e22}</Project>
+      <Name>Identity</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Resources\Resources.csproj">
-      <Project>{b281fd3f-84dd-42ad-960a-46fef2d06a5e}</Project>
+      <Project>{7308994f-36c4-49c2-8421-215aff278799}</Project>
       <Name>Resources</Name>
     </ProjectReference>
   </ItemGroup>
@@ -1657,9 +2441,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>11059</DevelopmentServerPort>
+          <DevelopmentServerPort>43467</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:11059/</IISUrl>
+          <IISUrl>https://localhost:44387/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -1673,9 +2457,11 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.1.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.1.1\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.2.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.2.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
   </Target>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

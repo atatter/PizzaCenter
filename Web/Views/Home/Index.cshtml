@@ -1,14 +1,9 @@
-﻿@{
-    ViewBag.Title = @Resources.Common.Home;
+﻿@model Web.ViewModels.HomeIndexViewModel
+@{
+    ViewBag.Title = Resources.Common.ApplicationName;
 }
 
 <div class="jumbotron">
-    <h1>@Resources.Common.WebsiteName</h1>
-    <img src="http://www.dioriospizza.com/assets/images/pizza.png" align="middle" alt="Pizza"/>
-</div>
-
-<div class="row">
-    <div>
-        <h1 align="center">@Resources.Common.News</h1>
-    </div>
+    @Html.Raw(Model.Article.ArticleHeadline)
+    @Html.Raw(Model.Article.ArticleBody)
 </div>

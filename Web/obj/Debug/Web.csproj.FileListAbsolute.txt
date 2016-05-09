@@ -1,245 +1,128 @@
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\ApplicationInsights.config
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\csc.exe
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\csc.exe.config
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\csc.rsp
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\csi.exe
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\csi.rsp
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\Microsoft.CodeAnalysis.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\Microsoft.CSharp.Core.targets
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\System.AppContext.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\System.Collections.Immutable.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\System.Console.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\System.Diagnostics.StackTrace.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\System.IO.FileSystem.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\System.Reflection.Metadata.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\vbc.exe
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\vbc.exe.config
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\vbc.rsp
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\VBCSCompiler.exe
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\roslyn\VBCSCompiler.exe.config
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Web.dll.config
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Web.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Web.pdb
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Antlr3.Runtime.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\DAL.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Domain.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\EntityFramework.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\EntityFramework.SqlServer.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Microsoft.AI.Agent.Intercept.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Microsoft.AI.DependencyCollector.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Microsoft.AI.PerfCounterCollector.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Microsoft.AI.Web.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Microsoft.AI.WindowsServer.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Microsoft.ApplicationInsights.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Microsoft.Web.Infrastructure.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Newtonsoft.Json.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\System.Web.Helpers.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\System.Web.Mvc.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\System.Web.Optimization.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\System.Web.Razor.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\System.Web.WebPages.Deployment.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\System.Web.WebPages.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\System.Web.WebPages.Razor.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\WebGrease.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\DAL.pdb
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Domain.pdb
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Antlr3.Runtime.pdb
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\EntityFramework.xml
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\EntityFramework.SqlServer.xml
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Microsoft.AI.DependencyCollector.xml
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Microsoft.AI.Web.xml
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Microsoft.AI.WindowsServer.xml
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Microsoft.ApplicationInsights.xml
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\Newtonsoft.Json.xml
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\System.Web.Helpers.xml
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\System.Web.Mvc.xml
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\System.Web.Optimization.xml
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\System.Web.Razor.xml
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\System.Web.WebPages.xml
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\System.Web.WebPages.Deployment.xml
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\bin\System.Web.WebPages.Razor.xml
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\obj\Debug\Web.dll
-c:\users\aleks\documents\visual studio 2015\Projects\PizzaWeb\Web\obj\Debug\Web.pdb
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\ApplicationInsights.config
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\csc.exe
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\csc.exe.config
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\csc.rsp
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\csi.exe
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\csi.rsp
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\System.AppContext.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\System.Console.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\vbc.exe
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\vbc.exe.config
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\vbc.rsp
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\VBCSCompiler.exe
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Web.dll.config
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Web.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Web.pdb
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Antlr3.Runtime.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\DAL.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Domain.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\EntityFramework.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\EntityFramework.SqlServer.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Microsoft.AI.DependencyCollector.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Microsoft.AI.Web.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Microsoft.AI.WindowsServer.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Microsoft.ApplicationInsights.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Newtonsoft.Json.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Ninject.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Ninject.Web.Common.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Ninject.Web.Mvc.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\System.Web.Helpers.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\System.Web.Mvc.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\System.Web.Optimization.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\System.Web.Razor.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\System.Web.WebPages.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\System.Web.WebPages.Razor.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\WebActivatorEx.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\WebGrease.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\DAL.pdb
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Domain.pdb
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Antlr3.Runtime.pdb
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\EntityFramework.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\EntityFramework.SqlServer.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Microsoft.AI.Web.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Microsoft.ApplicationInsights.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Newtonsoft.Json.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Ninject.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Ninject.Web.Common.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\Ninject.Web.Mvc.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\System.Web.Helpers.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\System.Web.Mvc.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\System.Web.Optimization.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\System.Web.Razor.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\System.Web.WebPages.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\bin\System.Web.WebPages.Razor.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\obj\Debug\Web.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter-master\Web\obj\Debug\Web.pdb
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\ApplicationInsights.config
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\csc.exe
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\csc.exe.config
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\csc.rsp
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\csi.exe
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\csi.rsp
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\System.AppContext.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\System.Console.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\vbc.exe
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\vbc.exe.config
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\vbc.rsp
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\VBCSCompiler.exe
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Web.dll.config
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Web.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Web.pdb
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Antlr3.Runtime.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\DAL.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Domain.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\EntityFramework.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\EntityFramework.SqlServer.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Microsoft.AI.DependencyCollector.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Microsoft.AI.Web.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Microsoft.AI.WindowsServer.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Microsoft.ApplicationInsights.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Newtonsoft.Json.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Ninject.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Ninject.Web.Common.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Ninject.Web.Mvc.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Resources.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.Helpers.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.Mvc.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.Optimization.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.Razor.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.WebPages.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.WebPages.Razor.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\WebActivatorEx.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\WebGrease.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\DAL.pdb
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Domain.pdb
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Resources.pdb
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Antlr3.Runtime.pdb
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\EntityFramework.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\EntityFramework.SqlServer.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Microsoft.AI.Web.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Microsoft.ApplicationInsights.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Newtonsoft.Json.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Ninject.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Ninject.Web.Common.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\Ninject.Web.Mvc.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.Helpers.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.Mvc.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.Optimization.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.Razor.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.WebPages.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\System.Web.WebPages.Razor.xml
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\bin\et\Resources.resources.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\obj\Debug\Web.dll
-C:\Users\Aleks\Source\Repos\PizzaCenter\Web\obj\Debug\Web.pdb
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\csc.exe
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\csc.exe.config
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\csc.rsp
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\csi.exe
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\csi.rsp
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\System.AppContext.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\vbc.exe
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\vbc.exe.config
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\vbc.rsp
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\VBCSCompiler.exe
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\NLog.config
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Web.dll.config
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Web.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Web.pdb
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Antlr3.Runtime.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\DAL.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\DataAnnotations.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Domain.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\EntityFramework.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\HtmlHelpers.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Identity.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Owin.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Owin.Security.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Threading.Tasks.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Newtonsoft.Json.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Ninject.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Ninject.Web.Common.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Ninject.Web.Mvc.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Ninject.Web.WebApi.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Ninject.Web.WebApi.WebHost.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\NLog.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\NLog.Web.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Owin.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Resources.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Net.Http.Formatting.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.Helpers.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.Http.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.Http.Owin.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.Http.WebHost.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.Mvc.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.Optimization.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.Razor.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.WebPages.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\WebActivatorEx.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\WebGrease.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\X.PagedList.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\X.PagedList.Mvc.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\DAL.pdb
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\DataAnnotations.pdb
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Domain.pdb
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\HtmlHelpers.pdb
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Identity.pdb
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Resources.pdb
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Antlr3.Runtime.pdb
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Threading.Tasks.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Newtonsoft.Json.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Ninject.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Ninject.Web.Common.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Ninject.Web.Mvc.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Ninject.Web.WebApi.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Ninject.Web.WebApi.WebHost.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\NLog.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\NLog.Web.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Net.Http.Formatting.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.Helpers.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.Http.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.Http.WebHost.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.Mvc.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.Optimization.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.Razor.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.WebPages.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\EntityFramework.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\EntityFramework.SqlServer.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Owin.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Owin.Security.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\System.Web.Http.Owin.xml
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\bin\et\Resources.resources.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\obj\Debug\Web.dll
+C:\Users\Aleks\Documents\Learn2Code\pizzaweb\ASP.NET-BaseApps-master\ContactApp\Web\obj\Debug\Web.pdb
