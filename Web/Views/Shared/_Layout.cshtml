@@ -42,7 +42,7 @@
                 <ul>
                     <li>@Html.ActionLink("Avaleht", "Index", "Home", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("Meist", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("Menüü", "Index", "Contacts", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Menüü", "Index", "Pizzas", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("Uudised", "Index", "Home", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("Kontakt", "Index", "Home", new { area = "" }, null)</li>
                 </ul>
@@ -50,9 +50,7 @@
         </div>
     </div>
     <div class="content">
-        <div class="container">
-           @RenderBody() 
-        </div>    
+        @RenderBody()    
     </div>
     <div class="footer">
         <div class="container">

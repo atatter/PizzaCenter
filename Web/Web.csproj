@@ -1315,6 +1315,7 @@
     <Content Include="Content\img\avatar2.png" />
     <Content Include="Content\img\avatar3.png" />
     <Content Include="Content\img\avatar5.png" />
+    <Content Include="Content\img\bg-menu.png" />
     <Content Include="Content\img\boxed-bg.jpg" />
     <Content Include="Content\img\boxed-bg.png" />
     <Content Include="Content\img\credit\american-express.png" />

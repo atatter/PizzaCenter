@@ -4,30 +4,26 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Menüü</h2>
+<div class="bg-content">
+    <div class="container">
+        <h1>Menüü</h1>
 
-<p>
-    
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.PizzaDescription.Value)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-    </tr>
+        <h2>Pizza</h2>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.PizzaDescription.Value)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-    </tr>
-}
+        <img src="http://marijazaric.com/leonardo-pizza/img/photo-menu2.png" />
 
-</table>
+
+
+        @foreach (var item in Model)
+        {
+            <div class="pizza-item">
+                <div class="heading">
+                    <h3>@Html.DisplayFor(modelItem => item.Name)</h3>
+                </div>
+                <div class="description">
+                    <p>@Html.DisplayFor(modelItem => item.PizzaDescription.Value)</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

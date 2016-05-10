@@ -143,3 +143,58 @@ section .white-area a:hover {
     text-transform: capitalize;
     text-align: center;
 }
+
+/* PIZZA MENU PAGE STYLE */
+
+.bg-content {
+    background-color: #f3f3f3;
+    background-image: url("/Content/img/bg-menu.png");
+    background-position: center top;
+    background-size: cover;
+}
+
+.bg-content h1 {
+    text-align: center;
+}
+
+.bg-content h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.bg-content .container img {
+    margin: 0 auto;
+    width: 700px;
+    height: auto;
+    display: block;
+}
+
+.bg-content .container .pizza-item {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.bg-content .container .pizza-item:last-child {
+    margin-bottom: 50px;
+}
+
+.bg-content .container .pizza-item .heading {
+    border-bottom: 1px dotted gray;
+    padding: 50px 0 15px 0;
+}
+
+.bg-content .container .pizza-item .heading h3 {
+    margin: 0;    
+    color: #e03800;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.bg-content .container .pizza-item .description {
+    padding-top: 15px;
+}
+
+.bg-content .container .pizza-item .description p {
+    font-size: 15px;
+    color: #393b3d;
+}
