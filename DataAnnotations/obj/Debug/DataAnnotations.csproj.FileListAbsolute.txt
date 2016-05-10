@@ -22,3 +22,14 @@ C:\Users\Aleks\Source\GitProjects\PizzaCenter\DataAnnotations\bin\Debug\NLog.xml
 C:\Users\Aleks\Source\GitProjects\PizzaCenter\DataAnnotations\obj\Debug\DataAnnotations.csprojResolveAssemblyReference.cache
 C:\Users\Aleks\Source\GitProjects\PizzaCenter\DataAnnotations\obj\Debug\DataAnnotations.dll
 C:\Users\Aleks\Source\GitProjects\PizzaCenter\DataAnnotations\obj\Debug\DataAnnotations.pdb
+C:\Users\Aleks\Source\Repos\PizzaCenter\DataAnnotations\bin\Debug\DataAnnotations.dll.config
+C:\Users\Aleks\Source\Repos\PizzaCenter\DataAnnotations\bin\Debug\DataAnnotations.dll
+C:\Users\Aleks\Source\Repos\PizzaCenter\DataAnnotations\bin\Debug\DataAnnotations.pdb
+C:\Users\Aleks\Source\Repos\PizzaCenter\DataAnnotations\bin\Debug\EntityFramework.dll
+C:\Users\Aleks\Source\Repos\PizzaCenter\DataAnnotations\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aleks\Source\Repos\PizzaCenter\DataAnnotations\bin\Debug\NLog.dll
+C:\Users\Aleks\Source\Repos\PizzaCenter\DataAnnotations\bin\Debug\EntityFramework.xml
+C:\Users\Aleks\Source\Repos\PizzaCenter\DataAnnotations\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aleks\Source\Repos\PizzaCenter\DataAnnotations\bin\Debug\NLog.xml
+C:\Users\Aleks\Source\Repos\PizzaCenter\DataAnnotations\obj\Debug\DataAnnotations.dll
+C:\Users\Aleks\Source\Repos\PizzaCenter\DataAnnotations\obj\Debug\DataAnnotations.pdb

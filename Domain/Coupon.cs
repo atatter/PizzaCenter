@@ -12,8 +12,10 @@ namespace Domain
         public int CouponId { get; set; }
         //Sisu nagu kehtivusaeg, kas ühekordne, kas kasutatud jne
         [DataType(DataType.DateTime)]
+        [Required(ErrorMessageResourceName = "FieldIsRequired", ErrorMessageResourceType = typeof(Resources.Common))]
         public DateTime StartDate { get; set; }
         [DataType(DataType.DateTime)]
+        [Required(ErrorMessageResourceName = "FieldIsRequired", ErrorMessageResourceType = typeof(Resources.Common))]
         public DateTime EndDate { get; set; }
         public bool IsReusable { get; set; }
         public bool HasBeenUsed { get; set; }

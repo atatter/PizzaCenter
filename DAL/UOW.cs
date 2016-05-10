@@ -66,6 +66,25 @@ namespace DAL
         public IUserClaimIntRepository UserClaimsInt => GetRepo<IUserClaimIntRepository>();
         public IUserLoginIntRepository UserLoginsInt => GetRepo<IUserLoginIntRepository>();
 
+        public IEFRepository<AdditionalProduct> AdditionalProducts => GetStandardRepo<AdditionalProduct>();
+        public IEFRepository<AdditionalProductInOrder> AdditionalProductInOrders => GetStandardRepo<AdditionalProductInOrder>();
+        public IEFRepository<Component> Components => GetStandardRepo<Component>();
+        public IEFRepository<ComponentAsTopping> ComponentAsToppings => GetStandardRepo<ComponentAsTopping>();
+        public IEFRepository<ComponentInPizza> ComponentInPizzas => GetStandardRepo<ComponentInPizza>();
+        public IEFRepository<Coupon> Coupons => GetStandardRepo<Coupon>();
+        public IEFRepository<Invoice> Invoices => GetStandardRepo<Invoice>();
+        public IEFRepository<Order> Orders => GetStandardRepo<Order>();
+        public IEFRepository<PaymentMethod> PaymentMethods => GetStandardRepo<PaymentMethod>();
+        public IEFRepository<Pizza> Pizzas => GetStandardRepo<Pizza>();
+        public IEFRepository<PizzaInOrder> PizzaInOrders => GetStandardRepo<PizzaInOrder>();
+        public IEFRepository<PizzaPriceBySize> PizzaPriceBySizes => GetStandardRepo<PizzaPriceBySize>();
+        public IEFRepository<PizzaSize> PizzaSizes => GetStandardRepo<PizzaSize>();
+        public IEFRepository<Price> Prices => GetStandardRepo<Price>();
+        public IEFRepository<PriceType> PriceTypes => GetStandardRepo<PriceType>();
+        public IEFRepository<Topping> Toppings => GetStandardRepo<Topping>();
+        public IEFRepository<ToppingInPizzaOrder> ToppingInPizzaOrders => GetStandardRepo<ToppingInPizzaOrder>();
+
+
         // calling standard EF repo provider
         private IEFRepository<T> GetStandardRepo<T>() where T : class
         {
