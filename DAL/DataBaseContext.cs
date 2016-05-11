@@ -34,8 +34,8 @@ namespace DAL
             _logger.Debug("InstanceId: " + _instanceId);
 
             //Database.SetInitializer(new MigrateDatabaseToLatestVersion<DataBaseContext,Migrations.Configuration>());
-            //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<DataBaseContext>());
-            Database.SetInitializer(new DatabaseInitializer());
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<DataBaseContext>());
+            //Database.SetInitializer(new DatabaseInitializer());
 
 
 #if DEBUG

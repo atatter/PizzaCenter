@@ -234,6 +234,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\ArticlesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ComponentsController.cs" />
     <Compile Include="Areas\Admin\Controllers\ContactTypesController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\MultiLangStringsController.cs" />
@@ -246,6 +247,7 @@
     <Compile Include="Areas\Admin\Controllers\UserRolesController.cs" />
     <Compile Include="Areas\Admin\Controllers\UsersController.cs" />
     <Compile Include="Areas\Admin\ViewModels\ArticleViewModels.cs" />
+    <Compile Include="Areas\Admin\ViewModels\ComponentsViewModel.cs" />
     <Compile Include="Areas\Admin\ViewModels\ContactTypeViewModels.cs" />
     <Compile Include="Areas\Admin\ViewModels\PizzaViewModels.cs" />
     <Compile Include="Areas\Admin\ViewModels\SystemLogViewModels.cs" />
@@ -2160,6 +2162,8 @@
     <Content Include="Areas\Admin\Views\Pizzas\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Pizzas\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Pizzas\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Components\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Components\Create.cshtml" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>
