@@ -61,11 +61,20 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MyApplication.
+        ///   Looks up a localized string similar to Pizza Center.
         /// </summary>
         public static string ApplicationName {
             get {
                 return ResourceManager.GetString("ApplicationName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PC.
+        /// </summary>
+        public static string ApplicationNameMini {
+            get {
+                return ResourceManager.GetString("ApplicationNameMini", resourceCulture);
             }
         }
         

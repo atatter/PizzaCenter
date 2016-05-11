@@ -49,8 +49,7 @@ namespace Web
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/bower_components/bootstrap/dist/css/bootstrap.css",
                 "~/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css",
-                "~/Content/font-awesome-4.6.1/css/font-awesome.css",
-                "~/Content/main.css"
+                "~/Content/font-awesome-4.6.1/css/font-awesome.css"
                 ));
 
 
@@ -58,6 +57,10 @@ namespace Web
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                    "~/Scripts/app/app.js"));
 
+            // MainPage stylebundle
+            bundles.Add(new StyleBundle("~/Content/mainpage").Include(
+                "~/Content/main.css"
+                ));
 
             // AdminLTE stylebundle
             bundles.Add(new StyleBundle("~/Content/adminltecss").Include(

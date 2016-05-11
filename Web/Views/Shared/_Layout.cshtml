@@ -26,6 +26,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>@titleTag</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/mainpage")
     @Scripts.Render("~/bundles/modernizr")
     <script type="text/javascript">
         var currentCultureCode = '@currentCultureCode';
@@ -42,7 +43,7 @@
                 <ul>
                     <li>@Html.ActionLink("Avaleht", "Index", "Home", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("Meist", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("Menüü", "Index", "Pizzas", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Menüü", "Index", "Menu", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("Uudised", "Index", "Home", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("Kontakt", "Index", "Home", new { area = "" }, null)</li>
                 </ul>

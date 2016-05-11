@@ -237,6 +237,7 @@
     <Compile Include="Areas\Admin\Controllers\ContactTypesController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\MultiLangStringsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PizzasController.cs" />
     <Compile Include="Areas\Admin\Controllers\RolesController.cs" />
     <Compile Include="Areas\Admin\Controllers\SystemLogController.cs" />
     <Compile Include="Areas\Admin\Controllers\TranslationsController.cs" />
@@ -246,6 +247,7 @@
     <Compile Include="Areas\Admin\Controllers\UsersController.cs" />
     <Compile Include="Areas\Admin\ViewModels\ArticleViewModels.cs" />
     <Compile Include="Areas\Admin\ViewModels\ContactTypeViewModels.cs" />
+    <Compile Include="Areas\Admin\ViewModels\PizzaViewModels.cs" />
     <Compile Include="Areas\Admin\ViewModels\SystemLogViewModels.cs" />
     <Compile Include="Areas\Admin\ViewModels\TranslationsViewModels.cs" />
     <Compile Include="Areas\Admin\ViewModels\UserRoleViewModels.cs" />
@@ -287,9 +289,9 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LanguageController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\PersonsController.cs" />
     <Compile Include="Controllers\Api\ValuesController.cs" />
-    <Compile Include="Controllers\Temporary\PizzasController.cs" />
     <Compile Include="Filters\RequireHttpsAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -2153,6 +2155,11 @@
     <Content Include="Content\font-awesome-4.6.1\scss\_stacked.scss" />
     <Content Include="Content\font-awesome-4.6.1\scss\_variables.scss" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\Pizzas\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Pizzas\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Pizzas\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Pizzas\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Pizzas\Index.cshtml" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -2394,13 +2401,10 @@
     <Content Include="Views\Coupons\Details.cshtml" />
     <Content Include="Views\Coupons\Edit.cshtml" />
     <Content Include="Views\Coupons\Index.cshtml" />
-    <Content Include="Views\Pizzas\Create.cshtml" />
-    <Content Include="Views\Pizzas\Delete.cshtml" />
-    <Content Include="Views\Pizzas\Details.cshtml" />
-    <Content Include="Views\Pizzas\Edit.cshtml" />
-    <Content Include="Views\Pizzas\Index.cshtml" />
+    <Content Include="Views\Menu\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Controllers\Temporary\" />
     <Folder Include="logs\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
