@@ -236,6 +236,7 @@
     <Compile Include="Areas\Admin\Controllers\ArticlesController.cs" />
     <Compile Include="Areas\Admin\Controllers\ComponentsController.cs" />
     <Compile Include="Areas\Admin\Controllers\ContactTypesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CouponsController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\MultiLangStringsController.cs" />
     <Compile Include="Areas\Admin\Controllers\PaymentMethodsController.cs" />
@@ -252,6 +253,7 @@
     <Compile Include="Areas\Admin\ViewModels\ArticleViewModels.cs" />
     <Compile Include="Areas\Admin\ViewModels\ComponentsViewModel.cs" />
     <Compile Include="Areas\Admin\ViewModels\ContactTypeViewModels.cs" />
+    <Compile Include="Areas\Admin\ViewModels\CouponsViewModels.cs" />
     <Compile Include="Areas\Admin\ViewModels\PaymentMethodsViewModels.cs" />
     <Compile Include="Areas\Admin\ViewModels\PizzaSizesVM.cs" />
     <Compile Include="Areas\Admin\ViewModels\PizzaViewModels.cs" />
@@ -2189,6 +2191,11 @@
     <Content Include="Areas\Admin\Views\Components\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\Components\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Translations\_CreateEdit.cshtml" />
+    <Content Include="Areas\Admin\Views\Coupons\_CreateEdit.cshtml" />
+    <Content Include="Areas\Admin\Views\Coupons\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Coupons\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Coupons\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Coupons\Index.cshtml" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>

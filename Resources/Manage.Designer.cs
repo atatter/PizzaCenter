@@ -106,6 +106,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add a coupon.
+        /// </summary>
+        public static string Coupons_Add {
+            get {
+                return ResourceManager.GetString("Coupons_Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Coupons.
+        /// </summary>
+        public static string Coupons_Header {
+            get {
+                return ResourceManager.GetString("Coupons_Header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Change your account settings.
         /// </summary>
         public static string Index_ChangeYourAccountSettings {

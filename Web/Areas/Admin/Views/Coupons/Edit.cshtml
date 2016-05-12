@@ -1,5 +1,6 @@
 ﻿@model Web.Areas.Admin.ViewModels.CouponsCreateEditViewModel
 
+
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
@@ -12,8 +13,7 @@
         <!-- form start -->
         <form role="form">
             <div class="box-body">
-                @Html.HiddenFor(model => model.Component.ComponentNameId)
-                @Html.HiddenFor(model => model.Component.ComponentId)
+                @Html.HiddenFor(model => model.Coupon.CouponId)
                 @Html.Partial("_CreateEdit", Model)
             </div>
             <!-- /.box-body -->

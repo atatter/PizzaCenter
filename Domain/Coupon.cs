@@ -10,6 +10,9 @@ namespace Domain
     public class Coupon
     {
         public int CouponId { get; set; }
+        //Kupongi kood, mille peaks kasutamiseks sisse trükkima
+        [MaxLength(64)]
+        public string Code { get; set; }
         //Sisu nagu kehtivusaeg, kas ühekordne, kas kasutatud jne
         [DataType(DataType.DateTime)]
         [Required(ErrorMessageResourceName = "FieldIsRequired", ErrorMessageResourceType = typeof(Resources.Common))]

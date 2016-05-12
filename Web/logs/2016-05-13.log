@@ -1,0 +1,323 @@
+2016-05-13 00:00:02.5736 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: ec54fd73-47d1-4b3b-891f-e77aebeb9d26
+2016-05-13 00:00:02.5736 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 39e20b62-9703-4446-af83-c1761112bca7
+2016-05-13 00:00:02.5736 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 12c545de-e7d6-4016-aa26-f6310bbf982b
+2016-05-13 00:00:02.5820 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 78aa85f3-1af5-4fb5-918d-9a7bcbaa9194
+2016-05-13 00:00:02.5820 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 09244615-9b92-4445-80fe-c54467ca690a
+2016-05-13 00:00:02.5820 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: e8cbe780-24e6-40c8-9aa6-aa80459c4452 dbSet: System.Data.Entity.DbSet`1[Domain.Coupon]
+2016-05-13 00:00:02.5820 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/13/2016 12:00:02 AM +03:00
+2016-05-13 00:00:02.5820 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT 
+    [Extent1].[CouponId] AS [CouponId], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[StartDate] AS [StartDate], 
+    [Extent1].[EndDate] AS [EndDate], 
+    [Extent1].[IsReusable] AS [IsReusable], 
+    [Extent1].[HasBeenUsed] AS [HasBeenUsed]
+    FROM [dbo].[Coupon] AS [Extent1]
+2016-05-13 00:00:02.5820 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:00:02.5820 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/13/2016 12:00:02 AM +03:00
+2016-05-13 00:00:02.5980 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-13 00:00:02.5980 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:00:02.5980 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/13/2016 12:00:02 AM +03:00
+2016-05-13 00:00:02.5980 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 78aa85f3-1af5-4fb5-918d-9a7bcbaa9194
+2016-05-13 00:00:02.5980 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: ec54fd73-47d1-4b3b-891f-e77aebeb9d26
+2016-05-13 00:00:02.5980 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 39e20b62-9703-4446-af83-c1761112bca7
+2016-05-13 00:00:02.6133 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 12c545de-e7d6-4016-aa26-f6310bbf982b Disposing:True
+2016-05-13 00:00:02.6133 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 78aa85f3-1af5-4fb5-918d-9a7bcbaa9194
+2016-05-13 00:00:04.0378 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 7c56e785-cedd-4a5a-bde1-229883f68704
+2016-05-13 00:00:04.0378 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: e482f134-578e-4a43-bcdd-31e8801a897f
+2016-05-13 00:00:04.0378 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 1af20c46-a399-40db-b1af-a45aa057d456
+2016-05-13 00:00:04.0378 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 5ed88779-9e80-47e9-932e-2379fe850b20
+2016-05-13 00:00:04.0378 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 324251c4-efab-4afe-9477-77b6a5a2f77c
+2016-05-13 00:00:04.0378 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 80d50583-2dc5-491a-acce-ac6e348e62f1 dbSet: System.Data.Entity.DbSet`1[Domain.Coupon]
+2016-05-13 00:00:04.0523 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/13/2016 12:00:04 AM +03:00
+2016-05-13 00:00:04.0523 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT TOP (2) 
+    [Extent1].[CouponId] AS [CouponId], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[StartDate] AS [StartDate], 
+    [Extent1].[EndDate] AS [EndDate], 
+    [Extent1].[IsReusable] AS [IsReusable], 
+    [Extent1].[HasBeenUsed] AS [HasBeenUsed]
+    FROM [dbo].[Coupon] AS [Extent1]
+    WHERE [Extent1].[CouponId] = @p0
+2016-05-13 00:00:04.0523 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:00:04.0523 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- p0: '1' (Type = Int32)
+2016-05-13 00:00:04.0523 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/13/2016 12:00:04 AM +03:00
+2016-05-13 00:00:04.0523 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-13 00:00:04.0658 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:00:04.0658 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/13/2016 12:00:04 AM +03:00
+2016-05-13 00:00:06.4917 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 5ed88779-9e80-47e9-932e-2379fe850b20
+2016-05-13 00:00:06.4917 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 7c56e785-cedd-4a5a-bde1-229883f68704
+2016-05-13 00:00:06.4917 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: e482f134-578e-4a43-bcdd-31e8801a897f
+2016-05-13 00:00:06.4917 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 1af20c46-a399-40db-b1af-a45aa057d456 Disposing:True
+2016-05-13 00:00:06.4917 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 5ed88779-9e80-47e9-932e-2379fe850b20
+2016-05-13 00:00:07.6505 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 8a1d3278-f496-4459-943e-ab3c478f97e2
+2016-05-13 00:00:07.6505 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: f33a589b-a634-4ea0-8a97-6b7840381851
+2016-05-13 00:00:07.6505 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 8aabfa7f-f4ac-432e-a9bf-bb7360c2c790
+2016-05-13 00:00:07.6505 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 24391182-c347-4510-9de1-aa93f9cb71e5
+2016-05-13 00:00:07.6610 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 5e2ed17a-6c34-4e4f-ab25-f8ee9fd8b5d8
+2016-05-13 00:00:07.6610 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 00b7c48c-2005-425d-b5cc-610c64d88fe1 dbSet: System.Data.Entity.DbSet`1[Domain.Coupon]
+2016-05-13 00:00:07.6610 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/13/2016 12:00:07 AM +03:00
+2016-05-13 00:00:07.6610 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT TOP (2) 
+    [Extent1].[CouponId] AS [CouponId], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[StartDate] AS [StartDate], 
+    [Extent1].[EndDate] AS [EndDate], 
+    [Extent1].[IsReusable] AS [IsReusable], 
+    [Extent1].[HasBeenUsed] AS [HasBeenUsed]
+    FROM [dbo].[Coupon] AS [Extent1]
+    WHERE [Extent1].[CouponId] = @p0
+2016-05-13 00:00:07.6610 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:00:07.6764 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- p0: '1' (Type = Int32)
+2016-05-13 00:00:07.6764 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/13/2016 12:00:07 AM +03:00
+2016-05-13 00:00:07.6764 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-13 00:00:07.6764 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:00:07.6764 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/13/2016 12:00:07 AM +03:00
+2016-05-13 00:00:07.6764 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/13/2016 12:00:07 AM +03:00
+2016-05-13 00:00:07.6919 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Started transaction at 5/13/2016 12:00:07 AM +03:00
+2016-05-13 00:00:07.6919 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+DELETE [dbo].[Coupon]
+WHERE ([CouponId] = @0)
+2016-05-13 00:00:07.6919 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:00:07.6919 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @0: '1' (Type = Int32)
+2016-05-13 00:00:07.6919 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/13/2016 12:00:07 AM +03:00
+2016-05-13 00:00:07.6919 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: 1
+2016-05-13 00:00:07.7075 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:00:07.7075 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Committed transaction at 5/13/2016 12:00:07 AM +03:00
+2016-05-13 00:00:07.7075 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/13/2016 12:00:07 AM +03:00
+2016-05-13 00:00:07.7075 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 24391182-c347-4510-9de1-aa93f9cb71e5
+2016-05-13 00:00:07.7075 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 8a1d3278-f496-4459-943e-ab3c478f97e2
+2016-05-13 00:00:07.7075 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: f33a589b-a634-4ea0-8a97-6b7840381851
+2016-05-13 00:00:07.7238 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 8aabfa7f-f4ac-432e-a9bf-bb7360c2c790 Disposing:True
+2016-05-13 00:00:07.7238 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 24391182-c347-4510-9de1-aa93f9cb71e5
+2016-05-13 00:00:07.7238 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 7caa556d-96ac-498e-9fa3-18bb2047e20a
+2016-05-13 00:00:07.7238 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 5868b114-e6de-4c89-a55f-5c1c3adf5bbb
+2016-05-13 00:00:07.7238 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 6b07b600-b675-4186-8417-4122262acb14
+2016-05-13 00:00:07.7378 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 8d0a1153-18d7-42ba-8994-dbda6f1ede12
+2016-05-13 00:00:07.7378 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: e8b9e232-8a71-48ec-8238-48cd9d05b80e
+2016-05-13 00:00:07.7378 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: aa5606a4-f5bf-48d2-a9dd-c2b2fc928d94 dbSet: System.Data.Entity.DbSet`1[Domain.Coupon]
+2016-05-13 00:00:07.7378 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/13/2016 12:00:07 AM +03:00
+2016-05-13 00:00:07.7378 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT 
+    [Extent1].[CouponId] AS [CouponId], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[StartDate] AS [StartDate], 
+    [Extent1].[EndDate] AS [EndDate], 
+    [Extent1].[IsReusable] AS [IsReusable], 
+    [Extent1].[HasBeenUsed] AS [HasBeenUsed]
+    FROM [dbo].[Coupon] AS [Extent1]
+2016-05-13 00:00:07.7378 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:00:07.7378 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/13/2016 12:00:07 AM +03:00
+2016-05-13 00:00:07.7548 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-13 00:00:07.7548 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:00:07.7548 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/13/2016 12:00:07 AM +03:00
+2016-05-13 00:00:07.7548 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 8d0a1153-18d7-42ba-8994-dbda6f1ede12
+2016-05-13 00:00:07.7548 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 7caa556d-96ac-498e-9fa3-18bb2047e20a
+2016-05-13 00:00:07.7548 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 5868b114-e6de-4c89-a55f-5c1c3adf5bbb
+2016-05-13 00:00:07.7705 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 6b07b600-b675-4186-8417-4122262acb14 Disposing:True
+2016-05-13 00:00:07.7705 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 8d0a1153-18d7-42ba-8994-dbda6f1ede12
+2016-05-13 00:00:09.7579 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: ddafd192-6919-4cbc-be99-a55d9420071c
+2016-05-13 00:00:09.7579 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 91405041-74ac-46ac-9780-1cf50ce58d82
+2016-05-13 00:00:09.7579 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 0ca6a789-74e6-4bd9-a79d-c4b04739261c
+2016-05-13 00:00:09.7579 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 9fb24204-0449-4142-8224-3b4d841b90fb
+2016-05-13 00:00:09.7579 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 789418a4-8c09-40db-a76c-d558dfec881e
+2016-05-13 00:00:09.7741 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 9fb24204-0449-4142-8224-3b4d841b90fb
+2016-05-13 00:00:09.7741 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: ddafd192-6919-4cbc-be99-a55d9420071c
+2016-05-13 00:00:09.7741 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 91405041-74ac-46ac-9780-1cf50ce58d82
+2016-05-13 00:00:09.7741 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 0ca6a789-74e6-4bd9-a79d-c4b04739261c Disposing:True
+2016-05-13 00:00:09.7741 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 9fb24204-0449-4142-8224-3b4d841b90fb
+2016-05-13 00:01:43.0300 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: faf97a39-9fb2-43bd-a943-637d9b897a3e
+2016-05-13 00:01:43.0300 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 9b04427f-315d-4141-a3e8-3510dfd71a29
+2016-05-13 00:01:43.0345 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 7239b31b-2889-4f05-ac94-a053c16815c4
+2016-05-13 00:01:43.0345 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 2e734afb-5e8b-432e-ad49-4ebe87b128a1
+2016-05-13 00:01:43.0345 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: af04a332-d034-462e-a693-9a0fab1d0e32
+2016-05-13 00:01:43.0345 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 35ca5b1c-893a-47a3-903a-c83fb944623e dbSet: System.Data.Entity.DbSet`1[Domain.Coupon]
+2016-05-13 00:01:43.0345 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/13/2016 12:01:43 AM +03:00
+2016-05-13 00:01:43.0345 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Started transaction at 5/13/2016 12:01:43 AM +03:00
+2016-05-13 00:01:43.0524 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+INSERT [dbo].[Coupon]([Code], [StartDate], [EndDate], [IsReusable], [HasBeenUsed])
+VALUES (@0, @1, @2, @3, @4)
+SELECT [CouponId]
+FROM [dbo].[Coupon]
+WHERE @@ROWCOUNT > 0 AND [CouponId] = scope_identity()
+2016-05-13 00:01:43.0524 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:01:43.0524 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @0: 'SUVI2016' (Type = String, Size = 64)
+2016-05-13 00:01:43.0524 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @1: '6/1/2016 12:00:00 AM' (Type = DateTime2)
+2016-05-13 00:01:43.0524 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @2: '6/24/2016 12:00:00 AM' (Type = DateTime2)
+2016-05-13 00:01:43.0524 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @3: 'False' (Type = Boolean)
+2016-05-13 00:01:43.0674 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @4: 'True' (Type = Boolean)
+2016-05-13 00:01:43.0674 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/13/2016 12:01:43 AM +03:00
+2016-05-13 00:01:43.0674 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-13 00:01:43.0674 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:01:43.0674 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Committed transaction at 5/13/2016 12:01:43 AM +03:00
+2016-05-13 00:01:43.0674 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/13/2016 12:01:43 AM +03:00
+2016-05-13 00:01:43.0831 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 2e734afb-5e8b-432e-ad49-4ebe87b128a1
+2016-05-13 00:01:43.0831 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: faf97a39-9fb2-43bd-a943-637d9b897a3e
+2016-05-13 00:01:43.0831 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 9b04427f-315d-4141-a3e8-3510dfd71a29
+2016-05-13 00:01:43.0831 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 7239b31b-2889-4f05-ac94-a053c16815c4 Disposing:True
+2016-05-13 00:01:43.0831 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 2e734afb-5e8b-432e-ad49-4ebe87b128a1
+2016-05-13 00:01:43.0976 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 9db3da60-231d-4fae-a27f-e4186ff9a8eb
+2016-05-13 00:01:43.0976 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 58968e00-29f8-4804-a515-9d4522dd7978
+2016-05-13 00:01:43.0976 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 80096b7a-b0cb-4396-bd17-06822a2054f4
+2016-05-13 00:01:43.0976 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 4e9b0b8d-2408-4819-8de3-6b7aee9193a6
+2016-05-13 00:01:43.0976 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 7f70880c-603a-4dc3-90ab-b2ab2e820177
+2016-05-13 00:01:43.0976 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 5992af56-c8f8-4b1b-b4fe-941592ea2e9c dbSet: System.Data.Entity.DbSet`1[Domain.Coupon]
+2016-05-13 00:01:43.1126 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/13/2016 12:01:43 AM +03:00
+2016-05-13 00:01:43.1126 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT 
+    [Extent1].[CouponId] AS [CouponId], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[StartDate] AS [StartDate], 
+    [Extent1].[EndDate] AS [EndDate], 
+    [Extent1].[IsReusable] AS [IsReusable], 
+    [Extent1].[HasBeenUsed] AS [HasBeenUsed]
+    FROM [dbo].[Coupon] AS [Extent1]
+2016-05-13 00:01:43.1126 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:01:43.1126 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/13/2016 12:01:43 AM +03:00
+2016-05-13 00:01:43.1126 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-13 00:01:43.1126 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:01:43.1126 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/13/2016 12:01:43 AM +03:00
+2016-05-13 00:01:43.1321 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 4e9b0b8d-2408-4819-8de3-6b7aee9193a6
+2016-05-13 00:01:43.1321 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 9db3da60-231d-4fae-a27f-e4186ff9a8eb
+2016-05-13 00:01:43.1321 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 58968e00-29f8-4804-a515-9d4522dd7978
+2016-05-13 00:01:43.1321 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 80096b7a-b0cb-4396-bd17-06822a2054f4 Disposing:True
+2016-05-13 00:01:43.1321 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 4e9b0b8d-2408-4819-8de3-6b7aee9193a6
+2016-05-13 00:01:45.2984 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: d806ca60-fe12-48ab-94d1-bae84dc4bacc
+2016-05-13 00:01:45.3019 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: fd11dadb-63ff-4f70-a5a2-69290457f417
+2016-05-13 00:01:45.3019 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 09f24003-2548-41fb-99cc-314c9802129b
+2016-05-13 00:01:45.3019 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: f8026489-22a2-4da2-b80b-2f4409ea75bb
+2016-05-13 00:01:45.3019 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 553b06e8-d980-49aa-80b7-2804f41e23c6
+2016-05-13 00:01:45.3019 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 1305c16a-8cc1-40e6-acf5-996efc3f5891 dbSet: System.Data.Entity.DbSet`1[Domain.Coupon]
+2016-05-13 00:01:45.3019 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/13/2016 12:01:45 AM +03:00
+2016-05-13 00:01:45.3181 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT TOP (2) 
+    [Extent1].[CouponId] AS [CouponId], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[StartDate] AS [StartDate], 
+    [Extent1].[EndDate] AS [EndDate], 
+    [Extent1].[IsReusable] AS [IsReusable], 
+    [Extent1].[HasBeenUsed] AS [HasBeenUsed]
+    FROM [dbo].[Coupon] AS [Extent1]
+    WHERE [Extent1].[CouponId] = @p0
+2016-05-13 00:01:45.3181 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:01:45.3181 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- p0: '2' (Type = Int32)
+2016-05-13 00:01:45.3181 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/13/2016 12:01:45 AM +03:00
+2016-05-13 00:01:45.3181 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-13 00:01:45.3181 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:01:45.3331 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/13/2016 12:01:45 AM +03:00
+2016-05-13 00:01:47.4862 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: f8026489-22a2-4da2-b80b-2f4409ea75bb
+2016-05-13 00:01:47.4882 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: d806ca60-fe12-48ab-94d1-bae84dc4bacc
+2016-05-13 00:01:47.4882 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: fd11dadb-63ff-4f70-a5a2-69290457f417
+2016-05-13 00:01:47.4882 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 09f24003-2548-41fb-99cc-314c9802129b Disposing:True
+2016-05-13 00:01:47.4882 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: f8026489-22a2-4da2-b80b-2f4409ea75bb
+2016-05-13 00:02:02.6813 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 4c175608-1e43-4160-9fd6-e2240d9fa080
+2016-05-13 00:02:02.6813 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: bd661655-5d08-47fc-b392-90b20d978a6e
+2016-05-13 00:02:02.6813 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 8e2278d5-c91d-4f1e-b169-e000086e4938
+2016-05-13 00:02:02.6813 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 2582fc39-32aa-4a63-b77f-d19dd32ee332
+2016-05-13 00:02:02.6913 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: ea52ad3a-fb81-4c82-b7f3-9ed28b75939f
+2016-05-13 00:02:02.6913 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 50ab0104-1ac1-406d-bbfb-5fb967df9852 dbSet: System.Data.Entity.DbSet`1[Domain.Coupon]
+2016-05-13 00:02:02.6913 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/13/2016 12:02:02 AM +03:00
+2016-05-13 00:02:02.6913 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Started transaction at 5/13/2016 12:02:02 AM +03:00
+2016-05-13 00:02:02.7078 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+UPDATE [dbo].[Coupon]
+SET [Code] = @0, [StartDate] = @1, [EndDate] = @2, [IsReusable] = @3, [HasBeenUsed] = @4
+WHERE ([CouponId] = @5)
+2016-05-13 00:02:02.7078 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @0: 'SUVI2016' (Type = String, Size = 64)
+2016-05-13 00:02:02.7078 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @1: '6/1/2016 12:00:00 AM' (Type = DateTime2)
+2016-05-13 00:02:02.7078 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @2: '6/24/2016 2:00:00 PM' (Type = DateTime2)
+2016-05-13 00:02:02.7078 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @3: 'False' (Type = Boolean)
+2016-05-13 00:02:02.7078 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @4: 'True' (Type = Boolean)
+2016-05-13 00:02:02.7078 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @5: '0' (Type = Int32)
+2016-05-13 00:02:02.7226 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/13/2016 12:02:02 AM +03:00
+2016-05-13 00:02:02.7226 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: 0
+2016-05-13 00:02:02.7226 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:02:02.7226 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/13/2016 12:02:02 AM +03:00
+2016-05-13 00:02:02.7420 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 2582fc39-32aa-4a63-b77f-d19dd32ee332
+2016-05-13 00:02:02.7420 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 4c175608-1e43-4160-9fd6-e2240d9fa080
+2016-05-13 00:02:02.7420 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: bd661655-5d08-47fc-b392-90b20d978a6e
+2016-05-13 00:02:02.7420 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 8e2278d5-c91d-4f1e-b169-e000086e4938 Disposing:True
+2016-05-13 00:02:02.7420 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 2582fc39-32aa-4a63-b77f-d19dd32ee332
+2016-05-13 00:02:28.9578 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 61a1ddc0-a523-4ea4-a2ad-82c6c5362a3f
+2016-05-13 00:02:28.9578 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: a0fad0c9-33b5-4670-8ebe-bb3b52cf1449
+2016-05-13 00:02:28.9578 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 15ea9c52-4105-47a0-b13d-c1c81a2bfffb
+2016-05-13 00:02:28.9578 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: b8afedac-2798-4a21-b925-393b2f9f476a
+2016-05-13 00:02:28.9578 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 0c57a6ac-6d21-4b0e-b39c-ff99c1c872db
+2016-05-13 00:02:28.9578 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 640929ec-cc2c-4b58-bacc-598f0ca33b58 dbSet: System.Data.Entity.DbSet`1[Domain.Coupon]
+2016-05-13 00:02:28.9728 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/13/2016 12:02:28 AM +03:00
+2016-05-13 00:02:28.9728 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT TOP (2) 
+    [Extent1].[CouponId] AS [CouponId], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[StartDate] AS [StartDate], 
+    [Extent1].[EndDate] AS [EndDate], 
+    [Extent1].[IsReusable] AS [IsReusable], 
+    [Extent1].[HasBeenUsed] AS [HasBeenUsed]
+    FROM [dbo].[Coupon] AS [Extent1]
+    WHERE [Extent1].[CouponId] = @p0
+2016-05-13 00:02:28.9728 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:02:28.9728 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- p0: '2' (Type = Int32)
+2016-05-13 00:02:28.9728 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/13/2016 12:02:28 AM +03:00
+2016-05-13 00:02:28.9728 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-13 00:02:28.9728 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:02:28.9888 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/13/2016 12:02:28 AM +03:00
+2016-05-13 00:02:31.2427 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: b8afedac-2798-4a21-b925-393b2f9f476a
+2016-05-13 00:02:31.2427 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 61a1ddc0-a523-4ea4-a2ad-82c6c5362a3f
+2016-05-13 00:02:31.2427 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: a0fad0c9-33b5-4670-8ebe-bb3b52cf1449
+2016-05-13 00:02:31.2427 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 15ea9c52-4105-47a0-b13d-c1c81a2bfffb Disposing:True
+2016-05-13 00:02:31.2427 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: b8afedac-2798-4a21-b925-393b2f9f476a
+2016-05-13 00:02:35.1363 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: a474b0ef-bb20-4f8b-a178-ffdd099918f5
+2016-05-13 00:02:35.1363 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: abbffd38-8b9a-4f87-bc61-e5793b65d4de
+2016-05-13 00:02:35.1363 | DEBUG |                                      DAL.UOW..ctor | InstanceId: d595df31-b47e-45f9-a411-29b18b9c24e3
+2016-05-13 00:02:35.1363 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 531235c5-cfba-4bde-9de7-6d4893601eb9
+2016-05-13 00:02:35.1468 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 2607d822-d0d9-41da-98b7-aabd3a271704
+2016-05-13 00:02:35.1468 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: f0de0844-0bba-4fe7-b8d7-a23fb638d0ec dbSet: System.Data.Entity.DbSet`1[Domain.Coupon]
+2016-05-13 00:02:35.1468 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/13/2016 12:02:35 AM +03:00
+2016-05-13 00:02:35.1468 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Started transaction at 5/13/2016 12:02:35 AM +03:00
+2016-05-13 00:02:35.1468 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+UPDATE [dbo].[Coupon]
+SET [Code] = @0, [StartDate] = @1, [EndDate] = @2, [IsReusable] = @3, [HasBeenUsed] = @4
+WHERE ([CouponId] = @5)
+2016-05-13 00:02:35.1613 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @0: 'SUVI2016' (Type = String, Size = 64)
+2016-05-13 00:02:35.1613 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @1: '6/1/2016 12:00:00 AM' (Type = DateTime2)
+2016-05-13 00:02:35.1613 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @2: '6/24/2016 12:00:00 AM' (Type = DateTime2)
+2016-05-13 00:02:35.1613 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @3: 'True' (Type = Boolean)
+2016-05-13 00:02:35.1613 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @4: 'True' (Type = Boolean)
+2016-05-13 00:02:35.1613 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @5: '2' (Type = Int32)
+2016-05-13 00:02:35.1756 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/13/2016 12:02:35 AM +03:00
+2016-05-13 00:02:35.1756 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: 1
+2016-05-13 00:02:35.1756 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:02:35.1756 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Committed transaction at 5/13/2016 12:02:35 AM +03:00
+2016-05-13 00:02:35.1756 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/13/2016 12:02:35 AM +03:00
+2016-05-13 00:02:35.1756 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 531235c5-cfba-4bde-9de7-6d4893601eb9
+2016-05-13 00:02:35.1911 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: a474b0ef-bb20-4f8b-a178-ffdd099918f5
+2016-05-13 00:02:35.1911 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: abbffd38-8b9a-4f87-bc61-e5793b65d4de
+2016-05-13 00:02:35.1911 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: d595df31-b47e-45f9-a411-29b18b9c24e3 Disposing:True
+2016-05-13 00:02:35.1911 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 531235c5-cfba-4bde-9de7-6d4893601eb9
+2016-05-13 00:02:35.1911 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: f9b082f9-d9cb-4beb-a674-c0721931ad7e
+2016-05-13 00:02:35.1911 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 531e34b0-58e7-4f9c-b332-bd2473ab339a
+2016-05-13 00:02:35.2091 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 78d82ff6-6df1-474f-8f9b-a0a0f696d77c
+2016-05-13 00:02:35.2091 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 9b678c18-f08a-45de-acac-fd413395b455
+2016-05-13 00:02:35.2091 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 941ff7ed-bb07-42b7-8525-eb44015209e0
+2016-05-13 00:02:35.2091 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 2698423b-e737-4876-b255-8f7c475b0115 dbSet: System.Data.Entity.DbSet`1[Domain.Coupon]
+2016-05-13 00:02:35.2091 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/13/2016 12:02:35 AM +03:00
+2016-05-13 00:02:35.2091 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT 
+    [Extent1].[CouponId] AS [CouponId], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[StartDate] AS [StartDate], 
+    [Extent1].[EndDate] AS [EndDate], 
+    [Extent1].[IsReusable] AS [IsReusable], 
+    [Extent1].[HasBeenUsed] AS [HasBeenUsed]
+    FROM [dbo].[Coupon] AS [Extent1]
+2016-05-13 00:02:35.2235 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:02:35.2235 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/13/2016 12:02:35 AM +03:00
+2016-05-13 00:02:35.2235 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-13 00:02:35.2235 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-13 00:02:35.2235 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/13/2016 12:02:35 AM +03:00
+2016-05-13 00:02:35.2235 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 9b678c18-f08a-45de-acac-fd413395b455
+2016-05-13 00:02:35.2385 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: f9b082f9-d9cb-4beb-a674-c0721931ad7e
+2016-05-13 00:02:35.2385 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 531e34b0-58e7-4f9c-b332-bd2473ab339a
+2016-05-13 00:02:35.2385 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 78d82ff6-6df1-474f-8f9b-a0a0f696d77c Disposing:True
+2016-05-13 00:02:35.2385 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 9b678c18-f08a-45de-acac-fd413395b455

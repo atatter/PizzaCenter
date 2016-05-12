@@ -28140,3 +28140,1415 @@ SELECT
 2016-05-12 23:06:16.8324 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 98977243-a1b3-4135-9311-3e95cf3bd59c
 2016-05-12 23:06:16.8324 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: b65b67af-c528-4188-80bf-7474f22241f4 Disposing:True
 2016-05-12 23:06:16.8484 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 971f0e6a-8df4-4dfa-b64c-69a2ecd4cfcb
+2016-05-12 23:10:27.7375 | DEBUG |          DAL.Helpers.EFRepositoryFactories.Dispose | InstanceId: 4c3b8119-168d-4b16-a7dc-bda9da3ddcc2
+2016-05-12 23:11:15.5981 | DEBUG |            DAL.Helpers.EFRepositoryFactories..ctor | InstanceId: b937bcc8-5de4-47b2-b647-d5d02fd5fdb3
+2016-05-12 23:11:15.5981 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 5fd1a232-7d31-4918-850a-c7b8ef288d01
+2016-05-12 23:11:15.7001 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: e6e220e9-c4d8-4d57-b9d8-40364954ddd1
+2016-05-12 23:11:15.7001 | DEBUG |                                      DAL.UOW..ctor | InstanceId: f8c92e2b-9e9b-459f-b1f4-fcc9a29491f8
+2016-05-12 23:11:15.7073 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 6ba11e2e-9241-41ed-b91c-4a56d49c9efc
+2016-05-12 23:11:15.7073 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 2a098ebe-1c4c-493f-8712-5a0af0362c3b
+2016-05-12 23:11:15.7583 | DEBUG | Web.Areas.Admin.Controllers.TranslationsController | InstanceId: edd00c17-48c9-4cde-b524-a19ad668f057
+2016-05-12 23:11:15.8224 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 4c963544-c9b6-45fb-bd6d-64ef334ff77f dbSet: System.Data.Entity.DbSet`1[Domain.Translation]
+2016-05-12 23:11:16.3029 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:11:16 PM +03:00
+2016-05-12 23:11:16.3029 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.AdditionalProductInOrder','dbo.AdditionalProduct','dbo.Price','dbo.Component','dbo.ComponentInPizza','dbo.Pizza','dbo.MultiLangString','dbo.Translation','dbo.PizzaInOrder','dbo.Order','dbo.Invoice','dbo.Coupon','dbo.PaymentMethod','dbo.Person','dbo.Contact','dbo.ContactType','dbo.UserInt','dbo.UserClaimInt','dbo.UserLoginInt','dbo.UserRoleInt','dbo.RoleInt','dbo.ToppingInPizzaOrder','dbo.PizzaPriceBySize','dbo.PizzaSize','dbo.PriceType','dbo.Article')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2016-05-12 23:11:16.3029 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:11:16.3029 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:11:16 PM +03:00
+2016-05-12 23:11:16.3029 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: 26
+2016-05-12 23:11:16.3164 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:11:16.3164 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:11:16 PM +03:00
+2016-05-12 23:11:16.4625 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:11:16 PM +03:00
+2016-05-12 23:11:16.9672 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2016-05-12 23:11:16.9672 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:11:16.9722 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- p__linq__0: 'DAL.DataBaseContext' (Type = String, Size = 4000)
+2016-05-12 23:11:16.9722 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:11:16 PM +03:00
+2016-05-12 23:11:16.9722 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:11:16.9722 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:11:16.9722 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:11:16 PM +03:00
+2016-05-12 23:11:16.9932 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:11:16 PM +03:00
+2016-05-12 23:11:17.0322 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2016-05-12 23:11:17.0322 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:11:17.0362 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- p__linq__0: 'DAL.DataBaseContext' (Type = String, Size = 4000)
+2016-05-12 23:11:17.0362 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:11:17 PM +03:00
+2016-05-12 23:11:17.0362 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:11:17.0362 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:11:17.0362 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:11:17 PM +03:00
+2016-05-12 23:11:17.0892 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:11:17 PM +03:00
+2016-05-12 23:11:17.1583 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT 
+    [Extent1].[TranslationId] AS [TranslationId], 
+    [Extent1].[Value] AS [Value], 
+    [Extent1].[MultiLangStringId] AS [MultiLangStringId], 
+    [Extent1].[Culture] AS [Culture]
+    FROM [dbo].[Translation] AS [Extent1]
+2016-05-12 23:11:17.1603 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:11:17.1603 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:11:17 PM +03:00
+2016-05-12 23:11:17.1603 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:11:17.1603 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:11:17.2086 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:11:17 PM +03:00
+2016-05-12 23:11:20.5125 | DEBUG | Web.Areas.Admin.Controllers.TranslationsController | InstanceId: edd00c17-48c9-4cde-b524-a19ad668f057 Disposing:True
+2016-05-12 23:11:20.5275 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 6ba11e2e-9241-41ed-b91c-4a56d49c9efc
+2016-05-12 23:11:20.5350 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 5fd1a232-7d31-4918-850a-c7b8ef288d01
+2016-05-12 23:11:20.5350 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: e6e220e9-c4d8-4d57-b9d8-40364954ddd1
+2016-05-12 23:11:20.5350 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: f8c92e2b-9e9b-459f-b1f4-fcc9a29491f8 Disposing:True
+2016-05-12 23:11:20.5350 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 6ba11e2e-9241-41ed-b91c-4a56d49c9efc
+2016-05-12 23:11:23.2203 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: e5620ce8-0ba3-43b8-8d24-6ea5df54db69
+2016-05-12 23:11:23.2223 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: a574c2be-fa84-4e34-aeb6-2eba73cbe2ca
+2016-05-12 23:11:23.2223 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 3e3aad84-e581-41be-afcb-c97b0e3d6e45
+2016-05-12 23:11:23.2223 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: fa3b2f01-82a6-466d-8065-e9be05ce9431
+2016-05-12 23:11:23.2223 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 3c38c076-7e4d-42dd-a308-41d649530f57
+2016-05-12 23:11:23.2223 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: fa3b2f01-82a6-466d-8065-e9be05ce9431
+2016-05-12 23:11:23.2223 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: e5620ce8-0ba3-43b8-8d24-6ea5df54db69
+2016-05-12 23:11:23.2223 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: a574c2be-fa84-4e34-aeb6-2eba73cbe2ca
+2016-05-12 23:11:23.2382 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 3e3aad84-e581-41be-afcb-c97b0e3d6e45 Disposing:True
+2016-05-12 23:11:23.2382 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: fa3b2f01-82a6-466d-8065-e9be05ce9431
+2016-05-12 23:25:44.4971 | DEBUG |          DAL.Helpers.EFRepositoryFactories.Dispose | InstanceId: b937bcc8-5de4-47b2-b647-d5d02fd5fdb3
+2016-05-12 23:57:04.1253 | DEBUG |            DAL.Helpers.EFRepositoryFactories..ctor | InstanceId: dd90b85d-ffde-4be4-a1cd-7f1dab3cfcc0
+2016-05-12 23:57:04.1366 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 3478a4d4-3953-451d-a407-f2b28e675c97
+2016-05-12 23:57:04.1589 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: d503317d-6215-401d-b0ad-7f5563a07905
+2016-05-12 23:57:04.1619 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 4fba0326-0ee4-46ee-b046-0bf5e5e25818
+2016-05-12 23:57:04.1619 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 4c69eff2-beb6-4778-9a90-572126f24979
+2016-05-12 23:57:04.1619 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: b8dd5125-494c-4e7a-a2cb-ee80cefedae1
+2016-05-12 23:57:04.1869 | INFO |                Identity.UserStore`11.FindByIdAsync | _instanceId: 4c69eff2-beb6-4778-9a90-572126f24979 userId:1
+2016-05-12 23:57:04.1919 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 7080c96a-608e-4e90-bdc8-7550c2f61142 dbSet: System.Data.Entity.DbSet`1[Domain.Identity.UserInt]
+2016-05-12 23:57:04.2997 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 12.05.2016 23:57.04 +03:00
+2016-05-12 23:57:04.3027 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.AdditionalProductInOrder','dbo.AdditionalProduct','dbo.Price','dbo.Component','dbo.ComponentInPizza','dbo.Pizza','dbo.MultiLangString','dbo.Translation','dbo.PizzaInOrder','dbo.Order','dbo.Invoice','dbo.Coupon','dbo.PaymentMethod','dbo.Person','dbo.Contact','dbo.ContactType','dbo.UserInt','dbo.UserClaimInt','dbo.UserLoginInt','dbo.UserRoleInt','dbo.RoleInt','dbo.ToppingInPizzaOrder','dbo.PizzaPriceBySize','dbo.PizzaSize','dbo.PriceType','dbo.Article')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2016-05-12 23:57:04.3027 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:04.3027 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.04 +03:00
+2016-05-12 23:57:04.3027 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: 26
+2016-05-12 23:57:04.3027 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:04.3027 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 12.05.2016 23:57.04 +03:00
+2016-05-12 23:57:04.3353 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 12.05.2016 23:57.04 +03:00
+2016-05-12 23:57:04.3627 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2016-05-12 23:57:04.3627 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:04.3627 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- p__linq__0: 'DAL.DataBaseContext' (Type = String, Size = 4000)
+2016-05-12 23:57:04.3627 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.04 +03:00
+2016-05-12 23:57:04.3627 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:57:04.3627 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:04.3627 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 12.05.2016 23:57.04 +03:00
+2016-05-12 23:57:04.3812 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 12.05.2016 23:57.04 +03:00
+2016-05-12 23:57:04.3812 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2016-05-12 23:57:04.3812 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:04.3812 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- p__linq__0: 'DAL.DataBaseContext' (Type = String, Size = 4000)
+2016-05-12 23:57:04.3812 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.04 +03:00
+2016-05-12 23:57:04.3957 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:57:04.3957 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:04.3957 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 12.05.2016 23:57.04 +03:00
+2016-05-12 23:57:24.4632 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 4c69eff2-beb6-4778-9a90-572126f24979
+2016-05-12 23:57:24.4720 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 3478a4d4-3953-451d-a407-f2b28e675c97
+2016-05-12 23:57:24.4720 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: d503317d-6215-401d-b0ad-7f5563a07905
+2016-05-12 23:57:24.5235 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 4fba0326-0ee4-46ee-b046-0bf5e5e25818 Disposing:True
+2016-05-12 23:57:24.5730 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 4c69eff2-beb6-4778-9a90-572126f24979
+2016-05-12 23:57:25.3977 | DEBUG |          DAL.Helpers.EFRepositoryFactories.Dispose | InstanceId: dd90b85d-ffde-4be4-a1cd-7f1dab3cfcc0
+2016-05-12 23:57:27.7084 | DEBUG |            DAL.Helpers.EFRepositoryFactories..ctor | InstanceId: 11976cf4-3c86-4129-beba-f826efa07d5c
+2016-05-12 23:57:27.7084 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: b225ebd0-9325-4eb9-bce2-7d7e366097b9
+2016-05-12 23:57:27.8039 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: f958b5c6-694f-4f15-9194-d2132085dbee
+2016-05-12 23:57:27.8039 | DEBUG |                                      DAL.UOW..ctor | InstanceId: f1ef8044-6593-4d7d-9777-4e805dc611be
+2016-05-12 23:57:27.8039 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 26b795ea-71bf-4020-aa50-cfde37bf8dd4
+2016-05-12 23:57:27.8039 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: bbf23057-7d55-42a5-be1b-cffd76303c7b
+2016-05-12 23:57:27.8339 | INFO |                Identity.UserStore`11.FindByIdAsync | _instanceId: 26b795ea-71bf-4020-aa50-cfde37bf8dd4 userId:1
+2016-05-12 23:57:27.8339 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 406f6ae8-3bb7-4358-8c4c-6d9eb01e61c7 dbSet: System.Data.Entity.DbSet`1[Domain.Identity.UserInt]
+2016-05-12 23:57:28.3055 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 12.05.2016 23:57.28 +03:00
+2016-05-12 23:57:28.3055 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.AdditionalProductInOrder','dbo.AdditionalProduct','dbo.Price','dbo.Component','dbo.ComponentInPizza','dbo.Pizza','dbo.MultiLangString','dbo.Translation','dbo.PizzaInOrder','dbo.Order','dbo.Invoice','dbo.Coupon','dbo.PaymentMethod','dbo.Person','dbo.Contact','dbo.ContactType','dbo.UserInt','dbo.UserClaimInt','dbo.UserLoginInt','dbo.UserRoleInt','dbo.RoleInt','dbo.ToppingInPizzaOrder','dbo.PizzaPriceBySize','dbo.PizzaSize','dbo.PriceType','dbo.Article')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2016-05-12 23:57:28.3055 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:28.3055 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.28 +03:00
+2016-05-12 23:57:28.3180 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: 26
+2016-05-12 23:57:28.3180 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:28.3180 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 12.05.2016 23:57.28 +03:00
+2016-05-12 23:57:28.4670 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 12.05.2016 23:57.28 +03:00
+2016-05-12 23:57:28.9573 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2016-05-12 23:57:28.9573 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:28.9573 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- p__linq__0: 'DAL.DataBaseContext' (Type = String, Size = 4000)
+2016-05-12 23:57:28.9573 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.28 +03:00
+2016-05-12 23:57:28.9573 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:57:28.9573 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:28.9778 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 12.05.2016 23:57.28 +03:00
+2016-05-12 23:57:28.9778 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 12.05.2016 23:57.28 +03:00
+2016-05-12 23:57:29.0245 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2016-05-12 23:57:29.0245 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:29.0245 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- p__linq__0: 'DAL.DataBaseContext' (Type = String, Size = 4000)
+2016-05-12 23:57:29.0245 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.29 +03:00
+2016-05-12 23:57:29.0245 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:57:29.0350 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:29.0350 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 12.05.2016 23:57.29 +03:00
+2016-05-12 23:57:37.8799 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 12.05.2016 23:57.37 +03:00
+2016-05-12 23:57:37.8799 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Started transaction at 12.05.2016 23:57.37 +03:00
+2016-05-12 23:57:37.8799 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[AdditionalProductInOrder] (
+    [AdditionalProductInOrderId] [int] NOT NULL IDENTITY,
+    [AdditionalProductId] [int] NOT NULL,
+    [OrderId] [int] NOT NULL,
+    CONSTRAINT [PK_dbo.AdditionalProductInOrder] PRIMARY KEY ([AdditionalProductInOrderId])
+)
+2016-05-12 23:57:37.8799 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:37.8799 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.37 +03:00
+2016-05-12 23:57:37.8989 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 2 ms with result: -1
+2016-05-12 23:57:37.8989 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:37.8989 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[AdditionalProduct] (
+    [AdditionalProductId] [int] NOT NULL IDENTITY,
+    CONSTRAINT [PK_dbo.AdditionalProduct] PRIMARY KEY ([AdditionalProductId])
+)
+2016-05-12 23:57:37.8989 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:37.8989 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.37 +03:00
+2016-05-12 23:57:37.9119 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:37.9119 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:37.9119 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[Price] (
+    [PriceId] [int] NOT NULL IDENTITY,
+    [Value] [int] NOT NULL,
+    [PriceTypeId] [int] NOT NULL,
+    [PizzaPriceBySizeId] [int] NOT NULL,
+    [ComponentId] [int] NOT NULL,
+    [AdditionalProductId] [int] NOT NULL,
+    CONSTRAINT [PK_dbo.Price] PRIMARY KEY ([PriceId])
+)
+2016-05-12 23:57:37.9119 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:37.9119 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.37 +03:00
+2016-05-12 23:57:37.9119 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:37.9255 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:37.9255 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[Component] (
+    [ComponentId] [int] NOT NULL IDENTITY,
+    [ComponentNameId] [int] NOT NULL,
+    [IsTopping] [bit] NOT NULL,
+    CONSTRAINT [PK_dbo.Component] PRIMARY KEY ([ComponentId])
+)
+2016-05-12 23:57:37.9255 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:37.9255 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.37 +03:00
+2016-05-12 23:57:37.9255 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: -1
+2016-05-12 23:57:37.9255 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:37.9412 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[ComponentInPizza] (
+    [ComponentInPizzaId] [int] NOT NULL IDENTITY,
+    [PizzaId] [int] NOT NULL,
+    [ComponentId] [int] NOT NULL,
+    CONSTRAINT [PK_dbo.ComponentInPizza] PRIMARY KEY ([ComponentInPizzaId])
+)
+2016-05-12 23:57:37.9412 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:37.9412 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.37 +03:00
+2016-05-12 23:57:37.9412 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:37.9412 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:37.9412 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[Pizza] (
+    [PizzaId] [int] NOT NULL IDENTITY,
+    [Name] [nvarchar](128),
+    [PizzaDescriptionId] [int] NOT NULL,
+    CONSTRAINT [PK_dbo.Pizza] PRIMARY KEY ([PizzaId])
+)
+2016-05-12 23:57:37.9412 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:37.9572 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.37 +03:00
+2016-05-12 23:57:37.9572 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:37.9572 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:37.9572 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[MultiLangString] (
+    [MultiLangStringId] [int] NOT NULL IDENTITY,
+    [Value] [nvarchar](max),
+    [Owner] [nvarchar](255),
+    CONSTRAINT [PK_dbo.MultiLangString] PRIMARY KEY ([MultiLangStringId])
+)
+2016-05-12 23:57:37.9572 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:37.9572 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.37 +03:00
+2016-05-12 23:57:37.9572 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: -1
+2016-05-12 23:57:37.9732 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:37.9732 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[Translation] (
+    [TranslationId] [int] NOT NULL IDENTITY,
+    [Value] [nvarchar](max),
+    [MultiLangStringId] [int] NOT NULL,
+    [Culture] [nvarchar](12),
+    CONSTRAINT [PK_dbo.Translation] PRIMARY KEY ([TranslationId])
+)
+2016-05-12 23:57:37.9732 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:37.9732 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.37 +03:00
+2016-05-12 23:57:37.9732 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:37.9732 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:37.9877 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[PizzaInOrder] (
+    [PizzaInOrderId] [int] NOT NULL IDENTITY,
+    [OrderId] [int] NOT NULL,
+    [PizzaId] [int] NOT NULL,
+    CONSTRAINT [PK_dbo.PizzaInOrder] PRIMARY KEY ([PizzaInOrderId])
+)
+2016-05-12 23:57:37.9877 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:37.9877 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.37 +03:00
+2016-05-12 23:57:37.9877 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:37.9877 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:37.9877 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[Order] (
+    [OrderId] [int] NOT NULL IDENTITY,
+    [NrOfPeople] [int] NOT NULL,
+    [InvoiceId] [int] NOT NULL,
+    CONSTRAINT [PK_dbo.Order] PRIMARY KEY ([OrderId])
+)
+2016-05-12 23:57:37.9877 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.0037 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.0037 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.0037 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.0037 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[Invoice] (
+    [InvoiceId] [int] NOT NULL IDENTITY,
+    [CreationTime] [datetime2](7) NOT NULL,
+    [SumWOCoupon] [int],
+    [Sum] [int],
+    [CustomersName] [nvarchar](max),
+    [Delivered] [bit] NOT NULL,
+    [CouponId] [int],
+    [PaymentMethodId] [int] NOT NULL,
+    [PersonId] [int],
+    CONSTRAINT [PK_dbo.Invoice] PRIMARY KEY ([InvoiceId])
+)
+2016-05-12 23:57:38.0037 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.0037 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.0037 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: -1
+2016-05-12 23:57:38.0212 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.0212 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[Coupon] (
+    [CouponId] [int] NOT NULL IDENTITY,
+    [Code] [nvarchar](64),
+    [StartDate] [datetime2](7) NOT NULL,
+    [EndDate] [datetime2](7) NOT NULL,
+    [IsReusable] [bit] NOT NULL,
+    [HasBeenUsed] [bit] NOT NULL,
+    CONSTRAINT [PK_dbo.Coupon] PRIMARY KEY ([CouponId])
+)
+2016-05-12 23:57:38.0212 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.0212 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.0212 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.0212 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.0362 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[PaymentMethod] (
+    [PaymentMethodId] [int] NOT NULL IDENTITY,
+    [PaymentMethodNameId] [int] NOT NULL,
+    CONSTRAINT [PK_dbo.PaymentMethod] PRIMARY KEY ([PaymentMethodId])
+)
+2016-05-12 23:57:38.0362 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.0362 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.0362 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.0362 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.0362 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[Person] (
+    [PersonId] [int] NOT NULL IDENTITY,
+    [Firstname] [nvarchar](255) NOT NULL,
+    [Lastname] [nvarchar](255) NOT NULL,
+    [DateTime] [datetime2](7) NOT NULL,
+    [Date] [date] NOT NULL,
+    [Time] [datetime2](7) NOT NULL,
+    [DateTime2] [datetime2](7) NOT NULL,
+    [Date2] [date] NOT NULL,
+    [Time2] [datetime2](7) NOT NULL,
+    [UserId] [int] NOT NULL,
+    [CreatedAtDT] [datetime2](7) NOT NULL,
+    [CreatedBy] [nvarchar](256),
+    [ModifiedAtDT] [datetime2](7) NOT NULL,
+    [ModifiedBy] [nvarchar](256),
+    CONSTRAINT [PK_dbo.Person] PRIMARY KEY ([PersonId])
+)
+2016-05-12 23:57:38.0507 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.0507 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.0507 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: -1
+2016-05-12 23:57:38.0507 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.0507 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[Contact] (
+    [ContactId] [int] NOT NULL IDENTITY,
+    [ContactValue] [nvarchar](128) NOT NULL,
+    [PersonId] [int] NOT NULL,
+    [ContactTypeId] [int] NOT NULL,
+    [CreatedAtDT] [datetime2](7) NOT NULL,
+    [CreatedBy] [nvarchar](256),
+    [ModifiedAtDT] [datetime2](7) NOT NULL,
+    [ModifiedBy] [nvarchar](256),
+    CONSTRAINT [PK_dbo.Contact] PRIMARY KEY ([ContactId])
+)
+2016-05-12 23:57:38.0507 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.0507 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.0677 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.0677 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.0677 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[ContactType] (
+    [ContactTypeId] [int] NOT NULL IDENTITY,
+    [ContactTypeNameId] [int] NOT NULL,
+    [CreatedAtDT] [datetime2](7) NOT NULL,
+    [CreatedBy] [nvarchar](256),
+    [ModifiedAtDT] [datetime2](7) NOT NULL,
+    [ModifiedBy] [nvarchar](256),
+    CONSTRAINT [PK_dbo.ContactType] PRIMARY KEY ([ContactTypeId])
+)
+2016-05-12 23:57:38.0677 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.0677 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.0822 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.0822 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.0822 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[UserInt] (
+    [Id] [int] NOT NULL IDENTITY,
+    [Email] [nvarchar](256),
+    [EmailConfirmed] [bit] NOT NULL,
+    [PasswordHash] [nvarchar](max),
+    [SecurityStamp] [nvarchar](max),
+    [PhoneNumber] [nvarchar](max),
+    [PhoneNumberConfirmed] [bit] NOT NULL,
+    [TwoFactorEnabled] [bit] NOT NULL,
+    [LockoutEndDateUtc] [datetime2](7),
+    [LockoutEnabled] [bit] NOT NULL,
+    [AccessFailedCount] [int] NOT NULL,
+    [UserName] [nvarchar](256) NOT NULL,
+    [FirstName] [nvarchar](128),
+    [LastName] [nvarchar](128),
+    CONSTRAINT [PK_dbo.UserInt] PRIMARY KEY ([Id])
+)
+2016-05-12 23:57:38.0822 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.0822 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.0822 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.0977 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.0977 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[UserClaimInt] (
+    [Id] [int] NOT NULL IDENTITY,
+    [UserId] [int] NOT NULL,
+    [ClaimType] [nvarchar](max),
+    [ClaimValue] [nvarchar](max),
+    CONSTRAINT [PK_dbo.UserClaimInt] PRIMARY KEY ([Id])
+)
+2016-05-12 23:57:38.0977 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.0977 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.0977 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: -1
+2016-05-12 23:57:38.0977 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.0977 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[UserLoginInt] (
+    [LoginProvider] [nvarchar](128) NOT NULL,
+    [ProviderKey] [nvarchar](128) NOT NULL,
+    [UserId] [int] NOT NULL,
+    CONSTRAINT [PK_dbo.UserLoginInt] PRIMARY KEY ([LoginProvider], [ProviderKey], [UserId])
+)
+2016-05-12 23:57:38.1137 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.1137 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.1137 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.1137 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.1137 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[UserRoleInt] (
+    [UserId] [int] NOT NULL,
+    [RoleId] [int] NOT NULL,
+    CONSTRAINT [PK_dbo.UserRoleInt] PRIMARY KEY ([UserId], [RoleId])
+)
+2016-05-12 23:57:38.1137 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.1137 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.1302 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.1302 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.1302 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[RoleInt] (
+    [Id] [int] NOT NULL IDENTITY,
+    [Name] [nvarchar](256) NOT NULL,
+    CONSTRAINT [PK_dbo.RoleInt] PRIMARY KEY ([Id])
+)
+2016-05-12 23:57:38.1302 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.1302 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.1302 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.1302 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.1452 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[ToppingInPizzaOrder] (
+    [ToppingInPizzaOrderId] [int] NOT NULL IDENTITY,
+    [ComponentId] [int] NOT NULL,
+    [PizzaInOrderId] [int] NOT NULL,
+    CONSTRAINT [PK_dbo.ToppingInPizzaOrder] PRIMARY KEY ([ToppingInPizzaOrderId])
+)
+2016-05-12 23:57:38.1452 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.1452 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.1452 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: -1
+2016-05-12 23:57:38.1452 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.1452 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[PizzaPriceBySize] (
+    [PizzaPriceBySizeId] [int] NOT NULL IDENTITY,
+    [PizzaSizeId] [int] NOT NULL,
+    [PizzaId] [int] NOT NULL,
+    CONSTRAINT [PK_dbo.PizzaPriceBySize] PRIMARY KEY ([PizzaPriceBySizeId])
+)
+2016-05-12 23:57:38.1607 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.1607 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.1607 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.1607 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.1607 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[PizzaSize] (
+    [PizzaSizeId] [int] NOT NULL IDENTITY,
+    [PizzaSizeNameId] [int] NOT NULL,
+    [Diameter] [int] NOT NULL,
+    CONSTRAINT [PK_dbo.PizzaSize] PRIMARY KEY ([PizzaSizeId])
+)
+2016-05-12 23:57:38.1607 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.1607 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.1782 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: -1
+2016-05-12 23:57:38.1782 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.1782 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[PriceType] (
+    [PriceTypeId] [int] NOT NULL IDENTITY,
+    [PriceTypeNameId] [int] NOT NULL,
+    CONSTRAINT [PK_dbo.PriceType] PRIMARY KEY ([PriceTypeId])
+)
+2016-05-12 23:57:38.1782 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.1782 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.1922 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.1922 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.1922 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[Article] (
+    [ArticleId] [int] NOT NULL IDENTITY,
+    [ArticleName] [nvarchar](255),
+    [ArticleHeadlineId] [int] NOT NULL,
+    [ArticleBodyId] [int] NOT NULL,
+    CONSTRAINT [PK_dbo.Article] PRIMARY KEY ([ArticleId])
+)
+2016-05-12 23:57:38.1922 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.1922 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.1922 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.1922 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.2077 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_AdditionalProductId] ON [dbo].[AdditionalProductInOrder]([AdditionalProductId])
+2016-05-12 23:57:38.2077 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.2077 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.2077 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.2077 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.2077 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_OrderId] ON [dbo].[AdditionalProductInOrder]([OrderId])
+2016-05-12 23:57:38.2077 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.2227 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.2227 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.2227 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.2227 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_PriceTypeId] ON [dbo].[Price]([PriceTypeId])
+2016-05-12 23:57:38.2227 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.2227 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.2377 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.2377 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.2377 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_PizzaPriceBySizeId] ON [dbo].[Price]([PizzaPriceBySizeId])
+2016-05-12 23:57:38.2377 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.2377 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.2377 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.2377 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.2547 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_ComponentId] ON [dbo].[Price]([ComponentId])
+2016-05-12 23:57:38.2547 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.2547 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.2547 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.2547 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.2547 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_AdditionalProductId] ON [dbo].[Price]([AdditionalProductId])
+2016-05-12 23:57:38.2547 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.2547 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.2722 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.2722 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.2722 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_ComponentNameId] ON [dbo].[Component]([ComponentNameId])
+2016-05-12 23:57:38.2722 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.2722 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.2722 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.2852 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.2852 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_PizzaId] ON [dbo].[ComponentInPizza]([PizzaId])
+2016-05-12 23:57:38.2852 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.2852 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.2852 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.2852 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.2852 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_ComponentId] ON [dbo].[ComponentInPizza]([ComponentId])
+2016-05-12 23:57:38.3017 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.3017 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.3017 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.3017 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.3017 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_PizzaDescriptionId] ON [dbo].[Pizza]([PizzaDescriptionId])
+2016-05-12 23:57:38.3017 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.3017 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.3182 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.3182 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.3182 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_MultiLangStringId] ON [dbo].[Translation]([MultiLangStringId])
+2016-05-12 23:57:38.3182 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.3182 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.3317 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.3317 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.3317 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_OrderId] ON [dbo].[PizzaInOrder]([OrderId])
+2016-05-12 23:57:38.3317 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.3317 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.3317 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.3472 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.3472 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_PizzaId] ON [dbo].[PizzaInOrder]([PizzaId])
+2016-05-12 23:57:38.3472 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.3472 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.3472 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.3472 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.3472 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_InvoiceId] ON [dbo].[Order]([InvoiceId])
+2016-05-12 23:57:38.3647 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.3647 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.3647 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.3647 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.3647 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_CouponId] ON [dbo].[Invoice]([CouponId])
+2016-05-12 23:57:38.3647 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.3797 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.3797 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.3797 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.3797 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_PaymentMethodId] ON [dbo].[Invoice]([PaymentMethodId])
+2016-05-12 23:57:38.3797 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.3797 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.3797 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.3962 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.3962 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_PersonId] ON [dbo].[Invoice]([PersonId])
+2016-05-12 23:57:38.3962 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.3962 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.3962 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.3962 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.4112 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_PaymentMethodNameId] ON [dbo].[PaymentMethod]([PaymentMethodNameId])
+2016-05-12 23:57:38.4112 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.4112 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.4112 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.4112 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.4112 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_UserId] ON [dbo].[Person]([UserId])
+2016-05-12 23:57:38.4262 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.4262 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.4262 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.4262 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.4262 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_PersonId] ON [dbo].[Contact]([PersonId])
+2016-05-12 23:57:38.4262 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.4262 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.4427 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.4427 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.4427 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_ContactTypeId] ON [dbo].[Contact]([ContactTypeId])
+2016-05-12 23:57:38.4427 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.4427 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.4427 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.4427 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.4587 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_ContactTypeNameId] ON [dbo].[ContactType]([ContactTypeNameId])
+2016-05-12 23:57:38.4587 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.4587 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.4587 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.4587 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.4587 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE UNIQUE INDEX [UserNameIndex] ON [dbo].[UserInt]([UserName])
+2016-05-12 23:57:38.4587 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.4742 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.4742 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.4742 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.4742 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_UserId] ON [dbo].[UserClaimInt]([UserId])
+2016-05-12 23:57:38.4742 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.4742 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.4882 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: -1
+2016-05-12 23:57:38.4882 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.4882 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_UserId] ON [dbo].[UserLoginInt]([UserId])
+2016-05-12 23:57:38.4882 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.4882 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.4882 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.5042 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5042 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_UserId] ON [dbo].[UserRoleInt]([UserId])
+2016-05-12 23:57:38.5042 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5042 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.5042 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.5042 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5042 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_RoleId] ON [dbo].[UserRoleInt]([RoleId])
+2016-05-12 23:57:38.5207 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5207 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.5207 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.5207 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5207 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE UNIQUE INDEX [RoleNameIndex] ON [dbo].[RoleInt]([Name])
+2016-05-12 23:57:38.5207 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5207 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.5384 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.5384 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5384 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_ComponentId] ON [dbo].[ToppingInPizzaOrder]([ComponentId])
+2016-05-12 23:57:38.5384 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5384 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.5384 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.5514 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5514 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_PizzaInOrderId] ON [dbo].[ToppingInPizzaOrder]([PizzaInOrderId])
+2016-05-12 23:57:38.5514 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5514 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.5514 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.5514 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5514 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_PizzaSizeId] ON [dbo].[PizzaPriceBySize]([PizzaSizeId])
+2016-05-12 23:57:38.5664 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5664 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.5664 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.5664 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5664 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_PizzaId] ON [dbo].[PizzaPriceBySize]([PizzaId])
+2016-05-12 23:57:38.5664 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5664 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.5824 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.5824 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5824 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_PizzaSizeNameId] ON [dbo].[PizzaSize]([PizzaSizeNameId])
+2016-05-12 23:57:38.5824 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5824 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.5824 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.5974 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5974 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_PriceTypeNameId] ON [dbo].[PriceType]([PriceTypeNameId])
+2016-05-12 23:57:38.5974 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5974 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.5974 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.5974 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.5974 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_ArticleHeadlineId] ON [dbo].[Article]([ArticleHeadlineId])
+2016-05-12 23:57:38.6139 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.6139 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.6139 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.6364 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.6364 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE INDEX [IX_ArticleBodyId] ON [dbo].[Article]([ArticleBodyId])
+2016-05-12 23:57:38.6364 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.6364 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.6454 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.6454 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.6454 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[AdditionalProductInOrder] ADD CONSTRAINT [FK_dbo.AdditionalProductInOrder_dbo.AdditionalProduct_AdditionalProductId] FOREIGN KEY ([AdditionalProductId]) REFERENCES [dbo].[AdditionalProduct] ([AdditionalProductId])
+2016-05-12 23:57:38.6454 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.6454 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.6454 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: -1
+2016-05-12 23:57:38.6454 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.6609 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[AdditionalProductInOrder] ADD CONSTRAINT [FK_dbo.AdditionalProductInOrder_dbo.Order_OrderId] FOREIGN KEY ([OrderId]) REFERENCES [dbo].[Order] ([OrderId])
+2016-05-12 23:57:38.6609 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.6609 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.6609 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.6609 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.6609 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[Price] ADD CONSTRAINT [FK_dbo.Price_dbo.AdditionalProduct_AdditionalProductId] FOREIGN KEY ([AdditionalProductId]) REFERENCES [dbo].[AdditionalProduct] ([AdditionalProductId])
+2016-05-12 23:57:38.6609 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.6764 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.6764 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.6764 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.6764 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[Price] ADD CONSTRAINT [FK_dbo.Price_dbo.PizzaPriceBySize_PizzaPriceBySizeId] FOREIGN KEY ([PizzaPriceBySizeId]) REFERENCES [dbo].[PizzaPriceBySize] ([PizzaPriceBySizeId])
+2016-05-12 23:57:38.6764 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.6764 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.6764 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.6914 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.6914 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[Price] ADD CONSTRAINT [FK_dbo.Price_dbo.Component_ComponentId] FOREIGN KEY ([ComponentId]) REFERENCES [dbo].[Component] ([ComponentId])
+2016-05-12 23:57:38.6914 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.6914 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.6914 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.6914 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.6914 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[Price] ADD CONSTRAINT [FK_dbo.Price_dbo.PriceType_PriceTypeId] FOREIGN KEY ([PriceTypeId]) REFERENCES [dbo].[PriceType] ([PriceTypeId])
+2016-05-12 23:57:38.7074 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.7074 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.7074 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.7074 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.7074 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[Component] ADD CONSTRAINT [FK_dbo.Component_dbo.MultiLangString_ComponentNameId] FOREIGN KEY ([ComponentNameId]) REFERENCES [dbo].[MultiLangString] ([MultiLangStringId])
+2016-05-12 23:57:38.7074 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.7227 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.7227 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.7227 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.7227 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[ComponentInPizza] ADD CONSTRAINT [FK_dbo.ComponentInPizza_dbo.Component_ComponentId] FOREIGN KEY ([ComponentId]) REFERENCES [dbo].[Component] ([ComponentId])
+2016-05-12 23:57:38.7227 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.7227 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.7378 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: -1
+2016-05-12 23:57:38.7378 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.7378 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[ComponentInPizza] ADD CONSTRAINT [FK_dbo.ComponentInPizza_dbo.Pizza_PizzaId] FOREIGN KEY ([PizzaId]) REFERENCES [dbo].[Pizza] ([PizzaId])
+2016-05-12 23:57:38.7378 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.7378 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.7378 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.7378 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.7548 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[Pizza] ADD CONSTRAINT [FK_dbo.Pizza_dbo.MultiLangString_PizzaDescriptionId] FOREIGN KEY ([PizzaDescriptionId]) REFERENCES [dbo].[MultiLangString] ([MultiLangStringId])
+2016-05-12 23:57:38.7548 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.7548 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.7548 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.7548 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.7548 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[Translation] ADD CONSTRAINT [FK_dbo.Translation_dbo.MultiLangString_MultiLangStringId] FOREIGN KEY ([MultiLangStringId]) REFERENCES [dbo].[MultiLangString] ([MultiLangStringId])
+2016-05-12 23:57:38.7548 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.7718 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.7718 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.7718 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.7718 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[PizzaInOrder] ADD CONSTRAINT [FK_dbo.PizzaInOrder_dbo.Order_OrderId] FOREIGN KEY ([OrderId]) REFERENCES [dbo].[Order] ([OrderId])
+2016-05-12 23:57:38.7718 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.7718 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.7873 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: -1
+2016-05-12 23:57:38.7873 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.7873 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[PizzaInOrder] ADD CONSTRAINT [FK_dbo.PizzaInOrder_dbo.Pizza_PizzaId] FOREIGN KEY ([PizzaId]) REFERENCES [dbo].[Pizza] ([PizzaId])
+2016-05-12 23:57:38.7873 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.7873 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.7873 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.7873 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8018 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[Order] ADD CONSTRAINT [FK_dbo.Order_dbo.Invoice_InvoiceId] FOREIGN KEY ([InvoiceId]) REFERENCES [dbo].[Invoice] ([InvoiceId])
+2016-05-12 23:57:38.8018 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8018 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.8018 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.8018 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8018 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[Invoice] ADD CONSTRAINT [FK_dbo.Invoice_dbo.Coupon_CouponId] FOREIGN KEY ([CouponId]) REFERENCES [dbo].[Coupon] ([CouponId])
+2016-05-12 23:57:38.8018 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8163 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.8163 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.8163 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8163 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[Invoice] ADD CONSTRAINT [FK_dbo.Invoice_dbo.PaymentMethod_PaymentMethodId] FOREIGN KEY ([PaymentMethodId]) REFERENCES [dbo].[PaymentMethod] ([PaymentMethodId])
+2016-05-12 23:57:38.8163 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8163 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.8163 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.8333 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8333 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[Invoice] ADD CONSTRAINT [FK_dbo.Invoice_dbo.Person_PersonId] FOREIGN KEY ([PersonId]) REFERENCES [dbo].[Person] ([PersonId])
+2016-05-12 23:57:38.8333 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8333 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.8333 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.8333 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8333 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[PaymentMethod] ADD CONSTRAINT [FK_dbo.PaymentMethod_dbo.MultiLangString_PaymentMethodNameId] FOREIGN KEY ([PaymentMethodNameId]) REFERENCES [dbo].[MultiLangString] ([MultiLangStringId])
+2016-05-12 23:57:38.8490 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8490 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.8490 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: -1
+2016-05-12 23:57:38.8490 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8490 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[Person] ADD CONSTRAINT [FK_dbo.Person_dbo.UserInt_UserId] FOREIGN KEY ([UserId]) REFERENCES [dbo].[UserInt] ([Id])
+2016-05-12 23:57:38.8490 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8630 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.8630 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.8630 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8630 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[Contact] ADD CONSTRAINT [FK_dbo.Contact_dbo.ContactType_ContactTypeId] FOREIGN KEY ([ContactTypeId]) REFERENCES [dbo].[ContactType] ([ContactTypeId])
+2016-05-12 23:57:38.8630 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8630 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.8630 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.8795 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8795 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[Contact] ADD CONSTRAINT [FK_dbo.Contact_dbo.Person_PersonId] FOREIGN KEY ([PersonId]) REFERENCES [dbo].[Person] ([PersonId])
+2016-05-12 23:57:38.8795 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8795 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.8795 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.8795 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8795 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[ContactType] ADD CONSTRAINT [FK_dbo.ContactType_dbo.MultiLangString_ContactTypeNameId] FOREIGN KEY ([ContactTypeNameId]) REFERENCES [dbo].[MultiLangString] ([MultiLangStringId])
+2016-05-12 23:57:38.8940 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8940 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.8940 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.8940 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8940 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[UserClaimInt] ADD CONSTRAINT [FK_dbo.UserClaimInt_dbo.UserInt_UserId] FOREIGN KEY ([UserId]) REFERENCES [dbo].[UserInt] ([Id])
+2016-05-12 23:57:38.8940 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.8940 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.9105 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.9105 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.9105 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[UserLoginInt] ADD CONSTRAINT [FK_dbo.UserLoginInt_dbo.UserInt_UserId] FOREIGN KEY ([UserId]) REFERENCES [dbo].[UserInt] ([Id])
+2016-05-12 23:57:38.9105 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.9105 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.9105 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: -1
+2016-05-12 23:57:38.9105 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.9260 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[UserRoleInt] ADD CONSTRAINT [FK_dbo.UserRoleInt_dbo.RoleInt_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [dbo].[RoleInt] ([Id])
+2016-05-12 23:57:38.9260 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.9260 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.9260 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.9260 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.9260 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[UserRoleInt] ADD CONSTRAINT [FK_dbo.UserRoleInt_dbo.UserInt_UserId] FOREIGN KEY ([UserId]) REFERENCES [dbo].[UserInt] ([Id])
+2016-05-12 23:57:38.9420 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.9420 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.9420 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.9420 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.9420 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[ToppingInPizzaOrder] ADD CONSTRAINT [FK_dbo.ToppingInPizzaOrder_dbo.Component_ComponentId] FOREIGN KEY ([ComponentId]) REFERENCES [dbo].[Component] ([ComponentId])
+2016-05-12 23:57:38.9420 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.9420 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.9592 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.9592 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.9592 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[ToppingInPizzaOrder] ADD CONSTRAINT [FK_dbo.ToppingInPizzaOrder_dbo.PizzaInOrder_PizzaInOrderId] FOREIGN KEY ([PizzaInOrderId]) REFERENCES [dbo].[PizzaInOrder] ([PizzaInOrderId])
+2016-05-12 23:57:38.9592 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.9592 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.9592 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.9722 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.9722 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[PizzaPriceBySize] ADD CONSTRAINT [FK_dbo.PizzaPriceBySize_dbo.Pizza_PizzaId] FOREIGN KEY ([PizzaId]) REFERENCES [dbo].[Pizza] ([PizzaId])
+2016-05-12 23:57:38.9722 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.9722 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.9722 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.9722 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.9722 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[PizzaPriceBySize] ADD CONSTRAINT [FK_dbo.PizzaPriceBySize_dbo.PizzaSize_PizzaSizeId] FOREIGN KEY ([PizzaSizeId]) REFERENCES [dbo].[PizzaSize] ([PizzaSizeId])
+2016-05-12 23:57:38.9892 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.9892 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.38 +03:00
+2016-05-12 23:57:38.9892 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:38.9892 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.9892 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[PizzaSize] ADD CONSTRAINT [FK_dbo.PizzaSize_dbo.MultiLangString_PizzaSizeNameId] FOREIGN KEY ([PizzaSizeNameId]) REFERENCES [dbo].[MultiLangString] ([MultiLangStringId])
+2016-05-12 23:57:38.9892 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:38.9892 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.39 +03:00
+2016-05-12 23:57:38.9892 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:39.0057 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:39.0057 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[PriceType] ADD CONSTRAINT [FK_dbo.PriceType_dbo.MultiLangString_PriceTypeNameId] FOREIGN KEY ([PriceTypeNameId]) REFERENCES [dbo].[MultiLangString] ([MultiLangStringId])
+2016-05-12 23:57:39.0057 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:39.0057 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.39 +03:00
+2016-05-12 23:57:39.0057 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:39.0057 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:39.0057 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[Article] ADD CONSTRAINT [FK_dbo.Article_dbo.MultiLangString_ArticleBodyId] FOREIGN KEY ([ArticleBodyId]) REFERENCES [dbo].[MultiLangString] ([MultiLangStringId])
+2016-05-12 23:57:39.0057 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:39.0207 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.39 +03:00
+2016-05-12 23:57:39.0207 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:39.0207 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:39.0207 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | ALTER TABLE [dbo].[Article] ADD CONSTRAINT [FK_dbo.Article_dbo.MultiLangString_ArticleHeadlineId] FOREIGN KEY ([ArticleHeadlineId]) REFERENCES [dbo].[MultiLangString] ([MultiLangStringId])
+2016-05-12 23:57:39.0207 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:39.0207 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.39 +03:00
+2016-05-12 23:57:39.0207 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:39.0352 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:39.0352 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | CREATE TABLE [dbo].[__MigrationHistory] (
+    [MigrationId] [nvarchar](150) NOT NULL,
+    [ContextKey] [nvarchar](300) NOT NULL,
+    [Model] [varbinary](max) NOT NULL,
+    [ProductVersion] [nvarchar](32) NOT NULL,
+    CONSTRAINT [PK_dbo.__MigrationHistory] PRIMARY KEY ([MigrationId], [ContextKey])
+)
+2016-05-12 23:57:39.0352 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:39.0352 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.39 +03:00
+2016-05-12 23:57:39.0352 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: -1
+2016-05-12 23:57:39.0352 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:39.0352 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+INSERT [dbo].[__MigrationHistory]([MigrationId], [ContextKey], [Model], [ProductVersion])
+VALUES (N'201605122057378_InitialCreate', N'DAL.DataBaseContext',  0x1F8B0800000000000400ED5DDB8EDC38927D5F60FF21514FBB831EA7ED9EEE9D31AA6660BBEC69637C83CBEED9B7829CA92A0B9D29D5484AB73D8BFDB27DD84FDA5F58DDC54B443048515456B5D10FEE4A92C160DC7811E3F0FFFEE77F4FFFF265BF5B7D8EF322C9D2B39307F7EE9FACE274936D93F4FAECE4505EFDFE8F277FF9F3BFFECBE9B3EDFECBEAE7BEDEF775BDAA655A9C9D7C2ACB9B47EB75B1F914EFA3E2DE3ED9E459915D95F736D97E1D6DB3F5C3FBF7FFB47EF0601D57244E2A5AABD5E9BB435A26FBB8F9A3FAF369966EE29BF210ED5E65DB785774BF5725170DD5D5EB681F1737D1263E3B397FFCF264F578974455D717F1EEEA6415A569564665C5D8A30F457C51E6597A7D7153FD10EDDE7FBD89AB7A57D1AE883B861F8DD5B9BCDF7F58F3BE1E1BF6A43687A2CCF696041F7CDF0963AD367712E9C920AC4A5CCF2AB1965FEB5137223B3B79BCDD2635E968F736CFB6874DF9227D936FE3FC64A576FEE8E92EAF1B5612AE7E4ED27B58D3EF566D85EF0673A8ACA6FEEFBBD5D3C3AE3CE4F1591A1FCA3CDA7DB77A7BF8B84B367F8BBFBECF7E89D3B3F4B0DB89FC561C5765D20FD54F557737715E7E7D175F1946F1627BB25ACBF4D62AC1811C83563BFE1769F9FDC393D5EB8AD9E8E32E1ECC4790D54599E5F15FE334CEA332DEBE8DCA32CE2BEDBFD8C68D0234AE8C3C183BA7093247A010791D7D4EAE9B0199F83B59BD8B774DCDE25372D33A9E6E2097986C8B93D5F33CDBBFCB761071BCD9E5FB28BF8EABDEDF67F66D2FB243BEB11874E717C0409B12DEE00C55B50199EA4383385D8F6E6EE7FC2E5E7F14EEEEC5CFE77470BE2B8D56B38C4BF516E5E252BDF57207FF364F36313CD2A648EF4A1C155245F321ACDE24DF698832FCA5A9B7808F34FDBAF8C5D030D464F773B43BC4D3A6B786E79AC0D479F26DF2CF7F460DB5275F2F927F4EA6F734DBDF64692587A984A6AF08264EE613FC518D2826BFE5323E0817647828BDECA3CCC8A95AA6850CAD82ED6241352458A64A258053A48A1EE3907AD67CF79E841B415D0A71AA94C16158AC3029FE0ACA37C6E0A1EE0271588A00B6B1D8227CF88BC743A7F59F53E3D68BE27D767393A4D73D992759650C513A215E8D42491BAB87D70F6AAD4BC1608040A0D5C243825ED5D6C924091B829752178A6152152DDA62F53CAED5AC422DCE9F1237B88C7506D6A985583C031561AB202B6A8641D7F613E43AE236B1AE6BB268C86B599816F9461AA10220B3C3B9567E53D73BAE010F754C3C365AAD86F025D02510D29525905E055E0201F5A66DF3986EB794AF393B5870AF6AE7AFB6B78B326F9604AFA22F2FE3F4BAFC7476F2E0E11F2BA5275FE26DFF4BC7C18734D964DBAA51991F78FBB7F3B8D8E4C94DCDF40CCE47AE3A2698B3B64B3298BD95EF092221F8D6ABAA6CAB3510AEB56A4E4C932761628DCBCE4B156EA552385CC855A66EF2084EA5AD19C8AD5683B1C743B966C7B757555C4A5E46E975EF92C648A7B45820E6291CB8443F80C422C75D4020FCC3FD3FFD78DF43287CF36B5A7FAE40FB79F8C30F2EBDE0CBF03C4A8BCEF8E1E5F758E152333B61F18D57D397DE44DD496E211066B884507B0177107A777105A5F95D73036B4F372CEB5B25920B19AF6EA579CA3C9EA5CEE31C2F745F50F32F1988D5175B5EBB5F2650DB87F22EB7EFFD5EF6C1CEDFCF95359FFACD5C2A46BE93CB759C96737E169BE0B2185E8F5A1E7315E23913FB984BF63AFAA44BE29573D825359834ED72A3C252E1C0390E040F00AFF337576FE3EC6637F1CBEA8BF473C6FA1E3CCF7D078F376B5497E4DEC4E10EAC9314388CAEEC52E75A2ED1DC4D29768A680C015B855E58907078768A0283248D71A0ABB9402410FCC23616B05DCAE327BD3C6EE8BC4FC633B8F38A52FBB76548B838ECFFFEE66976B8A9F746D2088CEDACEA3F6DB45F29D4707258FDAF877DC279BC4B3EC7793C6885FDA1523B28AC25A369D7B0D48ABEEE2B55BE8ACB4FD976F2BAAD92999903E2A4B3552DF88DA12EBAEC2C58F9CE2715019F4FE572A7DB97700C634757357221C1971D5D45A5C1EB46B1062836B8867EF40757B39E0F1ACB80596D8A601EE5229D39A57CE227CFD6FA181F3AEB8A8B7CDEEC1DDCFEA326181A66BDCBB1A542E78F7FF010392FCA282FEBD964F2CCF22CDD7AA1F3A278171F8ABAC1D460FE53543C89E3F443E1302F98568AD85D0A7688D53FD8C221D8ED9C460E6EE6831AB1FE122735EA0C6A7D546337057BBC6E2076EC74E7CACDD29C2727ED70839EC39CA653F46694DC19D006635FAB6A18875E7F9A3F7553AFD9919A8A4B78D0B06CB4761D78C139A3CF3C4FF2A24CE97D01F70397E594F0325AAAE7713E9C383F7A9964BD7152377CE885D2742A7E78A9960B930FDF9B2D7BBC7D5C9EBF9FCC4F47EBC957D2667FF4F1B52DDB26578927B67B6273F04DEC7ED332DA94D8E2AC29BCEC83B9B836134B80DDAF546CBB6FA3E771FECE4D9BF1909D1D97AFDAD0299EDA728D9FFA678C97A66CD24CDBC99AB5856C6A2EB2876C7A76DB440E4DC3ED229B2E4D9FECB957F8FC1C67591FCB3563F09124F62D342F1A9AD1EC24A1FC720CE35A8C96CAB1482D57F278CEC69E42F4DD3D38C34C0991AD24B961B2FE6DB950D93BAE63B8E4F9BDF7905977E7B4A5FF16728E29E490AB41BB7883B8351C941C22237A70027434D62799EEAB71781FEA4E8A4FCD068A95DAD9FBE3BDAEC9129F825DBE01070C45CF2A79EC66F7F5A697CA08AE927C3FFD23EADBA8287ECDF2ED4F51F169F64FBF17F1E6905782BC28A3FDCDECBDBDFD94A5F1EBC3FE23793BDB7B5FDE54F3FED7EC79E5E859FE2CAD5B4DA6F732DBFC921DCAEEDBCF8772A3CF144C025ED879BCA936C2C5F3CA98E3EDD3EC5007A12913771D960CF717B8FE67D97373446AE8DA4FD2557D223A4F47F884B78B923D3C2B7713C1655F659CDAE4126D36538A6DE7E097D97582643EF494FB2A3A4B6D09CA52576CFD45A5D92A90A746D4090DF29D5F3ABDE1B25253A085D3D5D065D314A0A2694B27AF361AA53B2C39FA76DFD61DF39C82D7E26DB7A9334F954D4FA6132EC7AEECCF4F45D3D27C542B049D43AE31D9419A10E4E0207DBB051CA4E9BAFAF973D2DC2A5F9B5BF4952BF2ACFABD89DBBAA1C259F013557198A13B770A0B6E1ED4DB1EE8415221E841728DC91E54137670A0AED902FE035B3758B561D2C1117CCC117DDF7E0CAAA6861A54A78BCBB6926C4F6219684E52056F5FDA44CA90998B65245BD38DDCC1C09733EE635F3D05DA349206072FD845839116EC5281666B72E924430392D03859DA7AAB25B2B5752E9CB2B66132E13E6F78C2B5B44B90E59F875348499E70C0B49469166A984BEAD6FC699E9CB18079A1EE39E01238262F0F5C68B2542EB8820DEB940F6E852FEB19D6CC07A8ADE7BC7043DAB50B720E987E8D03EC58714AA3B98ED4655C208565B81A8CF883D4754276E52214B17168CD92C6411DEDE2854DA05832424C0A0D8BC5041F9714CE93EA9F723CD0F0121878F05AD3DC0E3462838B5AC70C3CA341EE6DAC8B32DF5731313ED49BE67D2324340FED7EA18B421208BCB5F7F111E43D7A5FDFA993F739BFAAD0DCD760007883B8ED6205270861F2928AD205744105A962E2D6CFC594C779996C761C4FE86A2EF13A4ADBB3D39B2863D3503ED075693CEE7002AB83FBFA298EB6BB249D3CDF75E49E64DBAF1EF15146A2F00B306DF9A5544F78E9452FD65F7401EAD8BAB2224A0EAB635D94DDBE8A89E5A19E8D333F2E8A6C93344CF683B0784D4796CBB374BBEA3873795AA73573F0419FCAEC6BB8B59B2A125463383B79A0E9C4ADEF616B41F43D9C1CC82CFC4E63A10A36715EFB77545FF92AAAF095A4A51E99927493DC443B77492924E170677E0CAAB689811BB5E43CBE89D33A58B90BD5239B03374AE43649FC742D98376DF5D84B2E9895199F75192DAA7B14C9643E66DA1C6B357B8A93991A585AC2240D1AB85DE647E0D46356C201AD1F0D457F34816F8F9CF740809E66324533371CD5132FD05859A1590B1EB80911FF108C7634469900DB85F807D91B35839B40DE2799B55BF8A347CB51F1703E3C25E4D18299C846002BA33079316B6001F48E16218154F3631C0B607BEC4503149E25D43198E2E8DC080D6F65840C7D78632A58E0D31E79A06313FEE28321EC91CB3EFA9588E0D647F313DEF068D1B3839FF210CA2246674270C54C840DE73ADA0AB879A5665FF663CC8BED999952E0580472D5C4CA2E99029BC84E904D888CB286EF0710C835715DD60216CAFABF7FEF1E6579285AE6487740C19DC5B09081F156F030FEA1E5660214C0D4FE03988E82368A6918831E352A98321B0C2DDA10033DD90C3C248ECA50B4642B9B81473FB9FF102B2F186A0F5D1E1970F78495978CD268B1F134E0CE868A43F450592B1D1AF8D16EDD454AC51337C1ED4D0749E459058198C8B440720FC0445B0CBF19E031B6C0AE80A71D6B33ED6F1F2CB412034034F0651385A821AEC9047C1B7E50A4018234F2B32DCDF041F2D64704608EE5220D9787174E96B1AFE15689851DE8D74C58D6467F6B30A3A7040F7E0CA6C2073E863E2CCDF118425E0F0166B00F0D0FCC210EA144013BEB81C9E6342FA57BD68C85A013BB189222D2A9DD8758D029189FE8A20A03FC34E9D7705EA1D20DBF4F800716CC721001DC02D3D1A104302513B802A39A65B00C7EE0C1210914E2005D4FC1076581758430CD7E50D972FA4613B143D98F80A743E91702D771502E4A14B118BE393A9B8D3EB24036A38FFE56188C8CBC40A917816190353C828FD8051C18C12168C0015908643CA06C6F85FD086859A6D8A042677909380AE096B3394E0A38F2C802061C79F4476F30322001A65A049D60D4EC005FC1371718D340B11684AE2763018715C056C0A173FA6D1A2E195B441C1632BA48802D487C612B97200DD80DDB169D030CC441A01003C9F556598E715123569CC972965BD1401C04B69C5BB99EA999372F679A5A9E57332DCD45A6277058019732D2D08FDE54445056C3511C165AE0E33DF2432C04F91A2AA0009D07B00E4086476F1BD04BED984AC967DB275F98849F7A57EF0387B818098E90A3497F972141614C6421D45DF01ECCA9BDBF8DC607AD2A7A079CAD73923A6651735EFE0639E0A8D15BB20B28E1891C84C87321C1D430AD3391D5845C1708F2CF22E78585CD1630B58FC51047FBBEB2FB581AF1C0D042262985271B2B8161F266354C10688F196A67344F882D7E7C4A7D4CB95C05F9612BD434AC23DC9193250177A7D88804B1683925E3687921A765948BA053332AF1E39F9E29743452FF26A834C508201B33263E9B5010A798B3BBCDD12367AB1CC601B4373E5A481ED8096F8503C41DD33A74BC3B86F519231C8193B74C022ACE1047CB3364A0E21AB032BB452F5BEA013CA76FD0C1F55DE65863FC237052ED41753C4DB2B9F5F53A8584F70937B7BE70C7E22824D4CDB89332DC3B07EB9320374EE8360AFD056F9B930C850F7B060D58ED7F17BE63DE0FC410EFD48A56C64627D328840387366C60210F553019DC8E73140D2C169DCC50E45845D5B6095928E26CA8E91119186B16C2E188ED264444061E78086F43C6D42B23BA2FC3A28C8083042A70F8953FCDD0022B7F5A035666B7E8140821E5626641C2E60AE82F3DFC33DFE028B0DDE0C6463013DED00899739851D0978FC1C4068463A631E870C73E4D4D03495EDADC548616373955FE16662762880730BD670DA27593BE58759A77BC9C4765F4242AE2FAF7F80BF4F0DE87AAB005A62F3A8874D5786ABA177189C2C4F6574D56CF06506D23149666A1864E58D48D64BB45AA4EAA5B211A9A0FEB6D8884B003E292197045096A0394A7696818255E73C58920425A40309014A01121721234256770849DC99F3B0DC4502ABCE64382AD4E60C86F351A400D4F05ABBD450A33C943C4E600052243AE98C8F58FC0EB74BAAB82C60175A81CD088BA04741E89260EE164DAB5BC8154936FD0DC47D4C80C37151924DA9C3A9CCE9853C820D6E6CBE0C4C67C2106B1E6C62A4E6BB8AE6B204590E19200BEB683BE0EDD80E0F8BCF43112F17BE9789D4394A4C623D3EF5ED0B98465A8DD42019CDBFAB59D424298FC89D99200D35C0914B079948BC5292F2D1D5EB9180402CFF8DAAAC9ADB77E714BF536CA4711F85A9638431B6F91C71300C96355F171232D2089F68B1D428A18358EC47C888A00FA07A4C57D16003E63C61F061046092CCD08F1319E0280687B313218FC1C3432A42A611634C0BB646466291970DAADC4EF20290A651D90161B945D1A2307965D18A7BC342664C7016217E8EAAB784F86A62182A376A6D53419060661ED6465183EF7CC4232215803D2B202BD9646CA85BD16860CCF6D5654034FA22AFA32381D1000CD4A9C86219AA5C8D36DC9C8700F23320B64467E274B400111060440C10C4B8C2340C30CBE2932C0F0FDADA160345C28EA307073E5404123E78A5147D96553D187C6CA9DC7424C10AE466919505F8911E2B8AF3EE48723BDCE1BC641A05130F298004995B84140924A31483C022103110142AA139C4934C3875A9E84E0EFBAA671695F773DC94BFBAA1BC4B27A3C475C6220E223341815F391A1768A0C2086E154707AA052A009A1C044A117CAA102C12F34734E92993754EB087B800C0C307C12FB38109F3000E5149390060EBDA790832839CA43408C43848161CA69AC03A8720CBE2932C8F051693ACA40064143C44020A5694380B1D294510887D10689C0E868F3DA4407EA45D80404FB052A5301FE72B50905EA8B2B4D071988E825A008E40A38EB523D4800E3E13F2100990A327E8C92A309F47DD6FF624620D5A1F52756C50C81250B14938921D489A2A082835487C73D151AAC4511303034BC5171A1AD60F6E7A6DEE4A8D05299DF2944C4177CE564D03F0409E3B6620AA07008C7043D4223E04E80032E18F0C4E5A80C8638510F2D7D7E57D2F138B0535802B5433F3485713BB80331D1C304E3E5689F0496800EF7F94814F2313C0B8B423CE007BF8B5307FD2CF489B9BE2619E11098B2C421148C830541147C4B14844D98DB65F5DC7DCC6D0D59FEBAABE179FEEAA0E48B142617C633FBE770632A011D1315275F5D1F9721635D1D1C535A861C751B554C97DE90386D961C9C634D8D4FCBB29E2C312DAF3AC0D74C20D597E591408693C17572F4846AA24FE6D899157CE963CAD50C253195BA9741E5B0C21727902C56D63CC7A218EA785749A524A564342434E1728A5C02D88C960D885D7942330665B3C7720655DECD5F00D02CC10062A0BE93B072DFA89150DF47DC6413F8CB08948205DD5134656A4943A272B5C40B0CC3FD4BEAA621919D15543443EA90593C709611352C2DCF68A298B4CC223FA23A5DB774863497A1EC747DB1F914EFA3EE87D375556513DF948768F72ADBC6BBA22F781535FB82626CD9FDB2BAB8893675C8FCFDC5C9EACB7E971667279FCAF2E6D17A5D34A48B7BFB649367457655DEDB64FB75B4CDD60FEFDFFFD3FAC183F5BEA5B1DE48014D4DCA197A2AB33CBA8E95D23A5A6FE3E7495E9475DACEC7A8A8F4F074BBD7AAA9493DB2F40649F7BD99F27674A5F697917B0A7D4CA8BA7EFC12CFEA51088DA27D5E8DB6FEA2DF0C3C665C21D24955C42E36D12ECAFB7C2BC3B0EAACABA7D9EEB04FCDF554B3B6E9CDD88D157D907582CFD3B5226155976B4D998AABA9D6E2664B1E8CC887F54C311B37452EA40074ED440BBD4D73B31734D20E136E535D15E8F023DF1B7E8E768758A6D2FDC4A721E11B68FC60C007043D00394822CB4016C2A94B881E225912EA03A777CBCD5CD8E4D89A3A7AACCB3077A26D28C5691041204D0C3C01A7FBA2E8CE45658AC2CFC7A77C22638169037D12ED04534049982DA26D891BC6586E1986C0D81326E02C35EFB91982ABF62D55EE4B29ED698148A4FDC5D23C843C089029A5FC6894ACED0F6DD56DC8DB6128DE4801133C004621CA9D815581D3F6B11C7AF36B5A7FCE93B617ED4F47A37E2939CA56F522AA80BDDAC9D698488546AABA95A2B0AA9ED3149F568D0FB9C2E1F0E3D19892E96E0863D6703FDBA09BD373087C86A196CD77AEE06B865B48EF8E0A77D5B4A58A7D29E375FEE6EA6D9CDDECD4C582F0BBC5CEA0BDEDAEF225FC7C34EA25B2046805F7002DF62A465BFA14271A6DF3B89943DE27EABA502EE153BC38ECFFFEA6079B11094A0556F4343A76F3498D4A55F9ACBEF4558AF834CFE35DF239CE634503C2CF36DBA45A22FA1EA9FFD522828AB96D5A24550B2DE836B7333582C3AF47E3BC7DA6ADFD66BE314A972D3CDC707E5DD79F73542A5B3B3F2DA3BCFE18A490117EE6D37A966E754AC38F364748EFE243117D54A71DF1773EB59FA2E2491CA71F0AD54FA582A3B15E25A7D57A4929E17239AC29E9F6C1838E9AA84BD2C64F2B97526677EBDD5A8B608E26477D48437F411DA3D47C554EB5C955F8994FEB6504911A7FB598A2ABD0A32F6AC65FED28E9546C28E87CB8F050B779080FE7A12D2D808E150D80176B3EFAF76C4522D81BB7389566991A6F1F97E7EF81F56B5F604DEFC957905AFDB3C53149B64DAE128839B9C49EA2CA9EF8FBD1C44002BFC0B41E6B811D5D1664484B7C1DD534D09764C3CF366BB2A61170C02697CCB9F236F0067DAD568ABEB9DEDD71BDF686A6A3FB353893CE2E08B70E6A9E321C0741175F3D7E33FD5B67FA43B2A8ADD9F700BEF6268FB644F7B9EAD19D95F13DDB47C94ED96BB73F59D2A85CE02AC9F7EAF6582DB3D9B415C5AF59BEAD36D89FD4DD9A5862714A116F0E792DE732DADF282715729105979FB2347E7DD87F543F574A054EF41089C2352C96DBBF66CFAB5895E5CFD2FA1044FD14A8955A6CB8B2CD2FD9A1ECCE6A3E941B65E7A5173BD0067856CB2CEE9D6D3671513CAF4C34DE3ECD0E7536AE74EB4C2FB6DB92E8C7C4E3AF969B629D94F0B3DDA6582735FE7A54A17784B17189BF03F0B95B10C69BCF13893D6D616BAE5B546F69F21F7FB6A405ED4084DF8FCA5E46881B177B19B0EDDDEC056F8EC7B4AA45F5DBE764ABCE1E4A91CD3DE2B6CDDF62657D2515CC65950BEA7E403271517DFF8E809BE6D1D6F3BA7AD3AD42A5FFED6854E3AC16779558AB635ADCD667D3239B4941480A5B75404F63D8AB8645055DB8EA8DB58B6C7095E5121BA65D935AF23A9A01AF8271254D7CF0C4E11B94910429F3D9525F06380890AC23BDE3BFAA26C0663819C3142B7050BF6F05F5F81F284DFB63BFF3A4FAA754177EE3AFC7A3FA313FDF5AF5C31B430EAAC7DBE28B5FCF4974EAEBAF204D5CF54BA5BDF689F0B6EAEA5F73B25716DA123D79691B68797EE3CF16A7386D237D21261558D3131FC604A852EF661A69F76FBD0274B167606736270DB240AD32F4DEFD32FC3D4016747001128E4123871A95A0197FD14117A8F8016D959355BF493D3BB9F85A94F1FE5E5DE1DEC53F764F77495C1FBFF5155E4569721517E5FBEC97383D3B7978FFC1C393D5E35D12152DD244878CF0487D46940595F0E0FB1A2A21DEEED76A737BC0859A4A516C7700DC42ADA6DE2A58F802A7D5DE5D55796F5EC2B3AE6C0481D3B54AF054B5568256FB0A5C526BA589067F8D2BA3A9BF30BD8DCA6A024BEB7D54DC0CF464F5FAB0DBD587B3672757D1AED09F8BE3A4030BFD698FC3BE48B7F197B393FF6ADA3F5ABDF84FE08598ED77AB86F747ABFBABFFB666091A36838DAE9945D7A213DBD98C1F63F162253ECD832D1020FB9F270424E5DF3CF0A1E18CBED09DB30A3D581290D63E76D62B349DE43CD08ECB92138DC22486A4DDBC1D2742D3492C2C1EE3D87E85C00CF07C8B383731FB17A626DF3EA60115389A44DB7C92590808072D131F1393CBDB2B120409B0D527060760A3D691C68CDA85FAE0869CDB1667F893A5AB01386B3D84AADB9D5EDB41FA39CA379FA2FC64F52AFAF2324EAFCB4F67270F1EFE51245AE6FA374C906F0583C0C192240A736894C402E0E9D6986B6DD6324022D4E2A857F8BFEDA32FFF6EABE50E5D80309D873FFC4013656B0A4DDFE76989CCD6376B48697E2BB4435B15C3053502D3C27A8F2040461A4FD682E7E7DB046CF73300B5FD8C06136C93BDE02281AD7767853B6B3A848AC5A47FF73DAD909E6EA7AFA1E11C1A0393EF793A43F3EDCD5A8365E17D8B2465F0B71D6D2BD2659BA9F5368F3749D11CB0FE87356D29991F340ACE1CD1A4F23BB756D2F73DCC5942023F7727076D20FA746EDBDD43DB0E3373D6C2574DB8B50C8D72F369D179C852B2E4A16BC71783C5665A4FD7E76EA1E1147DCEC619B006FF87215B7A65F3E31FAC5D73C401F01B39065800BF6445880077DF959001BC1FE61029F6CC75219D4FCF581812F1C1FB190E94A03F211E599FD4F1F502E4CE331582A4623234018547DF2A1072F0F9BB6416E53125DF33E13143DF6F7C50638E3581B998EAF2E6FD137E3879B8DED9EA2F4CDB4581B6D5B4DDBF9896E9774C428E26E90A3F5A1FA048D99A7E99163337A7706DB1F40212F3B96B2F24179FB3F81A9ACEBAFA12B3FBF927D98B2EA36D46E6F6255A6AFCCD7BEF80F7EA373BAD3C18BECCC9F662C00A67F264F186A8B3CD7BF8B0FCCDEE17B67B30B19F793AE8722C38AF757720017EF5AD8205B8EFBD6588000FA7790A4080078A1240805F7A5E44A82301B8D30252FFD9DECC19BB8A00E0CE2990F2EFFE99624CF657FDC414FEFB96CDCFDFAD5E141FD2E41F87AAE07D258D3AFAE38EC6DFCCCF715B6244129842D72AA8C289FAB736B22EB7AF1D31023C84231124C09A9C95FEE1C47B9EFE0D79F6E06561228F1EA80FE7759BAD4CE1CCF74E501C8567DA810CD8CA46C09C709E896089F9405538FBDEACEBC55CBE67D8AEE3B6D51CAA9AA0A6238CE46E537F2D037F533FFF529A29359F79398D9381CFB8A406939975BBBE784A0071D38A7D1529B5BF0C6577130D4DC9B7B88D4626DF336FA4E1E924B3DC1F9F90B6E2215FE5F86EA72189F916463049FB21D5EEF8B9596E3E49FD232800772F6A9734E77A164BA4D53393E7029CC36A79FA967A949BCF92C90925CF33F337B17C7946D6E6D87446E94B29F8FCCFFB9C1D2690876FA75A8DC0B4843E397DDF8995B6B1071B7B5C14D926697AEBD953930581F441F005BACA5EB7CDA2144A39EE8659A7DC034FA5AF9A6BF737BB6453B1586D26351112A4FB1BEF640F4325B9A3DF691D551E13E7B50947F5F97251E651A2C32754AE9E6E929B68870E576901BB24E7A9EAD3F5D0995A721EDFC469ED6E26C9786466E853892126B19DAE0543A3EDAF89A3BACD2D616B6DA2B848AEFBE50E5B11901C7FF426A3E6895E6299C8A36AC71AA27A855FF956A265CB821487C2596C877A1D1EFA344E60D459D80AE33D72EBCE434418D946E0E7D8C530A0691554E5B1DB085F4528AADCDCB641741CC02E848447350F10B50DB59EA857AD8C6F2F62E6A74852FA7D162B31BF35AEAB8DF1F4B285E5D04F5E3BF61E2CACA839DCA12D8719ACEE8CB5580617253F7F11436956E50EBB2A7D9F036E6A6EDBEE89BF4941117043ED920806822C73EBACAE4BF8B56869B1216648764B8CF6275981F7EFDDA38CA54F5315090DBFCDB48C45DEC4859691D8FBB516C680BF9F6DD76100E577AC5E1A628485CE28D533438D27B5DBA8817870DC42F17C9727FB0BB1AA10B3D1CCBE2F67FB49CB00B9846F0BE1C380E95561606E37BDF93B535060F41BDC46B4FCC5E04B50371BBC3B4BD269E6DB7F7E5A688D31E412F47905D44263CCD090571BC2EF3687246DBA16406AB6F506F5E8A4654E89E5F108F6DAAC43AFCBD845FFAD33747871B0BA3B135A2618EC3184954B30E95D9839DA6269CAE87E3AE630028D0A510896BB3F5BF0A03A0CB13469BA67AC5BB99A3FBA3D6B68E55B2D4F9755BE9874D1DC4246D5DFE7BC896A1B7EE3BBBE94E5A1D21A0B66B103FC255FCE1D642B13303C5A6971353D9415D406D03ED2F9CD047EA326D067DF040B0443BA8F4A6B2CB80B5640BC467A8456501B40FBFAEA3713F80D9A4097B7D3C400DC02FAEC1E516BC36F76160091927E9F45FFF89BA4B3E8DFA63BECE1D76011A03781FADF6F16F05BB680500B81652C20F01C60630147B10A681E7CFEA6FEDF9AFABB03A110BECF3E53BA7D2AB738745A54DBED552731E374D6EB4DD21308DA1DB8BB748D097FECC1BED35077233B762FA12785BCDEB65ED20CC2DEB2B63683856F58EBD9FA61733520F002E97E35547E8732368CE00D6EFD2F643AC48B371383C1EDB02147EFC79EF80962496616424D47023044A0294984C4D0A8498577656A424140EC3B0E6516A33D08CC1B92C3608D42AABC153662A72E189F2390ADE09D87B7971EC46391941FBE09DE99CB508EB6BAE845287DE6C9E97B315362C2F1E4B6BB3B38090165672EECCC765EC72113DBE5A7A3C3DFB8B4DA80DD9900E3B8475BF8A6656F3286C8E271571D36962CB373E6478FE5F7CA03149571761940BD34E5D95EDE0F3C9FC06864884608F8B1B96610BAC7F036B0D4657D4B0BBB335387A3812E3A7574D86222C6586873E911EEA474F4FEB73B6A2A20AA1FD2B3821D770C66D2A3E27D3395A3341511F53080B93C6B50069B0495AAD37C58126DE3E62589F3A88C3E46856E2C75AB8BB844A1C5FA63FA67038AA111ACE262F329DE476727DB8F5965242D32225E5BB33303471C56983C183BEF56525A87DDEF50275D9181B0B0DAD7880B6550074231B79301DE0AEF6BA8427639D432C90DE98EE88347580B5B5A175A0DA833AD92A15B09FD49EB522A85BA932A7044877B9D5C8C0A92EB5D5837047D1EE121F54B233D9440C48742A369B7B02A8041B705B019B765260DC8B9F2BA0AE472500772155387DDDD28BDA7AE00ECA22B330AAACBBF0424D595C0A2EA0A79E4DB1D05D6455B4A74D356307435DC43D3BA194AA02E864206F9314B09EC632CC63A1A6B307A1B5321C0DEC662ACB7B106A3B7E1D225D8D9508AF53554307485774376C1250F7EE2D70332540B0CCC50454E8096CEFEE1202D554103B5548BD333D5A5A12F5E27E30901BCECC1BD5928362DEAFAED82BE94EB4BC0055C5FA8901796C4C4C291007E5B0914B0352517374EDE2B61ABD78A4FC68294A6A5AC126092D84A602D0B8D21500C1F1A101E0B4A7A364149ABF6A63DBC28B7170181770C48818B8E8C7D1D1006802EFAE1B6CA825F26812DE21D2C02C1F3852C8203FDAB7F8095B508B1BDA80028E05A40086C9C5BFA18471893612323D10136310D0D6A77E26A131A182B6A12346CEB2C82605A96C3E04D00A38014AC3049A561E8C11F8CF4473587A8489A60D424C036156F1737819D8F435B3CA995B2336D9A61DB4EFB012A6891C0F8283C4957465DECC2C5B7614844C8B719E089B24F429BEED637A9BD7440CD9AB0FE8C5230C003CE13EADCC4EAE4D9007E1DE8DE269C3BC5C7B50386CED1D19303A83DD4769E410FDF7B7963873F0FCF620B0EA27417490F38864B018424938D573A176BAD163CF50AA87115560BF27A0A79CBC300E70D733A7414304403BE94C4AE726ED7B08B1CCA69EDD403B9A1317AD0E63660012509192D86A374EB862AA30121A3252083BC0D583DFE1C1AA3C79AEEBAED806F08DD42D038B76AA822B6033852B902CEB07282DBF08A1CCF6A0385DA52A7C76E1AED4752FF8BE954AA7317064BB9AB54671E130E33D8119E8270D5B6C26D1DA608C3802F1E66D2247BC1E17CF621230EA0E71D0430C1E4330EE80BFA78CAE3F13C5C4FADC74EB98804FCC9679EA1864BA79043A79DFC9C736F27E0C4F7C1F6AC93F1C1CF8F6864E9F3A443A5154FD5F811880949FEC59CC69026ECC771800FB96373EAE3ACE3F09124574C069C9C587D50F068A0611C9340862C4EB330E084CFF93E16F005EAC52D72F4688193C4E84FA7A1BFAA2AC976D427552A2F6FA6D333AB596992187003A093CCBC4DA3F3E95ACB90C26E0FA059543AA3DA89267A116599415247C2AC6CA179029B9DE81CC400A5B540376D4CD92FB30C5FB982D47EF844EE174D1EFA90AA611E3E9CD571C422385DB7CD87D483A1EC74DD5EE2EA7EA8FE2CB33CBA8E5F65DB785734BF9EAEDF1DAAD6FBB8FDEB3C2E92EB91C46945338D37759F23D1BECE8BF42AEB932F148EFA2A7D717F793C2EA36D5446F518AFA24D591557D1A568C4F473B43B54559EED3FC6DB6A057D286F0E6535E478FF71F75514469DB941F57FBAD6783E7DD35C6C287C0CA16233A98610BF499F1C92DD76E0FB79B42B14A56124EA9490BFC6D5EFAD2ECBEADFF8FAEB40E97596320975E21B3259DEC7FB9B5D45AC78935E449F6317DE3E14F1CBF83ADA7CAD7EFF9C34BB0E8C885911B2D84FCF93E83A8FF64547636C5FFD59D9F076FFE5CFFF0FA1B9EDC884000200 , N'6.1.3-40302')
+2016-05-12 23:57:39.0502 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.39 +03:00
+2016-05-12 23:57:39.0502 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: 1
+2016-05-12 23:57:39.0502 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:39.0502 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Committed transaction at 12.05.2016 23:57.39 +03:00
+2016-05-12 23:57:39.0687 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 12.05.2016 23:57.39 +03:00
+2016-05-12 23:57:39.1518 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT TOP (2) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[EmailConfirmed] AS [EmailConfirmed], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[SecurityStamp] AS [SecurityStamp], 
+    [Extent1].[PhoneNumber] AS [PhoneNumber], 
+    [Extent1].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+    [Extent1].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+    [Extent1].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+    [Extent1].[LockoutEnabled] AS [LockoutEnabled], 
+    [Extent1].[AccessFailedCount] AS [AccessFailedCount], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[FirstName] AS [FirstName], 
+    [Extent1].[LastName] AS [LastName]
+    FROM [dbo].[UserInt] AS [Extent1]
+    WHERE [Extent1].[Id] = @p0
+2016-05-12 23:57:39.1518 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:39.1518 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- p0: '1' (Type = Int32)
+2016-05-12 23:57:39.1518 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 12.05.2016 23:57.39 +03:00
+2016-05-12 23:57:39.1613 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:57:39.1613 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:57:39.1613 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 12.05.2016 23:57.39 +03:00
+2016-05-12 23:57:39.1613 | INFO |                Identity.UserStore`11.FindByIdAsync | result: null
+2016-05-12 23:57:39.4153 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 26b795ea-71bf-4020-aa50-cfde37bf8dd4
+2016-05-12 23:57:39.4153 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: b225ebd0-9325-4eb9-bce2-7d7e366097b9
+2016-05-12 23:57:39.4153 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: f958b5c6-694f-4f15-9194-d2132085dbee
+2016-05-12 23:57:39.4267 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: f1ef8044-6593-4d7d-9777-4e805dc611be Disposing:True
+2016-05-12 23:57:39.4267 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 26b795ea-71bf-4020-aa50-cfde37bf8dd4
+2016-05-12 23:57:43.1188 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 96367490-1089-4f10-ad7a-44c0645ac127
+2016-05-12 23:57:43.1188 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 5719e762-dd31-4cf9-a564-586d2990d20e
+2016-05-12 23:57:43.1188 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 50a334a0-5647-4516-9166-a36e55874d09
+2016-05-12 23:57:43.1188 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 5a09e0da-39d9-4430-a704-98f8c665ceec
+2016-05-12 23:57:43.1283 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 51630884-bc5a-4c5c-94ab-c961cdbb4a9d
+2016-05-12 23:57:43.1283 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 5a09e0da-39d9-4430-a704-98f8c665ceec
+2016-05-12 23:57:43.1283 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 96367490-1089-4f10-ad7a-44c0645ac127
+2016-05-12 23:57:43.1283 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 5719e762-dd31-4cf9-a564-586d2990d20e
+2016-05-12 23:57:43.1283 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 50a334a0-5647-4516-9166-a36e55874d09 Disposing:True
+2016-05-12 23:57:43.1445 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 5a09e0da-39d9-4430-a704-98f8c665ceec
+2016-05-12 23:57:43.1445 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: a455ac5c-ed6e-4f47-bfce-aeed34360864
+2016-05-12 23:57:43.1445 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 579a747f-2c82-467c-8e95-37ad33e6638b
+2016-05-12 23:57:43.1445 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 53c40902-06d4-4df5-b732-16f9959c0e07
+2016-05-12 23:57:43.1445 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 54b77e81-12cf-4ecb-be38-2af0a29fee4d
+2016-05-12 23:57:43.1615 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: ae4c6af0-721b-47ec-8e07-b9fb07d683e7
+2016-05-12 23:57:43.1763 | DEBUG |                 Web.ApplicationSignInManager..ctor | InstanceId: 415d2078-b281-49d7-8338-5873717d58cf
+2016-05-12 23:57:43.1763 | DEBUG |            Web.Controllers.AccountController..ctor | InstanceId: 4c3eaca2-3edc-4841-bff3-f2cadbe4df86
+2016-05-12 23:57:46.9524 | DEBUG |          Web.Controllers.AccountController.Dispose | InstanceId: 4c3eaca2-3edc-4841-bff3-f2cadbe4df86 Disposing:True
+2016-05-12 23:57:46.9524 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 54b77e81-12cf-4ecb-be38-2af0a29fee4d
+2016-05-12 23:57:46.9578 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: a455ac5c-ed6e-4f47-bfce-aeed34360864
+2016-05-12 23:57:46.9578 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 579a747f-2c82-467c-8e95-37ad33e6638b
+2016-05-12 23:57:46.9578 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 53c40902-06d4-4df5-b732-16f9959c0e07 Disposing:True
+2016-05-12 23:57:46.9578 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 54b77e81-12cf-4ecb-be38-2af0a29fee4d
+2016-05-12 23:57:57.9268 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 3f982b38-5888-44c3-ac3a-f665cb8b6673
+2016-05-12 23:57:57.9268 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 2fb1d9df-dd15-4d14-bc55-8e95a15a1604
+2016-05-12 23:57:57.9268 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 1f35920a-b70a-42e9-a222-d16ab31371dc
+2016-05-12 23:57:57.9268 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: e432c81a-6b26-40e3-86cc-18ffdf84eedf
+2016-05-12 23:57:57.9268 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 4b8c5bb2-3ded-4589-89cf-088546647c14
+2016-05-12 23:57:57.9268 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: e432c81a-6b26-40e3-86cc-18ffdf84eedf
+2016-05-12 23:57:57.9413 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 3f982b38-5888-44c3-ac3a-f665cb8b6673
+2016-05-12 23:57:57.9413 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 2fb1d9df-dd15-4d14-bc55-8e95a15a1604
+2016-05-12 23:57:57.9413 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 1f35920a-b70a-42e9-a222-d16ab31371dc Disposing:True
+2016-05-12 23:57:57.9413 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: e432c81a-6b26-40e3-86cc-18ffdf84eedf
+2016-05-12 23:57:57.9413 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 9587312a-e9ea-4485-ba19-9b8f742e40ac
+2016-05-12 23:57:57.9413 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 645cd710-7756-420e-82bd-e5777213a319
+2016-05-12 23:57:57.9573 | DEBUG |                                      DAL.UOW..ctor | InstanceId: b34854f8-dd86-4e83-93e5-0bb3ee9f9348
+2016-05-12 23:57:57.9573 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: ef4afbda-0b7b-46ba-9c2e-e55b4a76f659
+2016-05-12 23:57:57.9573 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 819057a0-df47-40ff-8b95-87e98858eb2a
+2016-05-12 23:57:57.9573 | DEBUG |                 Web.ApplicationSignInManager..ctor | InstanceId: 063a9ff9-1c22-4693-b019-40af830af75f
+2016-05-12 23:57:57.9573 | DEBUG |            Web.Controllers.AccountController..ctor | InstanceId: 30c28ed9-69e1-4ffc-a8d2-2a813cbce8c8
+2016-05-12 23:57:57.9573 | DEBUG |          Web.Controllers.AccountController.Dispose | InstanceId: 30c28ed9-69e1-4ffc-a8d2-2a813cbce8c8 Disposing:True
+2016-05-12 23:57:57.9729 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: ef4afbda-0b7b-46ba-9c2e-e55b4a76f659
+2016-05-12 23:57:57.9729 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 9587312a-e9ea-4485-ba19-9b8f742e40ac
+2016-05-12 23:57:57.9729 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 645cd710-7756-420e-82bd-e5777213a319
+2016-05-12 23:57:57.9729 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: b34854f8-dd86-4e83-93e5-0bb3ee9f9348 Disposing:True
+2016-05-12 23:57:57.9729 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: ef4afbda-0b7b-46ba-9c2e-e55b4a76f659
+2016-05-12 23:58:03.8082 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 4c467bbc-945a-46b9-9377-cf422455373d
+2016-05-12 23:58:03.8082 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 33028976-13ca-4175-b20b-7c54935f0d60
+2016-05-12 23:58:03.8082 | DEBUG |                                      DAL.UOW..ctor | InstanceId: c5e327eb-ffb8-4b3b-92fb-3d4fe52807f4
+2016-05-12 23:58:03.8162 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: fa9a2da2-db2c-496a-b1af-3c6e81326153
+2016-05-12 23:58:03.8162 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 41c69d95-9991-43d0-9398-4217e937bb86
+2016-05-12 23:58:03.8162 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 2dcbe647-83ee-4fa9-ae12-a36eea6fb573 dbSet: System.Data.Entity.DbSet`1[Domain.PizzaSize]
+2016-05-12 23:58:03.8317 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:58:03 PM +03:00
+2016-05-12 23:58:03.8317 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT 
+    [Extent1].[PizzaSizeId] AS [PizzaSizeId], 
+    [Extent1].[PizzaSizeNameId] AS [PizzaSizeNameId], 
+    [Extent1].[Diameter] AS [Diameter]
+    FROM [dbo].[PizzaSize] AS [Extent1]
+2016-05-12 23:58:03.8317 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:58:03.8317 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:58:03 PM +03:00
+2016-05-12 23:58:03.8487 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:58:03.8487 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:58:03.8487 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:58:03 PM +03:00
+2016-05-12 23:58:06.6405 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: fa9a2da2-db2c-496a-b1af-3c6e81326153
+2016-05-12 23:58:06.6405 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 4c467bbc-945a-46b9-9377-cf422455373d
+2016-05-12 23:58:06.6444 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 33028976-13ca-4175-b20b-7c54935f0d60
+2016-05-12 23:58:06.6444 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: c5e327eb-ffb8-4b3b-92fb-3d4fe52807f4 Disposing:True
+2016-05-12 23:58:06.6444 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: fa9a2da2-db2c-496a-b1af-3c6e81326153
+2016-05-12 23:58:09.6309 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 1b6aa9cd-d945-4381-b000-aa042602ef7f
+2016-05-12 23:58:09.6309 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: a7bfc55f-4a75-47e1-88c9-ef347dfb8f71
+2016-05-12 23:58:09.6309 | DEBUG |                                      DAL.UOW..ctor | InstanceId: dea35393-957b-4196-b1ba-5df7fd3dd5f5
+2016-05-12 23:58:09.6309 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: a73f648c-9bc1-45b7-85aa-fb1b20be9891
+2016-05-12 23:58:09.6309 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 76b98f31-a2da-4964-b6af-f59d2a28d3dd
+2016-05-12 23:58:09.6449 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 5935bf49-16af-4f79-aee3-9f5f24321d7f dbSet: System.Data.Entity.DbSet`1[Domain.Coupon]
+2016-05-12 23:58:09.6449 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:58:09 PM +03:00
+2016-05-12 23:58:09.6449 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT 
+    [Extent1].[CouponId] AS [CouponId], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[StartDate] AS [StartDate], 
+    [Extent1].[EndDate] AS [EndDate], 
+    [Extent1].[IsReusable] AS [IsReusable], 
+    [Extent1].[HasBeenUsed] AS [HasBeenUsed]
+    FROM [dbo].[Coupon] AS [Extent1]
+2016-05-12 23:58:09.6449 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:58:09.6609 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:58:09 PM +03:00
+2016-05-12 23:58:09.6609 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:58:09.6609 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:58:09.6609 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:58:09 PM +03:00
+2016-05-12 23:58:09.9438 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: a73f648c-9bc1-45b7-85aa-fb1b20be9891
+2016-05-12 23:58:09.9438 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 1b6aa9cd-d945-4381-b000-aa042602ef7f
+2016-05-12 23:58:09.9438 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: a7bfc55f-4a75-47e1-88c9-ef347dfb8f71
+2016-05-12 23:58:09.9438 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: dea35393-957b-4196-b1ba-5df7fd3dd5f5 Disposing:True
+2016-05-12 23:58:09.9438 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: a73f648c-9bc1-45b7-85aa-fb1b20be9891
+2016-05-12 23:58:12.2473 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 47de3a22-8276-4864-ad63-3fab63cb2c5b
+2016-05-12 23:58:12.2473 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 668f42fb-0ba3-4325-b2ab-c30160e18e32
+2016-05-12 23:58:12.2473 | DEBUG |                                      DAL.UOW..ctor | InstanceId: aaf50d9a-6d9e-44b0-8ffc-1fe78349f596
+2016-05-12 23:58:12.2553 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 5eba66c6-2c85-4635-87d7-787496176ef8
+2016-05-12 23:58:12.2553 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: a556d70f-26e9-4854-9528-b36fad91a5e4
+2016-05-12 23:58:12.6030 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 5eba66c6-2c85-4635-87d7-787496176ef8
+2016-05-12 23:58:12.6030 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 47de3a22-8276-4864-ad63-3fab63cb2c5b
+2016-05-12 23:58:12.6030 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 668f42fb-0ba3-4325-b2ab-c30160e18e32
+2016-05-12 23:58:12.6030 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: aaf50d9a-6d9e-44b0-8ffc-1fe78349f596 Disposing:True
+2016-05-12 23:58:12.6030 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 5eba66c6-2c85-4635-87d7-787496176ef8
+2016-05-12 23:58:24.6838 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 55ef8454-6db7-4288-a351-a6f41b66e238
+2016-05-12 23:58:24.6838 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 5cc8667a-47dd-4ebe-97d3-1704f663e26e
+2016-05-12 23:58:24.6838 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 03cff9f8-914a-4d93-956d-49921a9a1c89
+2016-05-12 23:58:24.6918 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: f0526201-aad8-492f-8fe2-0eb246a270a6
+2016-05-12 23:58:24.6918 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: ff094ffd-a974-4b1d-b3b6-8380a33fa72a
+2016-05-12 23:58:24.7103 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: e24718c1-8d2d-4867-af35-9f0e319e03db dbSet: System.Data.Entity.DbSet`1[Domain.Coupon]
+2016-05-12 23:58:24.7368 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:58:24 PM +03:00
+2016-05-12 23:58:24.7403 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Started transaction at 5/12/2016 11:58:24 PM +03:00
+2016-05-12 23:58:24.7403 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+INSERT [dbo].[Coupon]([Code], [StartDate], [EndDate], [IsReusable], [HasBeenUsed])
+VALUES (@0, @1, @2, @3, @4)
+SELECT [CouponId]
+FROM [dbo].[Coupon]
+WHERE @@ROWCOUNT > 0 AND [CouponId] = scope_identity()
+2016-05-12 23:58:24.7403 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:58:24.7403 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @0: 'ASDA' (Type = String, Size = 64)
+2016-05-12 23:58:24.7403 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @1: '5/25/2016 12:00:00 AM' (Type = DateTime2)
+2016-05-12 23:58:24.7538 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @2: '6/11/2016 12:00:00 AM' (Type = DateTime2)
+2016-05-12 23:58:24.7538 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @3: 'False' (Type = Boolean)
+2016-05-12 23:58:24.7538 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @4: 'True' (Type = Boolean)
+2016-05-12 23:58:24.7538 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:58:24 PM +03:00
+2016-05-12 23:58:24.7538 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: SqlDataReader
+2016-05-12 23:58:24.7538 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:58:24.7745 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Committed transaction at 5/12/2016 11:58:24 PM +03:00
+2016-05-12 23:58:24.7745 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:58:24 PM +03:00
+2016-05-12 23:58:24.7745 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: f0526201-aad8-492f-8fe2-0eb246a270a6
+2016-05-12 23:58:24.7862 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 55ef8454-6db7-4288-a351-a6f41b66e238
+2016-05-12 23:58:24.7862 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 5cc8667a-47dd-4ebe-97d3-1704f663e26e
+2016-05-12 23:58:24.7862 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 03cff9f8-914a-4d93-956d-49921a9a1c89 Disposing:True
+2016-05-12 23:58:24.7862 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: f0526201-aad8-492f-8fe2-0eb246a270a6
+2016-05-12 23:58:24.7862 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 28c199ef-dbe3-448f-aa7f-938a1e8e99df
+2016-05-12 23:58:24.7862 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 2313cc9e-2bb0-4ea6-8d6b-90b6cfda4c4c
+2016-05-12 23:58:24.8002 | DEBUG |                                      DAL.UOW..ctor | InstanceId: cc35a582-a32a-4994-b842-4d1b89e20497
+2016-05-12 23:58:24.8002 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: e64967d5-f133-4fda-82c4-641719ff78e6
+2016-05-12 23:58:24.8002 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 261a2df7-c592-4aa6-8cdc-b681271f2887
+2016-05-12 23:58:24.8002 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: d3210fb7-ba16-4cd7-babe-e3bbde2db680 dbSet: System.Data.Entity.DbSet`1[Domain.Coupon]
+2016-05-12 23:58:24.8002 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:58:24 PM +03:00
+2016-05-12 23:58:24.8002 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT 
+    [Extent1].[CouponId] AS [CouponId], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[StartDate] AS [StartDate], 
+    [Extent1].[EndDate] AS [EndDate], 
+    [Extent1].[IsReusable] AS [IsReusable], 
+    [Extent1].[HasBeenUsed] AS [HasBeenUsed]
+    FROM [dbo].[Coupon] AS [Extent1]
+2016-05-12 23:58:24.8002 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:58:24.8002 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:58:24 PM +03:00
+2016-05-12 23:58:24.8182 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:58:24.8182 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:58:24.8182 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:58:24 PM +03:00
+2016-05-12 23:58:24.8182 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: e64967d5-f133-4fda-82c4-641719ff78e6
+2016-05-12 23:58:24.8317 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 28c199ef-dbe3-448f-aa7f-938a1e8e99df
+2016-05-12 23:58:24.8317 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 2313cc9e-2bb0-4ea6-8d6b-90b6cfda4c4c
+2016-05-12 23:58:24.8317 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: cc35a582-a32a-4994-b842-4d1b89e20497 Disposing:True
+2016-05-12 23:58:24.8317 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: e64967d5-f133-4fda-82c4-641719ff78e6
+2016-05-12 23:58:29.2173 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: a003c802-826b-49f4-93b9-a80e8fa88e61
+2016-05-12 23:58:29.2173 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 46e23d8c-6b11-4c32-b68d-0fdf5dcad486
+2016-05-12 23:58:29.2228 | DEBUG |                                      DAL.UOW..ctor | InstanceId: e7627812-2e6d-4f40-b0fa-a3d5a92a26f5
+2016-05-12 23:58:29.2228 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: a5f6e4f8-1828-49bc-bd37-b4fd018d5cd5
+2016-05-12 23:58:29.2228 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: bc40cb63-2474-46d7-8885-04a01bd66083
+2016-05-12 23:58:29.2228 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 63daacea-a557-4d7b-ab12-1735a4e0f8a7 dbSet: System.Data.Entity.DbSet`1[Domain.Coupon]
+2016-05-12 23:58:29.2228 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:58:29 PM +03:00
+2016-05-12 23:58:29.2228 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT TOP (2) 
+    [Extent1].[CouponId] AS [CouponId], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[StartDate] AS [StartDate], 
+    [Extent1].[EndDate] AS [EndDate], 
+    [Extent1].[IsReusable] AS [IsReusable], 
+    [Extent1].[HasBeenUsed] AS [HasBeenUsed]
+    FROM [dbo].[Coupon] AS [Extent1]
+    WHERE [Extent1].[CouponId] = @p0
+2016-05-12 23:58:29.2378 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:58:29.2378 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- p0: '1' (Type = Int32)
+2016-05-12 23:58:29.2378 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:58:29 PM +03:00
+2016-05-12 23:58:29.2378 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:58:29.2378 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:58:29.2378 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:58:29 PM +03:00
+2016-05-12 23:58:31.1503 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: a5f6e4f8-1828-49bc-bd37-b4fd018d5cd5
+2016-05-12 23:58:31.1503 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: a003c802-826b-49f4-93b9-a80e8fa88e61
+2016-05-12 23:58:31.1503 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 46e23d8c-6b11-4c32-b68d-0fdf5dcad486
+2016-05-12 23:58:31.1503 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: e7627812-2e6d-4f40-b0fa-a3d5a92a26f5 Disposing:True
+2016-05-12 23:58:31.1503 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: a5f6e4f8-1828-49bc-bd37-b4fd018d5cd5
+2016-05-12 23:58:36.6400 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 2a133a14-441f-420d-b61b-f1ff94b381f2
+2016-05-12 23:58:36.6400 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 3ce2e218-be7f-41dd-a108-1dac070d7f46
+2016-05-12 23:58:36.6450 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 45b63211-9597-4585-933a-d4fdcc3d490b
+2016-05-12 23:58:36.6450 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 24c4c3c0-9ce1-4084-aeac-8b9171339ff2
+2016-05-12 23:58:36.6450 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 10d83b0b-9c08-4075-9fd8-d2d6f6d79896
+2016-05-12 23:58:36.6450 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: b77c024c-5f59-4bed-931d-53576caeb66c dbSet: System.Data.Entity.DbSet`1[Domain.Coupon]
+2016-05-12 23:58:36.6450 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:58:36 PM +03:00
+2016-05-12 23:58:36.6450 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT TOP (2) 
+    [Extent1].[CouponId] AS [CouponId], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[StartDate] AS [StartDate], 
+    [Extent1].[EndDate] AS [EndDate], 
+    [Extent1].[IsReusable] AS [IsReusable], 
+    [Extent1].[HasBeenUsed] AS [HasBeenUsed]
+    FROM [dbo].[Coupon] AS [Extent1]
+    WHERE [Extent1].[CouponId] = @p0
+2016-05-12 23:58:36.6600 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:58:36.6600 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- p0: '1' (Type = Int32)
+2016-05-12 23:58:36.6600 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:58:36 PM +03:00
+2016-05-12 23:58:36.6600 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:58:36.6600 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:58:36.6600 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:58:36 PM +03:00
+2016-05-12 23:58:36.8508 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 24c4c3c0-9ce1-4084-aeac-8b9171339ff2
+2016-05-12 23:58:36.8508 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 2a133a14-441f-420d-b61b-f1ff94b381f2
+2016-05-12 23:58:36.8508 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 3ce2e218-be7f-41dd-a108-1dac070d7f46
+2016-05-12 23:58:36.8508 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 45b63211-9597-4585-933a-d4fdcc3d490b Disposing:True
+2016-05-12 23:58:36.8508 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 24c4c3c0-9ce1-4084-aeac-8b9171339ff2
+2016-05-12 23:58:41.3978 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 3f5e69d8-7d2a-4ca2-aea5-5ade7b1fc560
+2016-05-12 23:58:41.3978 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 93329f57-3d7d-4fbb-a40c-111620d8a79a
+2016-05-12 23:58:41.3978 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 6505a4ab-f061-4de9-9a07-bea72b4e97b5
+2016-05-12 23:58:41.3978 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 9acc2ec4-ce20-47c3-97bb-a99abfc8ce1b
+2016-05-12 23:58:41.3978 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: f4cf65dd-bfcf-47ba-b0d7-ef87cfe2d3a2
+2016-05-12 23:58:41.3978 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: f83b5446-9611-4162-930f-1af2235db15f dbSet: System.Data.Entity.DbSet`1[Domain.Coupon]
+2016-05-12 23:58:41.4118 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:58:41 PM +03:00
+2016-05-12 23:58:41.4118 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT 
+    [Extent1].[CouponId] AS [CouponId], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[StartDate] AS [StartDate], 
+    [Extent1].[EndDate] AS [EndDate], 
+    [Extent1].[IsReusable] AS [IsReusable], 
+    [Extent1].[HasBeenUsed] AS [HasBeenUsed]
+    FROM [dbo].[Coupon] AS [Extent1]
+2016-05-12 23:58:41.4118 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:58:41.4118 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:58:41 PM +03:00
+2016-05-12 23:58:41.4118 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:58:41.4118 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:58:41.4258 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:58:41 PM +03:00
+2016-05-12 23:58:41.4258 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 9acc2ec4-ce20-47c3-97bb-a99abfc8ce1b
+2016-05-12 23:58:41.4258 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 3f5e69d8-7d2a-4ca2-aea5-5ade7b1fc560
+2016-05-12 23:58:41.4258 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 93329f57-3d7d-4fbb-a40c-111620d8a79a
+2016-05-12 23:58:41.4258 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 6505a4ab-f061-4de9-9a07-bea72b4e97b5 Disposing:True
+2016-05-12 23:58:41.4258 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 9acc2ec4-ce20-47c3-97bb-a99abfc8ce1b
+2016-05-12 23:58:42.9431 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: dae3a527-dd37-461f-96ff-16c4c3104574
+2016-05-12 23:58:42.9431 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: e166e26d-cb9a-45af-b827-014db94acdaf
+2016-05-12 23:58:42.9431 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 8e84b415-291c-424c-8c12-51de2318505a
+2016-05-12 23:58:42.9431 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: ddaec724-88c9-44b1-a0aa-a601d981d660
+2016-05-12 23:58:42.9431 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: dc65d017-1db7-4a17-b389-cefa3dc17081
+2016-05-12 23:58:42.9431 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 4c52e6b0-f38f-4d46-95ce-8196ccc6b314 dbSet: System.Data.Entity.DbSet`1[Domain.Coupon]
+2016-05-12 23:58:42.9431 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:58:42 PM +03:00
+2016-05-12 23:58:42.9581 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT TOP (2) 
+    [Extent1].[CouponId] AS [CouponId], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[StartDate] AS [StartDate], 
+    [Extent1].[EndDate] AS [EndDate], 
+    [Extent1].[IsReusable] AS [IsReusable], 
+    [Extent1].[HasBeenUsed] AS [HasBeenUsed]
+    FROM [dbo].[Coupon] AS [Extent1]
+    WHERE [Extent1].[CouponId] = @p0
+2016-05-12 23:58:42.9581 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:58:42.9581 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- p0: '1' (Type = Int32)
+2016-05-12 23:58:42.9581 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:58:42 PM +03:00
+2016-05-12 23:58:42.9581 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:58:42.9581 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:58:42.9581 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:58:42 PM +03:00
+2016-05-12 23:58:42.9723 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: ddaec724-88c9-44b1-a0aa-a601d981d660
+2016-05-12 23:58:42.9723 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: dae3a527-dd37-461f-96ff-16c4c3104574
+2016-05-12 23:58:42.9723 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: e166e26d-cb9a-45af-b827-014db94acdaf
+2016-05-12 23:58:42.9723 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 8e84b415-291c-424c-8c12-51de2318505a Disposing:True
+2016-05-12 23:58:42.9723 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: ddaec724-88c9-44b1-a0aa-a601d981d660
+2016-05-12 23:59:24.4843 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 4e7ed012-e5bf-4106-89b0-09bea97aee50
+2016-05-12 23:59:24.4878 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 5f654f15-ed82-4973-8b76-118acc2a0e1a
+2016-05-12 23:59:24.4878 | DEBUG |                                      DAL.UOW..ctor | InstanceId: ae623f2f-9ea8-43fa-a72c-6384bd42528c
+2016-05-12 23:59:24.4878 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 8cc94087-e25a-4da5-ae61-9475fff03bb9
+2016-05-12 23:59:24.4878 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: a1fabe2b-d1d4-411d-8c31-afd74b2cf3e4
+2016-05-12 23:59:24.4878 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 9582bbf6-7e6e-40e2-87ef-a47e4b59c36c dbSet: System.Data.Entity.DbSet`1[Domain.Component]
+2016-05-12 23:59:24.4878 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:59:24 PM +03:00
+2016-05-12 23:59:24.5108 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT 
+    [Extent1].[ComponentId] AS [ComponentId], 
+    [Extent1].[ComponentNameId] AS [ComponentNameId], 
+    [Extent1].[IsTopping] AS [IsTopping]
+    FROM [dbo].[Component] AS [Extent1]
+2016-05-12 23:59:24.5108 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:24.5108 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:59:24 PM +03:00
+2016-05-12 23:59:24.5108 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:59:24.5203 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:24.5203 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:59:24 PM +03:00
+2016-05-12 23:59:26.9788 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 8cc94087-e25a-4da5-ae61-9475fff03bb9
+2016-05-12 23:59:26.9788 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 4e7ed012-e5bf-4106-89b0-09bea97aee50
+2016-05-12 23:59:26.9788 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 5f654f15-ed82-4973-8b76-118acc2a0e1a
+2016-05-12 23:59:26.9788 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: ae623f2f-9ea8-43fa-a72c-6384bd42528c Disposing:True
+2016-05-12 23:59:26.9788 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 8cc94087-e25a-4da5-ae61-9475fff03bb9
+2016-05-12 23:59:28.2282 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 33e28258-fe4e-4a7c-99e6-1a6b7fd6b1ab
+2016-05-12 23:59:28.2282 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: ec8198da-ef50-4b9e-a0d3-532ba3f184df
+2016-05-12 23:59:28.2282 | DEBUG |                                      DAL.UOW..ctor | InstanceId: b909d885-015f-474d-b6d1-886c3d5f2d01
+2016-05-12 23:59:28.2282 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 67286830-eba0-480c-8381-268c754bff1d
+2016-05-12 23:59:28.2282 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 0859af6b-6ede-4943-8413-e794015ba2d4
+2016-05-12 23:59:28.5758 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 67286830-eba0-480c-8381-268c754bff1d
+2016-05-12 23:59:28.5758 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 33e28258-fe4e-4a7c-99e6-1a6b7fd6b1ab
+2016-05-12 23:59:28.5758 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: ec8198da-ef50-4b9e-a0d3-532ba3f184df
+2016-05-12 23:59:28.5818 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: b909d885-015f-474d-b6d1-886c3d5f2d01 Disposing:True
+2016-05-12 23:59:28.5818 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 67286830-eba0-480c-8381-268c754bff1d
+2016-05-12 23:59:29.9125 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 6e2bec6c-41a1-4580-ac5c-7009f2742bf1
+2016-05-12 23:59:29.9125 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 8533713d-103f-4049-a98f-09835d8579c8
+2016-05-12 23:59:29.9125 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 00cc7cbc-f267-4a7b-a52c-b139e4c736a2
+2016-05-12 23:59:29.9125 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 4b56de94-b27b-4cca-85de-01bc77cf6b79
+2016-05-12 23:59:29.9125 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: f479ebc1-0e73-46e7-9473-91501916c510
+2016-05-12 23:59:29.9275 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 64a043bf-b421-4b6d-b78e-5acc63f5662a dbSet: System.Data.Entity.DbSet`1[Domain.Component]
+2016-05-12 23:59:29.9480 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:59:29 PM +03:00
+2016-05-12 23:59:29.9480 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Started transaction at 5/12/2016 11:59:29 PM +03:00
+2016-05-12 23:59:29.9579 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+INSERT [dbo].[MultiLangString]([Value], [Owner])
+VALUES (@0, @1)
+SELECT [MultiLangStringId]
+FROM [dbo].[MultiLangString]
+WHERE @@ROWCOUNT > 0 AND [MultiLangStringId] = scope_identity()
+2016-05-12 23:59:29.9579 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:29.9579 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @0: 'asdasd' (Type = String, Size = -1)
+2016-05-12 23:59:29.9579 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @1: '' (Type = String, Size = 255)
+2016-05-12 23:59:29.9579 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:59:29 PM +03:00
+2016-05-12 23:59:29.9579 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: SqlDataReader
+2016-05-12 23:59:29.9579 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:29.9749 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+INSERT [dbo].[Component]([ComponentNameId], [IsTopping])
+VALUES (@0, @1)
+SELECT [ComponentId]
+FROM [dbo].[Component]
+WHERE @@ROWCOUNT > 0 AND [ComponentId] = scope_identity()
+2016-05-12 23:59:29.9749 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:29.9749 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @0: '1' (Type = Int32)
+2016-05-12 23:59:29.9749 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @1: 'False' (Type = Boolean)
+2016-05-12 23:59:29.9749 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:59:29 PM +03:00
+2016-05-12 23:59:29.9749 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: SqlDataReader
+2016-05-12 23:59:29.9884 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:29.9884 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+INSERT [dbo].[Translation]([Value], [MultiLangStringId], [Culture])
+VALUES (@0, @1, @2)
+SELECT [TranslationId]
+FROM [dbo].[Translation]
+WHERE @@ROWCOUNT > 0 AND [TranslationId] = scope_identity()
+2016-05-12 23:59:29.9884 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:29.9884 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @0: 'asdasd' (Type = String, Size = -1)
+2016-05-12 23:59:29.9884 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @1: '1' (Type = Int32)
+2016-05-12 23:59:29.9884 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @2: 'en' (Type = String, Size = 12)
+2016-05-12 23:59:29.9884 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:59:30 PM +03:00
+2016-05-12 23:59:30.0050 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: SqlDataReader
+2016-05-12 23:59:30.0050 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:30.0050 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Committed transaction at 5/12/2016 11:59:30 PM +03:00
+2016-05-12 23:59:30.0050 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:59:30 PM +03:00
+2016-05-12 23:59:30.0270 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 4b56de94-b27b-4cca-85de-01bc77cf6b79
+2016-05-12 23:59:30.0270 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 6e2bec6c-41a1-4580-ac5c-7009f2742bf1
+2016-05-12 23:59:30.0270 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 8533713d-103f-4049-a98f-09835d8579c8
+2016-05-12 23:59:30.0270 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 00cc7cbc-f267-4a7b-a52c-b139e4c736a2 Disposing:True
+2016-05-12 23:59:30.0349 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 4b56de94-b27b-4cca-85de-01bc77cf6b79
+2016-05-12 23:59:30.0349 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 43fce20e-de70-44da-a933-ae8634b65da6
+2016-05-12 23:59:30.0349 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 0a6d6703-cb70-4984-8099-03210b6161ca
+2016-05-12 23:59:30.0349 | DEBUG |                                      DAL.UOW..ctor | InstanceId: d86a8b53-3b6d-4326-8970-74a8173be39d
+2016-05-12 23:59:30.0349 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 0ea7d8d0-dadf-46bb-a20e-301641f06423
+2016-05-12 23:59:30.0349 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 24c324ab-3abc-44c4-93cc-d592cf4da9df
+2016-05-12 23:59:30.0509 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: be0ab522-5a1c-4385-b39e-d1eea14ce9c1 dbSet: System.Data.Entity.DbSet`1[Domain.Component]
+2016-05-12 23:59:30.0509 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:59:30 PM +03:00
+2016-05-12 23:59:30.0509 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT 
+    [Extent1].[ComponentId] AS [ComponentId], 
+    [Extent1].[ComponentNameId] AS [ComponentNameId], 
+    [Extent1].[IsTopping] AS [IsTopping]
+    FROM [dbo].[Component] AS [Extent1]
+2016-05-12 23:59:30.0509 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:30.0509 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:59:30 PM +03:00
+2016-05-12 23:59:30.0509 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:59:30.0659 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:30.0659 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:59:30 PM +03:00
+2016-05-12 23:59:30.0659 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:59:30 PM +03:00
+2016-05-12 23:59:30.0854 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT 
+    [Extent1].[MultiLangStringId] AS [MultiLangStringId], 
+    [Extent1].[Value] AS [Value], 
+    [Extent1].[Owner] AS [Owner]
+    FROM [dbo].[MultiLangString] AS [Extent1]
+    WHERE [Extent1].[MultiLangStringId] = @EntityKeyValue1
+2016-05-12 23:59:30.0854 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:30.0854 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- EntityKeyValue1: '1' (Type = Int32, IsNullable = false)
+2016-05-12 23:59:30.0854 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:59:30 PM +03:00
+2016-05-12 23:59:30.0854 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:59:30.0972 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:30.0972 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:59:30 PM +03:00
+2016-05-12 23:59:30.0972 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:59:30 PM +03:00
+2016-05-12 23:59:30.1196 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT 
+    [Extent1].[TranslationId] AS [TranslationId], 
+    [Extent1].[Value] AS [Value], 
+    [Extent1].[MultiLangStringId] AS [MultiLangStringId], 
+    [Extent1].[Culture] AS [Culture]
+    FROM [dbo].[Translation] AS [Extent1]
+    WHERE [Extent1].[MultiLangStringId] = @EntityKeyValue1
+2016-05-12 23:59:30.1196 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:30.1196 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- EntityKeyValue1: '1' (Type = Int32, IsNullable = false)
+2016-05-12 23:59:30.1196 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:59:30 PM +03:00
+2016-05-12 23:59:30.1301 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: SqlDataReader
+2016-05-12 23:59:30.1301 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:30.1301 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:59:30 PM +03:00
+2016-05-12 23:59:30.1301 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 0ea7d8d0-dadf-46bb-a20e-301641f06423
+2016-05-12 23:59:30.1301 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 43fce20e-de70-44da-a933-ae8634b65da6
+2016-05-12 23:59:30.1441 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 0a6d6703-cb70-4984-8099-03210b6161ca
+2016-05-12 23:59:30.1441 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: d86a8b53-3b6d-4326-8970-74a8173be39d Disposing:True
+2016-05-12 23:59:30.1441 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 0ea7d8d0-dadf-46bb-a20e-301641f06423
+2016-05-12 23:59:31.4954 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: 0b4271e9-083a-40ed-a882-e0d113330b66
+2016-05-12 23:59:31.4954 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 9b347d7c-ac51-4ce5-bd5c-4e1ddb81409f
+2016-05-12 23:59:31.4954 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 439dc27e-4ac1-4935-b002-6507e34c5f0a
+2016-05-12 23:59:31.4954 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: a8768ba2-af46-4090-8f10-a8c62803fb91
+2016-05-12 23:59:31.5040 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 241569c7-1dc8-4e51-8786-2ea6c31e7ba2
+2016-05-12 23:59:31.5040 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 26b53ae3-054c-4160-bcb5-53d9fad13f6c dbSet: System.Data.Entity.DbSet`1[Domain.Component]
+2016-05-12 23:59:31.5040 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:59:31 PM +03:00
+2016-05-12 23:59:31.5040 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT TOP (2) 
+    [Extent1].[ComponentId] AS [ComponentId], 
+    [Extent1].[ComponentNameId] AS [ComponentNameId], 
+    [Extent1].[IsTopping] AS [IsTopping]
+    FROM [dbo].[Component] AS [Extent1]
+    WHERE [Extent1].[ComponentId] = @p0
+2016-05-12 23:59:31.5040 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:31.5040 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- p0: '1' (Type = Int32)
+2016-05-12 23:59:31.5040 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:59:31 PM +03:00
+2016-05-12 23:59:31.5195 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:59:31.5195 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:31.5195 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:59:31 PM +03:00
+2016-05-12 23:59:31.7240 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:59:31 PM +03:00
+2016-05-12 23:59:31.7240 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT 
+    [Extent1].[MultiLangStringId] AS [MultiLangStringId], 
+    [Extent1].[Value] AS [Value], 
+    [Extent1].[Owner] AS [Owner]
+    FROM [dbo].[MultiLangString] AS [Extent1]
+    WHERE [Extent1].[MultiLangStringId] = @EntityKeyValue1
+2016-05-12 23:59:31.7240 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:31.7240 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- EntityKeyValue1: '1' (Type = Int32, IsNullable = false)
+2016-05-12 23:59:31.7240 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:59:31 PM +03:00
+2016-05-12 23:59:31.7240 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:59:31.7240 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:31.7395 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:59:31 PM +03:00
+2016-05-12 23:59:31.7395 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: a8768ba2-af46-4090-8f10-a8c62803fb91
+2016-05-12 23:59:31.7395 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: 0b4271e9-083a-40ed-a882-e0d113330b66
+2016-05-12 23:59:31.7395 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 9b347d7c-ac51-4ce5-bd5c-4e1ddb81409f
+2016-05-12 23:59:31.7538 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 439dc27e-4ac1-4935-b002-6507e34c5f0a Disposing:True
+2016-05-12 23:59:31.7538 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: a8768ba2-af46-4090-8f10-a8c62803fb91
+2016-05-12 23:59:34.8205 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: d0e05c76-73bc-4d14-abc1-92ab498e7948
+2016-05-12 23:59:34.8205 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: f3e82342-9142-4b9d-80c6-0e60f0fd76d5
+2016-05-12 23:59:34.8205 | DEBUG |                                      DAL.UOW..ctor | InstanceId: 5a92b844-7755-4406-bfea-c19f55afa4f7
+2016-05-12 23:59:34.8205 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: e36d1152-da10-45bb-bbf9-eff7a7902739
+2016-05-12 23:59:34.8315 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: 0916d43c-341f-4bd6-b84b-1f7f11126d11
+2016-05-12 23:59:34.8315 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 9662c352-c7e9-4ea0-8fb8-860b44b081f7 dbSet: System.Data.Entity.DbSet`1[Domain.Component]
+2016-05-12 23:59:34.8315 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:59:34 PM +03:00
+2016-05-12 23:59:34.8315 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT TOP (2) 
+    [Extent1].[ComponentId] AS [ComponentId], 
+    [Extent1].[ComponentNameId] AS [ComponentNameId], 
+    [Extent1].[IsTopping] AS [IsTopping]
+    FROM [dbo].[Component] AS [Extent1]
+    WHERE [Extent1].[ComponentId] = @p0
+2016-05-12 23:59:34.8315 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:34.8315 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- p0: '1' (Type = Int32)
+2016-05-12 23:59:34.8315 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:59:34 PM +03:00
+2016-05-12 23:59:34.8495 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:59:34.8495 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:34.8495 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:59:34 PM +03:00
+2016-05-12 23:59:34.8627 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:59:34 PM +03:00
+2016-05-12 23:59:34.8627 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Started transaction at 5/12/2016 11:59:34 PM +03:00
+2016-05-12 23:59:34.8627 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+DELETE [dbo].[Component]
+WHERE ([ComponentId] = @0)
+2016-05-12 23:59:34.8627 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:34.8627 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- @0: '1' (Type = Int32)
+2016-05-12 23:59:34.8627 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:59:34 PM +03:00
+2016-05-12 23:59:34.8799 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 1 ms with result: 1
+2016-05-12 23:59:34.8799 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:34.8799 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Committed transaction at 5/12/2016 11:59:34 PM +03:00
+2016-05-12 23:59:34.8799 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:59:34 PM +03:00
+2016-05-12 23:59:34.8799 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: e36d1152-da10-45bb-bbf9-eff7a7902739
+2016-05-12 23:59:34.8799 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: d0e05c76-73bc-4d14-abc1-92ab498e7948
+2016-05-12 23:59:34.8944 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: f3e82342-9142-4b9d-80c6-0e60f0fd76d5
+2016-05-12 23:59:34.8944 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: 5a92b844-7755-4406-bfea-c19f55afa4f7 Disposing:True
+2016-05-12 23:59:34.8944 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: e36d1152-da10-45bb-bbf9-eff7a7902739
+2016-05-12 23:59:34.8944 | DEBUG |             DAL.Helpers.EFRepositoryProvider..ctor | InstanceId: ccb3d6c3-a46e-4898-b415-d8ef18d511da
+2016-05-12 23:59:34.8944 | DEBUG |                          DAL.DataBaseContext..ctor | InstanceId: 3abdc926-64c5-4e52-b388-f2d2262a36fa
+2016-05-12 23:59:34.8944 | DEBUG |                                      DAL.UOW..ctor | InstanceId: be05f2b4-9f19-486d-b2d7-d724859d629d
+2016-05-12 23:59:34.9114 | DEBUG |                        Identity.UserStore`11..ctor | InstanceId: 091cd31c-b2b7-4eea-b3a9-036793194575
+2016-05-12 23:59:34.9114 | DEBUG |                   Web.ApplicationUserManager..ctor | InstanceId: e028fe59-3ee3-4cf4-9317-1369a77472f5
+2016-05-12 23:59:34.9114 | INFO |              DAL.Repositories.EFRepository`1..ctor | _instanceId: 2983c129-568b-45de-b5eb-4dc71b5d8c2d dbSet: System.Data.Entity.DbSet`1[Domain.Component]
+2016-05-12 23:59:34.9114 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Opened connection at 5/12/2016 11:59:34 PM +03:00
+2016-05-12 23:59:34.9114 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+SELECT 
+    [Extent1].[ComponentId] AS [ComponentId], 
+    [Extent1].[ComponentNameId] AS [ComponentNameId], 
+    [Extent1].[IsTopping] AS [IsTopping]
+    FROM [dbo].[Component] AS [Extent1]
+2016-05-12 23:59:34.9114 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:34.9114 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Executing at 5/12/2016 11:59:34 PM +03:00
+2016-05-12 23:59:34.9269 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | -- Completed in 0 ms with result: SqlDataReader
+2016-05-12 23:59:34.9269 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | 
+2016-05-12 23:59:34.9269 | INFO |                  DAL.DataBaseContext.<.ctor>b__3_1 | Closed connection at 5/12/2016 11:59:34 PM +03:00
+2016-05-12 23:59:34.9269 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 091cd31c-b2b7-4eea-b3a9-036793194575
+2016-05-12 23:59:34.9269 | DEBUG |           DAL.Helpers.EFRepositoryProvider.Dispose | InstanceId: ccb3d6c3-a46e-4898-b415-d8ef18d511da
+2016-05-12 23:59:34.9269 | INFO |                        DAL.DataBaseContext.Dispose | Disposing: True _instanceId: 3abdc926-64c5-4e52-b388-f2d2262a36fa
+2016-05-12 23:59:34.9269 | DEBUG |                                    DAL.UOW.Dispose | InstanceId: be05f2b4-9f19-486d-b2d7-d724859d629d Disposing:True
+2016-05-12 23:59:34.9424 | DEBUG |                      Identity.UserStore`11.Dispose | InstanceId: 091cd31c-b2b7-4eea-b3a9-036793194575

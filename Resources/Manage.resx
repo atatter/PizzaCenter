@@ -243,4 +243,10 @@
   <data name="Translations_Header" xml:space="preserve">
     <value>Translations</value>
   </data>
+  <data name="Coupons_Add" xml:space="preserve">
+    <value>Add a coupon</value>
+  </data>
+  <data name="Coupons_Header" xml:space="preserve">
+    <value>Coupons</value>
+  </data>
 </root>
