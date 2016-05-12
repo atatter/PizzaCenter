@@ -94,9 +94,22 @@
                 <ul class="sidebar-menu">
                     <li class="header">MAIN NAVIGATION</li>
 
-                    <li><a href="@Url.Action("Index","Pizzas",new { area = "Admin" })"><i class="fa fa-pie-chart"></i> <span>Pizzas</span></a></li>
+                    <li><a href="@Url.Action("Index", "Pizzas", new {area = "Admin"})"><i class="fa fa-pie-chart"></i> <span>Pizzas</span></a></li>
                     <li><a href="@Url.Action("Index","Components",new { area = "Admin" })"><i class="fa fa-th"></i> <span>Components</span></a></li>
-                    <li><a href="@Url.Action("Index","Translations",new { area = "Admin" })"><i class="fa fa-book"></i> <span>Translations</span></a></li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-laptop"></i>
+                            <span>Pizza related stuff</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu" style="display: none;">
+                            <li><a href="@Url.Action("Index", "PizzaSizes", new {area = "Admin"})"><i class="fa fa-circle-o"></i>Pizza sizes</a></li>
+                            <li><a href="@Url.Action("Index", "PizzaSizes", new {area = "Admin"})"><i class="fa fa-circle-o"></i>Price types</a></li>
+                            @*<li><a href="@Url.Action("Index", "PizzaSizes", new {area = "Admin"})"><i class="fa fa-circle-o"></i>Coupons</a></li>*@
+                            <li><a href="@Url.Action("Index", "PizzaSizes", new {area = "Admin"})"><i class="fa fa-circle-o"></i>Payment Methods</a></li>
+                            <li><a href="@Url.Action("Index","Translations",new { area = "Admin" })"><i class="fa fa-circle-o"></i>Translations</a></li>
+                        </ul>
+                    </li>                 
                 </ul>
             </section>
             <!-- /.sidebar -->

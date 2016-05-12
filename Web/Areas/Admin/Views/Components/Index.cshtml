@@ -25,7 +25,7 @@
                         @foreach (var item in Model)
                         {
                             <tr>
-                                <td>@Html.DisplayFor(modelItem => item.Nimetus.Value)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Name.Value)</td>
                                 <td></td>
                                 <td>@*@Html.ActionLink("Edit", "Edit", new { id = item.PizzaId }) | @Html.ActionLink("Delete", "Delete", new { id = item.PizzaId })*@</td>
                             </tr>

@@ -210,4 +210,19 @@
   <data name="ViewModel_PhoneNumberRequired" xml:space="preserve">
     <value>Phone number is required.</value>
   </data>
+  <data name="PizzaSizes_Add" xml:space="preserve">
+    <value>Add pizza size</value>
+  </data>
+  <data name="PizzaSizes_Header" xml:space="preserve">
+    <value>Pizza Sizes</value>
+  </data>
+  <data name="InputText_Placeholder" xml:space="preserve">
+    <value>Type here...</value>
+  </data>
+  <data name="PriceTypes_Add" xml:space="preserve">
+    <value>Add a price type</value>
+  </data>
+  <data name="PriceTypes_Header" xml:space="preserve">
+    <value>Price Types</value>
+  </data>
 </root>

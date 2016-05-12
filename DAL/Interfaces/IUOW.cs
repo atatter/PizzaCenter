@@ -31,7 +31,6 @@ namespace DAL.Interfaces
         IEFRepository<AdditionalProduct> AdditionalProducts { get; }
         IEFRepository<AdditionalProductInOrder> AdditionalProductInOrders { get; }
         IEFRepository<Component> Components { get; }
-        IEFRepository<ComponentAsTopping> ComponentAsToppings { get; }
         IEFRepository<ComponentInPizza> ComponentInPizzas { get; }
         IEFRepository<Coupon> Coupons { get; }
         IEFRepository<Invoice> Invoices { get; }
@@ -43,7 +42,6 @@ namespace DAL.Interfaces
         IEFRepository<PizzaSize> PizzaSizes { get; }
         IEFRepository<Price> Prices { get; }
         IEFRepository<PriceType> PriceTypes { get; }
-        IEFRepository<Topping> Toppings { get; }
         IEFRepository<ToppingInPizzaOrder> ToppingInPizzaOrders { get; }
 
 

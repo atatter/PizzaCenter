@@ -39,7 +39,7 @@ namespace Web.Areas.Admin.Controllers
                 _uow.MultiLangStrings.Add(vm.MultiLangString);
                 _uow.Commit();
                 Component component = new Component();
-                component.NimetusId = vm.MultiLangString.MultiLangStringId;
+                component.NameId = vm.MultiLangString.MultiLangStringId;
                 _uow.Components.Add(component);
                 _uow.Commit();
                 return RedirectToAction("Index");

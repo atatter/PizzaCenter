@@ -25,7 +25,7 @@
                 <div class="form-group">
                     @Html.LabelFor(model => model.MultiLangString.Value, "MultiLangString Value", htmlAttributes: new {@class = ""})
                     @Html.EditorFor(m => m.MultiLangString.Value, new { htmlAttributes = new { @class = "form-control", placeholder = "Sisesta ..." } })
-                    @Html.ValidationMessageFor(model => model.Pizza.PizzaDescriptionId, "", new {@class = "text-danger"})
+                    @Html.ValidationMessageFor(model => model.MultiLangString.Value, "", new {@class = "text-danger"})
                 </div>
             </div>
             <!-- /.box-body -->

@@ -11,8 +11,8 @@ namespace Domain
         public int ToppingInPizzaOrderId { get; set; }
 
         //Lisand
-        public int ToppingId { get; set; }
-        public virtual Topping Topping { get; set; }
+        public int ComponentId { get; set; }
+        public virtual Component Component { get; set; }
 
         //Pizza tellimuses
         public int PizzaInOrderId { get; set; }

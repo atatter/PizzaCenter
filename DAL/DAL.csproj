@@ -80,7 +80,6 @@
     <Compile Include="Interfaces\IAdditionalProductInOrderRepostiory.cs" />
     <Compile Include="Interfaces\IAdditionalProductRepository.cs" />
     <Compile Include="Interfaces\IArticleRepository.cs" />
-    <Compile Include="Interfaces\IComponentAsToppingRepository.cs" />
     <Compile Include="Interfaces\IComponentInPizzaRepository.cs" />
     <Compile Include="Interfaces\IComponentRepository.cs" />
     <Compile Include="Interfaces\IContactRepository.cs" />
@@ -100,7 +99,6 @@
     <Compile Include="Interfaces\IPriceTypeRepository.cs" />
     <Compile Include="Interfaces\IRoleRepository.cs" />
     <Compile Include="Interfaces\IToppingInPizzaOrderRepository.cs" />
-    <Compile Include="Interfaces\IToppingRepository.cs" />
     <Compile Include="Interfaces\IUOW.cs" />
     <Compile Include="Interfaces\IUserClaimRepository.cs" />
     <Compile Include="Interfaces\IUserLoginRepository.cs" />
@@ -112,7 +110,6 @@
     <Compile Include="Repositories\AdditionalProductInOrderRepository.cs" />
     <Compile Include="Repositories\AdditionalProductRepository.cs" />
     <Compile Include="Repositories\ArticleRepository.cs" />
-    <Compile Include="Repositories\ComponentAsToppingRepository.cs" />
     <Compile Include="Repositories\ComponentInPizzaRepository.cs" />
     <Compile Include="Repositories\ComponentRepository.cs" />
     <Compile Include="Repositories\ContactRepository.cs" />
@@ -130,7 +127,6 @@
     <Compile Include="Repositories\PriceTypeRepository.cs" />
     <Compile Include="Repositories\RoleRepository.cs" />
     <Compile Include="Repositories\ToppingInPizzaOrderRepository.cs" />
-    <Compile Include="Repositories\ToppingRepository.cs" />
     <Compile Include="Repositories\UserClaimRepository.cs" />
     <Compile Include="Repositories\UserLoginRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />

@@ -1,0 +1,39 @@
+﻿@model List<Domain.PizzaSize>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">@Resources.Manage.PizzaSizes_Header</h3>
+            </div><!-- /.box-header -->
+            @Html.ActionLink(Resources.Manage.PizzaSizes_Add, "Create", new { }, new { @class = "btn btn-block btn-primary btn-flat" })
+            <div class="box-body">
+                <table id="example2" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().PizzaSizeName)</th>
+                            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Diameter)</th>
+                            <th>@Resources.Common.Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.PizzaSizeName</td>
+                                <td>@item.Diameter</td>
+                                <td>@Html.ActionLink(Resources.Common.Edit, "Edit", new { id = item.PizzaSizeId }) | @Html.ActionLink(Resources.Common.Delete, "Delete", new { id = item.PizzaSizeId })</td>
+                            </tr>
+                        }
+                    <tfoot>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().PizzaSizeName)</th>
+                            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Diameter)</th>
+                            <th>@Resources.Common.Actions</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+    </div>
+</div>

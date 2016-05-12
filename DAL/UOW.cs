@@ -69,7 +69,6 @@ namespace DAL
         public IEFRepository<AdditionalProduct> AdditionalProducts => GetStandardRepo<AdditionalProduct>();
         public IEFRepository<AdditionalProductInOrder> AdditionalProductInOrders => GetStandardRepo<AdditionalProductInOrder>();
         public IEFRepository<Component> Components => GetStandardRepo<Component>();
-        public IEFRepository<ComponentAsTopping> ComponentAsToppings => GetStandardRepo<ComponentAsTopping>();
         public IEFRepository<ComponentInPizza> ComponentInPizzas => GetStandardRepo<ComponentInPizza>();
         public IEFRepository<Coupon> Coupons => GetStandardRepo<Coupon>();
         public IEFRepository<Invoice> Invoices => GetStandardRepo<Invoice>();
@@ -81,7 +80,6 @@ namespace DAL
         public IEFRepository<PizzaSize> PizzaSizes => GetStandardRepo<PizzaSize>();
         public IEFRepository<Price> Prices => GetStandardRepo<Price>();
         public IEFRepository<PriceType> PriceTypes => GetStandardRepo<PriceType>();
-        public IEFRepository<Topping> Toppings => GetStandardRepo<Topping>();
         public IEFRepository<ToppingInPizzaOrder> ToppingInPizzaOrders => GetStandardRepo<ToppingInPizzaOrder>();
 
 

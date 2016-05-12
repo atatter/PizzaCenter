@@ -13,12 +13,16 @@ namespace Domain
         public int ComponentId { get; set; }
 
         //List nimetuse tõlkeid
-        [ForeignKey(nameof(Nimetus))]
-        public int NimetusId { get; set; }
-        public virtual MultiLangString Nimetus { get; set; }
-        //List komponente lisandiks
-        public virtual List<ComponentAsTopping> ComponentsAsTopping { get; set; }
+        [ForeignKey(nameof(Name))]
+        public int NameId { get; set; }
+        public virtual MultiLangString Name { get; set; }
+        public bool IsTopping { get; set; }
+
         //List komponente pizzas
         public virtual List<ComponentInPizza> ComponentInPizzas { get; set; }
+        //List lisandeid_tellimuses
+        public virtual List<ToppingInPizzaOrder> ToppingInPizzaOrders { get; set; }
+        //List hindu
+        public virtual List<Price> Prices { get; set; }
     }
 }

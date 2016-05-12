@@ -169,6 +169,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Type here....
+        /// </summary>
+        public static string InputText_Placeholder {
+            get {
+                return ResourceManager.GetString("InputText_Placeholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to There are no external authentication services configured..
         /// </summary>
         public static string ManageLogins_NoExternalLogins {
@@ -237,6 +246,42 @@ namespace Resources {
         public static string ManageMessage_SetTwoFactorSuccess {
             get {
                 return ResourceManager.GetString("ManageMessage_SetTwoFactorSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add pizza size.
+        /// </summary>
+        public static string PizzaSizes_Add {
+            get {
+                return ResourceManager.GetString("PizzaSizes_Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pizza Sizes.
+        /// </summary>
+        public static string PizzaSizes_Header {
+            get {
+                return ResourceManager.GetString("PizzaSizes_Header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add a price type.
+        /// </summary>
+        public static string PriceTypes_Add {
+            get {
+                return ResourceManager.GetString("PriceTypes_Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Price Types.
+        /// </summary>
+        public static string PriceTypes_Header {
+            get {
+                return ResourceManager.GetString("PriceTypes_Header", resourceCulture);
             }
         }
         

@@ -20,8 +20,8 @@ namespace Domain
         public virtual PizzaPriceBySize PizzaPriceBySize { get; set; }
 
         //Millise lisandi hind
-        public int ToppingId { get; set; }
-        public virtual Topping Topping { get; set; }
+        public int ComponentId { get; set; }
+        public virtual Component Component { get; set; }
 
         //Millise lisatoote hind
         public int AdditionalProductId { get; set; }

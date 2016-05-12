@@ -18,18 +18,25 @@
         <form role="form">
             <div class="box-body">
                 <div class="form-group">
-                    @Html.LabelFor(model => model.MultiLangString.Value, htmlAttributes: new { @class = "" })
-                    @Html.EditorFor(model => model.MultiLangString.Value, new { htmlAttributes = new { @class = "form-control", placeholder = "Sisesta ..." } })
-                    @Html.ValidationMessageFor(model => model.MultiLangString.Value, "", new { @class = "text-danger" })
+                    @Html.Label("Nimetus", htmlAttributes: new {@class = ""})
+                    @Html.EditorFor(model => model.MultiLangString.Value, new {htmlAttributes = new {@class = "form-control", placeholder = "Sisesta ..."}})
+                    @Html.ValidationMessageFor(model => model.MultiLangString.Value, "", new {@class = "text-danger"})
+                </div>
+                <div class="checkbox">
+                    @*@Html.LabelFor(model => model.MultiLangString.MultiLangStringId, "sass", htmlAttributes: new {@class = ""})
+                    @Html.CheckBoxFor(model => model.MultiLangString, new {htmlAttributes = new {@class = "checkbox", placeholder = "Sisesta ..."}})
+                    @Html.ValidationMessageFor(model => model.MultiLangString.Value, "", new {@class = "text-danger"})*@
                 </div>
             </div>
             <!-- /.box-body -->
 
             <div class="box-footer">
                 <button type="submit" class="btn btn-primary">Lisa</button>
-                @Html.ActionLink("Tagasi", "Index", new { }, new { @class = "btn btn-danger" })
+                @Html.ActionLink("Tagasi", "Index", new {}, new {@class = "btn btn-danger"})
             </div>
         </form>
     </div>
+
+
 }
 

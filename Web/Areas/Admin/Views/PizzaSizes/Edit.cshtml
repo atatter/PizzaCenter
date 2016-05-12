@@ -1,0 +1,28 @@
+﻿@model Web.Areas.Admin.ViewModels.PizzaSizesVM
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">@Resources.Common.Edit</h3>
+        </div>
+        <!-- /.box-header -->
+        <!-- form start -->
+        <form role="form">
+            <div class="box-body">
+                @Html.HiddenFor(model => model.PizzaSize.PizzaSizeNameId)
+                @Html.HiddenFor(model => model.PizzaSize.PizzaSizeId)
+                @Html.Partial("_CreateEdit", Model)
+            </div>
+            <!-- /.box-body -->
+
+            <div class="box-footer">
+                <button type="submit" class="btn btn-primary">@Resources.Common.Edit</button>
+                @Html.ActionLink(Resources.Common.Cancel, "Index", new { }, new { @class = "btn btn-danger" })
+            </div>
+        </form>
+    </div>
+}
