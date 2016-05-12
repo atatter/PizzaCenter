@@ -11,7 +11,7 @@ namespace Domain
     {
         public int PriceTypeId { get; set; }
 
-        //Pizza kirjeldus
+        //Hinnatüübi nimetus
         [ForeignKey(nameof(PriceTypeName))]
         public int PriceTypeNameId { get; set; }
         public virtual MultiLangString PriceTypeName { get; set; }

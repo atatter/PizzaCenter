@@ -250,6 +250,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add a payment method.
+        /// </summary>
+        public static string PaymentMethods_Add {
+            get {
+                return ResourceManager.GetString("PaymentMethods_Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Payment Methods.
+        /// </summary>
+        public static string PaymentMethods_Header {
+            get {
+                return ResourceManager.GetString("PaymentMethods_Header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add pizza size.
         /// </summary>
         public static string PizzaSizes_Add {

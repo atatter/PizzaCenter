@@ -1,0 +1,6 @@
+﻿@model Web.Areas.Admin.ViewModels.PaymentMethodsCreateEditViewModel
+<div class="form-group">
+    @Html.LabelFor(model => model.PaymentMethodName, htmlAttributes: new { @class = "" })
+    @Html.EditorFor(model => model.PaymentMethodName, new { htmlAttributes = new { @class = "form-control", placeholder = Resources.Manage.InputText_Placeholder } })
+    @Html.ValidationMessageFor(model => model.PaymentMethodName, "", new { @class = "text-danger" })
+</div>

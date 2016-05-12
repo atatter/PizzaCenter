@@ -225,4 +225,10 @@
   <data name="PriceTypes_Header" xml:space="preserve">
     <value>Price Types</value>
   </data>
+  <data name="PaymentMethods_Add" xml:space="preserve">
+    <value>Add a payment method</value>
+  </data>
+  <data name="PaymentMethods_Header" xml:space="preserve">
+    <value>Payment Methods</value>
+  </data>
 </root>
