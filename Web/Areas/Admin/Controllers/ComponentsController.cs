@@ -7,11 +7,12 @@ using System.Web.Mvc;
 using DAL.Interfaces;
 using Domain;
 using Web.Areas.Admin.ViewModels;
+using Web.Controllers;
 using Web.Helpers;
 
 namespace Web.Areas.Admin.Controllers
 {
-    public class ComponentsController : Controller
+    public class ComponentsController : BaseController
     {
         private readonly IUOW _uow;
 

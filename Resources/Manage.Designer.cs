@@ -322,6 +322,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add a translation.
+        /// </summary>
+        public static string Translations_Add {
+            get {
+                return ResourceManager.GetString("Translations_Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Translations.
+        /// </summary>
+        public static string Translations_Header {
+            get {
+                return ResourceManager.GetString("Translations_Header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Code.
         /// </summary>
         public static string ViewModel_Code {

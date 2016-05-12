@@ -237,4 +237,10 @@
   <data name="Components_Header" xml:space="preserve">
     <value>Components</value>
   </data>
+  <data name="Translations_Add" xml:space="preserve">
+    <value>Add a translation</value>
+  </data>
+  <data name="Translations_Header" xml:space="preserve">
+    <value>Translations</value>
+  </data>
 </root>
