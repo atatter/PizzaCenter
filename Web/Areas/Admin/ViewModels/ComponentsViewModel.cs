@@ -7,9 +7,10 @@ using Domain;
 
 namespace Web.Areas.Admin.ViewModels
 {
-    public class ComponentsViewModel
+    public class ComponentsCreateEditViewModel
     {
-        public MultiLangString MultiLangString { get; set; }
-        public bool Is { get; set; }
+        public Component Component { get; set; }
+        public string ComponentName { get; set; }
     }
+
 }

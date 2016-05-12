@@ -1,42 +1,27 @@
-﻿@model Web.Areas.Admin.ViewModels.ComponentsViewModel
-
-@{
-    ViewBag.Title = "Create";
-}
-
-@using (Html.BeginForm())
-{
-    @Html.AntiForgeryToken()
+﻿@model Web.Areas.Admin.ViewModels.ComponentsCreateEditViewModel
 
 
-    <div class="box box-primary">
-        <div class="box-header with-border">
-            <h3 class="box-title">Create</h3>
+    @using (Html.BeginForm()) 
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">@Resources.Common.Create</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+                <div class="box-body">
+                    @Html.Partial("_CreateEdit", Model)
+                </div>
+                <!-- /.box-body -->
+
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-primary">@Resources.Common.Create</button>
+                    @Html.ActionLink(Resources.Common.Cancel, "Index", new { }, new { @class = "btn btn-danger" })
+                </div>
+            </form>
         </div>
-        <!-- /.box-header -->
-        <!-- form start -->
-        <form role="form">
-            <div class="box-body">
-                <div class="form-group">
-                    @Html.Label("Nimetus", htmlAttributes: new {@class = ""})
-                    @Html.EditorFor(model => model.MultiLangString.Value, new {htmlAttributes = new {@class = "form-control", placeholder = "Sisesta ..."}})
-                    @Html.ValidationMessageFor(model => model.MultiLangString.Value, "", new {@class = "text-danger"})
-                </div>
-                <div class="checkbox">
-                    @*@Html.LabelFor(model => model.MultiLangString.MultiLangStringId, "sass", htmlAttributes: new {@class = ""})
-                    @Html.CheckBoxFor(model => model.MultiLangString, new {htmlAttributes = new {@class = "checkbox", placeholder = "Sisesta ..."}})
-                    @Html.ValidationMessageFor(model => model.MultiLangString.Value, "", new {@class = "text-danger"})*@
-                </div>
-            </div>
-            <!-- /.box-body -->
-
-            <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Lisa</button>
-                @Html.ActionLink("Tagasi", "Index", new {}, new {@class = "btn btn-danger"})
-            </div>
-        </form>
-    </div>
-
-
-}
-
+    }
+    

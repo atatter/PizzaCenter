@@ -88,6 +88,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add a component.
+        /// </summary>
+        public static string Components_Add {
+            get {
+                return ResourceManager.GetString("Components_Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Components.
+        /// </summary>
+        public static string Components_Header {
+            get {
+                return ResourceManager.GetString("Components_Header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Change your account settings.
         /// </summary>
         public static string Index_ChangeYourAccountSettings {

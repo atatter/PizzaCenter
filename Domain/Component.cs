@@ -13,9 +13,9 @@ namespace Domain
         public int ComponentId { get; set; }
 
         //List nimetuse tõlkeid
-        [ForeignKey(nameof(Name))]
-        public int NameId { get; set; }
-        public virtual MultiLangString Name { get; set; }
+        [ForeignKey(nameof(ComponentName))]
+        public int ComponentNameId { get; set; }
+        public virtual MultiLangString ComponentName { get; set; }
         public bool IsTopping { get; set; }
 
         //List komponente pizzas

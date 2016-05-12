@@ -2170,7 +2170,6 @@
     <Content Include="Areas\Admin\Views\Pizzas\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Pizzas\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Components\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Components\Create.cshtml" />
     <Content Include="Areas\Admin\Views\PizzaSizes\Index.cshtml" />
     <Content Include="Areas\Admin\Views\PizzaSizes\Create.cshtml" />
     <Content Include="Areas\Admin\Views\PizzaSizes\_CreateEdit.cshtml" />
@@ -2185,6 +2184,10 @@
     <Content Include="Areas\Admin\Views\PaymentMethods\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\PaymentMethods\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\PaymentMethods\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Components\_CreateEdit.cshtml" />
+    <Content Include="Areas\Admin\Views\Components\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Components\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Components\Create.cshtml" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>

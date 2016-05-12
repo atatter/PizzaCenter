@@ -231,4 +231,10 @@
   <data name="PaymentMethods_Header" xml:space="preserve">
     <value>Payment Methods</value>
   </data>
+  <data name="Components_Add" xml:space="preserve">
+    <value>Add a component</value>
+  </data>
+  <data name="Components_Header" xml:space="preserve">
+    <value>Components</value>
+  </data>
 </root>
