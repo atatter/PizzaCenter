@@ -249,4 +249,10 @@
   <data name="Coupons_Header" xml:space="preserve">
     <value>Coupons</value>
   </data>
+  <data name="Pizzas_Add" xml:space="preserve">
+    <value>Add a pizza</value>
+  </data>
+  <data name="Pizzas_Header" xml:space="preserve">
+    <value>Pizzas</value>
+  </data>
 </root>

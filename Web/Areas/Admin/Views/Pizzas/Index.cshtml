@@ -1,43 +1,38 @@
-﻿@using System.Web.UI.WebControls
-@model IEnumerable<Domain.Pizza>
-
-@{
-    ViewBag.Title = "Index";
-}
+﻿@model List<Domain.Pizza>
 
 <div class="row">
     <div class="col-xs-12">
         <div class="box">
             <div class="box-header">
-                <h3 class="box-title">Pitsad</h3> <!-- VAJAB MUUTMIST -->
+                <h3 class="box-title">@Resources.Manage.Pizzas_Header</h3>
             </div><!-- /.box-header -->
-            @Html.ActionLink("Lisa Pitsa", "Create", new {}, new { @class = "btn btn-block btn-primary btn-flat" })
+            @Html.ActionLink(Resources.Manage.Pizzas_Add, "Create", new { }, new { @class = "btn btn-block btn-primary btn-flat" })
             <div class="box-body">
                 <table id="example2" class="table table-bordered table-hover">
                     <thead>
                         <tr>
-                            <th>Nimetus</th>
+                            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().PizzaName)</th>
                             <th>Komponendid</th>
-                            <th>Suurused / Hinnad</th>
-                            <th>Tegevused</th>
+                            <th>Hinnad</th>
+                            <th>@Resources.Common.Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach (var item in Model)
                         {
                             <tr>
-                                <td>@Html.DisplayFor(modelItem => item.Name)</td>
-                                <td>@Html.DisplayFor(modelItem => item.PizzaDescription.Value)</td>
-                                <td></td>
-                                <td>@Html.ActionLink("Edit", "Edit", new { id = item.PizzaId }) | @Html.ActionLink("Delete", "Delete", new { id = item.PizzaId })</td>
+                                <td>@item.PizzaName</td>
+                                <td>Juust, ananass, tomat</td>
+                                <td>Suur: 10.50, Keskmine: 8.60, Väike: 4.60</td>
+                                <td>@Html.ActionLink(Resources.Common.Edit, "Edit", new { id = item.PizzaId }) | @Html.ActionLink(Resources.Common.Delete, "Delete", new { id = item.PizzaId })</td>
                             </tr>
                         }
                     <tfoot>
                         <tr>
-                            <th>Nimetus</th>
+                            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().PizzaName)</th>
                             <th>Komponendid</th>
-                            <th>Suurused / Hinnad</th>
-                            <th>Tegevused</th>
+                            <th>Hinnad</th>
+                            <th>@Resources.Common.Actions</th>
                         </tr>
                     </tfoot>
                 </table>
@@ -45,35 +40,3 @@
         </div><!-- /.box -->
     </div>
 </div>
-
-@*<p>
-        @Html.ActionLink("Create New", "Create")
-    </p>
-    <table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.PizzaDescription.Value)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th></th>
-        </tr>
-
-    @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.PizzaDescription.Value)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.PizzaId }) |
-                @Html.ActionLink("Details", "Details", new { id=item.PizzaId }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.PizzaId })
-            </td>
-        </tr>
-    }
-
-    </table>*@

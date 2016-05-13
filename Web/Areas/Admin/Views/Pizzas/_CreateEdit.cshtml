@@ -1,0 +1,15 @@
+﻿@using System.Web.UI.HtmlControls
+@model Web.Areas.Admin.ViewModels.PizzaViewModels
+<div class="form-group">
+    @Html.LabelFor(model => model.PizzaName, htmlAttributes: new {@class = ""})
+    @Html.EditorFor(model => model.PizzaName, new {htmlAttributes = new {@class = "form-control", placeholder = Resources.Manage.InputText_Placeholder}})
+    @Html.ValidationMessageFor(model => model.PizzaName, "", new {@class = "text-danger"})
+</div>
+<div class="pizza-component-items">
+    <div class="form-group">
+        @Html.HiddenFor(model => model.ComponentIds, new { Value = "1" })
+        <p>Juust</p>
+        <button href="#" class="btn-del">x</button>
+    </div>
+</div>
+<button href="#" id="btn-add">+</button>

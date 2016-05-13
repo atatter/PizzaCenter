@@ -13,13 +13,11 @@ namespace Domain
     public class Pizza
     {
         public int PizzaId { get; set; }
-        [MaxLength(128)]
-        public string Name { get; set; }
 
-        //Pizza kirjeldus
-        [ForeignKey(nameof(PizzaDescription))]
-        public int PizzaDescriptionId { get; set; }
-        public virtual MultiLangString PizzaDescription { get; set; }
+        //Pizza Nimetus
+        [ForeignKey(nameof(PizzaName))]
+        public int PizzaNameId { get; set; }
+        public virtual MultiLangString PizzaName { get; set; }
 
         //Pizza tellimuses
         public virtual List<PizzaInOrder> PizzaInOrders { get; set; }

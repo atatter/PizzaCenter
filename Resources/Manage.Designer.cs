@@ -304,6 +304,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add a pizza.
+        /// </summary>
+        public static string Pizzas_Add {
+            get {
+                return ResourceManager.GetString("Pizzas_Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pizzas.
+        /// </summary>
+        public static string Pizzas_Header {
+            get {
+                return ResourceManager.GetString("Pizzas_Header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add pizza size.
         /// </summary>
         public static string PizzaSizes_Add {

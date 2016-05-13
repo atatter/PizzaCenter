@@ -12,6 +12,7 @@
                     <thead>
                         <tr>
                             <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Code)</th>
+                            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Discount) (%)</th>
                             <th>@Html.DisplayNameFor(model => model.FirstOrDefault().IsReusable)</th>
                             <th>@Html.DisplayNameFor(model => model.FirstOrDefault().HasBeenUsed)</th>
                             <th>@Html.DisplayNameFor(model => model.FirstOrDefault().StartDate)</th>
@@ -24,16 +25,18 @@
                         {
                             <tr>
                                 <td>@item.Code</td>
+                                <td>@item.Discount</td>
                                 <td><input type="checkbox" checked="@item.IsReusable" disabled="true" /></td>
                                 <td><input type="checkbox" checked="@item.HasBeenUsed" disabled="true" /></td>
-                                <td>@item.StartDate</td>
-                                <td>@item.EndDate</td>
+                                <td>@item.StartDate.Date</td>
+                                <td>@item.EndDate.Date</td>
                                 <td>@Html.ActionLink(Resources.Common.Edit, "Edit", new { id = item.CouponId }) | @Html.ActionLink(Resources.Common.Delete, "Delete", new { id = item.CouponId })</td>
                             </tr>
                         }
                     <tfoot>
                         <tr>
                             <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Code)</th>
+                            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Discount) (%)</th>
                             <th>@Html.DisplayNameFor(model => model.FirstOrDefault().IsReusable)</th>
                             <th>@Html.DisplayNameFor(model => model.FirstOrDefault().HasBeenUsed)</th>
                             <th>@Html.DisplayNameFor(model => model.FirstOrDefault().StartDate)</th>

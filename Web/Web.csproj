@@ -2166,11 +2166,6 @@
     <Content Include="Content\font-awesome-4.6.1\scss\_stacked.scss" />
     <Content Include="Content\font-awesome-4.6.1\scss\_variables.scss" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\Admin\Views\Pizzas\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\Pizzas\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\Pizzas\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\Pizzas\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\Pizzas\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Components\Index.cshtml" />
     <Content Include="Areas\Admin\Views\PizzaSizes\Index.cshtml" />
     <Content Include="Areas\Admin\Views\PizzaSizes\Create.cshtml" />
@@ -2196,6 +2191,11 @@
     <Content Include="Areas\Admin\Views\Coupons\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\Coupons\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Coupons\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Pizzas\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Pizzas\_CreateEdit.cshtml" />
+    <Content Include="Areas\Admin\Views\Pizzas\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Pizzas\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Pizzas\Edit.cshtml" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>
