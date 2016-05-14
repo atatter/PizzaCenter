@@ -1,0 +1,46 @@
+﻿@using Microsoft.Ajax.Utilities
+@model List<Domain.Invoice>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">@Resources.Manage.Invoices_Header</h3>
+            </div><!-- /.box-header -->
+            @Html.ActionLink(Resources.Manage.Invoices_Add, "Create", new { }, new { @class = "btn btn-block btn-primary btn-flat" })
+            <div class="box-body">
+                <table id="example2" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>SUM</th>
+                            <th>Payment Method</th>
+                            <th>Phone</th>
+                            <th>@Resources.Common.Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.CreationTime</td>
+                                <td>@item.SumAfterCoupon</td>
+                                <td>@item.PaymentMethod.PaymentMethodName.Value</td>
+                                <td>@item.CustomersPhone</td>
+                                <td>@Html.ActionLink(Resources.Common.Edit, "Edit", new { id = item.InvoiceId }) | @Html.ActionLink(Resources.Common.Delete, "Delete", new { id = item.InvoiceId })</td>
+                            </tr>
+                        }
+                    <tfoot>
+                        <tr>
+                            <th>Date</th>
+                            <th>SUM</th>
+                            <th>Payment Method</th>
+                            <th>Phone</th>
+                            <th>@Resources.Common.Actions</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+    </div>
+</div>

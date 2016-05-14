@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -11,10 +12,13 @@ namespace Domain
     {
         public int InvoiceId { get; set; }
         public DateTime CreationTime { get; set; }
-        public int? SumWOCoupon { get; set; }
-        public int? Sum { get; set; }
-        public string CustomersName { get; set; }
-        public bool Delivered { get; set; }
+        [Range(0,10000000)]
+        public double SumBeforeCoupon { get; set; }
+        [Range(0, 10000000)]
+        public double SumAfterCoupon { get; set; }
+        [Range(0, 1000000000)]
+        public int CustomersPhone { get; set; }
+        public bool GivenOut { get; set; }
 
         //List tellimusi
         public virtual List<Order> Orders { get; set; }

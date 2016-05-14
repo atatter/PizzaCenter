@@ -214,6 +214,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add an invoice.
+        /// </summary>
+        public static string Invoices_Add {
+            get {
+                return ResourceManager.GetString("Invoices_Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invoices.
+        /// </summary>
+        public static string Invoices_Header {
+            get {
+                return ResourceManager.GetString("Invoices_Header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to There are no external authentication services configured..
         /// </summary>
         public static string ManageLogins_NoExternalLogins {
