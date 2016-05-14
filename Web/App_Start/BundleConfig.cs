@@ -65,11 +65,13 @@ namespace Web
             // AdminLTE stylebundle
             bundles.Add(new StyleBundle("~/Content/adminltecss").Include(
                 "~/Content/AdminLTE.css",
-                "~/Content/skins/_all-skins.min.css"
+                "~/Content/skins/_all-skins.min.css",
+                "~/Content/select2/select2.min.css"
                 ));
 
             bundles.Add(new ScriptBundle("~/bundles/adminltejs").Include(
-                "~/Scripts/AdminLTE/app.js"));
+                "~/Scripts/AdminLTE/app.js",
+                "~/Content/select2/select2.full.min.js"));
 
             BundleTable.EnableOptimizations = false;
         }

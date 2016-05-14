@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,22 +10,28 @@ namespace Domain
     public class Price
     {
         public int PriceId { get; set; }
-        public int Value { get; set; }
+
+        [Range(1, 1000000)]
+        public double Value { get; set; }
+        //Pitsa suurus
+        public int? PizzaSizeId { get; set; }
+        public virtual PizzaSize PizzaSize { get; set; }
+
+        //Pitsa millega seotud
+        public int? PizzaId { get; set; }
+        public virtual Pizza Pizza { get; set; }
 
         //Hinnatüüp
         public int PriceTypeId { get; set; }
         public virtual PriceType PriceType { get; set; }
 
-        //Millise pitsa hind
-        public int PizzaPriceBySizeId { get; set; }
-        public virtual PizzaPriceBySize PizzaPriceBySize { get; set; }
 
         //Millise lisandi hind
-        public int ComponentId { get; set; }
+        public int? ComponentId { get; set; }
         public virtual Component Component { get; set; }
 
         //Millise lisatoote hind
-        public int AdditionalProductId { get; set; }
+        public int? AdditionalProductId { get; set; }
         public virtual AdditionalProduct AdditionalProduct { get; set; }
     }
 }

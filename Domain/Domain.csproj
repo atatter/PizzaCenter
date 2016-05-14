@@ -70,7 +70,6 @@
     <Compile Include="Person.cs" />
     <Compile Include="Pizza.cs" />
     <Compile Include="PizzaInOrder.cs" />
-    <Compile Include="PizzaPriceBySize.cs" />
     <Compile Include="PizzaSize.cs" />
     <Compile Include="Price.cs" />
     <Compile Include="PriceType.cs" />

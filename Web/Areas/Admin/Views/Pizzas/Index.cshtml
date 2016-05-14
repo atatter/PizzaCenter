@@ -1,4 +1,4 @@
-﻿@model List<Domain.Pizza>
+﻿@model Web.Areas.Admin.ViewModels.PizzaIndexViewModel
 
 <div class="row">
     <div class="col-xs-12">
@@ -11,25 +11,35 @@
                 <table id="example2" class="table table-bordered table-hover">
                     <thead>
                         <tr>
-                            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().PizzaName)</th>
+                            <th>@Html.DisplayNameFor(model => model.Pizzas.FirstOrDefault().PizzaName)</th>
                             <th>Komponendid</th>
                             <th>Hinnad</th>
                             <th>@Resources.Common.Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var item in Model)
+                        @foreach (var item in Model.Pizzas)
                         {
                             <tr>
                                 <td>@item.PizzaName</td>
-                                <td>Juust, ananass, tomat</td>
-                                <td>Suur: 10.50, Keskmine: 8.60, Väike: 4.60</td>
+                                <td>
+                                    @foreach (var component in item.ComponentInPizzas)
+                                    {
+                                        <span>@component.Component.ComponentName</span>
+                                    }
+                                </td>
+                                <td>
+                                    @foreach (var component in Model.PizzaSizes)
+                                    {
+                                        <span>@component.PizzaSizeName : </span>
+                                    }
+                                </td>
                                 <td>@Html.ActionLink(Resources.Common.Edit, "Edit", new { id = item.PizzaId }) | @Html.ActionLink(Resources.Common.Delete, "Delete", new { id = item.PizzaId })</td>
                             </tr>
                         }
                     <tfoot>
                         <tr>
-                            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().PizzaName)</th>
+                            <th>@Html.DisplayNameFor(model => model.Pizzas.FirstOrDefault().PizzaName)</th>
                             <th>Komponendid</th>
                             <th>Hinnad</th>
                             <th>@Resources.Common.Actions</th>

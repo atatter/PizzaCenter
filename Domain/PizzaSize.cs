@@ -19,7 +19,7 @@ namespace Domain
         public int Diameter { get; set; }
 
         //List pitsa_hind_suuruse_järgi
-        public virtual List<PizzaPriceBySize> PizzaPriceBySizes { get; set; }
+        public virtual List<Price> Prices { get; set; }
 
     }
 }

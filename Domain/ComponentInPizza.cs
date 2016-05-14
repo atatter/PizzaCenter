@@ -8,6 +8,16 @@ namespace Domain
 {
     public class ComponentInPizza
     {
+        public ComponentInPizza()
+        {
+            
+        }
+
+        public ComponentInPizza(int pizzaId, int componentId)
+        {
+            PizzaId = pizzaId;
+            ComponentId = componentId;
+        }
         public int ComponentInPizzaId { get; set; }
         
         //Pitsa

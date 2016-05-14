@@ -75,7 +75,6 @@ namespace DAL
         public DbSet<PaymentMethod> PaymentMethods { get; set; }
         public DbSet<Pizza> Pizzas { get; set; }
         public DbSet<PizzaInOrder> PizzaInOrders { get; set; }
-        public DbSet<PizzaPriceBySize> PizzaPriceBySizes { get; set; }
         public DbSet<PizzaSize> PizzaSizes { get; set; }
         public DbSet<Price> Prices { get; set; }
         public DbSet<PriceType> PriceTypes { get; set; }

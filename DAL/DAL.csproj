@@ -92,7 +92,6 @@
     <Compile Include="Interfaces\IPaymentMethodRepository.cs" />
     <Compile Include="Interfaces\IPersonRepository.cs" />
     <Compile Include="Interfaces\IPizzaInOrderRepository.cs" />
-    <Compile Include="Interfaces\IPizzaPriceBySizeRepository.cs" />
     <Compile Include="Interfaces\IPizzaRepository.cs" />
     <Compile Include="Interfaces\IPizzaSizeRepository.cs" />
     <Compile Include="Interfaces\IPriceRepository.cs" />
@@ -120,7 +119,6 @@
     <Compile Include="Repositories\PaymentMethodRepository.cs" />
     <Compile Include="Repositories\PersonRepository.cs" />
     <Compile Include="Repositories\PizzaInOrderRepository.cs" />
-    <Compile Include="Repositories\PizzaPriceBySizeRepository.cs" />
     <Compile Include="Repositories\PizzaRepository.cs" />
     <Compile Include="Repositories\PizzaSizeRepository.cs" />
     <Compile Include="Repositories\PriceRepository.cs" />

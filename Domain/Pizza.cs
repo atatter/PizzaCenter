@@ -23,7 +23,7 @@ namespace Domain
         public virtual List<PizzaInOrder> PizzaInOrders { get; set; }
 
         //List hindu pitsa suuruse järgi
-        public virtual List<PizzaPriceBySize> PizzaPriceBySizes { get; set; } 
+        public virtual List<Price> Prices { get; set; } 
 
         //List komponente pitsas
         public virtual List<ComponentInPizza> ComponentInPizzas { get; set; }

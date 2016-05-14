@@ -38,7 +38,6 @@ namespace DAL.Interfaces
         IEFRepository<PaymentMethod> PaymentMethods { get; }
         IEFRepository<Pizza> Pizzas { get; }
         IEFRepository<PizzaInOrder> PizzaInOrders { get; }
-        IEFRepository<PizzaPriceBySize> PizzaPriceBySizes { get; }
         IEFRepository<PizzaSize> PizzaSizes { get; }
         IEFRepository<Price> Prices { get; }
         IEFRepository<PriceType> PriceTypes { get; }

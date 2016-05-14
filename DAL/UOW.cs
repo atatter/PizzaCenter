@@ -76,7 +76,6 @@ namespace DAL
         public IEFRepository<PaymentMethod> PaymentMethods => GetStandardRepo<PaymentMethod>();
         public IEFRepository<Pizza> Pizzas => GetStandardRepo<Pizza>();
         public IEFRepository<PizzaInOrder> PizzaInOrders => GetStandardRepo<PizzaInOrder>();
-        public IEFRepository<PizzaPriceBySize> PizzaPriceBySizes => GetStandardRepo<PizzaPriceBySize>();
         public IEFRepository<PizzaSize> PizzaSizes => GetStandardRepo<PizzaSize>();
         public IEFRepository<Price> Prices => GetStandardRepo<Price>();
         public IEFRepository<PriceType> PriceTypes => GetStandardRepo<PriceType>();

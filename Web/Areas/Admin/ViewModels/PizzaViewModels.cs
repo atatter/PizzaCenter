@@ -11,10 +11,21 @@ namespace Web.Areas.Admin.ViewModels
     {        
         public Pizza Pizza { get; set; }
         public string PizzaName { get; set; }
-        public SelectList PriceTypes { get; set; }
-        //public SelectList Components { get; set; }
-        public List<Component> Components { get; set; }
-        public int[] ComponentIds { get; set; }
+        public int[] ComponentSelectListId { get; set; }
+        public MultiSelectList ComponentSelectList { get; set; }
+        public List<PizzaSize> PizzaSizesList { get; set; }
+        public List<PriceType> PriceTypesList { get; set; }
+        public List<Price> Price { get; set; }
+        public double?[] ThePrice { get; set; }
+        public double[] ThePriceTypeId { get; set; }
+        public double[] ThePizzaSizeId { get; set; }
+
+    }
+
+    public class PizzaIndexViewModel
+    {
+        public List<Pizza> Pizzas { get; set; }
+        public List<PizzaSize> PizzaSizes { get; set; }
     }
 
 }

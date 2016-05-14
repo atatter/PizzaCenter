@@ -11,6 +11,7 @@ using DAL.Interfaces;
 using Domain;
 using Web.Areas.Admin.ViewModels;
 using Web.Helpers;
+using WebGrease.Css.Extensions;
 
 namespace Web.Areas.Admin.Controllers
 {
@@ -26,7 +27,11 @@ namespace Web.Areas.Admin.Controllers
         // GET: Admin/Pizzas
         public ActionResult Index()
         {
-            var vm = _uow.Pizzas.All;
+            var vm = new PizzaIndexViewModel
+            {
+                Pizzas =  _uow.Pizzas.All,
+                PizzaSizes = _uow.PizzaSizes.All
+            };
 
             return View(vm);
         }
@@ -36,9 +41,9 @@ namespace Web.Areas.Admin.Controllers
         {
             var vm = new PizzaViewModels
             {
-                //Components = new SelectList(_uow.Components.All, nameof(Component.ComponentId), nameof(Component.ComponentName)),
-                Components = _uow.Components.All,
-                PriceTypes = new SelectList(_uow.PriceTypes.All, nameof(PriceType.PriceTypeId), nameof(PriceType.PriceTypeName))
+                ComponentSelectList = new MultiSelectList(_uow.Components.All, nameof(Component.ComponentId), nameof(Component.ComponentName)),
+                PizzaSizesList = _uow.PizzaSizes.All,
+                PriceTypesList = _uow.PriceTypes.All
             };
             
             return View(vm);
@@ -55,12 +60,33 @@ namespace Web.Areas.Admin.Controllers
             {
                 if(vm.Pizza == null) vm.Pizza = new Pizza();
 
+                for (int i = 0; i < vm.ThePrice.Length; i++)
+                {
+                    if(vm.ThePrice[i] != null) { 
+                        _uow.Prices.Add(new Price()
+                        {
+                            Value = vm.ThePrice[i].Value,
+                            PizzaSizeId = (int) vm.ThePizzaSizeId[i],
+                            PriceTypeId = (int) vm.ThePriceTypeId[i]
+                        });
+                    }
+                }
+
+                if (vm.ComponentSelectListId != null)
+                {
+                    //Olemas ComponentSelectListId valitud komponentidega
+                    foreach (var compId in vm.ComponentSelectListId)
+                    {
+                        _uow.ComponentInPizzas.Add(new ComponentInPizza(vm.Pizza.PizzaId, compId));
+                    }
+                }                              
                 vm.Pizza.PizzaName = new MultiLangString(vm.PizzaName, CultureHelper.GetCurrentNeutralUICulture(), vm.PizzaName, "");
                 _uow.Pizzas.Add(vm.Pizza);
                 _uow.Commit();
                 return RedirectToAction("Index");
             }
 
+            vm.ComponentSelectList = new MultiSelectList(_uow.Components.All, nameof(Component.ComponentId), nameof(Component.ComponentName));
 
             return View(vm);
         }
@@ -77,10 +103,13 @@ namespace Web.Areas.Admin.Controllers
             {
                 return HttpNotFound();
             }
+            var selected = pizza.ComponentInPizzas.Select(x => x.ComponentId);
             var vm = new PizzaViewModels()
             {
                 Pizza = pizza,
-                PizzaName = pizza.PizzaName.Translate()
+                PizzaName = pizza.PizzaName.Translate(),
+                ComponentSelectListId = selected.ToArray(),
+                ComponentSelectList = new MultiSelectList(_uow.Components.All, nameof(Component.ComponentId), nameof(Component.ComponentName))
             };
             return View(vm);
         }
@@ -94,6 +123,15 @@ namespace Web.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
+                _uow.ComponentInPizzas.All.Where(x => x.PizzaId == vm.Pizza.PizzaId).ForEach(x => _uow.ComponentInPizzas.Delete(x));
+                if (vm.ComponentSelectListId != null)
+                {
+                    //Olemas ComponentSelectListId valitud komponentidega
+                    foreach (var compId in vm.ComponentSelectListId)
+                    {
+                        _uow.ComponentInPizzas.Add(new ComponentInPizza(vm.Pizza.PizzaId, compId));
+                    }
+                }
                 vm.Pizza.PizzaName = _uow.MultiLangStrings.GetById(vm.Pizza.PizzaNameId);
                 vm.Pizza.PizzaName.SetTranslation(vm.PizzaName, CultureHelper.GetCurrentNeutralUICulture(), "");
                 _uow.Pizzas.Update(vm.Pizza);
