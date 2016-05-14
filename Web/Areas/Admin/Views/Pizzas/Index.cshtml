@@ -1,4 +1,5 @@
-﻿@model Web.Areas.Admin.ViewModels.PizzaIndexViewModel
+﻿@using Microsoft.Ajax.Utilities
+@model Web.Areas.Admin.ViewModels.PizzaIndexViewModel
 
 <div class="row">
     <div class="col-xs-12">
@@ -29,12 +30,13 @@
                                     }
                                 </td>
                                 <td>
-                                    @foreach (var component in Model.PizzaSizes)
+                                    @foreach (var price in item.Prices)
                                     {
-                                        <span>@component.PizzaSizeName : </span>
+                                        <span>@price.PizzaSize.PizzaSizeName.Value _</span><span>@price.PriceType.PriceTypeName.Value:</span><span>@price.Value</span>
                                     }
+
                                 </td>
-                                <td>@Html.ActionLink(Resources.Common.Edit, "Edit", new { id = item.PizzaId }) | @Html.ActionLink(Resources.Common.Delete, "Delete", new { id = item.PizzaId })</td>
+                                <td>@Html.ActionLink(Resources.Common.Edit, "Edit", new {id = item.PizzaId}) | @Html.ActionLink(Resources.Common.Delete, "Delete", new {id = item.PizzaId})</td>
                             </tr>
                         }
                     <tfoot>

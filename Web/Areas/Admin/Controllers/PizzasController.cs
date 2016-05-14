@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Antlr.Runtime.Tree;
 using DAL;
 using DAL.Interfaces;
 using Domain;
@@ -27,10 +28,12 @@ namespace Web.Areas.Admin.Controllers
         // GET: Admin/Pizzas
         public ActionResult Index()
         {
-            var vm = new PizzaIndexViewModel
+            var vm = new PizzaIndexViewModel()
             {
-                Pizzas =  _uow.Pizzas.All,
-                PizzaSizes = _uow.PizzaSizes.All
+                Pizzas = _uow.Pizzas.All,
+                ThePizzaSizes = _uow.PizzaSizes.All,
+                ThePriceTypes = _uow.PriceTypes.All,
+                ThePrices = _uow.Prices.All
             };
 
             return View(vm);
@@ -59,19 +62,6 @@ namespace Web.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 if(vm.Pizza == null) vm.Pizza = new Pizza();
-
-                for (int i = 0; i < vm.ThePrice.Length; i++)
-                {
-                    if(vm.ThePrice[i] != null) { 
-                        _uow.Prices.Add(new Price()
-                        {
-                            Value = vm.ThePrice[i].Value,
-                            PizzaSizeId = (int) vm.ThePizzaSizeId[i],
-                            PriceTypeId = (int) vm.ThePriceTypeId[i]
-                        });
-                    }
-                }
-
                 if (vm.ComponentSelectListId != null)
                 {
                     //Olemas ComponentSelectListId valitud komponentidega
@@ -79,9 +69,22 @@ namespace Web.Areas.Admin.Controllers
                     {
                         _uow.ComponentInPizzas.Add(new ComponentInPizza(vm.Pizza.PizzaId, compId));
                     }
-                }                              
+                }
                 vm.Pizza.PizzaName = new MultiLangString(vm.PizzaName, CultureHelper.GetCurrentNeutralUICulture(), vm.PizzaName, "");
                 _uow.Pizzas.Add(vm.Pizza);
+                _uow.Commit();
+                for (int i = 0; i < vm.ThePrice.Length; i++)
+                {
+                    if(vm.ThePrice[i] != null) { 
+                        _uow.Prices.Add(new Price()
+                        {
+                            Value = vm.ThePrice[i].Value,
+                            PizzaSizeId = vm.ThePizzaSizeId[i],
+                            PriceTypeId = vm.ThePriceTypeId[i] ?? default(int),
+                            PizzaId = vm.Pizza.PizzaId
+                        });
+                    }
+                }
                 _uow.Commit();
                 return RedirectToAction("Index");
             }
@@ -104,13 +107,44 @@ namespace Web.Areas.Admin.Controllers
                 return HttpNotFound();
             }
             var selected = pizza.ComponentInPizzas.Select(x => x.ComponentId);
+
+            //Kõik hinnad mis on seotud selle pizzaga
+            var prices = _uow.Prices.All.Where(x => x.PizzaId == id).ToArray();
+
+            //Kõik võimalikud hinnad sellele pizzale
+            List<double?> thePrices = new List<double?>();
+            foreach (var size in _uow.PizzaSizes.All)
+            {
+                var y = 0;
+                foreach (var pricetype in _uow.PriceTypes.All)
+                {
+                    var query = prices.Where(x => x.PizzaSizeId == size.PizzaSizeId && x.PriceTypeId == pricetype.PriceTypeId).ToList();
+                    if (query.Any())
+                    {
+                        thePrices.Add(query.FirstOrDefault().Value);
+                    }
+                    else
+                    {
+                        thePrices.Add(null);
+                    }
+                    y++;
+                }
+            }
+
             var vm = new PizzaViewModels()
             {
                 Pizza = pizza,
                 PizzaName = pizza.PizzaName.Translate(),
+                PizzaSizesList = _uow.PizzaSizes.All,
+                PriceTypesList = _uow.PriceTypes.All,
                 ComponentSelectListId = selected.ToArray(),
-                ComponentSelectList = new MultiSelectList(_uow.Components.All, nameof(Component.ComponentId), nameof(Component.ComponentName))
+                ComponentSelectList = new MultiSelectList(_uow.Components.All, nameof(Component.ComponentId), nameof(Component.ComponentName)),
+                ThePrice = thePrices.ToArray()
             };
+            
+            
+
+            
             return View(vm);
         }
 
@@ -136,6 +170,24 @@ namespace Web.Areas.Admin.Controllers
                 vm.Pizza.PizzaName.SetTranslation(vm.PizzaName, CultureHelper.GetCurrentNeutralUICulture(), "");
                 _uow.Pizzas.Update(vm.Pizza);
                 _uow.Commit();
+
+
+                _uow.Prices.All.Where(x => x.PizzaId == vm.Pizza.PizzaId).ForEach(x => _uow.Prices.Delete(x));
+                for (int i = 0; i < vm.ThePrice.Length; i++)
+                {
+                    if (vm.ThePrice[i] != null)
+                    {
+                        _uow.Prices.Add(new Price()
+                        {
+                            Value = vm.ThePrice[i].Value,
+                            PizzaSizeId = vm.ThePizzaSizeId[i],
+                            PriceTypeId = vm.ThePriceTypeId[i] ?? default(int),
+                            PizzaId = vm.Pizza.PizzaId
+                        });
+                    }
+                }
+                _uow.Commit();
+
                 return RedirectToAction("Index");
             }
             return View(vm);
