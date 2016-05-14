@@ -119,6 +119,9 @@ namespace Domain.Identity
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
+        //List of invoices
+        public virtual List<Invoice> Invoices { get; set; }
+
         [Display(Name = "FirstLastName", ResourceType = typeof (Resources.Domain))]
         public string FirstLastName => FirstName + " " + LastName;
 

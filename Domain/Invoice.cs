@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Domain.Identity;
 
 namespace Domain
 {
@@ -34,5 +35,9 @@ namespace Domain
         //Klient
         public int? PersonId { get; set; }
         public virtual Person Person { get; set; }
+
+        //User
+        public int? UserIntId { get; set; }
+        public virtual UserInt UserInt { get; set; }
     }
 }

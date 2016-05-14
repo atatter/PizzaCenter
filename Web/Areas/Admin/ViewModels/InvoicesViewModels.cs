@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Domain;
+using Domain.Identity;
 
 namespace Web.Areas.Admin.ViewModels
 {
@@ -13,8 +14,8 @@ namespace Web.Areas.Admin.ViewModels
         public int PaymentMethodId { get; set; }
         public SelectList PaymentMethods { get; set; }
         //TULEB TAGASI NOT NULLIKS MUUTA
-        public int? PersonId { get; set; }
-        public SelectList Persons { get; set; }
+        public int? UserIntId { get; set; }
+        public SelectList UserInts { get; set; }
         public int? CouponId { get; set; }
         public SelectList Coupons { get; set; }
         public DateTime Date { get; set; }

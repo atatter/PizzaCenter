@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using System.Web.UI;
 using DAL.Interfaces;
 using Domain;
+using Domain.Identity;
 using Web.Areas.Admin.ViewModels;
 using Web.Controllers;
 
@@ -35,7 +36,7 @@ namespace Web.Areas.Admin.Controllers
             {
                 Coupons = new SelectList(_uow.Coupons.All, nameof(Coupon.CouponId), nameof(Coupon.Code)),
                 PaymentMethods = new SelectList(_uow.PaymentMethods.All, nameof(PaymentMethod.PaymentMethodId), nameof(PaymentMethod.PaymentMethodName)),
-                Persons = new SelectList(_uow.Persons.All, nameof(Person.PersonId), nameof(Person.FirstLastname))
+                UserInts = new SelectList(_uow.UsersInt.All, nameof(UserInt.Id), nameof(UserInt.UserName))
             };
             return View(vm);
         }
@@ -49,7 +50,7 @@ namespace Web.Areas.Admin.Controllers
             {
                 if (vm.Invoice == null) vm.Invoice = new Invoice();
                 vm.Invoice.CouponId = vm.CouponId;
-                vm.Invoice.PersonId = vm.PersonId;
+                vm.Invoice.UserIntId = vm.UserIntId;
                 vm.Invoice.PaymentMethodId = vm.PaymentMethodId;
                 vm.Invoice.CustomersPhone = vm.PhoneNr;
                 vm.Invoice.CreationTime = vm.Date;
@@ -63,7 +64,7 @@ namespace Web.Areas.Admin.Controllers
 
             vm.Coupons = new SelectList(_uow.Coupons.All, nameof(Coupon.CouponId), nameof(Coupon.Code), vm.CouponId);
             vm.PaymentMethods = new SelectList(_uow.PaymentMethods.All, nameof(PaymentMethod.PaymentMethodId), nameof(PaymentMethod.PaymentMethodName), vm.PaymentMethodId);
-            vm.Persons = new SelectList(_uow.Persons.All, nameof(Person.PersonId), nameof(Person.FirstLastname), vm.PersonId);
+            vm.UserInts = new SelectList(_uow.UsersInt.All, nameof(UserInt.Id), nameof(UserInt.UserName), vm.UserIntId);
 
             return View(vm);
         }
@@ -87,11 +88,11 @@ namespace Web.Areas.Admin.Controllers
                 PhoneNr = invoice.CustomersPhone,
                 PaymentMethodId = invoice.PaymentMethodId,
                 CouponId = invoice.CouponId,
-                PersonId = invoice.PersonId,
+                UserIntId = invoice.UserIntId,
                 SUM = invoice.SumAfterCoupon,
                 Coupons = new SelectList(_uow.Coupons.All, nameof(Coupon.CouponId), nameof(Coupon.Code), invoice.CouponId),
                 PaymentMethods = new SelectList(_uow.PaymentMethods.All, nameof(PaymentMethod.PaymentMethodId), nameof(PaymentMethod.PaymentMethodName)),
-                Persons = new SelectList(_uow.Persons.All, nameof(Person.PersonId), nameof(Person.FirstLastname), invoice.PersonId)
+                UserInts = new SelectList(_uow.UsersInt.All, nameof(UserInt.Id), nameof(UserInt.UserName), invoice.UserIntId)
             };
 
             return View(vm);
@@ -111,7 +112,7 @@ namespace Web.Areas.Admin.Controllers
                     CustomersPhone = vm.PhoneNr,
                     InvoiceId = vm.Invoice.InvoiceId,
                     PaymentMethodId = vm.PaymentMethodId,
-                    PersonId = vm.PersonId,
+                    UserIntId = vm.UserIntId,
                     //MUUTA!!!!!!!!!!!
                     SumAfterCoupon = vm.SUM
                 });
