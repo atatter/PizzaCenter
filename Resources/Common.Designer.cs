@@ -232,6 +232,42 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        public static string PLayout_About {
+            get {
+                return ResourceManager.GetString("PLayout_About", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact.
+        /// </summary>
+        public static string PLayout_Contact {
+            get {
+                return ResourceManager.GetString("PLayout_Contact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        public static string PLayout_Home {
+            get {
+                return ResourceManager.GetString("PLayout_Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Menu.
+        /// </summary>
+        public static string PLayout_Menu {
+            get {
+                return ResourceManager.GetString("PLayout_Menu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Previous.
         /// </summary>
         public static string Previous {

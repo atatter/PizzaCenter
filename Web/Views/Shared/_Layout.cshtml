@@ -37,15 +37,14 @@
     <div class="nav-bar">
         <div class="container">
             <div class="logo">
-                <img src="~/Content/img/logo.png" />
-            </div>
+                <a href="/"><img src="~/Content/img/logo.png" /></a></div>
             <div class="nav">
                 <ul>
-                    <li>@Html.ActionLink("Avaleht", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("Meist", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("Menüü", "Index", "Menu", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("Uudised", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("Kontakt", "Index", "Home", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink(Resources.Common.PLayout_Home, "Index", "Home", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink(Resources.Common.PLayout_About, "Index", "Home", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink(Resources.Common.PLayout_Menu, "Index", "Menu", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink(Resources.Common.PLayout_Contact, "Index", "Home", new {area = ""}, null)</li>
+                    @Html.Partial("_LoginPartial")
                 </ul>
             </div>
         </div>

@@ -133,6 +133,42 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Good fresh pizza.
+        /// </summary>
+        public static string Index_h1 {
+            get {
+                return ResourceManager.GetString("Index_h1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Everyone likes pizza! It&apos;s a quick and easy clean-up meal..
+        /// </summary>
+        public static string Index_h2 {
+            get {
+                return ResourceManager.GetString("Index_h2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Our menu.
+        /// </summary>
+        public static string Index_menubtn {
+            get {
+                return ResourceManager.GetString("Index_menubtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The first Italian pizza in America was introduced in Chicago by the street peddlers who walked up and down Taylor Street and sold the hot slices of Pizzas to the pedestrians. They maintained the heat of the slices by holding them in cylindrical drums that had a compartment which was filled with hot charcoal..
+        /// </summary>
+        public static string Index_p {
+            get {
+                return ResourceManager.GetString("Index_p", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Last, Firstname.
         /// </summary>
         public static string LastFirstname {

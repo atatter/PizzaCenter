@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Web;
 using System.Web.Mvc;
 using Domain;
@@ -20,7 +21,27 @@ namespace Web.Areas.Admin.ViewModels
         public SelectList Coupons { get; set; }
         public DateTime Date { get; set; }
         public int PhoneNr { get; set; }
+
         //Hiljem kustutamisele
         public double SUM { get; set; }
+
+        //Testimine
+        public int[] OrderIds { get; set; }
+        public int[] ItemIds { get; set; }
+        public List<InvoiceOrder> Orders { get; set; }
+
+    }
+
+    public class InvoiceOrder
+    {
+        public int InvoiceOrderId { get; set; }
+        public List<OrderedItem> OrderedItems { get; set; }
+    }
+
+    public class OrderedItem
+    {
+        public int OrderedItemId { get; set; }
+        public int? PizzaId { get; set; }
+        public int? AdditionalProductId { get; set; }
     }
 }

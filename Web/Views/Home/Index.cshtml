@@ -4,14 +4,14 @@
 }
 <div class="container">
     <section id="header">
-        <h1 id="header-text" class="text">Hea värske pitsa</h1>
+        <h1 id="header-text" class="text">@Resources.Domain.Index_h1</h1>
         <div class="hr"></div>
     </section>
     <section id="intro">
         <div class="white-area">
-            <h2>Kõigile meeldib pitsa! Kiire ja lihtne viis kõhtu täita.</h2>
-            <p>Esimene Itaalia pitsa valmis blablabla kohas ja selleks oli too. Tsikibriki kõmm kõmm ja tekst olemas</p>
-            @Html.ActionLink("Meie menüü", "Index", "Menu", new { area = "" }, null)
+            <h2>@Resources.Domain.Index_h2</h2>
+            <p>@Resources.Domain.Index_p</p>
+            @Html.ActionLink(@Resources.Domain.Index_menubtn, "Index", "Menu", new { area = "" }, null)
         </div>
     </section>
     <section id="top-pizzas"></section>

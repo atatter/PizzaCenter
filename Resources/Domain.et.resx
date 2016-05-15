@@ -132,6 +132,18 @@
   <data name="FirstnameLengthError" xml:space="preserve">
     <value>Eesnimi on liiga pikk.</value>
   </data>
+  <data name="Index_h1" xml:space="preserve">
+    <value>Hea värske pitsa</value>
+  </data>
+  <data name="Index_h2" xml:space="preserve">
+    <value>Kõigile meeldib pitsa! Kiire ja lihtne viis kõhtu täita.</value>
+  </data>
+  <data name="Index_menubtn" xml:space="preserve">
+    <value>Meie menüü</value>
+  </data>
+  <data name="Index_p" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui urna, lobortis sit amet tincidunt vitae, consequat eget est. Integer eget varius elit. Phasellus mollis mauris nec justo sollicitudin, id tristique mi rhoncus.</value>
+  </data>
   <data name="LastFirstName" xml:space="preserve">
     <value>Pere-, eesnimi</value>
   </data>

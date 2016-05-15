@@ -186,4 +186,16 @@
   <data name="Delete_confirm" xml:space="preserve">
     <value>Are you sure that you want to delete it?</value>
   </data>
+  <data name="PLayout_About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="PLayout_Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="PLayout_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="PLayout_Menu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
 </root>

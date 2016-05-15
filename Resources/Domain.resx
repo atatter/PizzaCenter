@@ -159,4 +159,16 @@
   <data name="Person_Time2" xml:space="preserve">
     <value>Time</value>
   </data>
+  <data name="Index_h1" xml:space="preserve">
+    <value>Good fresh pizza</value>
+  </data>
+  <data name="Index_h2" xml:space="preserve">
+    <value>Everyone likes pizza! It's a quick and easy clean-up meal.</value>
+  </data>
+  <data name="Index_menubtn" xml:space="preserve">
+    <value>Our menu</value>
+  </data>
+  <data name="Index_p" xml:space="preserve">
+    <value>The first Italian pizza in America was introduced in Chicago by the street peddlers who walked up and down Taylor Street and sold the hot slices of Pizzas to the pedestrians. They maintained the heat of the slices by holding them in cylindrical drums that had a compartment which was filled with hot charcoal.</value>
+  </data>
 </root>

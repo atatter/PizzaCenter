@@ -13,6 +13,7 @@ using Web.Controllers;
 
 namespace Web.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class InvoicesController : BaseController
     {
         private readonly IUOW _uow;

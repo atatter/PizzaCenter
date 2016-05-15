@@ -238,6 +238,13 @@ a:focus {
     background: transparent;
   }
 }
+
+@media (min-width: 768px) {
+    .main-header .navbar-right {
+        margin-right: 0;
+    }
+}
+
 @media (max-width: 767px) {
   .main-header .navbar-right {
     float: none;
@@ -248,6 +255,15 @@ a:focus {
   .main-header .navbar-right > li {
     color: inherit;
     border: 0;
+  }
+  .navbar-custom-menu {
+      float: none !important;
+  }
+  .navbar-custom-menu ul{
+      float: none !important;
+  }
+  .navbar-custom-menu ul li {
+      min-width: 0 !important;
   }
 }
 .main-header .sidebar-toggle {

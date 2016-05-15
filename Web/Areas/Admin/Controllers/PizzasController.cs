@@ -11,12 +11,14 @@ using DAL;
 using DAL.Interfaces;
 using Domain;
 using Web.Areas.Admin.ViewModels;
+using Web.Controllers;
 using Web.Helpers;
 using WebGrease.Css.Extensions;
 
 namespace Web.Areas.Admin.Controllers
 {
-    public class PizzasController : Controller
+    [Authorize(Roles = "Admin")]
+    public class PizzasController : BaseController
     {
         private IUOW _uow;
 
@@ -73,16 +75,18 @@ namespace Web.Areas.Admin.Controllers
                 vm.Pizza.PizzaName = new MultiLangString(vm.PizzaName, CultureHelper.GetCurrentNeutralUICulture(), vm.PizzaName, "");
                 _uow.Pizzas.Add(vm.Pizza);
                 _uow.Commit();
-                for (int i = 0; i < vm.ThePrice.Length; i++)
-                {
-                    if(vm.ThePrice[i] != null) { 
-                        _uow.Prices.Add(new Price()
-                        {
-                            Value = vm.ThePrice[i].Value,
-                            PizzaSizeId = vm.ThePizzaSizeId[i],
-                            PriceTypeId = vm.ThePriceTypeId[i] ?? default(int),
-                            PizzaId = vm.Pizza.PizzaId
-                        });
+                if(vm.ThePrice != null) { 
+                    for (int i = 0; i < vm.ThePrice.Length; i++)
+                    {
+                        if(vm.ThePrice[i] != null) { 
+                            _uow.Prices.Add(new Price()
+                            {
+                                Value = vm.ThePrice[i].Value,
+                                PizzaSizeId = vm.ThePizzaSizeId[i],
+                                PriceTypeId = vm.ThePriceTypeId[i] ?? default(int),
+                                PizzaId = vm.Pizza.PizzaId
+                            });
+                        }
                     }
                 }
                 _uow.Commit();

@@ -14,6 +14,37 @@
             <form role="form">
                 <div class="box-body">
                     @Html.Partial("_CreateEdit", Model)
+                    <button type="submit" id="order_add">+</button>
+                    @foreach (var order in Model.Orders)
+                    {
+                        <div class="form-group">
+                            @Html.HiddenFor(order.InvoiceOrderId[order.])
+                            @foreach (var item in order.OrderedItems)
+                            {
+
+                            }
+                        </div>
+                        
+                    }
+                    <div class="form-group">
+                        <input type="hidden" id="OrderIds_0_" name="OrderIds[0]" value=""/>
+                        @Html.HiddenFor(model => model.OrderIds[1])
+                        <div class="form-group">
+                            @Html.HiddenFor(model => model.ItemIds[1])
+                        </div>
+                        <div class="form-group">
+                            @Html.HiddenFor(model => model.ItemIds[2])
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.HiddenFor(model => model.OrderIds[2])
+                        <div class="form-group">
+                            @Html.HiddenFor(model => model.ItemIds[2])
+                        </div>
+                        <div class="form-group">
+                            @Html.HiddenFor(model => model.ItemIds[2])
+                        </div>
+                    </div>            
                 </div>
                 <!-- /.box-body -->
 
@@ -24,4 +55,54 @@
             </form>
         </div>
     }
-    
+@section scripts
+{
+    <script type="text/javascript">
+     
+        $(document).on('click', '.btn-del', function (e) {
+
+            console.log("Del btn clicked");
+            e.preventDefault();
+            $(this).parent().parent().remove();
+
+        });
+        $(document).on('click', '.btn-add-pizza', function (e) {
+
+            console.log("Pizza Add Button Clicked");
+            e.preventDefault();
+            $(this).siblings('table').find('tbody').append('<tr><td>1.</td><td>Hawai</td><td>Pizza</td><td>Medium</td><td>9,60</td><td><a href="#" class="btn-del">-</a></td></tr>');
+
+        });
+        $(document).on('click', '.btn-add-drink', function (e) {
+
+            console.log("Drink Add Button Clicked");
+            e.preventDefault();
+            $(this).siblings('table').find('tbody').append('<tr><td>1.</td><td>Coca cola</td><td>Drink</td><td>Medium</td><td>1,50</td><td><a href="#" class="btn-del">-</a></td></tr>');
+
+        });
+
+                    $("#order_add")
+                        .click(function (e) {
+                            console.log("Order Add Button Clicked");
+                            e.preventDefault();
+                            $(this).parent().append('<div class="box"><div class="box-header with-border"><h3 class="box-title">Partial Order</h3> </div><div class="box-body"> <table class="table table-bordered"><tbody><tr><th style="width: 10px">#</th><th>Name</th><th>Type</th><th>Size</th><th>Price</th><th style="width: 40px">Action</th></tr></tbody></table><button type="submit" class="btn-add-pizza">Add a pizza</button><button type="submit" class="btn-add-drink">Add a drink</button></div></div>');
+                        });
+                    $(".pizza_add")
+                        .click(function (e) {
+                            console.log("Pizza Add Button Clicked");
+                            e.preventDefault();
+                            $(this).siblings('table').find('tbody').append('<tr><td>1.</td><td>Hawai</td><td>Pizza</td><td>Medium</td><td>9,60</td><td><a href="#" class="btn-del">-</a></td></tr>');
+                        });
+                    $(".ap_add")
+                        .click(function (e) {
+                            console.log("Drink Add Button Clicked");
+                            e.preventDefault();
+                        });
+                    $(function () {
+                        //Initialize Select2 Elements
+                        $(".select2").select2();
+                    });
+
+        
+    </script>
+}    

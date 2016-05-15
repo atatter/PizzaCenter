@@ -18,10 +18,16 @@
         {
             <div class="pizza-item">
                 <div class="heading">
-                    <h3>@Html.DisplayFor(modelItem => item.Name)</h3>
+                    <h3 >@Html.DisplayFor(modelItem => item.PizzaName.Value)</h3>
+                    <span >@foreach (var price in item.Prices)
+                    {
+                        <span>@price.PizzaSize.PizzaSizeName.Value _</span><span>@price.PriceType.PriceTypeName.Value:</span><span>@price.Value</span>
+                    }</span>
                 </div>
                 <div class="description">
-                    <p>@Html.DisplayFor(modelItem => item.PizzaDescription.Value)</p>
+                    <p>@foreach (var component in item.ComponentInPizzas)
+                       {
+                           @Html.DisplayFor(modelItem => component.Component.ComponentName.Value)<span>  </span> }</p>
                 </div>
             </div>
         }

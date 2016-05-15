@@ -11,6 +11,7 @@ using Web.Controllers;
 
 namespace Web.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class CouponsController : BaseController
     {
         private readonly IUOW _uow;

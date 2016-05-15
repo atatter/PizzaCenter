@@ -165,4 +165,16 @@
   <data name="FieldMustBeDataTypeTime" xml:space="preserve">
     <value>Väli {0} peab olema kellaaeg.</value>
   </data>
+  <data name="PLayout_About" xml:space="preserve">
+    <value>Meist</value>
+  </data>
+  <data name="PLayout_Contact" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="PLayout_Home" xml:space="preserve">
+    <value>Avaleht</value>
+  </data>
+  <data name="PLayout_Menu" xml:space="preserve">
+    <value>Menüü</value>
+  </data>
 </root>

@@ -12,6 +12,7 @@ using Web.Helpers;
 
 namespace Web.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class ComponentsController : BaseController
     {
         private readonly IUOW _uow;
