@@ -51,3 +51,4 @@ C:\Users\Aleks\Source\Repos\PizzaCenter\Resources\obj\Debug\et\Resources.resourc
 C:\Users\Aleks\Source\Repos\PizzaCenter\Resources\obj\Debug\Resources.dll
 C:\Users\Aleks\Source\Repos\PizzaCenter\Resources\obj\Debug\Resources.pdb
 C:\Users\Aleks\Source\GitProjects\PizzaCenter\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+C:\Users\Aleks\Source\Repos\PizzaCenter\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache

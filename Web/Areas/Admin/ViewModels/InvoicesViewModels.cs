@@ -28,7 +28,7 @@ namespace Web.Areas.Admin.ViewModels
         //Testimine
         public int[] OrderIds { get; set; }
         public int[] ItemIds { get; set; }
-        public List<InvoiceOrder> Orders { get; set; }
+        public TheOrder[] Orders { get; set; }
 
     }
 
@@ -44,4 +44,17 @@ namespace Web.Areas.Admin.ViewModels
         public int? PizzaId { get; set; }
         public int? AdditionalProductId { get; set; }
     }
+
+    public class ThePizza : Pizza
+    {
+        public bool Deleted { get; set; }
+    }
+
+    public class TheOrder
+    {
+        public int Inimesi { get; set; }
+        public ThePizza[] Pizzas { get; set; }
+        public bool Deleted { get; set; }
+    }
+
 }

@@ -305,6 +305,7 @@
     <Compile Include="Controllers\PersonsController.cs" />
     <Compile Include="Controllers\Api\ValuesController.cs" />
     <Compile Include="Controllers\Temporary\PizzaSizesController.cs" />
+    <Compile Include="Controllers\Temporary\TestController.cs" />
     <Compile Include="Filters\RequireHttpsAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -2458,6 +2459,7 @@
     <Folder Include="Content\select2\i18n\" />
     <Folder Include="logs\" />
     <Folder Include="Views\Base\" />
+    <Folder Include="Views\Test\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
