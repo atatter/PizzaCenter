@@ -2214,6 +2214,7 @@
     <Content Include="Areas\Admin\Views\Invoices\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\Invoices\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Areas\Admin\Views\Invoices\View.cshtml" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>

@@ -31,6 +31,21 @@ namespace Web.Areas.Admin.Controllers
             return View(vm);
         }
 
+        public ActionResult View(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Invoice invoice = _uow.Invoices.GetById(id);
+            if (invoice == null)
+            {
+                return HttpNotFound();
+            }
+
+            return View(invoice);
+        }
+
         // GET: Admin/Invoices/Create
         public ActionResult Create()
         {
