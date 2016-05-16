@@ -41,9 +41,20 @@
             <div class="nav">
                 <ul>
                     <li>@Html.ActionLink(Resources.Common.PLayout_Home, "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink(Resources.Common.PLayout_About, "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink(Resources.Common.PLayout_Menu, "Index", "Menu", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink(Resources.Common.PLayout_Contact, "Index", "Home", new {area = ""}, null)</li>
+                    <li>@Html.ActionLink(Resources.Common.PLayout_Menu, "Index", "Menu", new {area = ""}, null)</li>
+                    <li>@Html.ActionLink(Resources.Common.Order, "Index", "Order", new {area = ""}, null)</li>
+                        @if (Request.IsAuthenticated)
+                        {
+
+                        }
+                        else
+                        {
+                            <li>@Html.ActionLink(@Resources.Account.Login_ButtonLogin, "Login", "Account", new { area = "" }, null)</li>
+                        }
+                        @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                        {
+                            <li>@Html.ActionLink("Admin", "Index", "Home", new { area = "Admin" }, null)</li>
+                        }
                     @Html.Partial("_LoginPartial")
                 </ul>
             </div>

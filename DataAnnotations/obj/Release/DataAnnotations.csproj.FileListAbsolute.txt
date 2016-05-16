@@ -1,0 +1,12 @@
+C:\Users\Aleks\Source\GitProjects\PizzaCenter\DataAnnotations\bin\Release\DataAnnotations.dll.config
+C:\Users\Aleks\Source\GitProjects\PizzaCenter\DataAnnotations\bin\Release\DataAnnotations.dll
+C:\Users\Aleks\Source\GitProjects\PizzaCenter\DataAnnotations\bin\Release\DataAnnotations.pdb
+C:\Users\Aleks\Source\GitProjects\PizzaCenter\DataAnnotations\bin\Release\EntityFramework.dll
+C:\Users\Aleks\Source\GitProjects\PizzaCenter\DataAnnotations\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Aleks\Source\GitProjects\PizzaCenter\DataAnnotations\bin\Release\NLog.dll
+C:\Users\Aleks\Source\GitProjects\PizzaCenter\DataAnnotations\bin\Release\EntityFramework.xml
+C:\Users\Aleks\Source\GitProjects\PizzaCenter\DataAnnotations\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Aleks\Source\GitProjects\PizzaCenter\DataAnnotations\bin\Release\NLog.xml
+C:\Users\Aleks\Source\GitProjects\PizzaCenter\DataAnnotations\obj\Release\DataAnnotations.csprojResolveAssemblyReference.cache
+C:\Users\Aleks\Source\GitProjects\PizzaCenter\DataAnnotations\obj\Release\DataAnnotations.dll
+C:\Users\Aleks\Source\GitProjects\PizzaCenter\DataAnnotations\obj\Release\DataAnnotations.pdb

@@ -1,0 +1,87 @@
+﻿@using System.Threading
+@using Microsoft.AspNet.Identity
+@{
+    var titleTag = (string.IsNullOrWhiteSpace(ViewBag.Title) ? "" : ViewBag.Title + " - ") + Resources.Common.ApplicationName;
+
+    // set up global js variable, to hold culture code
+    // it is later used for globalize, cldr and moment
+    var currentCultureCode = "root";
+    switch (Thread.CurrentThread.CurrentCulture.ToString())
+    {
+        case "et-EE":
+            currentCultureCode = "et";
+            break;
+        case "en-US":
+            currentCultureCode = "en";
+            break;
+        default:
+            currentCultureCode = Thread.CurrentThread.CurrentCulture.ToString();
+            break;
+    }
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@titleTag</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/mainpage")
+    @Scripts.Render("~/bundles/modernizr")
+    <script type="text/javascript">
+        var currentCultureCode = '@currentCultureCode';
+    </script>
+    @RenderSection("headerscripts", required: false)
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="container">
+            <div class="logo">
+                <a href="/"><img src="~/Content/img/logo.png" /></a></div>
+            <div class="nav">
+                <ul>
+                    <li>@Html.ActionLink(Resources.Common.PLayout_Home, "Index", "Home", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink(Resources.Common.PLayout_Menu, "Index", "Menu", new {area = ""}, null)</li>
+                    <li>@Html.ActionLink(Resources.Common.Order, "Index", "Order", new {area = ""}, null)</li>
+                        @if (Request.IsAuthenticated)
+                        {
+
+                        }
+                        else
+                        {
+                            <li>@Html.ActionLink(@Resources.Account.Login_ButtonLogin, "Login", "Account", new { area = "" }, null)</li>
+                        }
+                        @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                        {
+                            <li>@Html.ActionLink("Admin", "Index", "Home", new { area = "Admin" }, null)</li>
+                        }
+                    @Html.Partial("_LoginPartial")
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        @RenderBody()    
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p>Pizza Center - 2016</p>
+        </div>
+    </div>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/cldr")
+    @Scripts.Render("~/bundles/globalize")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/moment")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/tinymce/tinymce.min.js")
+
+
+
+    @Scripts.Render("~/bundles/app")
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

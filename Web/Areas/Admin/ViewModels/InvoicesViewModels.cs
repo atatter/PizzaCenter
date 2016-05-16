@@ -12,7 +12,7 @@ namespace Web.Areas.Admin.ViewModels
     public class InvoicesCreateEditViewModel
     {
         public Invoice Invoice { get; set; }
-        public int PaymentMethodId { get; set; }
+        public int? PaymentMethodId { get; set; }
         public SelectList PaymentMethods { get; set; }
         //TULEB TAGASI NOT NULLIKS MUUTA
         public int? UserIntId { get; set; }
@@ -21,13 +21,12 @@ namespace Web.Areas.Admin.ViewModels
         public SelectList Coupons { get; set; }
         public DateTime Date { get; set; }
         public int PhoneNr { get; set; }
-
-        //Hiljem kustutamisele
-        public double SUM { get; set; }
-
-        //Testimine
-        public int[] OrderIds { get; set; }
-        public int[] ItemIds { get; set; }
+        public bool isDone { get; set; }
+        public bool isCanceled { get; set; }
+        //Orderid, pizzad jne
+        public SelectList Sizes { get; set; }
+        public SelectList Pizzas { get; set; }
+        public SelectList Components { get; set; }
         public TheOrder[] Orders { get; set; }
 
     }
@@ -48,13 +47,21 @@ namespace Web.Areas.Admin.ViewModels
     public class ThePizza : Pizza
     {
         public bool Deleted { get; set; }
+        public int[] ComponentIds { get; set; }
+        public int SizeId { get; set; }
     }
 
     public class TheOrder
     {
-        public int Inimesi { get; set; }
+        public int People { get; set; }
         public ThePizza[] Pizzas { get; set; }
         public bool Deleted { get; set; }
+    }
+
+    public class ManagedOrder
+    {
+        public int People { get; set; }
+        public List<ThePizza> ThePizzas { get; set; }
     }
 
 }

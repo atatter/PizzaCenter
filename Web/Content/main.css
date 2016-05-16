@@ -198,3 +198,76 @@ section .white-area a:hover {
     font-size: 15px;
     color: #393b3d;
 }
+
+@media(min-width: 768px) {
+    .col-md-8 {
+        width: 600px;
+        margin: 0 auto;
+    }
+}
+
+
+.btncont a {
+    padding: 12px 18px;
+    background-color: #cc3300;
+    transition: all .35s;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+}
+.btncont a:hover {
+    background-color: #ea3a00;
+}
+.btncont {
+    width: 200px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.order-banner {
+    width: 100%;
+    padding: 100px 0;
+    color: #fff;
+    background: url('http://marijazaric.com/leonardo-pizza/img/contact-banner.jpg') no-repeat center center;
+    background-color: #393b3d;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.order-banner h2 {
+    text-align: center;
+    font-size: 50px;
+}
+.order-group {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.order-group .order-phone-label {
+    display: block;
+    text-align: center;
+}
+.order-group .order-phone-box {
+    width: 100%;
+}
+.order-body {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#order_add {
+    
+}
+#form-submit-area {
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}

@@ -1,0 +1,11 @@
+﻿@model Web.Areas.Admin.ViewModels.PizzaSizesVM
+<div class="form-group">
+    @Html.LabelFor(model => model.PizzaSizeName, htmlAttributes: new { @class = "" })
+    @Html.EditorFor(model => model.PizzaSizeName, new { htmlAttributes = new { @class = "form-control", placeholder = Resources.Manage.InputText_Placeholder } })
+    @Html.ValidationMessageFor(model => model.PizzaSizeName, "", new { @class = "text-danger" })
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.PizzaSize.Diameter, htmlAttributes: new { @class = "" })
+    @Html.EditorFor(model => model.PizzaSize.Diameter, new { htmlAttributes = new { @class = "form-control", placeholder = Resources.Manage.InputText_Placeholder } })
+    @Html.ValidationMessageFor(model => model.PizzaSize.Diameter, "", new { @class = "text-danger" })
+</div>

@@ -1,0 +1,115 @@
+﻿@using Microsoft.AspNet.Identity
+@model Web.Areas.Admin.ViewModels.InvoicesCreateEditViewModel
+<div class="order-banner">
+    <h2>@Resources.Common.Order</h2>
+</div>
+    
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="container">
+        <div class="order-box">
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form class="order-form" role="form">
+
+                <div class="order-group">
+                    @Html.LabelFor(model => model.PhoneNr, @Resources.Common.Phone_nr , htmlAttributes: new { @class = "order-phone-label" })
+                    @Html.TextBoxFor(model => model.PhoneNr, new { @class = "order-phone-box", placeholder = Resources.Manage.InputText_Placeholder, @Value = "", type="number"  })
+                    @Html.ValidationMessageFor(model => model.PhoneNr, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="order-body">
+
+                    @{
+                        if (Request.IsAuthenticated)
+                        {
+                            @Html.HiddenFor(model => model.UserIntId, new {Value = User.Identity.GetUserId()})
+                        }
+                    }
+
+                    <button type="submit" id="order_add" class="btn btn-primary">@Resources.Common.Order_add</button>
+                    @Html.DropDownList("componentslist", Model.Components, new {style = "display:none;"})
+                    @Html.DropDownList("sizeslist", Model.Sizes, new {style = "display:none;"})
+                    @Html.DropDownList("pizzaslist", Model.Pizzas, new {style = "display:none;"})
+
+                    @*<div class="form-group">
+                            <select class="form-control select2" name="Orders[0].Pizzas[0].ComponentIds" id="Orders_0__Pizzas_0__ComponentIds" multiple></select>
+                            <select class="form-control" id="Orders_' + y + '__Pizzas_' + newid + '__SizeId" name="Orders[' + y + '].Pizzas[' + newid + '].SizeId"></select>
+                            <select class="form-control" id=Orders_' + y + '__Pizzas_' + newid + '__PizzaId" name="Orders[' + y + '].Pizzas[' + newid + '].PizzaId"></select>
+                        </div>*@
+
+                </div>
+                <!-- /.box-body -->
+                <div id="form-submit-area" class="box-footer" style="display: none;">
+                    <button type="submit" class="btn btn-primary">@Resources.Common.ApplyInvoice</button>
+                </div>
+            </form>
+        </div>
+    </div>
+                        }
+@section scripts
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.content').css('min-height', $(window).height()-198);
+        });
+        
+        var x = 0;
+        $(document).on('click', '.btn-del', function (e) {
+
+            console.log("Del btn clicked");
+            e.preventDefault();
+            $(this).parent().find("input").val('true');
+            $(this).parent().parent().hide();
+
+        });
+        $(document).on('click', '.btn-add-pizza-first', function (e) {
+
+            console.log("Pizza Add Button Clicked");
+            e.preventDefault();
+            var y = parseInt($(this).parents('.box').attr("orderid"));
+            var newid = 0;
+            var sizes = $("#sizeslist").html();
+            var pizzas = $("#pizzaslist").html();
+            var components = $("#componentslist").html();
+            $(this).siblings('table').find('tbody').append('<tr><td>1</td><td><select class="form-control" id=Orders_' + y + '__Pizzas_' + newid + '__PizzaId" name="Orders[' + y + '].Pizzas[' + newid + '].PizzaId">' + pizzas + '</select></td><td><select class="form-control" id="Orders_' + y + '__Pizzas_' + newid + '__SizeId" name="Orders[' + y + '].Pizzas[' + newid + '].SizeId">' + sizes + '</select></td><td><select class="form-control select2" name="Orders[' + y + '].Pizzas[' + newid + '].ComponentIds" id="Orders_' + y + '__Pizzas_' + newid + '__ComponentIds" multiple>' + components + '</select></td><td></td><td><a href="#" class="btn-del">-</a><input id="Orders_' + y + '__Pizzas_' + newid + '__Deleted" name="Orders[' + y + '].Pizas[' + newid + '].Deleted" type="hidden" value="false"></td></tr>');
+            $(this).siblings('table').attr("pizzaid", 0);
+            $(this).hide();
+            $(this).next().show();
+        });
+        $(document).on('click', '.btn-add-pizza', function (e) {
+            var oldid = parseInt($(this).siblings('table').attr("pizzaid"));
+            var newid = oldid + 1;
+            var ordernr = newid + 1;
+            var sizes = $("#sizeslist").html();
+            var pizzas = $("#pizzaslist").html();
+            var components = $("#componentslist").html();
+            var y = parseInt($(this).parents('.box').attr("orderid"));
+            $(this).siblings('table').attr("pizzaid", newid);
+            console.log("new id=" + newid);
+            e.preventDefault();
+            $(this).siblings('table').find('tbody').append('<tr><td>' + ordernr + '</td><td><select class="form-control" id=Orders_' + y + '__Pizzas_' + newid + '__PizzaId" name="Orders[' + y + '].Pizzas[' + newid + '].PizzaId">' + pizzas + '</select></td><td><select class="form-control" id="Orders_' + y + '__Pizzas_' + newid + '__SizeId" name="Orders[' + y + '].Pizzas[' + newid + '].SizeId">' + sizes + '</select></td><td><select class="form-control select2" name="Orders[' + y + '].Pizzas[' + newid + '].ComponentIds" id="Orders_' + y + '__Pizzas_' + newid + '__ComponentIds" multiple>' + components + '</select></td><td></td><td><a href="#" class="btn-del">-</a><input id="Orders_' + y + '__Pizzas_' + newid + '__Deleted" name="Orders[' + y + '].Pizzas[' + newid + '].Deleted" type="hidden" value="false"></td></tr>');
+
+        });
+        $(document).on('click', '.btn-order-del', function (e) {
+
+            console.log("Drink Add Button Clicked");
+            e.preventDefault();
+            $(this).parent().find("input").val('true');
+            $(this).parent().parent().hide();
+        });
+
+        $("#order_add")
+            .click(function (e) {
+                var shownr = x + 1;
+                $("#form-submit-area").show();
+                console.log("Order Add Button Clicked");
+                e.preventDefault();
+                $(this).parent().append('<div class="box" orderid="' + x + '"><div class="box-header with-border"><h3 style="line-height:26px" class="box-title">Partial Order ' + shownr + '</h3><input type="number" min="1" max="1000000" id="Orders_' + x + '__People" name="Orders[' + x + '].People" value="1" required><button class="btn-order-del" style="float: right;">-</button><input id="Orders_' + x + '__Deleted" name="Orders[' + x + '].Deleted" type="hidden" value="false"></div><div class="box-body"> <table class="table table-bordered"><tbody><tr><th style="width: 10px">#</th><th>Name</th><th>Size</th><th>Toppings</th><th></th><th style="width: 40px">Action</th></tr></tbody></table><button type="submit" class="btn-add-pizza-first">@Resources.Common.Pizza_add</button><button type="submit" style="display: none;" class="btn-add-pizza">@Resources.Common.Pizza_add</button></div></div>');
+                x++;
+            });
+
+
+    </script>
+}    

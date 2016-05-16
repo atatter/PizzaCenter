@@ -88,6 +88,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Send the invoice.
+        /// </summary>
+        public static string ApplyInvoice {
+            get {
+                return ResourceManager.GetString("ApplyInvoice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cancel.
         /// </summary>
         public static string Cancel {
@@ -228,6 +237,51 @@ namespace Resources {
         public static string OK {
             get {
                 return ResourceManager.GetString("OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Order.
+        /// </summary>
+        public static string Order {
+            get {
+                return ResourceManager.GetString("Order", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add an order.
+        /// </summary>
+        public static string Order_add {
+            get {
+                return ResourceManager.GetString("Order_add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Order sent!.
+        /// </summary>
+        public static string Order_done {
+            get {
+                return ResourceManager.GetString("Order_done", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone number.
+        /// </summary>
+        public static string Phone_nr {
+            get {
+                return ResourceManager.GetString("Phone_nr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add a pizza.
+        /// </summary>
+        public static string Pizza_add {
+            get {
+                return ResourceManager.GetString("Pizza_add", resourceCulture);
             }
         }
         

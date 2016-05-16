@@ -25,11 +25,6 @@ namespace Domain
         public int PriceTypeId { get; set; }
         public virtual PriceType PriceType { get; set; }
 
-
-        //Millise lisandi hind
-        public int? ComponentId { get; set; }
-        public virtual Component Component { get; set; }
-
         //Millise lisatoote hind
         public int? AdditionalProductId { get; set; }
         public virtual AdditionalProduct AdditionalProduct { get; set; }

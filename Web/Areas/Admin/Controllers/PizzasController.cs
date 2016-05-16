@@ -94,7 +94,8 @@ namespace Web.Areas.Admin.Controllers
             }
 
             vm.ComponentSelectList = new MultiSelectList(_uow.Components.All, nameof(Component.ComponentId), nameof(Component.ComponentName));
-
+            vm.PizzaSizesList = _uow.PizzaSizes.All;
+            vm.PriceTypesList = _uow.PriceTypes.All;
             return View(vm);
         }
 

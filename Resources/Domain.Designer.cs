@@ -196,6 +196,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Order here.
+        /// </summary>
+        public static string Menu_go {
+            get {
+                return ResourceManager.GetString("Menu_go", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Date.
         /// </summary>
         public static string Person_Date2 {

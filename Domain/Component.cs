@@ -22,7 +22,6 @@ namespace Domain
         public virtual List<ComponentInPizza> ComponentInPizzas { get; set; }
         //List lisandeid_tellimuses
         public virtual List<ToppingInPizzaOrder> ToppingInPizzaOrders { get; set; }
-        //List hindu
-        public virtual List<Price> Prices { get; set; }
+
     }
 }

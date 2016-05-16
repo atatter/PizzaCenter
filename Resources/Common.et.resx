@@ -177,4 +177,22 @@
   <data name="PLayout_Menu" xml:space="preserve">
     <value>Menüü</value>
   </data>
+  <data name="Order" xml:space="preserve">
+    <value>Telli</value>
+  </data>
+  <data name="ApplyInvoice" xml:space="preserve">
+    <value>Esita tellimus</value>
+  </data>
+  <data name="Order_add" xml:space="preserve">
+    <value>Lisa üks tellimus</value>
+  </data>
+  <data name="Order_done" xml:space="preserve">
+    <value>Tellimus saadetud!</value>
+  </data>
+  <data name="Phone_nr" xml:space="preserve">
+    <value>Telefoni number</value>
+  </data>
+  <data name="Pizza_add" xml:space="preserve">
+    <value>Lisa üks pitsa</value>
+  </data>
 </root>

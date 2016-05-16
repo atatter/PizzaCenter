@@ -56,3 +56,4 @@ C:\Users\Aleks\Source\Repos\PizzaCenter\HtmlHelpers\obj\Debug\HtmlHelpers.Proper
 C:\Users\Aleks\Source\Repos\PizzaCenter\HtmlHelpers\obj\Debug\HtmlHelpers.csproj.GenerateResource.Cache
 C:\Users\Aleks\Source\Repos\PizzaCenter\HtmlHelpers\obj\Debug\HtmlHelpers.dll
 C:\Users\Aleks\Source\Repos\PizzaCenter\HtmlHelpers\obj\Debug\HtmlHelpers.pdb
+C:\Users\Aleks\Source\GitProjects\PizzaCenter\HtmlHelpers\obj\Debug\HtmlHelpers.csprojResolveAssemblyReference.cache

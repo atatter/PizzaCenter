@@ -38,7 +38,7 @@
     <div class="wrapper">
         <header class="main-header">
             <!-- Logo -->
-            <a href="index2.html" class="logo">
+            <a href="/" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini">@Resources.Common.ApplicationNameMini</span>
                 <!-- logo for regular state and mobile devices -->
@@ -70,13 +70,14 @@
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu">
                     <li class="header">MAIN NAVIGATION</li>
-
+                    <li><a href="@Url.Action("Index","Home",new { area = "Admin" })"><i class="fa fa-dashboard"></i> <span>Admin Home</span></a></li>
+                    <li><a href="@Url.Action("Index","Invoices",new { area = "Admin" })"><i class="fa fa-th"></i> <span>Invoices</span></a></li>
                     <li><a href="@Url.Action("Index", "Pizzas", new {area = "Admin"})"><i class="fa fa-pie-chart"></i> <span>Pizzas</span></a></li>
                     <li><a href="@Url.Action("Index","Components",new { area = "Admin" })"><i class="fa fa-th"></i> <span>Components</span></a></li>
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-laptop"></i>
-                            <span>Pizza related stuff</span>
+                            <span>Hidden stuff</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
                         <ul class="treeview-menu" style="display: none;">

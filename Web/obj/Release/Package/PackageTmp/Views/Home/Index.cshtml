@@ -1,0 +1,35 @@
+﻿@model Web.ViewModels.HomeIndexViewModel
+@{
+    ViewBag.Title = Resources.Common.ApplicationName;
+}
+<div class="container">
+    <section id="header">
+        <h1 id="header-text" class="text">@Resources.Domain.Index_h1</h1>
+        <div class="hr"></div>
+    </section>
+    <section id="intro">
+        <div class="white-area">
+            <h2>@Resources.Domain.Index_h2</h2>
+            <p>@Resources.Domain.Index_p</p>
+            @Html.ActionLink(@Resources.Domain.Index_menubtn, "Index", "Menu", new { area = "" }, null)
+        </div>
+    </section>
+    <section id="top-pizzas"></section>
+</div>
+    @section scripts
+{
+        <script type="text/javascript">
+            function header_sizer() {
+                var windowHeight = $(window).height();
+                var imageHeight = windowHeight - $(".nav-bar").height() - 20
+                $('#header').height(imageHeight);
+                $('#intro').css("margin-top", imageHeight);
+                $('#header-text').css("margin-top", (imageHeight / 2) - ($('#header-text').height() / 2));
+            }
+            $(document).ready(function () {
+                header_sizer();
+                $(window).resize(header_sizer)
+            })
+
+        </script>
+    }

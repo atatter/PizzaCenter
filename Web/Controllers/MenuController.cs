@@ -7,7 +7,7 @@ using DAL.Interfaces;
 
 namespace Web.Controllers
 {
-    public class MenuController : Controller
+    public class MenuController : BaseController
     {
         private IUOW _uow;
 

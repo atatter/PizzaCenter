@@ -1,0 +1,17 @@
+﻿
+<div class="order-banner">
+    <h2>@Resources.Common.Order</h2>
+</div>
+<div class="order-done-textarea">
+    <h3 style="text-align: center; font-size: 50px; padding-top: 70px;">@Resources.Common.Order_done</h3>
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+        $(document)
+            .ready(function() {
+                $('.content').css('min-height', $(window).height() - 208);
+            });
+    </script>
+    }

@@ -19,7 +19,8 @@ namespace Domain
         public double SumAfterCoupon { get; set; }
         [Range(0, 1000000000)]
         public int CustomersPhone { get; set; }
-        public bool GivenOut { get; set; }
+        public bool Done { get; set; }
+        public bool Canceled { get; set; }
 
         //List tellimusi
         public virtual List<Order> Orders { get; set; }
@@ -29,7 +30,7 @@ namespace Domain
         public virtual Coupon Coupon { get; set; }
 
         //Makseviis
-        public int PaymentMethodId { get; set; }
+        public int? PaymentMethodId { get; set; }
         public virtual PaymentMethod PaymentMethod { get; set; }
 
         //Klient

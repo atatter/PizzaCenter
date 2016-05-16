@@ -1,0 +1,13 @@
+﻿@model Web.Areas.Admin.ViewModels.ComponentsCreateEditViewModel
+<div class="form-group">
+    @Html.LabelFor(model => model.ComponentName, htmlAttributes: new {@class = ""})
+    @Html.EditorFor(model => model.ComponentName, new {htmlAttributes = new {@class = "form-control", placeholder = Resources.Manage.InputText_Placeholder}})
+    @Html.ValidationMessageFor(model => model.ComponentName, "", new {@class = "text-danger"})
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Component.IsTopping, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.CheckBoxFor(model => model.Component.IsTopping, new { @class = "" })
+        @Html.ValidationMessageFor(model => model.Component.IsTopping, "", new { @class = "text-danger" })
+    </div>
+</div>

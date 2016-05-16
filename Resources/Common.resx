@@ -198,4 +198,22 @@
   <data name="PLayout_Menu" xml:space="preserve">
     <value>Menu</value>
   </data>
+  <data name="Order" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="ApplyInvoice" xml:space="preserve">
+    <value>Send the invoice</value>
+  </data>
+  <data name="Order_add" xml:space="preserve">
+    <value>Add an order</value>
+  </data>
+  <data name="Order_done" xml:space="preserve">
+    <value>Order sent!</value>
+  </data>
+  <data name="Phone_nr" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="Pizza_add" xml:space="preserve">
+    <value>Add a pizza</value>
+  </data>
 </root>

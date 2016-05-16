@@ -153,6 +153,9 @@
   <data name="Index_TwoFactorAuthentication" xml:space="preserve">
     <value>Kahetasemeline autentimine:</value>
   </data>
+  <data name="InputText_Placeholder" xml:space="preserve">
+    <value>Sisesta siia...</value>
+  </data>
   <data name="ManageLogins_NoExternalLogins" xml:space="preserve">
     <value>Süsteemis ei ole seadistatud ühtegi välist autentimise teenust.</value>
   </data>

@@ -1,0 +1,40 @@
+﻿@model Domain.Component
+
+<div class="box box-primary">
+    <div class="box-header with-border">
+        <h3 class="box-title">@Resources.Common.Delete - @Resources.Common.Delete_confirm</h3>
+    </div>
+    <!-- /.box-header -->
+    <!-- form start -->
+    @using (Html.BeginForm())
+            {
+        <div class="box-body">
+            <dt>
+                @Html.DisplayNameFor(model => model.ComponentName.Value)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ComponentName.Value)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.IsTopping)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.IsTopping)
+            </dd>
+
+        </div>
+        <!-- /.box-body -->
+
+        <div class="box-footer">
+
+            @Html.AntiForgeryToken()
+
+            <button type="submit" class="btn btn-primary">@Resources.Common.Delete</button>
+            @Html.ActionLink(Resources.Common.Cancel, "Index", new { }, new { @class = "btn btn-danger" })
+
+
+        </div>
+    }
+</div>

@@ -1,0 +1,6 @@
+﻿@model Web.Areas.Admin.ViewModels.PriceTypesCreateEditViewModel
+<div class="form-group">
+    @Html.LabelFor(model => model.PriceTypeName, htmlAttributes: new { @class = "" })
+    @Html.EditorFor(model => model.PriceTypeName, new { htmlAttributes = new { @class = "form-control", placeholder = Resources.Manage.InputText_Placeholder } })
+    @Html.ValidationMessageFor(model => model.PriceTypeName, "", new { @class = "text-danger" })
+</div>
